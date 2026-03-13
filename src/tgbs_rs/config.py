@@ -1,6 +1,19 @@
+from pathlib import Path
+
+# Path definitions for AOI geojson files
+DATA_DIR = Path("data")
+
+AOI_PATHS = {
+    "buda": DATA_DIR / "buda_aoi.geojson",
+    "gogoni": DATA_DIR / "gogoni_aoi.geojson",
+    "shimba_hills": DATA_DIR / "shimba_hills_aoi.geojson",
+    "ks_rehab": DATA_DIR / "ks_rehab_aoi.geojson",
+    "ks_rehab_blocks": DATA_DIR / "ks_rehab_blocks_2509_epsg_4326.geojson",
+}
+
 # Sentinel-2 collections
 S2_SR_COLLECTION = "COPERNICUS/S2_SR_HARMONIZED"
-S2_CLOUDSCORE_COLLECTION = "GOOGLE/CLOUD_SCORE_PLUS/V1/S2_HARMONIZED"
+S2_CLOUD_PROB_COLLECTION = "COPERNICUS/S2_CLOUD_PROBABILITY"
 
 # Sentinel-2 processing
 S2_BANDS = ["B2", "B3", "B4", "B5", "B6", "B7", "B8", "B8A", "B11", "B12"]
@@ -17,8 +30,6 @@ S2_BANDS = ["B2", "B3", "B4", "B5", "B6", "B7", "B8", "B8A", "B11", "B12"]
 # SWIR2_BAND = "B12"
 
 S2_SCALE_FACTOR = 0.0001
-S2_QA_BAND = "cs_cdf"
-CLEAR_THRESHOLD = 0.60
 
 # CLOUD MASKING PARAMETERS
 CLOUD_FILTER = 70  # % max CLOUDY_PIXEL_PERCENTAGE per image

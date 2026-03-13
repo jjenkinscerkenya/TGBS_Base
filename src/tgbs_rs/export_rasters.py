@@ -2,7 +2,13 @@ import ee
 
 
 def export_image_to_drive(
-    image, aoi, description, folder, file_prefix, scale=10, crs=None
+    image: ee.Image,
+    aoi: ee.Geometry,
+    description: str,
+    folder: str,
+    file_prefix: str,
+    scale=10,
+    crs=None,
 ):
     """Export an ee.Image prediction layer to Google Drive as a GeoTIFF."""
     task = ee.batch.Export.image.toDrive(
@@ -21,7 +27,12 @@ def export_image_to_drive(
 
 
 def export_image_to_asset(
-    image, aoi, asset_id, description, scale=10, crs=None
+    image: ee.Image,
+    aoi: ee.Geometry,
+    asset_id: str,
+    description: str,
+    scale=10,
+    crs=None,
 ):
     """Export an image to an Earth Engine asset."""
     task = ee.batch.Export.image.toAsset(
