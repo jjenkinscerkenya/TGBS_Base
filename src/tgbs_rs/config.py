@@ -1,7 +1,8 @@
 from pathlib import Path
 
-# Path definitions for AOI geojson files
-DATA_DIR = Path("data")
+
+REPO_ROOT = Path(__file__).resolve().parents[2]
+DATA_DIR = REPO_ROOT / "data"
 
 AOI_PATHS = {
     "buda": DATA_DIR / "buda_aoi.geojson",
@@ -32,7 +33,7 @@ S2_BANDS = ["B2", "B3", "B4", "B5", "B6", "B7", "B8", "B8A", "B11", "B12"]
 S2_SCALE_FACTOR = 0.0001
 
 # CLOUD MASKING PARAMETERS
-CLOUD_FILTER = 70  # % max CLOUDY_PIXEL_PERCENTAGE per image
+CLOUD_FILTER = 50  # % max CLOUDY_PIXEL_PERCENTAGE per image
 CLD_PRB_THRESH = 40  # % s2cloudless probability threshold
 NIR_DRK_THRESH = 0.15  # reflectance (0..1) threshold for dark pixels
 CLD_PRJ_DIST_KM = 1.0  # max shadow search distance (km)
