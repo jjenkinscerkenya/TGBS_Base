@@ -5,12 +5,53 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 DATA_DIR = REPO_ROOT / "data"
 
 AOI_PATHS = {
+    "kwale": DATA_DIR / "kwale_county.geojson",
     "buda": DATA_DIR / "buda_aoi.geojson",
     "gogoni": DATA_DIR / "gogoni_aoi.geojson",
     "shimba_hills": DATA_DIR / "shimba_hills_aoi.geojson",
     "ks_rehab": DATA_DIR / "ks_rehab_aoi.geojson",
     "ks_rehab_blocks": DATA_DIR / "ks_rehab_blocks_2509_epsg_4326.geojson",
 }
+
+#################### EE DATASETS ##########################
+# Global Biodiversity Intactness Index
+BII_1KM = "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/BII/BII_1km"
+BII_MASK = "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/BII/BII_Mask"
+BII_MAIN_BAND = "BII All"
+BII_BANDS = [
+    "Land Use",
+    "Land Use Intensity",
+    "BII All",
+    "BII Amphibians",
+    "BII Birds",
+    "BII Forbs",
+    "BII Graminoids",
+    "BII Mammals",
+    "BII All Plants",
+    "BII Reptiles",
+    "BII Trees",
+    "BII All Vertebrates",
+]
+
+# ESA WORLDCOVER
+ESA = "ESA/WorldCover/v200"
+ESA_MAP_BAND = "Map"
+
+# 1m Global Canopy Height Model
+CANOPY = "projects/sat-io/open-datasets/facebook/meta-canopy-height"
+
+# iSDA Total Soil Carbon
+ISDA = "ISDASOIL/Africa/v1/carbon_total"
+ISDA_TOPSOIL_MEAN_BAND = "mean_0_20"
+
+# Global Elevation
+DEM = "COPERNICUS/DEM/GLO30"
+
+# IUCN Protected Areas
+IUCN = "WCMC/WDPA/current/polygons"
+
+# Global admin boundary datasets
+GLOBAL_ADM2 = "FAO/GAUL/2015/level2"
 
 # Sentinel-2 collections
 S2_SR_COLLECTION = "COPERNICUS/S2_SR_HARMONIZED"
@@ -79,3 +120,129 @@ OUTPUT_DIRS = {
     "tables": "outputs/tables",
     "rasters": "outputs/rasters",
 }
+
+PLOTTING_SCALE_DICT = {
+    "hillshade": 30,
+    "dem": 30,
+    "slope": 30,
+    "canopy_height": 30,  # downsampled from 1m for consistent plotting
+    "land_cover": 30,
+    "soil_carbon": 30,
+    "bii_all": 30,
+}
+
+############# Visualization parameters #########################
+
+DEM_VIS = {
+    "min": 0,
+    "max": 800,
+    "palette": ["#0b1f3a", "#355c7d", "#6c8f6b", "#c2b280", "#f5f5f5"],
+}
+
+DEM_VIS_TERRAIN = {
+    "min": 0,
+    "max": 800,
+    "palette": ["#1a3d2f", "#4f772d", "#90a955", "#dda15e", "#ede6d6"],
+}
+
+DEM_VIS_HYPSO = {
+    "min": 0,
+    "max": 800,
+    "palette": ["#2c7bb6", "#abd9e9", "#d9ef8b", "#fdae61", "#d7191c"],
+}
+
+DEM_VIS_MUTED = {
+    "min": 0,
+    "max": 800,
+    "palette": ["#334e68", "#7b9e87", "#b7b7a4", "#d4a373", "#f1faee"],
+}
+
+SLOPE_VIS = {
+    "min": 0,
+    "max": 45,
+    "palette": ["#f7fcf0", "#ccebc5", "#7bccc4", "#2b8cbe", "#084081"],
+}
+
+SLOPE_VIS_DARK_TO_ORANGE = {
+    "min": 0,
+    "max": 45,
+    "palette": [
+        "#0b1f3a",
+        "#1f4e79",
+        "#4fa3c4",
+        "#fdae61",
+        "#d94801",
+    ],
+}
+
+HILLSHADE_VIS = {"min": 0, "max": 255, "palette": ["#000000", "#ffffff"]}
+
+CANOPY_VIS = {
+    "min": 0,
+    "max": 15,
+    "palette": [
+        "#440154",
+        "#482775",
+        "#3E4A89",
+        "#31688E",
+        "#26828E",
+        "#1F9E89",
+        "#67C165",
+        "#B8D73D",
+        "#FDE623",
+    ],
+}
+
+SOIL_CARBON_VIS = {
+    "min": 0,
+    "max": 40,
+    "palette": [
+        "#fff7ec",
+        "#fee8c8",
+        "#fdd49e",
+        "#fdbb84",
+        "#e34a33",
+        "#7f0000",
+    ],
+}
+
+# Start with 0-1 if BII is fractional. If your layer is 0-100, change max to 100.
+BII_VIS = {
+    "min": 0,
+    "max": 1,
+    "palette": ["#d73027", "#fee08b", "#d9ef8b", "#1a9850"],
+}
+
+ESA_WORLDCOVER_VIS = {
+    "min": 10,
+    "max": 100,
+    "palette": [
+        "#006400",  # 10 Tree cover
+        "#ffbb22",  # 20 Shrubland
+        "#ffff4c",  # 30 Grassland
+        "#f096ff",  # 40 Cropland
+        "#fa0000",  # 50 Built-up
+        "#b4b4b4",  # 60 Bare/sparse vegetation
+        "#f0f0f0",  # 70 Snow and ice
+        "#0064c8",  # 80 Permanent water bodies
+        "#0096a0",  # 90 Herbaceous wetland
+        "#00cf75",  # 95 Mangroves
+        "#fae6a0",  # 100 Moss and lichen
+    ],
+}
+
+ESA_CLASS_VALUES = [10, 20, 30, 40, 50, 60, 70, 80, 90, 95, 100]
+
+ESA_CLASS_NAMES = [
+    "Tree cover",
+    "Shrubland",
+    "Grassland",
+    "Cropland",
+    "Built-up",
+    "Bare / sparse vegetation",
+    "Snow and ice",
+    "Permanent water bodies",
+    "Herbaceous wetland",
+    "Mangroves",
+    "Moss and lichen",
+]
