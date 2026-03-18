@@ -11,17 +11,61 @@ from tgbs_rs.config import (
     BII_MAIN_BAND,
     ESA_MAP_BAND,
     ISDA_TOPSOIL_MEAN_BAND,
+    GL_FOREST_CHANGE,
 )
 from tgbs_rs.topography import calc_terrain
+from tgbs_rs.utils import _clip_and_mask_image
 
 
-def _clip_and_mask_image(image, geometry):
+# Global Forest Change
+def get_forest_2000(aoi: ee.Geometry):
     """
-    Clip image to AOI and apply an explicit AOI mask while preserving
-    the image's existing mask.
+    Return a clipped image of tree canopy cover for year 2000.
     """
-    aoi_mask = ee.Image.constant(1).clip(geometry).mask()
-    return image.updateMask(aoi_mask).clip(geometry)
+    gfc = ee.Image(GL_FOREST_CHANGE)
+
+    forest_2000 = gfc.select("treecover2000")
+    return _clip_and_mask_image(forest_2000, aoi)
+
+
+def get_forest_loss_image(aoi: ee.Geometry, tree_cover_threshold=10):
+    """
+    Return a clipped binary forest loss image for the provided AOI.
+    """
+    gfc = ee.Image(GL_FOREST_CHANGE)
+
+    forest2000 = gfc.select("treecover2000").gte(tree_cover_threshold)
+    loss = gfc.select("loss")
+
+    forest_loss = forest2000.And(loss).rename("forest_loss")
+
+    return _clip_and_mask_image(forest_loss, aoi)
+
+
+def get_forest_gain_image(aoi: ee.Geometry, tree_cover_threshold=10):
+    """
+    Return a clipped binary forest loss image for the provided AOI.
+    """
+    gfc = ee.Image(GL_FOREST_CHANGE)
+
+    forest2000 = gfc.select("treecover2000").gte(tree_cover_threshold)
+    gain = gfc.select("gain")
+
+    forest_gain = forest2000.And(gain).rename("forest_gain")
+
+    return _clip_and_mask_image(forest_gain, aoi)
+
+
+def get_forest_loss_year_image(aoi: ee.Geometry, tree_cover_threshold=10):
+    """
+    Return a clipped forest loss year image for the provided AOI.
+    """
+    gfc = ee.Image(GL_FOREST_CHANGE)
+
+    forest2000 = gfc.select("treecover2000").gte(tree_cover_threshold)
+    lossyear = gfc.select("lossyear").updateMask(forest2000).rename("lossyear")
+
+    return _clip_and_mask_image(lossyear, aoi)
 
 
 # BII

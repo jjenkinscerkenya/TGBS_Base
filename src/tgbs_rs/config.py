@@ -40,6 +40,9 @@ ESA_MAP_BAND = "Map"
 # 1m Global Canopy Height Model
 CANOPY = "projects/sat-io/open-datasets/facebook/meta-canopy-height"
 
+GL_FOREST_CHANGE = "UMD/hansen/global_forest_change_2024_v1_12"
+GL_AGBM = "projects/sat-io/open-datasets/ESA/ESA_CCI_AGB"
+
 # iSDA Total Soil Carbon
 ISDA = "ISDASOIL/Africa/v1/carbon_total"
 ISDA_TOPSOIL_MEAN_BAND = "mean_0_20"
@@ -132,6 +135,12 @@ PLOTTING_SCALE_DICT = {
 }
 
 ############# Visualization parameters #########################
+
+FOREST_LOSS_VIS = {
+    "min": 0,
+    "max": 1,
+    "palette": ["#ffffff", "#ff0000"],
+}
 
 DEM_VIS = {
     "min": 0,

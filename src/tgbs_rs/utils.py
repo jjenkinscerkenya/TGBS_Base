@@ -5,6 +5,15 @@ import ee
 from tgbs_rs.config import AOI_PATHS
 
 
+def _clip_and_mask_image(image, geometry):
+    """
+    Clip image to AOI and apply an explicit AOI mask while preserving
+    the image's existing mask.
+    """
+    aoi_mask = ee.Image.constant(1).clip(geometry).mask()
+    return image.updateMask(aoi_mask).clip(geometry)
+
+
 def geojson_to_ee_geometry(path) -> ee.Geometry:
     """Read a local GeoJSON file and return its contents as a single ee.Geometry."""
     path = Path(path)
