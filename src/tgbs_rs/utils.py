@@ -1,6 +1,6 @@
+import ee
 import json
 from pathlib import Path
-import ee
 
 from tgbs_rs.config import AOI_PATHS
 
@@ -101,12 +101,28 @@ def build_default_sites_featurecollection():
         site_category="reference",
     )
 
+    degraded_1_feature = load_site_feature(
+        path=AOI_PATHS["degraded_1"],
+        site_id="degraded_1",
+        site_name="degraded_1",
+        site_category="degraded",
+    )
+
+    degraded_2_feature = load_site_feature(
+        path=AOI_PATHS["degraded_2"],
+        site_id="degraded_2",
+        site_name="degraded_2",
+        site_category="degraded",
+    )
+
     return ee.FeatureCollection(
         [
             ks_rehab_feature,
             buda_feature,
             gogoni_feature,
             shimba_hills_feature,
+            degraded_1_feature,
+            degraded_2_feature,
         ]
     )
 

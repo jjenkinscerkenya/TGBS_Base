@@ -73,6 +73,16 @@ def build_baseline_export_config(scale_dict):
             "prefix": "bii_all",
             "scale": scale_dict["bii_all"],
         },
+        "forest_2000": {
+            "description": "Forest_2000",
+            "prefix": "forest_2000",
+            "scale": scale_dict["forest_2000"],
+        },
+        "forest_loss": {
+            "description": "Forest_Loss",
+            "prefix": "forest_loss",
+            "scale": scale_dict["forest_loss"],
+        },
     }
 
 

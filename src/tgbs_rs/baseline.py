@@ -42,20 +42,6 @@ def get_forest_loss_image(aoi: ee.Geometry, tree_cover_threshold=10):
     return _clip_and_mask_image(forest_loss, aoi)
 
 
-def get_forest_gain_image(aoi: ee.Geometry, tree_cover_threshold=10):
-    """
-    Return a clipped binary forest loss image for the provided AOI.
-    """
-    gfc = ee.Image(GL_FOREST_CHANGE)
-
-    forest2000 = gfc.select("treecover2000").gte(tree_cover_threshold)
-    gain = gfc.select("gain")
-
-    forest_gain = forest2000.And(gain).rename("forest_gain")
-
-    return _clip_and_mask_image(forest_gain, aoi)
-
-
 def get_forest_loss_year_image(aoi: ee.Geometry, tree_cover_threshold=10):
     """
     Return a clipped forest loss year image for the provided AOI.
@@ -213,6 +199,8 @@ def build_baseline_layers(aoi):
         "land_cover": get_esa_landcover(aoi),
         "soil_carbon": get_isda_topsoil_mean(aoi),
         "bii_all": get_bii_all(aoi),
+        "forest_2000": get_forest_2000(aoi),
+        "forest_loss": get_forest_loss_image(aoi),
     }
 
     return layers

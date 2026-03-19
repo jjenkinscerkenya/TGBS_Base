@@ -5,11 +5,13 @@ import matplotlib.pyplot as plt
 import geopandas as gpd
 import rasterio
 from rasterio.features import geometry_mask
-from matplotlib.colors import ListedColormap, Normalize
+from matplotlib.colors import ListedColormap, Normalize, LinearSegmentedColormap
 from matplotlib.patches import Patch
 
 from tgbs_rs.config import (
     DEM_VIS_MUTED,
+    FOREST_COVER_VIS,
+    LOSS_YEAR_VIS,
     SLOPE_VIS_DARK_TO_ORANGE,
     CANOPY_VIS,
     SOIL_CARBON_VIS,
@@ -20,9 +22,7 @@ from tgbs_rs.config import (
 )
 
 
-# -----------------------------------------------------------------------------
 # Raster reading and masking helpers
-# -----------------------------------------------------------------------------
 
 
 def _ensure_masked_float_array(arr):
@@ -146,11 +146,7 @@ def _combine_masks(*arrays):
     return tuple(out)
 
 
-# -----------------------------------------------------------------------------
 # Colormap helpers
-# -----------------------------------------------------------------------------
-
-
 def _transparent_gray_cmap():
     """
     Grayscale colormap with transparent masked pixels.
@@ -174,9 +170,7 @@ def _hex_palette_to_cmap(hex_list, name="custom_cmap"):
     return cmap
 
 
-# -----------------------------------------------------------------------------
 # Axis styling
-# -----------------------------------------------------------------------------
 
 
 def _style_axis(ax, title):
@@ -193,9 +187,7 @@ def _style_axis(ax, title):
         spine.set_visible(False)
 
 
-# -----------------------------------------------------------------------------
 # Plotting helpers
-# -----------------------------------------------------------------------------
 
 
 def _plot_continuous_with_hillshade(
@@ -300,9 +292,7 @@ def _plot_categorical_with_hillshade(
     )
 
 
-# -----------------------------------------------------------------------------
 # Main figure function
-# -----------------------------------------------------------------------------
 
 
 def plot_baseline_panels_from_rasters(
@@ -383,7 +373,7 @@ def plot_baseline_panels_from_rasters(
         vector_path,
     )
 
-    # Make figure and axes transparent/white-friendly
+    # Make figure and axes
     fig, axes = plt.subplots(3, 2, figsize=figsize)
     fig.patch.set_facecolor("white")
     fig.patch.set_alpha(1.0)
@@ -467,3 +457,224 @@ def plot_baseline_panels_from_rasters(
 
     plt.tight_layout(rect=[0.03, 0.02, 1, 1])
     return fig, axes
+
+
+def plot_forest_cover_2000_from_raster(
+    raster_dir,
+    figsize=(6, 6),
+    alpha_forest=0.70,
+):
+    """
+    Plot forest cover 2000 as a single-panel figure over hillshade.
+
+    Expected files in raster_dir:
+    - kwale_hillshade.tif
+    - kwale_forest_2000.tif
+    """
+    raster_dir = Path(raster_dir)
+
+    raster_paths = {
+        "hillshade": raster_dir / "kwale_hillshade.tif",
+        "forest_2000": raster_dir / "kwale_forest_2000.tif",
+    }
+
+    missing = [str(path) for path in raster_paths.values() if not path.exists()]
+    if missing:
+        raise FileNotFoundError(
+            "The following raster files were not found:\n" + "\n".join(missing)
+        )
+
+    arrays = {}
+
+    for name, path in raster_paths.items():
+        extra_nodata_values = None
+        if name == "hillshade":
+            extra_nodata_values = [0]
+
+        arr, _ = _read_raster_as_array(
+            path,
+            extra_nodata_values=extra_nodata_values,
+        )
+        arrays[name] = arr
+
+    arrays, _ = _crop_to_common_shape(arrays)
+
+    hillshade = arrays["hillshade"]
+    forest_2000 = arrays["forest_2000"]
+
+    fig, ax = plt.subplots(1, 1, figsize=figsize)
+    fig.patch.set_alpha(1.0)
+    ax.set_facecolor("none")
+    ax.patch.set_alpha(0.0)
+
+    gray_cmap = _transparent_gray_cmap()
+
+    hillshade_fc, forest_2000_plot = _combine_masks(hillshade, forest_2000)
+
+    forest_cmap = LinearSegmentedColormap.from_list(
+        "forest_cover_continuous",
+        ["#000000", "#1F951F"],
+        N=256,
+    )
+    forest_cmap = forest_cmap.copy()
+    forest_cmap.set_bad((0, 0, 0, 0))
+
+    ax.imshow(
+        hillshade_fc,
+        cmap=gray_cmap,
+        vmin=0,
+        vmax=255,
+        interpolation="none",
+    )
+
+    im = ax.imshow(
+        forest_2000_plot,
+        cmap=forest_cmap,
+        norm=Normalize(
+            vmin=FOREST_COVER_VIS["min"],
+            vmax=FOREST_COVER_VIS["max"],
+        ),
+        alpha=alpha_forest,
+        interpolation="none",
+    )
+
+    _style_axis(ax, "Forest Cover (2000)")
+
+    cbar = fig.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
+    cbar.set_label("(tree cover %)", fontsize=8, labelpad=6)
+
+    plt.tight_layout(rect=[0.03, 0.02, 1, 1])
+    return fig, ax
+
+
+def plot_forest_loss_years_from_raster(
+    raster_dir,
+    figsize=(6, 6),
+    alpha_loss_years=0.90,
+):
+    """
+    Plot forest loss years as a single-panel figure over hillshade.
+
+    Expected files in raster_dir:
+    - kwale_hillshade.tif
+    - kwale_forest_loss_years.tif
+
+    Notes
+    -----
+    - Hillshade nodata is kept masked, but hillshade value 0 is treated as valid
+    - Forest loss year nodata (-9999) is transparent
+    - Forest loss year value 0 (no loss) is also transparent
+    - Forest loss years 1..24 are rendered with a continuous color ramp
+    """
+    raster_dir = Path(raster_dir)
+
+    raster_paths = {
+        "hillshade": raster_dir / "kwale_hillshade.tif",
+        "forest_loss_years": raster_dir / "kwale_forest_loss_years.tif",
+    }
+
+    missing = [str(path) for path in raster_paths.values() if not path.exists()]
+    if missing:
+        raise FileNotFoundError(
+            "The following raster files were not found:\n" + "\n".join(missing)
+        )
+
+    arrays = {}
+
+    for name, path in raster_paths.items():
+        # Do NOT treat hillshade value 0 as nodata.
+        # Let the raster's true nodata value control masking.
+        arr, _ = _read_raster_as_array(path)
+        arrays[name] = arr
+
+    arrays, _ = _crop_to_common_shape(arrays)
+
+    hillshade = arrays["hillshade"]
+    forest_loss_years = arrays["forest_loss_years"]
+
+    fig, ax = plt.subplots(1, 1, figsize=figsize)
+    fig.patch.set_alpha(0.0)
+    ax.set_facecolor("none")
+    ax.patch.set_alpha(0.0)
+
+    gray_cmap = _transparent_gray_cmap()
+
+    hillshade_ly = _ensure_masked_float_array(hillshade)
+    loss_data = _ensure_masked_float_array(forest_loss_years)
+
+    # Keep hillshade masking independent from the loss-year masking.
+    hillshade_mask = np.ma.getmaskarray(hillshade_ly) | (hillshade_ly.data == 0)
+    loss_mask = np.ma.getmaskarray(loss_data)
+
+    hillshade_plot = np.ma.array(
+        hillshade_ly.data,
+        mask=hillshade_mask,
+        dtype="float32",
+    )
+
+    # Mask both:
+    # - raster nodata
+    # - valid zero values representing "no loss"
+    loss_years_only = np.ma.masked_where(
+        loss_mask | (loss_data.data <= 0),
+        loss_data.data,
+    ).astype("float32")
+
+    loss_cmap = LinearSegmentedColormap.from_list(
+        "loss_year_continuous",
+        LOSS_YEAR_VIS["palette"],
+        N=256,
+    )
+    loss_cmap = loss_cmap.copy()
+    loss_cmap.set_bad((0, 0, 0, 0))
+
+    ax.imshow(
+        hillshade_plot,
+        cmap=gray_cmap,
+        vmin=0,
+        vmax=255,
+        interpolation="none",
+    )
+
+    im = ax.imshow(
+        loss_years_only,
+        cmap=loss_cmap,
+        norm=Normalize(vmin=1, vmax=24),
+        alpha=alpha_loss_years,
+        interpolation="none",
+    )
+
+    _style_axis(ax, "Forest Loss Year")
+
+    cbar = fig.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
+    cbar.set_ticks([1, 6, 12, 18, 24])
+    cbar.set_ticklabels(["2001", "2006", "2012", "2018", "2024"])
+    cbar.set_label("(year of loss)", fontsize=8, labelpad=6)
+
+    plt.tight_layout(rect=[0.03, 0.02, 1, 1])
+    return fig, ax
+
+
+def plot_forest_panels_from_rasters(
+    raster_dir,
+    figsize=(12, 6),
+    alpha_forest=0.70,
+    alpha_loss_years=0.90,
+):
+    fig, axes = plt.subplots(1, 2, figsize=figsize)
+
+    plt.close(fig)  # optional if you only want the separate functions
+
+    fig0, ax0 = plot_forest_cover_2000_from_raster(
+        raster_dir=raster_dir,
+        figsize=(6, 6),
+        alpha_forest=alpha_forest,
+    )
+
+    fig1, ax1 = plot_forest_loss_years_from_raster(
+        raster_dir=raster_dir,
+        figsize=(6, 6),
+        alpha_loss_years=alpha_loss_years,
+    )
+
+    return (fig0, ax0), (fig1, ax1)

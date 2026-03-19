@@ -11,6 +11,8 @@ AOI_PATHS = {
     "shimba_hills": DATA_DIR / "shimba_hills_aoi.geojson",
     "ks_rehab": DATA_DIR / "ks_rehab_aoi.geojson",
     "ks_rehab_blocks": DATA_DIR / "ks_rehab_blocks_2509_epsg_4326.geojson",
+    "degraded_1": DATA_DIR / "degraded_1_aoi.geojson",
+    "degraded_2": DATA_DIR / "degraded_2_aoi.geojson",
 }
 
 #################### EE DATASETS ##########################
@@ -132,9 +134,13 @@ PLOTTING_SCALE_DICT = {
     "land_cover": 30,
     "soil_carbon": 30,
     "bii_all": 30,
+    "forest_2000": 30,
+    "forest_loss": 30,
 }
 
 ############# Visualization parameters #########################
+
+FOREST_COVER_VIS = {"min": 0, "max": 100, "palette": ["#000000", "#1F951F"]}
 
 FOREST_LOSS_VIS = {
     "min": 0,
@@ -142,22 +148,20 @@ FOREST_LOSS_VIS = {
     "palette": ["#ffffff", "#ff0000"],
 }
 
-DEM_VIS = {
+LOSS_YEAR_VIS = {
     "min": 0,
-    "max": 800,
-    "palette": ["#0b1f3a", "#355c7d", "#6c8f6b", "#c2b280", "#f5f5f5"],
-}
-
-DEM_VIS_TERRAIN = {
-    "min": 0,
-    "max": 800,
-    "palette": ["#1a3d2f", "#4f772d", "#90a955", "#dda15e", "#ede6d6"],
-}
-
-DEM_VIS_HYPSO = {
-    "min": 0,
-    "max": 800,
-    "palette": ["#2c7bb6", "#abd9e9", "#d9ef8b", "#fdae61", "#d7191c"],
+    "max": 24,
+    "palette": [
+        "#ffffcc",
+        "#ffeda0",
+        "#fed976",
+        "#feb24c",
+        "#fd8d3c",
+        "#fc4e2a",
+        "#e31a1c",
+        "#bd0026",
+        "#800026",
+    ],
 }
 
 DEM_VIS_MUTED = {
