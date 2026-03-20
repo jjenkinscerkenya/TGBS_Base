@@ -173,3 +173,22 @@ def export_image_to_asset(
     )
     task.start()
     print("Export started:", task.status())
+
+
+def export_table_to_drive(
+    collection: ee.FeatureCollection,
+    description: str,
+    folder: str,
+    fileNamePrefix: str,
+    fileFormat: str = "CSV",
+):
+    """Export an Earth Engine image to Google Drive"""
+    task = ee.batch.Export.table.toDrive(
+        collection=collection,
+        description=description,
+        folder=folder,
+        fileNamePrefix=fileNamePrefix,
+        fileFormat="CSV",
+    )
+    task.start()
+    print("Export started:", task.status())

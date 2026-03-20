@@ -74,8 +74,8 @@ def process_s2_image(image: ee.Image) -> ee.Image:
 
 def get_s2_sr_collection(
     aoi: ee.Geometry,
-    start_date: str,
-    end_date: str,
+    start_date: ee.Date,
+    end_date: ee.Date,
     apply_water_masking: bool = False,
 ) -> ee.ImageCollection:
     """Build a cloud-masked Sentinel-2 SR collection with indices for the AOI and date range."""

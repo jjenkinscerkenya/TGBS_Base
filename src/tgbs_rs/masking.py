@@ -23,7 +23,7 @@ def mask_edges(image: ee.Image) -> ee.Image:
 
 
 def get_s2_sr_cld_col(
-    aoi: ee.Geometry, start_date: str, end_date: str
+    aoi: ee.Geometry, start_date: ee.Date, end_date: ee.Date
 ) -> ee.ImageCollection:
     """Join Sentinel-2 SR and s2cloudless collections filtered to the AOI and date range."""
 
@@ -98,7 +98,7 @@ def apply_cld_shdw_mask(image: ee.Image) -> ee.Image:
 
 
 def build_cloudfree_s2sr_col(
-    aoi: ee.Geometry, start_date: str, end_date: str
+    aoi: ee.Geometry, start_date: ee.Date, end_date: ee.Date
 ) -> ee.ImageCollection:
     """Build a Sentinel-2 SR collection with cloud and shadow masking applied."""
     return (
