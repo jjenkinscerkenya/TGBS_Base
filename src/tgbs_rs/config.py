@@ -4,6 +4,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[2]
 DATA_DIR = REPO_ROOT / "data"
 
+#################### AOI BOUNDARIES ##########################
 AOI_PATHS = {
     "kwale": DATA_DIR / "kwale_county.geojson",
     "buda": DATA_DIR / "buda_aoi.geojson",
@@ -39,6 +40,22 @@ BII_BANDS = [
 ESA = "ESA/WorldCover/v200"
 ESA_MAP_BAND = "Map"
 
+ESA_CLASS_VALUES = [10, 20, 30, 40, 50, 60, 70, 80, 90, 95, 100]
+
+ESA_CLASS_NAMES = [
+    "Tree cover",
+    "Shrubland",
+    "Grassland",
+    "Cropland",
+    "Built-up",
+    "Bare / sparse vegetation",
+    "Snow and ice",
+    "Permanent water bodies",
+    "Herbaceous wetland",
+    "Mangroves",
+    "Moss and lichen",
+]
+
 # 1m Global Canopy Height Model
 CANOPY = "projects/sat-io/open-datasets/facebook/meta-canopy-height"
 
@@ -62,7 +79,11 @@ GLOBAL_ADM2 = "FAO/GAUL/2015/level2"
 S2_SR_COLLECTION = "COPERNICUS/S2_SR_HARMONIZED"
 S2_CLOUD_PROB_COLLECTION = "COPERNICUS/S2_CLOUD_PROBABILITY"
 
-# Sentinel-2 processing
+# Landsat-8 collections
+L8_SR_COLLECTION = "LANDSAT/LC08/C02/T1_L2"
+
+
+#################### SENTINEL VARIABLES ##########################
 S2_BANDS = ["B2", "B3", "B4", "B5", "B6", "B7", "B8", "B8A", "B11", "B12"]
 
 # BLUE_BAND = "B2"
@@ -77,15 +98,15 @@ S2_BANDS = ["B2", "B3", "B4", "B5", "B6", "B7", "B8", "B8A", "B11", "B12"]
 # SWIR2_BAND = "B12"
 
 S2_INDEX_BANDS = [
-    "NDVI",
-    "EVI",
-    "NDWI",
-    "MNDWI",
-    "SAVI",
-    "NDMI",
-    "NBR",
-    "NIRv",
-    "NDRE",
+    "NDVI",  # Normalized Difference Vegetation Index
+    "EVI",  # Enhanced Vegetation Index
+    "NDWI",  # Normalized Difference Water Index
+    "MNDWI",  # Modified Normalized Difference Water Index
+    "SAVI",  # Soil-Adjusted Vegetation Index
+    "NDMI",  # Normalized Difference Moisture Index
+    "NBR",  # Normalized Burn Ratio
+    "NIRv",  # Near-Infrared Reflectance of Vegetation
+    "NDRE",  # Normalized Difference Red Edge
 ]
 
 S2_SCALE_FACTOR = 0.0001
@@ -110,6 +131,45 @@ VEGETATION_INDEX_BANDS = ["NDVI", "EVI", "SAVI", "NIRv", "NDRE"]
 MOISTURE_INDEX_BANDS = ["NDMI", "NDWI", "MNDWI"]
 DISTURBANCE_INDEX_BANDS = ["NBR"]
 
+#################### LANDSAT VARIABLES #########################
+# Core optical SR bands used for the translated workflow
+L8_BANDS = ["SR_B2", "SR_B3", "SR_B4", "SR_B5", "SR_B6", "SR_B7"]
+
+# BLUE_BAND = "SR_B2"
+# GREEN_BAND = "SR_B3"
+# RED_BAND = "SR_B4"
+# NIR_BAND = "SR_B5"
+# SWIR1_BAND = "SR_B6"
+# SWIR2_BAND = "SR_B7"
+
+L8_INDEX_BANDS = [
+    "NDVI",  # Normalized Difference Vegetation Index
+    "EVI",  # Enhanced Vegetation Index
+    "NDWI",  # Normalized Difference Water Index
+    "MNDWI",  # Modified Normalized Difference Water Index
+    "SAVI",  # Soil-Adjusted Vegetation Index
+    "NDMI",  # Normalized Difference Moisture Index
+    "NBR",  # Normalized Burn Ratio
+    "NIRv",  # Near-Infrared Reflectance of Vegetation
+]
+
+# Landsat Collection 2 Level-2 surface reflectance scaling
+L8_SCALE_FACTOR = 0.0000275
+L8_ADD_OFFSET = -0.2
+
+# CLOUD MASKING PARAMETERS
+# Closest analog to Sentinel CLOUDY_PIXEL_PERCENTAGE
+L8_CLOUD_FILTER = 50  # % max CLOUD_COVER per image
+
+# Default analysis scale
+L8_SCALE = 30
+
+# Common index names
+VEGETATION_INDEX_BANDS = ["NDVI", "EVI", "SAVI", "NIRv"]
+MOISTURE_INDEX_BANDS = ["NDMI", "NDWI", "MNDWI"]
+DISTURBANCE_INDEX_BANDS = ["NBR"]
+
+#################### GLOBAL VARIABLES ##########################
 # Time-series defaults
 START_DATE = "2018-01-02"
 END_DATE = "2026-01-01"
@@ -152,125 +212,3 @@ PLOTTING_SCALE_DICT = {
     "forest_2000": 30,
     "forest_loss": 30,
 }
-
-############# Visualization parameters #########################
-
-FOREST_COVER_VIS = {"min": 0, "max": 100, "palette": ["#000000", "#1F951F"]}
-
-FOREST_LOSS_VIS = {
-    "min": 0,
-    "max": 1,
-    "palette": ["#ffffff", "#ff0000"],
-}
-
-LOSS_YEAR_VIS = {
-    "min": 0,
-    "max": 24,
-    "palette": [
-        "#ffffcc",
-        "#ffeda0",
-        "#fed976",
-        "#feb24c",
-        "#fd8d3c",
-        "#fc4e2a",
-        "#e31a1c",
-        "#bd0026",
-        "#800026",
-    ],
-}
-
-DEM_VIS_MUTED = {
-    "min": 0,
-    "max": 800,
-    "palette": ["#334e68", "#7b9e87", "#b7b7a4", "#d4a373", "#f1faee"],
-}
-
-SLOPE_VIS = {
-    "min": 0,
-    "max": 45,
-    "palette": ["#f7fcf0", "#ccebc5", "#7bccc4", "#2b8cbe", "#084081"],
-}
-
-SLOPE_VIS_DARK_TO_ORANGE = {
-    "min": 0,
-    "max": 45,
-    "palette": [
-        "#0b1f3a",
-        "#1f4e79",
-        "#4fa3c4",
-        "#fdae61",
-        "#d94801",
-    ],
-}
-
-HILLSHADE_VIS = {"min": 0, "max": 255, "palette": ["#000000", "#ffffff"]}
-
-CANOPY_VIS = {
-    "min": 0,
-    "max": 15,
-    "palette": [
-        "#440154",
-        "#482775",
-        "#3E4A89",
-        "#31688E",
-        "#26828E",
-        "#1F9E89",
-        "#67C165",
-        "#B8D73D",
-        "#FDE623",
-    ],
-}
-
-SOIL_CARBON_VIS = {
-    "min": 0,
-    "max": 40,
-    "palette": [
-        "#fff7ec",
-        "#fee8c8",
-        "#fdd49e",
-        "#fdbb84",
-        "#e34a33",
-        "#7f0000",
-    ],
-}
-
-# Start with 0-1 if BII is fractional. If your layer is 0-100, change max to 100.
-BII_VIS = {
-    "min": 0,
-    "max": 1,
-    "palette": ["#d73027", "#fee08b", "#d9ef8b", "#1a9850"],
-}
-
-ESA_WORLDCOVER_VIS = {
-    "min": 10,
-    "max": 100,
-    "palette": [
-        "#006400",  # 10 Tree cover
-        "#ffbb22",  # 20 Shrubland
-        "#ffff4c",  # 30 Grassland
-        "#f096ff",  # 40 Cropland
-        "#fa0000",  # 50 Built-up
-        "#b4b4b4",  # 60 Bare/sparse vegetation
-        "#f0f0f0",  # 70 Snow and ice
-        "#0064c8",  # 80 Permanent water bodies
-        "#0096a0",  # 90 Herbaceous wetland
-        "#00cf75",  # 95 Mangroves
-        "#fae6a0",  # 100 Moss and lichen
-    ],
-}
-
-ESA_CLASS_VALUES = [10, 20, 30, 40, 50, 60, 70, 80, 90, 95, 100]
-
-ESA_CLASS_NAMES = [
-    "Tree cover",
-    "Shrubland",
-    "Grassland",
-    "Cropland",
-    "Built-up",
-    "Bare / sparse vegetation",
-    "Snow and ice",
-    "Permanent water bodies",
-    "Herbaceous wetland",
-    "Mangroves",
-    "Moss and lichen",
-]

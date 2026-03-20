@@ -8,18 +8,8 @@ from rasterio.features import geometry_mask
 from matplotlib.colors import ListedColormap, Normalize, LinearSegmentedColormap
 from matplotlib.patches import Patch
 
-from tgbs_rs.config import (
-    DEM_VIS_MUTED,
-    FOREST_COVER_VIS,
-    LOSS_YEAR_VIS,
-    SLOPE_VIS_DARK_TO_ORANGE,
-    CANOPY_VIS,
-    SOIL_CARBON_VIS,
-    BII_VIS,
-    ESA_WORLDCOVER_VIS,
-    ESA_CLASS_VALUES,
-    ESA_CLASS_NAMES,
-)
+from tgbs_rs.config import ESA_CLASS_VALUES, ESA_CLASS_NAMES
+from tgbs_rs.config_vis import BASELINE_VIS_PARAMS
 
 
 # Raster reading and masking helpers
@@ -388,7 +378,7 @@ def plot_baseline_panels_from_rasters(
         hillshade,
         dem,
         "Elevation",
-        DEM_VIS_MUTED,
+        BASELINE_VIS_PARAMS["DEM_VIS"],
         alpha=alpha_continuous,
     )
     cbar0 = fig.colorbar(im0, ax=axes[0, 0], fraction=0.046, pad=0.04)
@@ -400,7 +390,7 @@ def plot_baseline_panels_from_rasters(
         hillshade,
         slope,
         "Slope",
-        SLOPE_VIS_DARK_TO_ORANGE,
+        BASELINE_VIS_PARAMS["SLOPE_VIS"],
         alpha=alpha_continuous,
     )
     cbar1 = fig.colorbar(im1, ax=axes[0, 1], fraction=0.046, pad=0.04)
@@ -412,7 +402,7 @@ def plot_baseline_panels_from_rasters(
         hillshade,
         canopy,
         "Canopy Height",
-        CANOPY_VIS,
+        BASELINE_VIS_PARAMS["CANOPY_VIS"],
         alpha=alpha_continuous,
     )
     cbar2 = fig.colorbar(im2, ax=axes[1, 0], fraction=0.046, pad=0.04)
@@ -424,7 +414,7 @@ def plot_baseline_panels_from_rasters(
         hillshade,
         bii,
         "Biodiversity Intactness Index",
-        BII_VIS,
+        BASELINE_VIS_PARAMS["BII_VIS"],
         alpha=alpha_continuous,
     )
     cbar3 = fig.colorbar(im3, ax=axes[1, 1], fraction=0.046, pad=0.04)
@@ -436,7 +426,7 @@ def plot_baseline_panels_from_rasters(
         hillshade,
         soil,
         "Mean Soil Carbon 0-20cm Depth",
-        SOIL_CARBON_VIS,
+        BASELINE_VIS_PARAMS["SOIL_CARBON_VIS"],
         alpha=alpha_continuous,
     )
     cbar4 = fig.colorbar(im4, ax=axes[2, 0], fraction=0.046, pad=0.04)
@@ -450,7 +440,7 @@ def plot_baseline_panels_from_rasters(
         "Land Cover",
         ESA_CLASS_VALUES,
         ESA_CLASS_NAMES,
-        ESA_WORLDCOVER_VIS["palette"],
+        BASELINE_VIS_PARAMS["ESA_WORLDCOVER_VIS"]["palette"],
         alpha=alpha_categorical,
         exclude_legend_values=[70],
     )
@@ -513,7 +503,7 @@ def plot_forest_cover_2000_from_raster(
 
     forest_cmap = LinearSegmentedColormap.from_list(
         "forest_cover_continuous",
-        ["#000000", "#1F951F"],
+        BASELINE_VIS_PARAMS["FOREST_COVER_VIS"]["palette"],
         N=256,
     )
     forest_cmap = forest_cmap.copy()
@@ -531,8 +521,8 @@ def plot_forest_cover_2000_from_raster(
         forest_2000_plot,
         cmap=forest_cmap,
         norm=Normalize(
-            vmin=FOREST_COVER_VIS["min"],
-            vmax=FOREST_COVER_VIS["max"],
+            vmin=BASELINE_VIS_PARAMS["FOREST_COVER_VIS"]["min"],
+            vmax=BASELINE_VIS_PARAMS["FOREST_COVER_VIS"]["max"],
         ),
         alpha=alpha_forest,
         interpolation="none",
@@ -622,7 +612,7 @@ def plot_forest_loss_years_from_raster(
 
     loss_cmap = LinearSegmentedColormap.from_list(
         "loss_year_continuous",
-        LOSS_YEAR_VIS["palette"],
+        BASELINE_VIS_PARAMS["LOSS_YEAR_VIS"]["palette"],
         N=256,
     )
     loss_cmap = loss_cmap.copy()

@@ -66,3 +66,13 @@ exported rasters
 figure-ready summaries
 processing notes
 Section 4 says the remote sensing survey must generate a report for assessors and support comparison with field results.
+
+
+
+Sentinel-2 SR vs Landsat-8
+For TGBS reporting, I would document the workflow like this:
+Core long-term optical archive: Landsat 8 C2 L2 SR (2013–2017) + Sentinel-2 SR Harmonized (2017–present)
+Common analytical support: 30 m, matched seasonal windows, matched site categories
+Cross-sensor harmonization step: overlap-year regression / bias analysis per metric
+Metric eligibility table: “fully comparable,” “proxy comparable,” or “Sentinel-era only”
+Audit note: trend breaks attributable to sensor transition explicitly tested and documented
