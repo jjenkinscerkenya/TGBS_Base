@@ -133,6 +133,16 @@ S2_VIS_PARAMS = {
     },
 }
 
+# Landsat-8
+L8_VIS_PARAMS = {
+    "TrueColor": {
+        "bands": ["SR_B4", "SR_B3", "SR_B2"],
+        "min": 0.0,
+        "max": 0.3,
+        "gamma": 1.2,
+    },
+}
+
 BASELINE_VIS_PARAMS = {
     # Forest Cover
     "FOREST_COVER_VIS": {

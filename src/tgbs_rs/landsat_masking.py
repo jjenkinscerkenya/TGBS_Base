@@ -1,6 +1,6 @@
 import ee
 
-from config import (
+from tgbs_rs.config import (
     L8_SR_COLLECTION,
     L8_CLOUD_FILTER,
 )
