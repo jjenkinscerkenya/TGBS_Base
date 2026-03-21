@@ -1,5 +1,4 @@
 import ee
-import pandas as pd
 
 
 def _validate_composite_stat(composite_stat: str) -> None:
@@ -134,99 +133,9 @@ def build_period_composites(
             )
         )
 
-    return ee.ImageCollection.fromImages(windows.map(make_composite))
-
-
-def build_annual_band_composites(
-    collection: ee.ImageCollection,
-    band: str,
-    start_date: str | ee.Date,
-    end_date: str | ee.Date,
-    composite_stat: str = "median",
-) -> ee.ImageCollection:
-    """Build annual single-band composites for years with data.
-
-    Returns
-    -------
-    ee.ImageCollection
-    """
-    return build_period_composites(
-        collection=collection,
-        bands=[band],
-        start_date=start_date,
-        end_date=end_date,
-        temporal_scale="annual",
-        composite_stat=composite_stat,
-    )
-
-
-def build_monthly_band_composites(
-    collection: ee.ImageCollection,
-    band: str,
-    start_date: str | ee.Date,
-    end_date: str | ee.Date,
-    composite_stat: str = "median",
-) -> ee.ImageCollection:
-    """Build monthly single-band composites for months with data.
-
-    Returns
-    -------
-    ee.ImageCollection
-    """
-    return build_period_composites(
-        collection=collection,
-        bands=[band],
-        start_date=start_date,
-        end_date=end_date,
-        temporal_scale="monthly",
-        composite_stat=composite_stat,
-    )
-
-
-def build_annual_multiband_composites(
-    collection: ee.ImageCollection,
-    bands: list[str],
-    start_date: str | ee.Date,
-    end_date: str | ee.Date,
-    composite_stat: str = "median",
-) -> ee.ImageCollection:
-    """Build annual multi-band composites for years with data.
-
-    Returns
-    -------
-    ee.ImageCollection
-    """
-    return build_period_composites(
-        collection=collection,
-        bands=bands,
-        start_date=start_date,
-        end_date=end_date,
-        temporal_scale="annual",
-        composite_stat=composite_stat,
-    )
-
-
-def _set_image_time_props(image: ee.Image, feature: ee.Feature) -> ee.Feature:
-    """Attach image-level temporal metadata to a reduced feature.
-
-    Returns
-    -------
-    ee.Feature
-    """
-    date = ee.Date(image.get("system:time_start"))
-    return ee.Feature(feature).set(
-        {
-            "date": date.format("YYYY-MM-dd"),
-            "year": date.get("year"),
-            "month": date.get("month"),
-            "day": date.get("day"),
-            "system_time_start": image.get("system:time_start"),
-            "image_id": image.id(),
-            "image_count": image.get("image_count"),
-            "temporal_scale": image.get("temporal_scale"),
-            "composite_stat": image.get("composite_stat"),
-        }
-    )
+    # Convert FeatureCollection to List, map, then back to ImageCollection
+    images_list = windows.toList(windows.size()).map(make_composite)
+    return ee.ImageCollection.fromImages(images_list)
 
 
 def reduce_image_over_sites(
@@ -237,12 +146,7 @@ def reduce_image_over_sites(
     scale: int = 10,
     tile_scale: int = 4,
 ) -> ee.FeatureCollection:
-    """Reduce one image over site polygons and attach image metadata to each output feature.
-
-    Returns
-    -------
-    ee.FeatureCollection
-    """
+    """Reduce one image over site polygons and attach image metadata to each output feature."""
     image = ee.Image(image.select(bands) if bands else image)
     reducer = reducer or ee.Reducer.mean()
 
@@ -252,7 +156,22 @@ def reduce_image_over_sites(
         scale=scale,
         tileScale=tile_scale,
     )
-    return reduced.map(lambda f: _set_image_time_props(image, f))
+
+    meta = ee.Dictionary(
+        {
+            "image_id": image.get("system:index"),
+            "system_time_start": image.get("system:time_start"),
+            "year": image.get("year"),
+            "month": image.get("month"),
+            "day": image.get("day"),
+            "date": image.get("date"),
+            "image_count": image.get("image_count"),
+            "temporal_scale": image.get("temporal_scale"),
+            "composite_stat": image.get("composite_stat"),
+        }
+    )
+
+    return reduced.map(lambda f: ee.Feature(f).setMulti(meta))
 
 
 def collection_to_site_timeseries(
@@ -313,29 +232,6 @@ def build_index_collections(
     }
 
 
-def build_annual_index_collections(
-    collection: ee.ImageCollection,
-    bands: list[str],
-    start_date: str | ee.Date,
-    end_date: str | ee.Date,
-    composite_stat: str = "median",
-) -> dict[str, ee.ImageCollection]:
-    """Build one annual single-band composite collection per band.
-
-    Returns
-    -------
-    dict[str, ee.ImageCollection]
-    """
-    return build_index_collections(
-        collection=collection,
-        bands=bands,
-        start_date=start_date,
-        end_date=end_date,
-        temporal_scale="annual",
-        composite_stat=composite_stat,
-    )
-
-
 def build_index_timeseries(
     collections: dict[str, ee.ImageCollection],
     sites_fc: ee.FeatureCollection,
@@ -361,118 +257,3 @@ def build_index_timeseries(
         )
         for band, col in collections.items()
     }
-
-
-def build_annual_index_timeseries(
-    annual_collections: dict[str, ee.ImageCollection],
-    sites_fc: ee.FeatureCollection,
-    reducer: ee.Reducer | None = None,
-    scale: int = 10,
-    tile_scale: int = 4,
-) -> dict[str, ee.FeatureCollection]:
-    """Convert annual composite collections into per-site long-format time series.
-
-    Returns
-    -------
-    dict[str, ee.FeatureCollection]
-    """
-    return build_index_timeseries(
-        collections=annual_collections,
-        sites_fc=sites_fc,
-        reducer=reducer,
-        scale=scale,
-        tile_scale=tile_scale,
-    )
-
-
-def _fc_features_to_rows(
-    features: list[dict], value_band: str, include_source_file: bool = False
-) -> list[dict]:
-    """Convert client-side FeatureCollection features into row dictionaries.
-
-    Returns
-    -------
-    list[dict]
-    """
-    rows = []
-    for feat in features:
-        props = feat["properties"]
-        row = {
-            "site_id": props.get("site_id"),
-            "site_name": props.get("site_name"),
-            "site_category": props.get("site_category"),
-            "date": props.get("date"),
-            "year": props.get("year"),
-            "month": props.get("month"),
-            "day": props.get("day"),
-            "value": props.get(value_band),
-            "image_count": props.get("image_count"),
-        }
-        if include_source_file:
-            row["source_file"] = props.get("source_file")
-        rows.append(row)
-    return rows
-
-
-def featurecollection_to_timeseries_df(
-    fc: ee.FeatureCollection,
-    value_band: str,
-) -> pd.DataFrame:
-    """Convert a FeatureCollection of site summaries to a pandas DataFrame.
-
-    Returns
-    -------
-    pd.DataFrame
-    """
-    rows = _fc_features_to_rows(fc.getInfo()["features"], value_band)
-    df = pd.DataFrame(rows)
-    return df.sort_values(["site_category", "site_name", "year"]).reset_index(
-        drop=True
-    )
-
-
-def annual_collection_to_site_timeseries_df(
-    annual_collection: ee.ImageCollection,
-    sites_fc: ee.FeatureCollection,
-    band: str,
-    reducer: ee.Reducer | None = None,
-    scale: int = 10,
-    tile_scale: int = 4,
-) -> pd.DataFrame:
-    """Convert an annual composite collection to a DataFrame by evaluating one image at a time.
-
-    Returns
-    -------
-    pd.DataFrame
-    """
-    reducer = reducer or ee.Reducer.mean()
-    annual_collection = ee.ImageCollection(annual_collection).sort(
-        "system:time_start"
-    )
-
-    image_list = annual_collection.toList(annual_collection.size())
-    n_images = annual_collection.size().getInfo()
-    rows = []
-
-    for i in range(n_images):
-        image = ee.Image(image_list.get(i))
-        reduced_fc = reduce_image_over_sites(
-            image=image,
-            sites_fc=sites_fc,
-            bands=[band],
-            reducer=reducer,
-            scale=scale,
-            tile_scale=tile_scale,
-        )
-        rows.extend(
-            _fc_features_to_rows(
-                reduced_fc.getInfo()["features"],
-                value_band=band,
-                include_source_file=True,
-            )
-        )
-
-    df = pd.DataFrame(rows)
-    return df.sort_values(["site_category", "site_name", "year"]).reset_index(
-        drop=True
-    )

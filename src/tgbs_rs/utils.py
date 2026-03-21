@@ -74,7 +74,7 @@ def build_default_sites_featurecollection():
     Build the standard TGBS site FeatureCollection from the current repo AOI files.
     """
     ks_rehab_feature = load_site_feature(
-        path=AOI_PATHS["ks_rehab"],
+        path=AOI_PATHS["ks_rehab_blocks"],
         site_id="ks_rehab",
         site_name="KS Rehab",
         site_category="focal",
@@ -115,6 +115,13 @@ def build_default_sites_featurecollection():
         site_category="degraded",
     )
 
+    degraded_3_feature = load_site_feature(
+        path=AOI_PATHS["degraded_3"],
+        site_id="degraded_3",
+        site_name="degraded_3",
+        site_category="degraded",
+    )
+
     return ee.FeatureCollection(
         [
             ks_rehab_feature,
@@ -123,6 +130,7 @@ def build_default_sites_featurecollection():
             shimba_hills_feature,
             degraded_1_feature,
             degraded_2_feature,
+            degraded_3_feature,
         ]
     )
 

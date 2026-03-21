@@ -84,7 +84,9 @@ def harmonize_hls_l30_bands(image: ee.Image) -> ee.Image:
         ["B2", "B3", "B4", "B5", "B6", "B7"],
         ["BLUE", "GREEN", "RED", "NIR", "SWIR1", "SWIR2"],
     )
-    return image.copyProperties(source, source.propertyNames())
+    return ee.Image(
+        image.copyProperties(source, ["system:time_start", "system:index"])
+    )
 
 
 def harmonize_hls_s30_bands(image: ee.Image) -> ee.Image:
@@ -104,7 +106,9 @@ def harmonize_hls_s30_bands(image: ee.Image) -> ee.Image:
         ["B2", "B3", "B4", "B8A", "B11", "B12"],
         ["BLUE", "GREEN", "RED", "NIR", "SWIR1", "SWIR2"],
     )
-    return image.copyProperties(source, source.propertyNames())
+    return ee.Image(
+        image.copyProperties(source, ["system:time_start", "system:index"])
+    )
 
 
 def process_hls_l30_image(image: ee.Image) -> ee.Image:
@@ -177,4 +181,6 @@ def get_hls_merged_collection(
         return merged
 
     non_water_mask = build_hls_non_water_mask(merged)
-    return merged.map(lambda img: apply_water_mask(img, non_water_mask))
+    return merged.map(
+        lambda img: ee.Image(apply_water_mask(img, non_water_mask))
+    )

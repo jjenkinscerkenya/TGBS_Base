@@ -1,7 +1,7 @@
 from pathlib import Path
 
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
+REPO_ROOT = Path(__file__).resolve().parents[3]
 DATA_DIR = REPO_ROOT / "data"
 
 #################### AOI BOUNDARIES ##########################
@@ -10,10 +10,10 @@ AOI_PATHS = {
     "buda": DATA_DIR / "buda_aoi.geojson",
     "gogoni": DATA_DIR / "gogoni_aoi.geojson",
     "shimba_hills": DATA_DIR / "shimba_hills_aoi.geojson",
-    "ks_rehab": DATA_DIR / "ks_rehab_aoi.geojson",
-    "ks_rehab_blocks": DATA_DIR / "ks_rehab_blocks_2509_epsg_4326.geojson",
+    "ks_rehab_blocks": DATA_DIR / "ks_rehab_blocks.geojson",
     "degraded_1": DATA_DIR / "degraded_1_aoi.geojson",
     "degraded_2": DATA_DIR / "degraded_2_aoi.geojson",
+    "degraded_3": DATA_DIR / "degraded_3_aoi.geojson",
 }
 
 #################### EE DATASETS ##########################
@@ -81,6 +81,10 @@ S2_CLOUD_PROB_COLLECTION = "COPERNICUS/S2_CLOUD_PROBABILITY"
 
 # Landsat-8 collections
 L8_SR_COLLECTION = "LANDSAT/LC08/C02/T1_L2"
+
+# HLS
+HLS_L30_COLLECTION = "NASA/HLS/HLSL30/v002"  # Landsat OLI
+HLS_S30_COLLECTION = "NASA/HLS/HLSS30/v002"  # Sentinel MSI
 
 
 #################### SENTINEL VARIABLES ##########################
@@ -165,9 +169,6 @@ L8_CLOUD_FILTER = 20  # % max CLOUD_COVER per image
 L8_SCALE = 30
 
 #################### HLS VARIABLES ##########################
-HLSL30 = "NASA/HLS/HLSL30/v002"  # Landsat OLI
-HLSS30 = "NASA/HLS/HLSS30/v002"  # Sentinel MSI
-
 # Native HLS shared reflectance scaling
 HLS_SCALE_FACTOR = 0.0001
 HLS_ADD_OFFSET = 0.0
@@ -191,7 +192,7 @@ HLS_INDEX_BANDS = [
 ]
 
 # Fmask-based QA controls
-HLS_CLOUD_FILTER = 20  # max CLOUD_COVERAGE per image
+HLS_CLOUD_FILTER = 50  # max CLOUD_COVERAGE per image
 HLS_MASK_ADJACENT = True
 HLS_MASK_SNOW = True
 HLS_MASK_WATER_IN_QA = (
@@ -203,18 +204,25 @@ HLS_MASK_HIGH_AEROSOL = True
 # Default analysis scale
 HLS_SCALE = 30
 
+#################### ANALYSIS BAND COMBINATIONS ##########################
+PRODUCTIVITY_BANDS = ["NIRv", "EVI", "NDVI"]
+VEGETATION_COVER = ["NDVI", "EVI", "SAVI"]
+DISTURBANCE = ["NDMI", "NBR"]
+SPATIAL_CHANGE = ["NDVI", "NIRV", "NDMI", "NBR", "SAVI"]
+
+
 #################### GLOBAL VARIABLES ##########################
 # Time-series defaults
 START_DATE = "2018-01-02"
 END_DATE = "2026-01-01"
-BASELINE_START = "2014-01-02"
+BASELINE_START = "2014-01-01"
 BASELINE_END = "2017-12-31"
 CURRENT_START = "2018-01-01"
 CURRENT_END = "2025-12-31"
 
 # Seasonal definitions
-WET_MONTHS = [3, 4, 5, 11, 12]
-DRY_MONTHS = [1, 2, 6, 7, 8, 9, 10]
+WET_MONTHS = [3, 4, 5]
+DRY_MONTHS = [7, 8, 9, 10]
 
 # Site categories
 FOCAL_LABEL = "focal"
