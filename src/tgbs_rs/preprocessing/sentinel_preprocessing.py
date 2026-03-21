@@ -1,13 +1,16 @@
 import ee
 
-from tgbs_rs.config import S2_SCALE_FACTOR, S2_SR_COLLECTION
-from tgbs_rs.sentinel_masking import (
+from tgbs_rs.config.config import S2_SCALE_FACTOR, S2_SR_COLLECTION
+from tgbs_rs.masking.sentinel_masking import (
     build_cloudfree_s2sr_col,
     build_s2_non_water_mask,
     apply_water_mask,
 )
-from tgbs_rs.sentinel_indices import calc_tgbs_indices, select_base_s2_bands
-from tgbs_rs.sentinel_masking import (
+from tgbs_rs.indices.sentinel_indices import (
+    calc_tgbs_indices,
+    select_base_s2_bands,
+)
+from tgbs_rs.masking.sentinel_masking import (
     build_cloudfree_s2sr_col,
     build_s2_non_water_mask,
 )

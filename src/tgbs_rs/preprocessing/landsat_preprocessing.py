@@ -1,12 +1,19 @@
 import ee
 
-from tgbs_rs.config import L8_SR_COLLECTION, L8_SCALE_FACTOR, L8_ADD_OFFSET
-from tgbs_rs.landsat_masking import (
+from tgbs_rs.config.config import (
+    L8_SR_COLLECTION,
+    L8_SCALE_FACTOR,
+    L8_ADD_OFFSET,
+)
+from tgbs_rs.masking.landsat_masking import (
     build_cloudfree_l8sr_col,
     build_l8_non_water_mask,
     apply_water_mask,
 )
-from tgbs_rs.landsat_indices import select_base_l8_bands, calc_tgbs_indices
+from tgbs_rs.indices.landsat_indices import (
+    select_base_l8_bands,
+    calc_tgbs_indices,
+)
 
 
 def validate_l8_sr_date_range(

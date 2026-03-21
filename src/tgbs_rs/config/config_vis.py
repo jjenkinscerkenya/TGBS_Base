@@ -133,12 +133,22 @@ S2_VIS_PARAMS = {
     },
 }
 
-# Landsat-8
+# Landsat-8 OLI
 L8_VIS_PARAMS = {
     "TrueColor": {
         "bands": ["SR_B4", "SR_B3", "SR_B2"],
         "min": 0.0,
         "max": 0.3,
+        "gamma": 1.2,
+    },
+}
+
+# HLS
+HLS_VIS_PARAMS = {
+    "TrueColor": {
+        "bands": ["RED", "GREEN", "BLUE"],
+        "min": 0.02,
+        "max": 0.35,
         "gamma": 1.2,
     },
 }

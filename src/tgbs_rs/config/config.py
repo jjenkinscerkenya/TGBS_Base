@@ -112,7 +112,7 @@ S2_INDEX_BANDS = [
 S2_SCALE_FACTOR = 0.0001
 
 # CLOUD MASKING PARAMETERS
-CLOUD_FILTER = 50  # % max CLOUDY_PIXEL_PERCENTAGE per image
+CLOUD_FILTER = 20  # % max CLOUDY_PIXEL_PERCENTAGE per image
 CLD_PRB_THRESH = 40  # % s2cloudless probability threshold
 NIR_DRK_THRESH = 0.15  # reflectance (0..1) threshold for dark pixels
 CLD_PRJ_DIST_KM = 1.0  # max shadow search distance (km)
@@ -126,10 +126,10 @@ MORPH_SCALE_M = 20  # scale used for focal ops (m)
 # Default analysis scale
 S2_SCALE = 10
 
-# Common index names
-VEGETATION_INDEX_BANDS = ["NDVI", "EVI", "SAVI", "NIRv", "NDRE"]
-MOISTURE_INDEX_BANDS = ["NDMI", "NDWI", "MNDWI"]
-DISTURBANCE_INDEX_BANDS = ["NBR"]
+# S2 index names
+S2_VEGETATION_INDEX_BANDS = ["NDVI", "EVI", "SAVI", "NIRv", "NDRE"]
+S2_MOISTURE_INDEX_BANDS = ["NDMI", "NDWI", "MNDWI"]
+S2_DISTURBANCE_INDEX_BANDS = ["NBR"]
 
 #################### LANDSAT VARIABLES #########################
 # Core optical SR bands used for the translated workflow
@@ -159,15 +159,49 @@ L8_ADD_OFFSET = -0.2
 
 # CLOUD MASKING PARAMETERS
 # Closest analog to Sentinel CLOUDY_PIXEL_PERCENTAGE
-L8_CLOUD_FILTER = 50  # % max CLOUD_COVER per image
+L8_CLOUD_FILTER = 20  # % max CLOUD_COVER per image
 
 # Default analysis scale
 L8_SCALE = 30
 
-# Common index names
-VEGETATION_INDEX_BANDS = ["NDVI", "EVI", "SAVI", "NIRv"]
-MOISTURE_INDEX_BANDS = ["NDMI", "NDWI", "MNDWI"]
-DISTURBANCE_INDEX_BANDS = ["NBR"]
+#################### HLS VARIABLES ##########################
+HLSL30 = "NASA/HLS/HLSL30/v002"  # Landsat OLI
+HLSS30 = "NASA/HLS/HLSS30/v002"  # Sentinel MSI
+
+# Native HLS shared reflectance scaling
+HLS_SCALE_FACTOR = 0.0001
+HLS_ADD_OFFSET = 0.0
+
+# Common cross-sensor HLS band schema for merged trend analysis
+HLS_COMMON_BANDS = ["BLUE", "GREEN", "RED", "NIR", "SWIR1", "SWIR2"]
+
+# Optional native source band lists
+HLS_L30_SOURCE_BANDS = ["B2", "B3", "B4", "B5", "B6", "B7"]
+HLS_S30_SOURCE_BANDS = ["B2", "B3", "B4", "B8A", "B11", "B12"]
+
+HLS_INDEX_BANDS = [
+    "NDVI",  # Normalized Difference Vegetation Index
+    "EVI",  # Enhanced Vegetation Index
+    "NDWI",  # Normalized Difference Water Index
+    "MNDWI",  # Modified Normalized Difference Water Index
+    "SAVI",  # Soil-Adjusted Vegetation Index
+    "NDMI",  # Normalized Difference Moisture Index
+    "NBR",  # Normalized Burn Ratio
+    "NIRv",  # Near-Infrared Reflectance of Vegetation
+]
+
+# Fmask-based QA controls
+HLS_CLOUD_FILTER = 20  # max CLOUD_COVERAGE per image
+HLS_MASK_ADJACENT = True
+HLS_MASK_SNOW = True
+HLS_MASK_WATER_IN_QA = (
+    False  # keep False if you want separate spectral water masking
+)
+HLS_MASK_MODERATE_AEROSOL = False
+HLS_MASK_HIGH_AEROSOL = True
+
+# Default analysis scale
+HLS_SCALE = 30
 
 #################### GLOBAL VARIABLES ##########################
 # Time-series defaults

@@ -8,8 +8,8 @@ from rasterio.features import geometry_mask
 from matplotlib.colors import ListedColormap, Normalize, LinearSegmentedColormap
 from matplotlib.patches import Patch
 
-from tgbs_rs.config import ESA_CLASS_VALUES, ESA_CLASS_NAMES
-from tgbs_rs.config_vis import BASELINE_VIS_PARAMS
+from tgbs_rs.config.config import ESA_CLASS_VALUES, ESA_CLASS_NAMES
+from tgbs_rs.config.config_vis import BASELINE_VIS_PARAMS
 
 
 # Raster reading and masking helpers

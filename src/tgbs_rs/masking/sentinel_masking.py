@@ -1,6 +1,6 @@
 import ee
 
-from tgbs_rs.config import (
+from tgbs_rs.config.config import (
     S2_SR_COLLECTION,
     S2_CLOUD_PROB_COLLECTION,
     CLOUD_FILTER,
