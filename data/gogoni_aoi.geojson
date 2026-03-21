@@ -1,1 +1,170 @@
-{"type":"FeatureCollection","features":[{"type":"Feature","properties":{},"geometry":{"type":"Polygon","coordinates":[[[39.452182,-4.397942],[39.452182,-4.440197],[39.49385,-4.440197],[39.49385,-4.397942],[39.452182,-4.397942]]]}}]}
+{
+  "type": "FeatureCollection",
+  "columns": {
+    "CONS_OBJ": "String",
+    "DESIG": "String",
+    "DESIG_ENG": "String",
+    "DESIG_TYPE": "String",
+    "GIS_AREA": "Float",
+    "GIS_M_AREA": "Float",
+    "GOVSUBTYPE": "String",
+    "GOV_TYPE": "String",
+    "INLND_WTRS": "String",
+    "INT_CRIT": "String",
+    "ISO3": "String",
+    "IUCN_CAT": "String",
+    "MANG_AUTH": "String",
+    "MANG_PLAN": "String",
+    "METADATAID": "Integer",
+    "NAME": "String",
+    "NAME_ENG": "String",
+    "NO_TAKE": "String",
+    "NO_TK_AREA": "Float",
+    "OECM_ASMT": "String",
+    "OWNSUBTYPE": "String",
+    "OWN_TYPE": "String",
+    "PRNT_ISO3": "String",
+    "REALM": "String",
+    "REP_AREA": "Float",
+    "REP_M_AREA": "Float",
+    "SITE_ID": "Integer",
+    "SITE_PID": "String",
+    "SITE_TYPE": "String",
+    "STATUS": "String",
+    "STATUS_YR": "Integer",
+    "SUPP_INFO": "String",
+    "VERIF": "String",
+    "system:index": "String"
+  },
+  "version": 1766009385608479,
+  "id": "WCMC/WDPA/current/polygons",
+  "properties": {
+    "system:time_start": 1767225600000,
+    "system:time_end": 1769904000000,
+    "system:asset_size": 2177425559
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              39.45915155611406,
+              -4.406648631415918
+            ],
+            [
+              39.45937006218301,
+              -4.412610482795428
+            ],
+            [
+              39.45915155611405,
+              -4.418099593933079
+            ],
+            [
+              39.46212130864668,
+              -4.422919912908085
+            ],
+            [
+              39.46739192660228,
+              -4.421319078648783
+            ],
+            [
+              39.47285883698078,
+              -4.419490855180646
+            ],
+            [
+              39.47881173783091,
+              -4.418117426013762
+            ],
+            [
+              39.484760120192334,
+              -4.416980390551835
+            ],
+            [
+              39.489321824335185,
+              -4.4140017057958145
+            ],
+            [
+              39.49298272637206,
+              -4.409190365146857
+            ],
+            [
+              39.49184119490888,
+              -4.4036877919179025
+            ],
+            [
+              39.48863061397504,
+              -4.399558668986222
+            ],
+            [
+              39.48315040322483,
+              -4.39955865496669
+            ],
+            [
+              39.47697007661045,
+              -4.400240892666997
+            ],
+            [
+              39.47126247554821,
+              -4.400240930189308
+            ],
+            [
+              39.46646003328628,
+              -4.3972577561643975
+            ],
+            [
+              39.46073898602895,
+              -4.395879917670742
+            ],
+            [
+              39.458460405147385,
+              -4.400918695892796
+            ],
+            [
+              39.45915155611406,
+              -4.406648631415918
+            ]
+          ]
+        ]
+      },
+      "id": "000500000000000015f0",
+      "properties": {
+        "CONS_OBJ": "Not Applicable",
+        "DESIG": "Forest Reserve",
+        "DESIG_ENG": "Forest Reserve",
+        "DESIG_TYPE": "National",
+        "GIS_AREA": 7.83310250537177,
+        "GIS_M_AREA": 0,
+        "GOVSUBTYPE": "Not Applicable",
+        "GOV_TYPE": "Federal or national ministry or agency",
+        "INLND_WTRS": "Not Reported",
+        "INT_CRIT": "Not Applicable",
+        "ISO3": "KEN",
+        "IUCN_CAT": "Not Reported",
+        "MANG_AUTH": "Kenya Forest Service",
+        "MANG_PLAN": "Not Reported",
+        "METADATAID": 178,
+        "NAME": "Gogoni",
+        "NAME_ENG": "Gogoni",
+        "NO_TAKE": "Not Applicable",
+        "NO_TK_AREA": 0,
+        "OECM_ASMT": "Not Applicable",
+        "OWNSUBTYPE": "Not Applicable",
+        "OWN_TYPE": "State",
+        "PRNT_ISO3": "KEN",
+        "REALM": "Terrestrial",
+        "REP_AREA": 8.24,
+        "REP_M_AREA": 0,
+        "SITE_ID": 7560,
+        "SITE_PID": "7560",
+        "SITE_TYPE": "PA",
+        "STATUS": "Designated",
+        "STATUS_YR": 1932,
+        "SUPP_INFO": "Not Applicable",
+        "VERIF": "State Verified"
+      }
+    }
+  ]
+}
