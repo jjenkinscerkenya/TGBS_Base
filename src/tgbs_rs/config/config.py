@@ -89,7 +89,27 @@ HLS_S30_COLLECTION = "NASA/HLS/HLSS30/v002"  # Sentinel MSI
 
 #################### SENTINEL VARIABLES ##########################
 S2_BANDS = ["B2", "B3", "B4", "B5", "B6", "B7", "B8", "B8A", "B11", "B12"]
-
+S2_ALL_BANDS = [
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6",
+    "B7",
+    "B8",
+    "B8A",
+    "B11",
+    "B12",
+    "NDVI",
+    "EVI",
+    "NDWI",
+    "MNDWI",
+    "SAVI",
+    "NDMI",
+    "NBR",
+    "NIRv",
+    "NDRE",
+]
 # BLUE_BAND = "B2"
 # GREEN_BAND = "B3"
 # RED_BAND = "B4"
@@ -116,7 +136,7 @@ S2_INDEX_BANDS = [
 S2_SCALE_FACTOR = 0.0001
 
 # CLOUD MASKING PARAMETERS
-CLOUD_FILTER = 20  # % max CLOUDY_PIXEL_PERCENTAGE per image
+CLOUD_FILTER = 50  # % max CLOUDY_PIXEL_PERCENTAGE per image
 CLD_PRB_THRESH = 40  # % s2cloudless probability threshold
 NIR_DRK_THRESH = 0.15  # reflectance (0..1) threshold for dark pixels
 CLD_PRJ_DIST_KM = 1.0  # max shadow search distance (km)
@@ -163,7 +183,7 @@ L8_ADD_OFFSET = -0.2
 
 # CLOUD MASKING PARAMETERS
 # Closest analog to Sentinel CLOUDY_PIXEL_PERCENTAGE
-L8_CLOUD_FILTER = 20  # % max CLOUD_COVER per image
+L8_CLOUD_FILTER = 50  # % max CLOUD_COVER per image
 
 # Default analysis scale
 L8_SCALE = 30
@@ -179,6 +199,23 @@ HLS_COMMON_BANDS = ["BLUE", "GREEN", "RED", "NIR", "SWIR1", "SWIR2"]
 # Optional native source band lists
 HLS_L30_SOURCE_BANDS = ["B2", "B3", "B4", "B5", "B6", "B7"]
 HLS_S30_SOURCE_BANDS = ["B2", "B3", "B4", "B8A", "B11", "B12"]
+
+HLS_MERGED_BANDS = [
+    "BLUE",
+    "GREEN",
+    "RED",
+    "NIR",
+    "SWIR1",
+    "SWIR2",
+    "NDVI",
+    "EVI",
+    "NDWI",
+    "MNDWI",
+    "SAVI",
+    "NDMI",
+    "NBR",
+    "NIRv",
+]
 
 HLS_INDEX_BANDS = [
     "NDVI",  # Normalized Difference Vegetation Index
@@ -213,8 +250,7 @@ SPATIAL_CHANGE = ["NDVI", "NIRV", "NDMI", "NBR", "SAVI"]
 
 #################### GLOBAL VARIABLES ##########################
 # Time-series defaults
-START_DATE = "2018-01-02"
-END_DATE = "2026-01-01"
+S2_BASELINE_START = "2019-01-01"
 BASELINE_START = "2014-01-01"
 BASELINE_END = "2017-12-31"
 CURRENT_START = "2018-01-01"
