@@ -3,6 +3,7 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
 DATA_DIR = REPO_ROOT / "data"
+OUTPUTS_DIR = REPO_ROOT / "outputs"
 
 #################### AOI BOUNDARIES ##########################
 AOI_PATHS = {
@@ -14,6 +15,14 @@ AOI_PATHS = {
     "degraded_1": DATA_DIR / "degraded_1_aoi.geojson",
     "degraded_2": DATA_DIR / "degraded_2_aoi.geojson",
     "degraded_3": DATA_DIR / "degraded_3_aoi.geojson",
+}
+
+# Output directory names
+OUTPUT_DIRS = {
+    "plots": OUTPUTS_DIR / "plots",
+    "maps": OUTPUTS_DIR / "maps",
+    "tables": OUTPUTS_DIR / "tables",
+    "rasters": OUTPUTS_DIR / "rasters",
 }
 
 #################### EE DATASETS ##########################
@@ -270,14 +279,6 @@ DEFAULT_MAX_PIXELS = 1e13
 DEFAULT_FILE_FORMAT = "GeoTIFF"
 DEFAULT_CRS = "EPSG:4326"
 DRIVE_FOLDER = "TGBS_Kwale_Baseline"
-
-# Output directory names
-OUTPUT_DIRS = {
-    "plots": "outputs/plots",
-    "maps": "outputs/maps",
-    "tables": "outputs/tables",
-    "rasters": "outputs/rasters",
-}
 
 PLOTTING_SCALE_DICT = {
     "hillshade": 30,
