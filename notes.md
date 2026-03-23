@@ -13,6 +13,16 @@ Hengl, T., Miller, M.A.E., Križan, J., et al. African soil properties and nutri
 Clements, H.S., Biggs, R., De Vos, A. et al. A place-based assessment of biodiversity intactness in sub-Saharan Africa.
 Nature (2025). https://doi.org/10.1038/s41586-025-09781-7
 
+## Handling Seasonal Tables
+Seasonal information summary for documentation
+
+Seasonal productivity information was derived from the cleaned monthly composite site tables rather than being computed directly as a single seasonal Earth Engine product. For each sensor, monthly composites were first generated and reduced over all focal, reference, and degraded site polygons. The monthly site tables were then standardized locally in pandas, expanded to a complete site–year–month panel, and labeled according to the project’s seasonal definitions: wet season (March–May) and dry season (July–October). This approach made missing months explicit, preserved auditability, and allowed seasonal summaries to be calculated using transparent quality-control rules.
+
+For each site and year, wet- and dry-season productivity metrics were computed from the monthly values of the core indices NIRv, EVI, and NDVI. Seasonal values were only retained when a minimum number of valid monthly observations were available, ensuring that sparse months did not produce misleading seasonal summaries. The resulting seasonal tables include both the seasonal metric values and support information such as expected months, observed months, missing months, and valid-month counts.
+
+These seasonal products will be used to distinguish interannual ecological change from normal seasonal variation. In particular, they support focal-versus-reference and focal-versus-degraded seasonal comparisons, help assess whether the focal site is moving toward or away from intact seasonal behavior, and provide an auditable basis for interpreting disturbance and recovery dynamics.
+
+
 ## Development Notes
 
 1. Site model completion

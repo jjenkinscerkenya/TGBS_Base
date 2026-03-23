@@ -1,6 +1,6 @@
 import pandas as pd
 
-
+################## Table Preperation and Cleaning ###################
 def normalize_temporal_columns(
     df: pd.DataFrame, temporal_scale: str
 ) -> pd.DataFrame:
@@ -173,7 +173,7 @@ def prepare_composite_table(
 
     return sort_site_time(out)
 
-
+################## Seasonal Table Prep ###################
 def add_season_label(
     df: pd.DataFrame,
     wet_months: list[int] = [3, 4, 5],
@@ -338,7 +338,7 @@ def aggregate_monthly_to_seasonal_with_thresholds(
         .reset_index(drop=True)
     )
 
-
+################## Monthly Table Preperation ###################
 def build_site_month_grid(
     sites_df: pd.DataFrame,
     start_year: int,
@@ -486,3 +486,5 @@ def aggregate_monthly_to_seasonal_with_support(
         .sort_values(["site_category", "site_id", "year", "season"])
         .reset_index(drop=True)
     )
+
+################## Functions for building comparison Tables ###################
