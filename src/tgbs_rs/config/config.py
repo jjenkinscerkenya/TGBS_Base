@@ -4,6 +4,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[3]
 DATA_DIR = REPO_ROOT / "data"
 OUTPUTS_DIR = REPO_ROOT / "outputs"
+RASTER_DIR = OUTPUTS_DIR / "raster"
 TABLES_DIR = OUTPUTS_DIR / "tables"
 
 #################### AOI BOUNDARIES ##########################

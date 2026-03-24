@@ -8,7 +8,12 @@ from rasterio.features import geometry_mask
 from matplotlib.colors import ListedColormap, Normalize, LinearSegmentedColormap
 from matplotlib.patches import Patch
 
-from tgbs_rs.config.config import ESA_CLASS_VALUES, ESA_CLASS_NAMES
+from tgbs_rs.config.config import (
+    ESA_CLASS_VALUES,
+    ESA_CLASS_NAMES,
+    DATA_DIR,
+    RASTER_DIR,
+)
 from tgbs_rs.config.config_vis import BASELINE_VIS_PARAMS
 
 
@@ -177,6 +182,69 @@ def _style_axis(ax, title):
         spine.set_visible(False)
 
 
+def _load_and_transform_point(point_path, target_crs):
+    """
+    Load a point GeoJSON file and transform to target CRS.
+
+    Parameters
+    ----------
+    point_path : str or Path
+        Path to the point GeoJSON file.
+    target_crs : rasterio.crs.CRS
+        Target coordinate reference system to transform to.
+
+    Returns
+    -------
+    gdf : geopandas.GeoDataFrame
+        GeoDataFrame with the point, transformed to target_crs.
+    """
+    point_path = Path(point_path)
+    gdf = gpd.read_file(point_path)
+
+    if gdf.crs != target_crs:
+        gdf = gdf.to_crs(target_crs)
+
+    return gdf
+
+
+def _plot_point_on_ax(ax, point_gdf, vis_params):
+    """
+    Plot point(s) from a GeoDataFrame onto a matplotlib axis.
+
+    Parameters
+    ----------
+    ax : matplotlib.axes.Axes
+        The axis to plot on.
+    point_gdf : geopandas.GeoDataFrame
+        GeoDataFrame containing point geometries.
+    vis_params : dict
+        Visualization parameters containing:
+        - facecolor: color for the point fill
+        - edgecolor: color for the point border
+        - linewidth: width of the border
+        - markersize: size of the marker
+    """
+    facecolor = vis_params.get("facecolor", "red")
+    edgecolor = vis_params.get("edgecolor", "black")
+    linewidth = vis_params.get("linewidth", 0.5)
+    markersize = vis_params.get("markersize", 8)
+
+    for idx, row in point_gdf.iterrows():
+        geom = row.geometry
+        if geom.geom_type == "Point":
+            ax.plot(
+                geom.x,
+                geom.y,
+                marker="o",
+                markersize=markersize,
+                markerfacecolor=facecolor,
+                markeredgecolor=edgecolor,
+                markeredgewidth=linewidth,
+                linestyle="none",
+                zorder=100,  # Ensure point appears on top
+            )
+
+
 # Plotting helpers
 
 
@@ -286,7 +354,7 @@ def _plot_categorical_with_hillshade(
 
 
 def plot_baseline_panels_from_rasters(
-    raster_dir,
+    raster_dir: RASTER_DIR,
     figsize=(12, 14),
     alpha_continuous=0.65,
     alpha_categorical=0.75,
@@ -354,14 +422,17 @@ def plot_baseline_panels_from_rasters(
     bii = arrays["bii_all"]
 
     # Manual vector mask for canopy layer
-    vector_path = (
-        Path(__file__).resolve().parents[2] / "data" / "kwale_county.geojson"
-    )
+    vector_path = DATA_DIR / "kwale_county.geojson"
     canopy = _mask_array_with_vector(
         arrays["canopy_height"],
         profiles["canopy_height"],
         vector_path,
     )
+
+    # Load and transform the KS rehab point to match raster CRS
+    point_path = DATA_DIR / "ks_rehab_point.geojson"
+    raster_crs = profiles["dem"]["crs"]
+    point_gdf = _load_and_transform_point(point_path, raster_crs)
 
     # Make figure and axes
     fig, axes = plt.subplots(3, 2, figsize=figsize)
@@ -381,6 +452,9 @@ def plot_baseline_panels_from_rasters(
         BASELINE_VIS_PARAMS["DEM_VIS"],
         alpha=alpha_continuous,
     )
+    _plot_point_on_ax(
+        axes[0, 0], point_gdf, BASELINE_VIS_PARAMS["KS_REHAB_POINT_VIS"]
+    )
     cbar0 = fig.colorbar(im0, ax=axes[0, 0], fraction=0.046, pad=0.04)
     cbar0.set_label("(m)", fontsize=8, labelpad=6)
 
@@ -392,6 +466,9 @@ def plot_baseline_panels_from_rasters(
         "Slope",
         BASELINE_VIS_PARAMS["SLOPE_VIS"],
         alpha=alpha_continuous,
+    )
+    _plot_point_on_ax(
+        axes[0, 1], point_gdf, BASELINE_VIS_PARAMS["KS_REHAB_POINT_VIS"]
     )
     cbar1 = fig.colorbar(im1, ax=axes[0, 1], fraction=0.046, pad=0.04)
     cbar1.set_label("(deg)", fontsize=8, labelpad=6)
@@ -405,6 +482,9 @@ def plot_baseline_panels_from_rasters(
         BASELINE_VIS_PARAMS["CANOPY_VIS"],
         alpha=alpha_continuous,
     )
+    _plot_point_on_ax(
+        axes[1, 0], point_gdf, BASELINE_VIS_PARAMS["KS_REHAB_POINT_VIS"]
+    )
     cbar2 = fig.colorbar(im2, ax=axes[1, 0], fraction=0.046, pad=0.04)
     cbar2.set_label("(m)", fontsize=8, labelpad=6)
 
@@ -417,6 +497,9 @@ def plot_baseline_panels_from_rasters(
         BASELINE_VIS_PARAMS["BII_VIS"],
         alpha=alpha_continuous,
     )
+    _plot_point_on_ax(
+        axes[1, 1], point_gdf, BASELINE_VIS_PARAMS["KS_REHAB_POINT_VIS"]
+    )
     cbar3 = fig.colorbar(im3, ax=axes[1, 1], fraction=0.046, pad=0.04)
     cbar3.set_label("(0–1)", fontsize=8, labelpad=6)
 
@@ -428,6 +511,9 @@ def plot_baseline_panels_from_rasters(
         "Mean Soil Carbon 0-20cm Depth",
         BASELINE_VIS_PARAMS["SOIL_CARBON_VIS"],
         alpha=alpha_continuous,
+    )
+    _plot_point_on_ax(
+        axes[2, 0], point_gdf, BASELINE_VIS_PARAMS["KS_REHAB_POINT_VIS"]
     )
     cbar4 = fig.colorbar(im4, ax=axes[2, 0], fraction=0.046, pad=0.04)
     cbar4.set_label("(g/kg)", fontsize=8, labelpad=6)
@@ -444,13 +530,16 @@ def plot_baseline_panels_from_rasters(
         alpha=alpha_categorical,
         exclude_legend_values=[70],
     )
+    _plot_point_on_ax(
+        axes[2, 1], point_gdf, BASELINE_VIS_PARAMS["KS_REHAB_POINT_VIS"]
+    )
 
     plt.tight_layout(rect=[0.03, 0.02, 1, 1])
     return fig, axes
 
 
 def plot_forest_cover_2000_from_raster(
-    raster_dir,
+    raster_dir: RASTER_DIR,
     figsize=(6, 6),
     alpha_forest=0.70,
 ):
@@ -492,6 +581,12 @@ def plot_forest_cover_2000_from_raster(
     hillshade = arrays["hillshade"]
     forest_2000 = arrays["forest_2000"]
 
+    # Load and transform the KS rehab point to match raster CRS
+    with rasterio.open(raster_paths["hillshade"]) as src:
+        raster_crs = src.crs
+    point_path = DATA_DIR / "ks_rehab_point.geojson"
+    point_gdf = _load_and_transform_point(point_path, raster_crs)
+
     fig, ax = plt.subplots(1, 1, figsize=figsize)
     fig.patch.set_alpha(1.0)
     ax.set_facecolor("none")
@@ -529,6 +624,7 @@ def plot_forest_cover_2000_from_raster(
     )
 
     _style_axis(ax, "Forest Cover (2000)")
+    _plot_point_on_ax(ax, point_gdf, BASELINE_VIS_PARAMS["KS_REHAB_POINT_VIS"])
 
     cbar = fig.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
     cbar.set_label("(tree cover %)", fontsize=8, labelpad=6)
@@ -538,7 +634,7 @@ def plot_forest_cover_2000_from_raster(
 
 
 def plot_forest_loss_years_from_raster(
-    raster_dir,
+    raster_dir: RASTER_DIR,
     figsize=(6, 6),
     alpha_loss_years=0.90,
 ):
@@ -581,6 +677,12 @@ def plot_forest_loss_years_from_raster(
 
     hillshade = arrays["hillshade"]
     forest_loss_years = arrays["forest_loss_years"]
+
+    # Load and transform the KS rehab point to match raster CRS
+    with rasterio.open(raster_paths["hillshade"]) as src:
+        raster_crs = src.crs
+    point_path = DATA_DIR / "ks_rehab_point.geojson"
+    point_gdf = _load_and_transform_point(point_path, raster_crs)
 
     fig, ax = plt.subplots(1, 1, figsize=figsize)
     fig.patch.set_alpha(0.0)
@@ -635,6 +737,7 @@ def plot_forest_loss_years_from_raster(
     )
 
     _style_axis(ax, "Forest Loss Year")
+    _plot_point_on_ax(ax, point_gdf, BASELINE_VIS_PARAMS["KS_REHAB_POINT_VIS"])
 
     cbar = fig.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
     cbar.set_ticks([1, 6, 12, 18, 24])
@@ -646,7 +749,7 @@ def plot_forest_loss_years_from_raster(
 
 
 def plot_forest_panels_from_rasters(
-    raster_dir,
+    raster_dir: RASTER_DIR,
     figsize=(12, 6),
     alpha_forest=0.70,
     alpha_loss_years=0.90,

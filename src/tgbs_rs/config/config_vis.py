@@ -253,4 +253,11 @@ BASELINE_VIS_PARAMS = {
             "#fae6a0",  # 100 Moss and lichen
         ],
     },
+    # KS Rehab Point
+    "KS_REHAB_POINT_VIS": {
+        "facecolor": "#FF0000",  # red
+        "edgecolor": "#000000",  # black
+        "linewidth": 0.5,
+        "markersize": 8,
+    },
 }
