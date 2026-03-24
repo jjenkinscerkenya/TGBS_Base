@@ -111,6 +111,7 @@ def harmonize_hls_s30_bands(image: ee.Image) -> ee.Image:
     )
 
 
+'''
 def process_hls_l30_image(image: ee.Image) -> ee.Image:
     """Rename HLSL30 bands, scale reflectance, and add TGBS indices."""
     source = image
@@ -132,6 +133,24 @@ def process_hls_s30_image(image: ee.Image) -> ee.Image:
         .multiply(HLS_SCALE_FACTOR)
         .add(HLS_ADD_OFFSET)
     )
+    image = select_base_hls_bands(image)
+    image = calc_tgbs_indices(image)
+    return image.copyProperties(source, ["system:time_start"])
+'''
+
+def process_hls_l30_image(image: ee.Image) -> ee.Image:
+    """Rename HLSL30 bands and add TGBS indices."""
+    source = image
+    image = harmonize_hls_l30_bands(source)
+    image = select_base_hls_bands(image)
+    image = calc_tgbs_indices(image)
+    return image.copyProperties(source, ["system:time_start"])
+
+
+def process_hls_s30_image(image: ee.Image) -> ee.Image:
+    """Rename HLSS30 bands and add TGBS indices."""
+    source = image
+    image = harmonize_hls_s30_bands(source)
     image = select_base_hls_bands(image)
     image = calc_tgbs_indices(image)
     return image.copyProperties(source, ["system:time_start"])
