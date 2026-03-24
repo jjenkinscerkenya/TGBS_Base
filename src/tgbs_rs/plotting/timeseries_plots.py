@@ -12,7 +12,9 @@ def set_plot_theme() -> None:
     sns.set_theme(style="whitegrid", context="talk", palette="muted")
 
 
-def format_title(metric_label: str, temporal_label: str, comparison_label: str) -> str:
+def format_title(
+    metric_label: str, temporal_label: str, comparison_label: str
+) -> str:
     """
     Build a consistent capitalized title for time-series figures from metric,
     temporal context, and comparison type. This keeps figure titles uniform
@@ -124,21 +126,23 @@ def plot_category_mean_trajectories(
     metric_col: str,
     title: str,
     ylabel: str,
+    x_col: str = "year",
     figsize: tuple = (11, 5),
 ) -> tuple:
     """
     Plot category mean trajectories across time for focal, reference, and
-    degraded groups. This is a useful diagnostic or supporting figure for
-    understanding how all site categories move before focusing on the main
+    degraded groups for any requested metric. This is a reusable diagnostic
+    figure for checking grouped category behavior before or alongside the main
     focal-versus-envelope comparisons.
     """
     d = summary_df.loc[summary_df["index_name"].eq(metric_col)].copy()
+    d = d.sort_values([x_col, "site_category"])
 
     fig, ax = plt.subplots(figsize=figsize)
 
     sns.lineplot(
         data=d,
-        x="year",
+        x=x_col,
         y="mean",
         hue="site_category",
         marker="o",
@@ -146,7 +150,9 @@ def plot_category_mean_trajectories(
         ax=ax,
     )
 
-    finalize_timeseries_axis(ax=ax, title=title, ylabel=ylabel)
+    finalize_timeseries_axis(
+        ax=ax, title=title, ylabel=ylabel, xlabel=x_col.title()
+    )
     return fig, ax
 
 

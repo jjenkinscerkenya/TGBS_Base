@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 ################## Table Preperation and Cleaning ###################
 def normalize_temporal_columns(
     df: pd.DataFrame, temporal_scale: str
@@ -107,9 +108,9 @@ def keep_core_columns(
     value_columns: list[str],
 ) -> pd.DataFrame:
     """
-    Keep only the core metadata and requested analytical value columns.
-    This is useful for creating small, analysis-focused tables from large exported
-    band-rich CSV files.
+    Keep only core metadata, audit columns, and requested analytical value
+    columns. This is useful for creating compact analysis-specific tables from
+    the master annual, monthly, or seasonal tables.
     """
     core_cols = [
         c
@@ -120,11 +121,17 @@ def keep_core_columns(
             "source_file",
             "year",
             "month",
+            "season",
             "date",
             "image_count",
             "temporal_scale",
             "composite_stat",
             "period",
+            "has_any_missing_value",
+            "n_missing_values",
+            "row_was_missing",
+            "has_all_values",
+            "has_any_value",
         ]
         if c in df.columns
     ]
@@ -172,6 +179,22 @@ def prepare_composite_table(
         out = drop_rows_with_missing_values(out, value_columns=value_columns)
 
     return sort_site_time(out)
+
+
+def subset_metric_tables(
+    annual_master: pd.DataFrame,
+    seasonal_master: pd.DataFrame,
+    metric_cols: list[str],
+) -> tuple:
+    """
+    Create compact annual and seasonal analysis tables from the master tables
+    for one thematic metric group. This keeps script bodies short and makes
+    each analysis theme easy to configure.
+    """
+    annual_df = keep_core_columns(annual_master, metric_cols)
+    seasonal_df = keep_core_columns(seasonal_master, metric_cols)
+    return annual_df, seasonal_df
+
 
 ################## Seasonal Table Prep ###################
 def add_season_label(
@@ -338,6 +361,7 @@ def aggregate_monthly_to_seasonal_with_thresholds(
         .reset_index(drop=True)
     )
 
+
 ################## Monthly Table Preperation ###################
 def build_site_month_grid(
     sites_df: pd.DataFrame,
@@ -447,10 +471,11 @@ def aggregate_monthly_to_seasonal_with_support(
     rows = []
 
     for keys, g in out.groupby(
-        ["site_id", "site_name", "site_category", "year", "season"],
+        ["site_id", "site_name", "site_category", "year", "season", "period"],
         dropna=False,
     ):
         season = keys[4]
+        period = keys[5]
         min_valid = min_valid_months_by_season[season]
         expected_months = 3 if season == "wet" else 4
 
@@ -460,6 +485,7 @@ def aggregate_monthly_to_seasonal_with_support(
             "site_category": keys[2],
             "year": keys[3],
             "season": season,
+            "period": period,
             "expected_months_in_season": expected_months,
             "observed_rows_in_season": (
                 int((~g["row_was_missing"]).sum())
@@ -486,5 +512,3 @@ def aggregate_monthly_to_seasonal_with_support(
         .sort_values(["site_category", "site_id", "year", "season"])
         .reset_index(drop=True)
     )
-
-################## Functions for building comparison Tables ###################

@@ -13,26 +13,26 @@ from tgbs_rs.plotting.comparison_tables import (
     summarize_baseline_vs_current,
     compute_site_trends,
 )
-from tgbs_rs.plotting.figure_specs import (
+from figure_specs import (
     get_seasonal_plot_order,
     make_seasonal_title,
     get_metric_label,
 )
-from tgbs_rs.plotting.timeseries_plots import (
+from timeseries_plots import (
     set_plot_theme,
     plot_focal_vs_envelope,
     plot_category_mean_trajectories,
 )
 
 
-def build_seasonal_productivity_long_table(
+def build_seasonal_metrics_long_table(
     seasonal_df: pd.DataFrame,
     season: str,
     metric_cols: list[str],
 ) -> pd.DataFrame:
     """
     Filter a prepared seasonal summary table to one season and convert it into
-    a long-format productivity table ready for comparison summaries and plots.
+    a long-format metrics table ready for comparison summaries and plots.
     This keeps wet and dry analyses clearly separated and fully parallel.
     """
     season_core = filter_season_table(
@@ -42,10 +42,12 @@ def build_seasonal_productivity_long_table(
     )
 
     id_cols = [c for c in season_core.columns if c not in metric_cols]
-    return to_long_index_table(df=season_core, value_cols=metric_cols, id_cols=id_cols)
+    return to_long_index_table(
+        df=season_core, value_cols=metric_cols, id_cols=id_cols
+    )
 
 
-def build_seasonal_productivity_outputs(
+def build_seasonal_metrics_outputs(
     seasonal_long_df: pd.DataFrame,
 ) -> dict:
     """
@@ -111,7 +113,7 @@ def build_seasonal_productivity_outputs(
     }
 
 
-def run_single_season_productivity_workflow(
+def run_single_season_metrics_workflow(
     seasonal_df: pd.DataFrame,
     season: str,
     metric_cols: list[str],
@@ -121,15 +123,15 @@ def run_single_season_productivity_workflow(
     from a prepared seasonal summary table. This wrapper keeps seasonal figure
     pipelines concise and preserves a clean separation between seasons.
     """
-    seasonal_long = build_seasonal_productivity_long_table(
+    seasonal_long = build_seasonal_metrics_long_table(
         seasonal_df=seasonal_df,
         season=season,
         metric_cols=metric_cols,
     )
-    return build_seasonal_productivity_outputs(seasonal_long_df=seasonal_long)
+    return build_seasonal_metrics_outputs(seasonal_long_df=seasonal_long)
 
 
-def run_all_season_productivity_workflows(
+def run_all_season_metrics_workflows(
     seasonal_df: pd.DataFrame,
     metric_cols: list[str],
     seasons: list[str] = None,
@@ -137,11 +139,11 @@ def run_all_season_productivity_workflows(
     """
     Run the seasonal workflow for all requested seasons and return a nested
     output dictionary keyed by season. This provides a compact orchestration
-    layer for wet and dry productivity analyses in one call.
+    layer for wet and dry metrics analyses in one call.
     """
     seasons = seasons or ["wet", "dry"]
     return {
-        season: run_single_season_productivity_workflow(
+        season: run_single_season_metrics_workflow(
             seasonal_df=seasonal_df,
             season=season,
             metric_cols=metric_cols,
@@ -150,31 +152,40 @@ def run_all_season_productivity_workflows(
     }
 
 
-def plot_single_season_core_figures(
+def plot_single_season_metrics_core_figures(
     outputs: dict,
     season: str,
     source_label: str,
     metric_cols: list[str],
+    comparison_label: str = "Focal Vs Reference",
+    envelope_label: str = "reference",
+    use_spec_order: bool = True,
 ) -> list[tuple]:
     """
-    Generate the main focal-vs-reference figures for one season in preferred
-    metric order. This is intended for the core wet- and dry-season narrative
-    where NIRv is primary and EVI can be added as optional support.
+    Generate focal-versus-envelope figures for one season and any requested
+    metric list. The function can use family-aware seasonal ordering from
+    figure specs or preserve the metric order supplied by the caller.
     """
     set_plot_theme()
     figs = []
 
-    for season_name, metric_col in get_seasonal_plot_order(
-        [(season, m) for m in metric_cols]
-    ):
+    ordered_metrics = (
+        get_seasonal_plot_order(season=season, metric_cols=metric_cols)
+        if use_spec_order
+        else metric_cols
+    )
+
+    comparison_key = f"focal_vs_{envelope_label}"
+
+    for metric_col in ordered_metrics:
         fig, ax = plot_focal_vs_envelope(
-            comparison_df=outputs["focal_vs_reference"],
+            comparison_df=outputs[comparison_key],
             metric_col=metric_col,
-            envelope_label="reference",
+            envelope_label=envelope_label,
             title=make_seasonal_title(
                 metric_col=metric_col,
-                season=season_name,
-                comparison_label="Focal Vs Reference",
+                season=season,
+                comparison_label=comparison_label,
                 source_label=source_label,
             ),
             ylabel=get_metric_label(metric_col),

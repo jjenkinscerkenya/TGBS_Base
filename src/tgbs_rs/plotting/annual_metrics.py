@@ -12,26 +12,34 @@ from tgbs_rs.plotting.comparison_tables import (
     summarize_baseline_vs_current,
     compute_site_trends,
 )
-from tgbs_rs.plotting.figure_specs import get_annual_plot_order
-from tgbs_rs.plotting.timeseries_plots import (
+from figure_specs import (
+    get_annual_plot_order,
+    make_annual_title,
+    get_metric_label,
+)
+from timeseries_plots import (
     set_plot_theme,
     plot_focal_vs_envelope,
     plot_category_mean_trajectories,
 )
-from tgbs_rs.plotting.figure_specs import make_annual_title, get_metric_label
 
 
-def build_annual_productivity_long_table(
+def build_annual_metrics_long_table(
     annual_df: pd.DataFrame,
     metric_cols: list[str],
     extra_cols: list[str] = None,
 ) -> pd.DataFrame:
     """
     Convert a prepared annual site-year table into a long-format annual
-    productivity table ready for summary building and plotting. This is the
-    main entry point for annual HLS or Sentinel-2 productivity workflows.
+    metrics table ready for summary building and plotting. This is the
+    main entry point for annual HLS or Sentinel-2 metrics workflows.
     """
-    extra_cols = extra_cols or ["date", "image_count", "temporal_scale", "composite_stat"]
+    extra_cols = extra_cols or [
+        "date",
+        "image_count",
+        "temporal_scale",
+        "composite_stat",
+    ]
     core = select_analysis_columns(
         df=annual_df,
         value_cols=metric_cols,
@@ -42,7 +50,7 @@ def build_annual_productivity_long_table(
     return to_long_index_table(df=core, value_cols=metric_cols, id_cols=id_cols)
 
 
-def build_annual_productivity_outputs(
+def build_annual_metrics_outputs(
     annual_long_df: pd.DataFrame,
 ) -> dict:
     """
@@ -109,44 +117,52 @@ def build_annual_productivity_outputs(
     }
 
 
-def run_annual_productivity_workflow(
+def run_annual_metrics_workflow(
     annual_df: pd.DataFrame,
     metric_cols: list[str],
 ) -> dict:
     """
-    Run the full annual productivity table-building workflow starting from a
+    Run the full annual metrics table-building workflow starting from a
     prepared annual table. This wrapper keeps the notebook or analysis script
     concise while returning all core annual comparison products together.
     """
-    annual_long = build_annual_productivity_long_table(
+    annual_long = build_annual_metrics_long_table(
         annual_df=annual_df,
         metric_cols=metric_cols,
     )
-    return build_annual_productivity_outputs(annual_long_df=annual_long)
+    return build_annual_metrics_outputs(annual_long_df=annual_long)
 
 
-def plot_annual_productivity_core_figures(
+def plot_annual_metrics_core_figures(
     outputs: dict,
     source_label: str,
     metric_cols: list[str],
+    comparison_label: str = "Focal Vs Reference",
+    envelope_label: str = "reference",
+    use_spec_order: bool = True,
 ) -> list[tuple]:
     """
-    Generate the main annual focal-vs-reference figures in preferred order
-    using the derived annual comparison outputs. This function focuses on the
-    core annual narrative and returns the figure-axis tuples for optional save
-    or further editing.
+    Generate annual focal-versus-envelope figures for any requested metric list.
+    The function can use family-aware preferred ordering from figure specs or
+    preserve the metric order supplied by the caller.
     """
     set_plot_theme()
     figs = []
 
-    for metric_col in get_annual_plot_order(metric_cols):
+    ordered_metrics = (
+        get_annual_plot_order(metric_cols) if use_spec_order else metric_cols
+    )
+
+    comparison_key = f"focal_vs_{envelope_label}"
+
+    for metric_col in ordered_metrics:
         fig, ax = plot_focal_vs_envelope(
-            comparison_df=outputs["focal_vs_reference"],
+            comparison_df=outputs[comparison_key],
             metric_col=metric_col,
-            envelope_label="reference",
+            envelope_label=envelope_label,
             title=make_annual_title(
                 metric_col=metric_col,
-                comparison_label="Focal Vs Reference",
+                comparison_label=comparison_label,
                 source_label=source_label,
             ),
             ylabel=get_metric_label(metric_col),
@@ -156,7 +172,7 @@ def plot_annual_productivity_core_figures(
     return figs
 
 
-def plot_annual_productivity_category_figures(
+def plot_annual_metrics_category_figures(
     outputs: dict,
     source_label: str,
     metric_cols: list[str],

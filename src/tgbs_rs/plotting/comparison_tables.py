@@ -1,7 +1,5 @@
 import numpy as np
 import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
 
 
 def select_analysis_columns(
@@ -67,8 +65,7 @@ def summarize_by_category_year(
     reporting tables, and optional category mean overlays in plots.
     """
     return (
-        df_long
-        .groupby(group_cols + ["index_name"], dropna=False)["value"]
+        df_long.groupby(group_cols + ["index_name"], dropna=False)["value"]
         .agg(
             n="count",
             mean="mean",
@@ -121,7 +118,7 @@ def build_focal_series(
     """
     return (
         df_long.loc[df_long["site_category"].eq("focal")]
-        .sort_values([ "index_name", year_col ])
+        .sort_values(["index_name", year_col])
         .reset_index(drop=True)
     )
 
@@ -138,7 +135,17 @@ def join_focal_to_envelope(
     the main plotting-ready comparison table for focal-vs-reference or
     focal-vs-degraded visualizations.
     """
-    cols = [year_col, "index_name", "mean", "median", "min", "max", "q25", "q75", "n_sites"]
+    cols = [
+        year_col,
+        "index_name",
+        "mean",
+        "median",
+        "min",
+        "max",
+        "q25",
+        "q75",
+        "n_sites",
+    ]
     env = envelope_df.loc[:, cols].copy()
     env = env.rename(
         columns={
@@ -194,7 +201,9 @@ def add_standardized_anomalies(
     deviation for each index. This helps quantify whether focal productivity
     is within, above, or below the historical reference baseline.
     """
-    base = baseline_ranges.loc[:, ["index_name", "baseline_mean", "baseline_std"]].copy()
+    base = baseline_ranges.loc[
+        :, ["index_name", "baseline_mean", "baseline_std"]
+    ].copy()
     base = base.rename(
         columns={
             "baseline_mean": f"{label}_baseline_mean",
@@ -202,7 +211,9 @@ def add_standardized_anomalies(
         }
     )
     out = focal_long.merge(base, on="index_name", how="left")
-    out[f"{label}_baseline_anomaly"] = out["value"] - out[f"{label}_baseline_mean"]
+    out[f"{label}_baseline_anomaly"] = (
+        out["value"] - out[f"{label}_baseline_mean"]
+    )
     out[f"{label}_baseline_zscore"] = (
         out[f"{label}_baseline_anomaly"] / out[f"{label}_baseline_std"]
     )
@@ -218,8 +229,9 @@ def summarize_baseline_vs_current(
     and complements the time-series plots with period-level summaries.
     """
     return (
-        df_long
-        .groupby(["site_category", "period", "index_name"], dropna=False)["value"]
+        df_long.groupby(
+            ["site_category", "period", "index_name"], dropna=False
+        )["value"]
         .agg(
             n="count",
             mean="mean",
@@ -241,18 +253,25 @@ def compute_site_trends(
     This gives a compact trend table for quick interpretation of annual or
     seasonal trajectories without introducing heavier statistical machinery.
     """
+
     def _fit(group: pd.DataFrame) -> pd.Series:
         x = group[year_col].to_numpy(dtype=float)
         y = group["value"].to_numpy(dtype=float)
         mask = np.isfinite(x) & np.isfinite(y)
         if mask.sum() < 2:
-            return pd.Series({"n_obs": mask.sum(), "slope": np.nan, "intercept": np.nan})
+            return pd.Series(
+                {"n_obs": mask.sum(), "slope": np.nan, "intercept": np.nan}
+            )
         slope, intercept = np.polyfit(x[mask], y[mask], 1)
-        return pd.Series({"n_obs": mask.sum(), "slope": slope, "intercept": intercept})
+        return pd.Series(
+            {"n_obs": mask.sum(), "slope": slope, "intercept": intercept}
+        )
 
     return (
-        df_long
-        .groupby(["site_id", "site_name", "site_category", "index_name"], dropna=False)
+        df_long.groupby(
+            ["site_id", "site_name", "site_category", "index_name"],
+            dropna=False,
+        )
         .apply(_fit)
         .reset_index()
     )
