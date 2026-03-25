@@ -207,8 +207,8 @@ BASELINE_VIS_PARAMS = {
         "min": 0,
         "max": 45,
         "palette": [
-            "#0b1f3a",
-            "#1f4e79",
+            "#071424",
+            "#14324f",
             "#4fa3c4",
             "#fdae61",
             "#d94801",
