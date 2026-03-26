@@ -33,6 +33,128 @@ def export_image_to_drive(
     return task
 
 
+def _image_export_suffix(
+    image: ee.Image,
+    index: int,
+    date_property: str = "date",
+    fallback_property: str = "year",
+) -> str:
+    """Build a compact suffix for one image export.
+
+    Prefers an existing image property such as `date` or `year`. If neither
+    is present, falls back to the zero-padded collection index.
+    """
+    props = image.toDictionary([date_property, fallback_property]).getInfo()
+    if props.get(date_property) is not None:
+        return str(props[date_property]).replace(":", "-")
+    if props.get(fallback_property) is not None:
+        return str(props[fallback_property])
+    return f"{index:03d}"
+
+
+def export_image_collection_to_drive(
+    collection: ee.ImageCollection,
+    aoi: ee.Geometry,
+    folder: str,
+    file_prefix: str,
+    scale: int,
+    crs: str = "EPSG:4326",
+    band_names: list[str] | None = None,
+    sort_property: str = "system:time_start",
+    description_prefix: str | None = None,
+    date_property: str | None = None,
+    fallback_property: str = "year",
+    file_suffix: str | None = None,
+) -> list:
+    """Export every image in an ImageCollection to Google Drive.
+
+    Sorts the collection, optionally selects specific bands, then launches one
+    Drive export task per image using a property-based filename suffix.
+    """
+    collection = ee.ImageCollection(collection).sort(sort_property)
+    if band_names is not None:
+        collection = collection.select(band_names)
+
+    n = collection.size().getInfo()
+    images = collection.toList(n)
+    tasks = []
+
+    for i in range(n):
+        image = ee.Image(images.get(i))
+
+        props_to_get = (
+            [fallback_property]
+            if date_property is None
+            else [date_property, fallback_property]
+        )
+        props = image.toDictionary(props_to_get).getInfo()
+
+        if date_property is not None and props.get(date_property) is not None:
+            suffix = str(props[date_property]).replace(":", "-")
+        elif props.get(fallback_property) is not None:
+            suffix = str(props[fallback_property])
+        else:
+            suffix = f"{i:03d}"
+
+        description = f"{description_prefix or file_prefix}_{suffix}"
+        prefix = (
+            f"{file_prefix}_{suffix}"
+            if file_suffix is None
+            else f"{file_prefix}_{suffix}_{file_suffix}"
+        )
+
+        task = export_image_to_drive(
+            image=image,
+            aoi=aoi,
+            description=description,
+            folder=folder,
+            file_prefix=prefix,
+            scale=scale,
+            crs=crs,
+        )
+        tasks.append(task)
+
+    return tasks
+
+
+def export_site_collections_to_drive(
+    site_collections: dict[str, dict],
+    folder: str,
+    scale: int,
+    crs: str = "EPSG:4326",
+    band_names: list[str] | None = None,
+    sort_property: str = "system:time_start",
+    date_property: str = "date",
+    fallback_property: str = "year",
+    file_suffix: str = "dw_woody_cover",
+) -> dict[str, list]:
+    """
+    Export one ImageCollection per site from a site dictionary to Google Drive.
+
+    Expects a dictionary like `site_dw_dict` where each entry contains at least
+    `aoi` and `collection`. Returns a dictionary of export task lists keyed by site_id.
+    """
+    tasks_by_site = {}
+
+    for site_id, site_info in site_collections.items():
+        tasks_by_site[site_id] = export_image_collection_to_drive(
+            collection=site_info["collection"],
+            aoi=site_info["aoi"],
+            folder=folder,
+            file_prefix=site_id,
+            scale=scale,
+            crs=crs,
+            band_names=band_names,
+            sort_property=sort_property,
+            description_prefix=f"{site_id}_{file_suffix}",
+            date_property=date_property,
+            fallback_property=fallback_property,
+            file_suffix=file_suffix,
+        )
+
+    return tasks_by_site
+
+
 def build_baseline_export_config(scale_dict):
     """
     Build export metadata for the baseline layers dictionary.

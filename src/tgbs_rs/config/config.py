@@ -4,7 +4,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[3]
 DATA_DIR = REPO_ROOT / "data"
 OUTPUTS_DIR = REPO_ROOT / "outputs"
-RASTER_DIR = OUTPUTS_DIR / "raster"
+RASTER_DIR = OUTPUTS_DIR / "rasters"
 TABLES_DIR = OUTPUTS_DIR / "tables"
 
 #################### AOI BOUNDARIES ##########################
@@ -97,6 +97,9 @@ L8_SR_COLLECTION = "LANDSAT/LC08/C02/T1_L2"
 HLS_L30_COLLECTION = "NASA/HLS/HLSL30/v002"  # Landsat OLI
 HLS_S30_COLLECTION = "NASA/HLS/HLSS30/v002"  # Sentinel MSI
 
+# Dynamic World V1
+DYNAMIC_WORLD = "GOOGLE/DYNAMICWORLD/V1"
+DW_WOODY_BANDS = ["trees_prob", "woody_prob"]
 
 #################### SENTINEL VARIABLES ##########################
 S2_BANDS = ["B2", "B3", "B4", "B5", "B6", "B7", "B8", "B8A", "B11", "B12"]
@@ -281,6 +284,7 @@ DEFAULT_MAX_PIXELS = 1e13
 DEFAULT_FILE_FORMAT = "GeoTIFF"
 DEFAULT_CRS = "EPSG:4326"
 DRIVE_FOLDER = "TGBS_Kwale_Baseline"
+LANDSCAPE_METRICS_FOLDER = "TGBS_Kwale_Landscape_Metrics"
 
 PLOTTING_SCALE_DICT = {
     "hillshade": 30,

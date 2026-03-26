@@ -1,4 +1,11 @@
 ############# Visualization parameters #########################
+SITES_VIS_PARAMS = {
+    "color": "#FF0000",
+    "width": 2,
+    "lineType": "solid",
+    "fillColor": "#FF00006F",
+}
+
 # Sentinel-2 SR
 S2_VIS_PARAMS = {
     "TrueColor": {
@@ -153,6 +160,12 @@ HLS_VIS_PARAMS = {
     },
 }
 
+DW_BINARY_VIS_PARAMS = {
+    "min": 0,
+    "max": 1,
+    "palette": ["#F57C00", "#2E7D32"],  # 0 = Non-Woody LC  # 1 = Woody LC
+}
+
 BASELINE_VIS_PARAMS = {
     # Forest Cover
     "FOREST_COVER_VIS": {
@@ -258,6 +271,6 @@ BASELINE_VIS_PARAMS = {
         "facecolor": "#FF0000",  # red
         "edgecolor": "#000000",  # black
         "linewidth": 0.5,
-        "markersize": 8,
+        "markersize": 6,
     },
 }

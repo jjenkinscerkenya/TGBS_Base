@@ -14,6 +14,22 @@ def _clip_and_mask_image(image, geometry):
     return image.updateMask(aoi_mask).clip(geometry)
 
 
+def clip_collection_to_aoi(
+    collection: ee.ImageCollection,
+    aoi: ee.Geometry,
+) -> ee.ImageCollection:
+    """
+    Clip every image in an ImageCollection to a single AOI geometry.
+
+    This is useful when filtering by AOI is not enough and you want each
+    output raster trimmed to the exact site boundary.
+    """
+    aoi = ee.Geometry(aoi)
+    return ee.ImageCollection(collection).map(
+        lambda img: ee.Image(img).clip(aoi)
+    )
+
+
 def geojson_to_ee_geometry(path) -> ee.Geometry:
     """Read a local GeoJSON file and return its contents as a single ee.Geometry."""
     path = Path(path)
@@ -140,3 +156,20 @@ def get_sites_geometry(sites_fc):
     Return the merged geometry of a site FeatureCollection.
     """
     return ee.FeatureCollection(sites_fc).geometry()
+
+
+def buffer_sites_fc(
+    sites_fc: ee.FeatureCollection,
+    buffer_m: float = 500,
+) -> ee.FeatureCollection:
+    """Return a site FeatureCollection with each feature buffered by a fixed distance.
+
+    Buffers every site geometry by `buffer_m` meters while preserving the
+    original site properties for later naming, export, and grouping.
+    """
+    sites_fc = ee.FeatureCollection(sites_fc)
+    return sites_fc.map(
+        lambda f: ee.Feature(ee.Feature(f).buffer(buffer_m)).copyProperties(
+            ee.Feature(f)
+        )
+    )

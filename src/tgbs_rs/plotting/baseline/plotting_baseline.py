@@ -91,10 +91,10 @@ def _plot_points(ax, gdf, vp, transform):
         cols,
         rows,
         "o",
-        ms=vp.get("markersize", 1.5),
-        mfc=vp.get("facecolor", "red"),
-        mec=vp.get("edgecolor", "black"),
-        mew=vp.get("linewidth", 0.5),
+        ms=vp.get("markersize"),
+        mfc=vp.get("facecolor"),
+        mec=vp.get("edgecolor"),
+        mew=vp.get("linewidth"),
         zorder=100,
         ls="none",
     )
@@ -228,7 +228,7 @@ def _render_categorical(
 
 
 def plot_baseline_panels_from_rasters(
-    raster_dir: RASTER_DIR,
+    raster_dir=RASTER_DIR,
     figsize=(12, 17),
     alpha_continuous=0.65,
     alpha_categorical=0.75,
@@ -375,7 +375,7 @@ def plot_baseline_panels_from_rasters(
 
 
 def plot_forest_panels_from_rasters(
-    raster_dir: RASTER_DIR,
+    raster_dir=RASTER_DIR,
     data_dir=DATA_DIR,
     figsize=(12.5, 6.2),
     alpha_forest=0.70,
