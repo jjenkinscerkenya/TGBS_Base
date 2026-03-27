@@ -26,7 +26,6 @@ OUTPUT_DIRS = {
     "maps": OUTPUTS_DIR / "maps",
     "tables": OUTPUTS_DIR / "tables",
     "rasters": OUTPUTS_DIR / "rasters",
-    "QC": OUTPUTS_DIR / "qc",
 }
 
 #################### EE DATASETS ##########################
