@@ -6,6 +6,7 @@ DATA_DIR = REPO_ROOT / "data"
 OUTPUTS_DIR = REPO_ROOT / "outputs"
 RASTER_DIR = OUTPUTS_DIR / "rasters"
 TABLES_DIR = OUTPUTS_DIR / "tables"
+LANDSCAPE_RASTER_DIR = OUTPUTS_DIR / "rasters" / "landscape_metrics"
 
 #################### AOI BOUNDARIES ##########################
 AOI_PATHS = {
@@ -25,6 +26,7 @@ OUTPUT_DIRS = {
     "maps": OUTPUTS_DIR / "maps",
     "tables": OUTPUTS_DIR / "tables",
     "rasters": OUTPUTS_DIR / "rasters",
+    "QC": OUTPUTS_DIR / "qc",
 }
 
 #################### EE DATASETS ##########################
@@ -284,7 +286,7 @@ DEFAULT_MAX_PIXELS = 1e13
 DEFAULT_FILE_FORMAT = "GeoTIFF"
 DEFAULT_CRS = "EPSG:4326"
 DRIVE_FOLDER = "TGBS_Kwale_Baseline"
-LANDSCAPE_METRICS_FOLDER = "TGBS_Kwale_Landscape_Metrics"
+LAND_METRICS_DRIVE_FOLDER = "TGBS_Kwale_Landscape_Metrics"
 
 PLOTTING_SCALE_DICT = {
     "hillshade": 30,

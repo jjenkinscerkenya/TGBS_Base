@@ -23,6 +23,10 @@ For each site and year, wet- and dry-season productivity metrics were computed f
 These seasonal products will be used to distinguish interannual ecological change from normal seasonal variation. In particular, they support focal-versus-reference and focal-versus-degraded seasonal comparisons, help assess whether the focal site is moving toward or away from intact seasonal behavior, and provide an auditable basis for interpreting disturbance and recovery dynamics.
 
 
+# Landscape Metrics Calculations
+The shimba_hills 2022 site-year raster was excluded from the primary landscape-metrics analysis because valid pixel coverage was approximately 55%, substantially lower than the other site-years, which were near complete coverage. This level of masking was considered likely to distort patch configuration and fragmentation metrics by introducing artificial gaps and patch breaks, so the site-year was omitted under the study’s raster quality-control rule.
+
+
 ## Development Notes
 
 1. Site model completion
