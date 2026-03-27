@@ -9,6 +9,14 @@ from sklearn.preprocessing import StandardScaler
 sns.set_theme(style="whitegrid", context="talk")
 
 
+def drop_site_year(df: object, site_id: str, year: int) -> object:
+    """
+    Return a copy with one site-year removed.
+    This is useful for excluding known low-quality or incomplete observations before analysis.
+    """
+    return df.loc[~(df["site_id"].eq(site_id) & df["year"].eq(year))].copy()
+
+
 def load_metrics_table(path: str) -> object:
     """
     Read a landscape-metrics CSV and lightly standardize a few key columns.
@@ -31,6 +39,45 @@ def subset_metrics(
     out = df[df["metric"].isin([m.lower() for m in metrics])].copy()
     if level is not None and "level" in out.columns:
         out = out[out["level"].eq(level.lower())].copy()
+    return out
+
+
+def format_metric_labels(df: object, metric_col: str = "metric") -> object:
+    """
+    Return a copy with cleaner display labels for metrics.
+    This keeps plot titles and facet labels readable without changing the source values.
+    """
+    out = df.copy()
+    label_map = {
+        "enn_mn": "ENN Mn",
+        "proxim_mn": "Prox Mn",
+        "core_mn": "Core Area Mn",
+        "cpland": "Core Area Percent Of Landscape",
+        "tca": "Total Core Area",
+        "shape_mn": "Shape Mn",
+        "area_mn": "Area Mn",
+    }
+    out[metric_col] = out[metric_col].map(
+        lambda x: label_map.get(x, str(x).replace("_", " ").title())
+    )
+    return out
+
+
+def subset_metric_family(
+    df: object,
+    metrics: list[str],
+    level: str | None = None,
+    class_value: str | int | None = None,
+) -> object:
+    """
+    Filter to a selected metric family and optionally one level or class.
+    This is the main helper for building clean figures from the long metrics tables.
+    """
+    out = df[df["metric"].isin(metrics)].copy()
+    if level is not None and "level" in out.columns:
+        out = out[out["level"].eq(level)].copy()
+    if class_value is not None and "class" in out.columns:
+        out = out[out["class"].astype(str).eq(str(class_value))].copy()
     return out
 
 
@@ -300,6 +347,253 @@ def plot_pca_site_years(
     )
     fig.tight_layout(rect=[0, 0, 0.82, 1])
     return fig, ax
+
+
+def plot_connectivity_metric_facets(
+    df: object,
+    site_col: str = "site_id",
+    metrics: list[str] = ["enn_mn", "proxim_mn"],
+    level: str = "class",
+    class_value: str | int = 1,
+    palette: str = "muted",
+) -> object:
+    """
+    Plot yearly connectivity trajectories by site for ENN and or PROX.
+    This is useful for seeing whether woody patches are becoming more isolated or more connected through time.
+    """
+    d = subset_metric_family(
+        df, metrics=metrics, level=level, class_value=class_value
+    )
+    d = format_metric_labels(d)
+
+    g = sns.FacetGrid(
+        data=d,
+        col="metric",
+        hue=site_col,
+        col_order=[
+            m
+            for m in format_metric_labels(pd.DataFrame({"metric": metrics}))[
+                "metric"
+            ]
+        ],
+        sharex=True,
+        sharey=False,
+        height=4,
+        aspect=1.35,
+        palette=palette,
+    )
+    g.map_dataframe(
+        sns.lineplot,
+        x="year",
+        y="value",
+        marker="o",
+        dashes=False,
+        linewidth=2,
+        markersize=6,
+    )
+    g.add_legend(title="Site Id")
+    g.set_axis_labels("Year", "Metric Value")
+    g.set_titles("{col_name}")
+    g.fig.subplots_adjust(top=0.82, wspace=0.18)
+    g.fig.suptitle("Connectivity Metric Trajectories By Site", y=0.97)
+    return g
+
+
+def plot_core_metric_facets(
+    df: object,
+    site_col: str = "site_id",
+    metrics: list[str] = ["core_mn", "cpland", "tca"],
+    level: str = "class",
+    class_value: str | int = 1,
+    col_wrap: int = 2,
+    palette: str = "muted",
+) -> object:
+    """
+    Plot yearly core-area trajectories by site for mean core area, core percent, and total core area.
+    This is useful for judging whether woody cover is developing more interior area during recovery.
+    """
+    d = subset_metric_family(
+        df, metrics=metrics, level=level, class_value=class_value
+    )
+    d = format_metric_labels(d)
+
+    g = sns.relplot(
+        data=d,
+        x="year",
+        y="value",
+        hue=site_col,
+        col="metric",
+        kind="line",
+        marker="o",
+        dashes=False,
+        palette=palette,
+        linewidth=2,
+        markersize=6,
+        col_wrap=col_wrap,
+        facet_kws={"sharex": True, "sharey": False},
+        height=4,
+        aspect=1.35,
+    )
+    g.set_axis_labels("Year", "Metric Value")
+    g.set_titles("{col_name}")
+    g.fig.subplots_adjust(top=0.88)
+    g.fig.suptitle("Core Area Metric Trajectories By Site")
+    return g
+
+
+def plot_shape_metric_trajectories(
+    df: object,
+    site_col: str = "site_id",
+    level: str = "class",
+    class_value: str | int = 1,
+    palette: str = "muted",
+) -> object:
+    """
+    Plot yearly trajectories for mean patch shape complexity by site.
+    This helps show whether patches are becoming more compact or more irregular through time.
+    """
+    d = subset_metric_family(
+        df, metrics=["shape_mn"], level=level, class_value=class_value
+    )
+    fig, ax = plt.subplots(figsize=(10, 5.5))
+    sns.lineplot(
+        data=d,
+        x="year",
+        y="value",
+        hue=site_col,
+        marker="o",
+        dashes=False,
+        palette=palette,
+        linewidth=2,
+        markersize=6,
+        ax=ax,
+    )
+    ax.set_title("Shape Mn Trajectories By Site")
+    ax.set_xlabel("Year")
+    ax.set_ylabel("Metric Value")
+    ax.legend(
+        title="Site Id",
+        loc="center left",
+        bbox_to_anchor=(1.02, 0.5),
+        frameon=True,
+    )
+    return fig, ax
+
+
+def plot_area_metric_trajectories(
+    df: object,
+    site_col: str = "site_id",
+    level: str = "class",
+    class_value: str | int = 1,
+    palette: str = "muted",
+) -> object:
+    """
+    Plot yearly trajectories for mean patch area by site.
+    This helps distinguish whether recovery is producing larger patch units or many small patches.
+    """
+    d = subset_metric_family(
+        df, metrics=["area_mn"], level=level, class_value=class_value
+    )
+    fig, ax = plt.subplots(figsize=(10, 5.5))
+    sns.lineplot(
+        data=d,
+        x="year",
+        y="value",
+        hue=site_col,
+        marker="o",
+        dashes=False,
+        palette=palette,
+        linewidth=2,
+        markersize=6,
+        ax=ax,
+    )
+    ax.set_title("Area Mn Trajectories By Site")
+    ax.set_xlabel("Year")
+    ax.set_ylabel("Metric Value")
+    ax.legend(
+        title="Site Id",
+        loc="center left",
+        bbox_to_anchor=(1.02, 0.5),
+        frameon=True,
+    )
+    return fig, ax
+
+
+def plot_metric_heatmap(
+    df: object,
+    metric: str,
+    site_col: str = "site_id",
+    level: str = "class",
+    class_value: str | int = 1,
+    cmap: str = "crest",
+    figsize: tuple = (8, 6),
+) -> object:
+    """
+    Plot a site-by-year heatmap for one selected metric.
+    This is useful for quickly spotting the strongest temporal shifts and cross-site contrasts.
+    """
+    d = subset_metric_family(
+        df, metrics=[metric], level=level, class_value=class_value
+    )
+    M = d.pivot_table(
+        index=site_col, columns="year", values="value", aggfunc="mean"
+    ).sort_index()
+
+    fig, ax = plt.subplots(figsize=figsize)
+    sns.heatmap(
+        M, cmap=cmap, linewidths=0.4, cbar_kws={"label": "Metric Value"}, ax=ax
+    )
+    ax.set_title(
+        format_metric_labels(pd.DataFrame({"metric": [metric]}))["metric"].iloc[
+            0
+        ]
+        + " By Site And Year"
+    )
+    ax.set_xlabel("Year")
+    ax.set_ylabel("Site Id")
+    return fig, ax
+
+
+def plot_metric_small_multiples(
+    df: object,
+    metrics: list[str],
+    site_col: str = "site_id",
+    level: str = "class",
+    class_value: str | int = 1,
+    palette: str = "muted",
+    col_wrap: int = 2,
+) -> object:
+    """
+    Plot several selected metrics as compact site-by-year small multiples.
+    This is useful for building a concise recovery dashboard from a chosen subset of new metrics.
+    """
+    d = subset_metric_family(
+        df, metrics=metrics, level=level, class_value=class_value
+    )
+    d = format_metric_labels(d)
+
+    g = sns.relplot(
+        data=d,
+        x="year",
+        y="value",
+        hue=site_col,
+        col="metric",
+        kind="line",
+        marker="o",
+        dashes=False,
+        palette=palette,
+        linewidth=2,
+        markersize=6,
+        col_wrap=col_wrap,
+        facet_kws={"sharex": True, "sharey": False},
+        height=4,
+        aspect=1.35,
+    )
+    g.set_axis_labels("Year", "Metric Value")
+    g.set_titles("{col_name}")
+    g.fig.subplots_adjust(top=0.88)
+    g.fig.suptitle("Metric Trajectories By Site")
+    return g
 
 
 def baseline_deltas(

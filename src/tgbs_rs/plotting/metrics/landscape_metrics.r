@@ -66,18 +66,41 @@ safe_check_landscape <- function(r, raster_name = NA_character_) {
 }
 
 calc_metrics_for_raster <- function(r, raster_name) {
+  landscape_metrics <- c(
+    "lsm_l_np",
+    "lsm_l_pd",
+    "lsm_l_ed",
+    "lsm_l_lpi",
+    "lsm_l_shdi",
+    "lsm_l_ai",
+    "lsm_l_area_mn",
+    "lsm_l_shape_mn",
+    "lsm_l_core_mn",
+    "lsm_l_tca",
+    "lsm_l_proxim_mn"
+  )
+
+  class_metrics <- c(
+    "lsm_c_ca",
+    "lsm_c_pland",
+    "lsm_c_np",
+    "lsm_c_pd",
+    "lsm_c_ed",
+    "lsm_c_lpi",
+    "lsm_c_area_mn",
+    "lsm_c_shape_mn",
+    "lsm_c_core_mn",
+    "lsm_c_cpland",
+    "lsm_c_tca",
+    "lsm_c_enn_mn",
+    "lsm_c_proxim_mn"
+  )
+
   lsm_landscape <- tryCatch(
     {
       landscapemetrics::calculate_lsm(
         landscape = r,
-        what = c(
-          "lsm_l_np",
-          "lsm_l_pd",
-          "lsm_l_ed",
-          "lsm_l_lpi",
-          "lsm_l_shdi",
-          "lsm_l_ai"
-        )
+        what = landscape_metrics
       ) %>%
         mutate(metric_level = "landscape")
     },
@@ -91,14 +114,7 @@ calc_metrics_for_raster <- function(r, raster_name) {
     {
       landscapemetrics::calculate_lsm(
         landscape = r,
-        what = c(
-          "lsm_c_ca",
-          "lsm_c_pland",
-          "lsm_c_np",
-          "lsm_c_pd",
-          "lsm_c_ed",
-          "lsm_c_lpi"
-        )
+        what = class_metrics
       ) %>%
         mutate(metric_level = "class")
     },
