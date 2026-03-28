@@ -1,6 +1,6 @@
 import ee
 
-from tgbs_rs.config import S2_SCALE_FACTOR, S2_SR_COLLECTION
+from tgbs_rs.config.config import S2_SCALE_FACTOR, S2_SR_COLLECTION
 from tgbs_rs.data.sensors.sentinel.sentinel_masking import (
     build_cloudfree_s2sr_col,
     build_s2_non_water_mask,

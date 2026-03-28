@@ -1,6 +1,6 @@
 import ee
 
-from tgbs_rs.config import (
+from tgbs_rs.config.config import (
     BII_1KM,
     BII_MASK,
     ESA,

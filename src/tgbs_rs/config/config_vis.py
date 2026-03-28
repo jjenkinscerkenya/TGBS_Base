@@ -140,6 +140,157 @@ S2_VIS_PARAMS = {
     },
 }
 
+DELTA_VIS = {
+    "NBR": {
+        "min": -0.5,
+        "max": 0.5,
+        "palette": ["#8c510a", "#d8b365", "#f5f5f5", "#5ab4ac", "#01665e"],
+    },
+    "NDMI": {
+        "min": -0.5,
+        "max": 0.5,
+        "palette": ["#8c510a", "#d8b365", "#f5f5f5", "#5ab4ac", "#01665e"],
+    },
+    "NDVI": {
+        "min": -0.8,
+        "max": 0.8,
+        "palette": ["#8c510a", "#d8b365", "#f5f5f5", "#5ab4ac", "#01665e"],
+    },
+    "NIRv": {
+        "min": -0.3,
+        "max": 0.3,
+        "palette": ["#8c510a", "#d8b365", "#f5f5f5", "#5ab4ac", "#01665e"],
+    },
+    "SAVI": {
+        "min": -0.5,
+        "max": 0.5,
+        "palette": ["#8c510a", "#d8b365", "#f5f5f5", "#5ab4ac", "#01665e"],
+    },
+}
+
+SLOPE_VIS = {
+    "NBR": {
+        "min": -0.05,
+        "max": 0.05,
+        "palette": ["#8c510a", "#d8b365", "#f5f5f5", "#5ab4ac", "#01665e"],
+    },
+    "NDMI": {
+        "min": -0.04,
+        "max": 0.04,
+        "palette": ["#8c510a", "#d8b365", "#f5f5f5", "#5ab4ac", "#01665e"],
+    },
+    "NDVI": {
+        "min": -0.04,
+        "max": 0.04,
+        "palette": ["#8c510a", "#d8b365", "#f5f5f5", "#5ab4ac", "#01665e"],
+    },
+    "NIRv": {
+        "min": -0.015,
+        "max": 0.015,
+        "palette": ["#8c510a", "#d8b365", "#f5f5f5", "#5ab4ac", "#01665e"],
+    },
+    "SAVI": {
+        "min": -0.04,
+        "max": 0.04,
+        "palette": ["#8c510a", "#d8b365", "#f5f5f5", "#5ab4ac", "#01665e"],
+    },
+}
+
+Z_ANOMALY_VIS = {
+    "NBR": {
+        "min": -2.5,
+        "max": 2.5,
+        "palette": ["#8c510a", "#d8b365", "#f5f5f5", "#5ab4ac", "#01665e"],
+    },
+    "NDMI": {
+        "min": -2.5,
+        "max": 2.5,
+        "palette": ["#8c510a", "#d8b365", "#f5f5f5", "#5ab4ac", "#01665e"],
+    },
+    "NDVI": {
+        "min": -2.5,
+        "max": 2.5,
+        "palette": ["#8c510a", "#d8b365", "#f5f5f5", "#5ab4ac", "#01665e"],
+    },
+    "NIRv": {
+        "min": -2.5,
+        "max": 2.5,
+        "palette": ["#8c510a", "#d8b365", "#f5f5f5", "#5ab4ac", "#01665e"],
+    },
+    "SAVI": {
+        "min": -2.5,
+        "max": 2.5,
+        "palette": ["#8c510a", "#d8b365", "#f5f5f5", "#5ab4ac", "#01665e"],
+    },
+}
+
+PERCENTILE_ANOMALY_VIS = {
+    "NBR": {
+        "min": 0,
+        "max": 100,
+        "palette": ["#8c510a", "#d8b365", "#f5f5f5", "#5ab4ac", "#01665e"],
+    },
+    "NDMI": {
+        "min": 0,
+        "max": 100,
+        "palette": ["#8c510a", "#d8b365", "#f5f5f5", "#5ab4ac", "#01665e"],
+    },
+    "NDVI": {
+        "min": 0,
+        "max": 100,
+        "palette": ["#8c510a", "#d8b365", "#f5f5f5", "#5ab4ac", "#01665e"],
+    },
+    "NIRv": {
+        "min": 0,
+        "max": 100,
+        "palette": ["#8c510a", "#d8b365", "#f5f5f5", "#5ab4ac", "#01665e"],
+    },
+    "SAVI": {
+        "min": 0,
+        "max": 100,
+        "palette": ["#8c510a", "#d8b365", "#f5f5f5", "#5ab4ac", "#01665e"],
+    },
+}
+
+FIRE_VIS = {
+    "dNBR": {
+        "min": -0.1,
+        "max": 0.6,
+        "palette": [
+            "#f7fcf5",
+            "#c7e9c0",
+            "#74c476",
+            "#fdcc8a",
+            "#fc8d59",
+            "#d7301f",
+        ],
+    },
+    "pre_fire_nbr": {
+        "min": -0.5,
+        "max": 0.8,
+        "palette": [
+            "#8c510a",
+            "#d8b365",
+            "#f6e8c3",
+            "#c7eae5",
+            "#5ab4ac",
+            "#01665e",
+        ],
+    },
+    "post_fire_nbr": {
+        "min": -0.5,
+        "max": 0.8,
+        "palette": [
+            "#8c510a",
+            "#d8b365",
+            "#f6e8c3",
+            "#c7eae5",
+            "#5ab4ac",
+            "#01665e",
+        ],
+    },
+}
+
 # Landsat-8 OLI
 L8_VIS_PARAMS = {
     "TrueColor": {

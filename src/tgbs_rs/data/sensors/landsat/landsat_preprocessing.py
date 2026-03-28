@@ -1,6 +1,6 @@
 import ee
 
-from tgbs_rs.config import (
+from tgbs_rs.config.config import (
     L8_SR_COLLECTION,
     L8_SCALE_FACTOR,
     L8_ADD_OFFSET,

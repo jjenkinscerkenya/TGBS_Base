@@ -2,7 +2,7 @@ import ee
 import json
 from pathlib import Path
 
-from tgbs_rs.config import AOI_PATHS
+from tgbs_rs.config.config import AOI_PATHS
 
 
 def _clip_and_mask_image(image, geometry):
@@ -151,6 +151,92 @@ def build_default_sites_featurecollection():
     )
 
 
+def load_ks_rehab_blocks_featurecollection(
+    geojson_path: str | Path,
+    id_field: str = "id",
+    area_field: str = "area",
+    year_field: str = "year",
+    drop_null_year: bool = True,
+    drop_null_geometry: bool = True,
+) -> ee.FeatureCollection:
+    """
+    Load ks_rehab_blocks.geojson as an ee.FeatureCollection while preserving
+    original per-feature properties such as id, area, and year.
+
+    This loader is intended specifically for block-level analyses where the
+    original GeoJSON features must remain separate. It also handles null id/year
+    values safely.
+
+    Returns
+    -------
+    ee.FeatureCollection
+        FeatureCollection with one feature per GeoJSON feature and preserved
+        properties.
+
+    """
+    path = Path(geojson_path).resolve()
+    if not path.exists():
+        raise FileNotFoundError(f"GeoJSON file not found: {path}")
+
+    with path.open("r", encoding="utf-8") as f:
+        gj = json.load(f)
+
+    if gj.get("type") != "FeatureCollection":
+        raise ValueError(
+            f"Expected a GeoJSON FeatureCollection, got: {gj.get('type')}"
+        )
+
+    ee_features = []
+
+    for i, feat in enumerate(gj.get("features", [])):
+        geometry = feat.get("geometry")
+        properties = feat.get("properties", {}) or {}
+
+        if geometry is None:
+            if drop_null_geometry:
+                continue
+            else:
+                raise ValueError(f"Feature index {i} has null geometry.")
+
+        # Pull original properties safely
+        raw_id = properties.get(id_field, None)
+        raw_area = properties.get(area_field, None)
+        raw_year = properties.get(year_field, None)
+
+        # Skip null-year features if requested
+        if drop_null_year and raw_year is None:
+            continue
+
+        # Build a clean property dict that preserves originals and adds helpers
+        clean_props = dict(properties)
+
+        # Explicit normalized helper fields
+        clean_props["block_id"] = raw_id
+        clean_props["block_area"] = raw_area
+        clean_props["block_year"] = raw_year
+
+        # Convenience cohort field for later filtering
+        if raw_year is None:
+            clean_props["restoration_cohort"] = None
+        elif raw_year <= 2020:
+            clean_props["restoration_cohort"] = "old"
+        elif raw_year >= 2022:
+            clean_props["restoration_cohort"] = "new"
+        else:
+            clean_props["restoration_cohort"] = "other"
+
+        ee_feat = ee.Feature(geometry, clean_props)
+        ee_features.append(ee_feat)
+
+    if not ee_features:
+        raise ValueError(
+            "No valid features were loaded. Check whether all features had null "
+            "geometry or null year values that were dropped."
+        )
+
+    return ee.FeatureCollection(ee_features)
+
+
 def get_sites_geometry(sites_fc):
     """
     Return the merged geometry of a site FeatureCollection.
@@ -173,3 +259,46 @@ def buffer_sites_fc(
             ee.Feature(f)
         )
     )
+
+
+def get_image_min_max(
+    image,
+    geometry,
+    scale=10,
+    band_name=None,
+    max_pixels=1e13,
+    tile_scale=4,
+):
+    """
+    Print the min and max of an ee.Image band within a geometry.
+    Returns a dictionary with band_name, min, and max.
+    """
+    if hasattr(geometry, "geometry"):
+        geometry = geometry.geometry()
+
+    if band_name is None:
+        band_name = image.bandNames().get(0).getInfo()
+
+    stats = (
+        image.select([band_name])
+        .reduceRegion(
+            reducer=ee.Reducer.minMax(),
+            geometry=geometry,
+            scale=scale,
+            maxPixels=max_pixels,
+            tileScale=tile_scale,
+        )
+        .getInfo()
+    )
+
+    min_val = stats.get(f"{band_name}_min")
+    max_val = stats.get(f"{band_name}_max")
+
+    print(f"{band_name} min: {min_val}")
+    print(f"{band_name} max: {max_val}")
+
+    return {
+        "band_name": band_name,
+        "min": min_val,
+        "max": max_val,
+    }

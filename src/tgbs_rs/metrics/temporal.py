@@ -8,7 +8,9 @@ from tgbs_rs.config.specs import (
     get_seasonal_plot_order,
     make_annual_title,
     make_seasonal_title,
-    get_metric_label,
+)
+
+from tgbs_rs.visualization.plots import (
     set_plot_theme,
     plot_focal_vs_envelope,
     plot_category_mean_trajectories,
@@ -25,15 +27,8 @@ from tgbs_rs.visualization.tables import (
     add_standardized_anomalies,
     summarize_baseline_vs_current,
     compute_site_trends,
+    filter_season_table,
 )
-
-from tgbs_rs.metrics.temporal import (
-    set_plot_theme,
-    plot_focal_vs_envelope,
-    plot_category_mean_trajectories,
-)
-
-from tgbs_rs.visualization.tables import filter_season_table
 
 
 def _validate_composite_stat(composite_stat: str) -> None:

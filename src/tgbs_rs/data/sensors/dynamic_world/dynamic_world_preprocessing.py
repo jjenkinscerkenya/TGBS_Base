@@ -1,6 +1,6 @@
 import ee
 
-from tgbs_rs.config import DYNAMIC_WORLD, DW_WOODY_BANDS
+from tgbs_rs.config.config import DYNAMIC_WORLD, DW_WOODY_BANDS
 from tgbs_rs.metrics import build_period_composites
 
 

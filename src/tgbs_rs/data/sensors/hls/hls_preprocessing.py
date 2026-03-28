@@ -1,6 +1,6 @@
 import ee
 
-from tgbs_rs.config import (
+from tgbs_rs.config.config import (
     HLS_L30_COLLECTION,
     HLS_S30_COLLECTION,
     HLS_SCALE_FACTOR,

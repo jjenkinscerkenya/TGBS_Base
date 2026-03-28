@@ -292,6 +292,68 @@ def export_image_to_asset(
     print("Export started:", task.status())
 
 
+def export_spatial_products_to_drive(
+    spatial_products: dict,
+    aoi: ee.Geometry,
+    folder: str,
+    scale: int = 10,
+    crs: str = "EPSG:4326",
+    prefix: str = "s2",
+):
+    """
+    Export all ee.Images in a nested spatial_products dictionary to Google Drive.
+
+    Expected structure
+    ------------------
+    spatial_products = {
+        "NBR": {
+            "baseline_mean": ee.Image,
+            "current_mean": ee.Image,
+            "delta": ee.Image,
+            ...
+        },
+        "NDMI": {
+            "delta": ee.Image,
+            ...
+        },
+    }
+
+    Returns
+    -------
+    dict
+        Nested dictionary of started EE export tasks with the same keys.
+    """
+    tasks = {}
+
+    for index_name, product_dict in spatial_products.items():
+        tasks[index_name] = {}
+
+        for product_name, image in product_dict.items():
+            if not isinstance(image, ee.Image):
+                continue
+
+            index_slug = str(index_name).lower()
+            product_slug = str(product_name).lower()
+
+            description = f"{prefix}_{index_slug}_{product_slug}"
+            file_prefix = description
+
+            task = export_image_to_drive(
+                image=image,
+                aoi=aoi,
+                description=description,
+                folder=folder,
+                file_prefix=file_prefix,
+                scale=scale,
+                crs=crs,
+            )
+
+            tasks[index_name][product_name] = task
+            print(f"Started export: {description}")
+
+    return tasks
+
+
 def export_table_to_drive(
     collection: ee.FeatureCollection,
     description: str,

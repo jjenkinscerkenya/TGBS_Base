@@ -15,6 +15,10 @@ Hengl, T., Miller, M.A.E., Križan, J., et al. African soil properties and nutri
 Clements, H.S., Biggs, R., De Vos, A. et al. A place-based assessment of biodiversity intactness in sub-Saharan Africa.
 Nature (2025). https://doi.org/10.1038/s41586-025-09781-7
 
+## Spatial Change Interpretation
+Positive delta values indicate that the index is higher in the current period than in the baseline period, which is interpreted as a relative increase in the biophysical property represented by that index at a given pixel, whereas negative delta values indicate that the index is lower in the current period than in the baseline period, reflecting a relative decline from baseline conditions. The ecological meaning of the sign depends on the index itself: for vegetation and productivity metrics such as NDVI, SAVI, and NIRv, positive deltas generally suggest increased vegetation cover, vigor, or productivity, while negative deltas suggest reduced cover or productivity; for NDMI, positive deltas generally indicate wetter or less water-stressed vegetation conditions, while negative deltas indicate drying or moisture loss; for NBR, positive deltas generally indicate recovery or increased vegetation condition, while negative deltas indicate disturbance, biomass loss, or burn-related decline. Accordingly, positive and negative delta values should not be interpreted as universally “good” or “bad” in isolation, but rather as directional measures of change whose significance must be evaluated in relation to the specific index, the local disturbance history, restoration timing, and corroborating spatial patterns such as known fire-affected or restoration-treatment blocks.
+
+
 ## Handling Seasonal Tables
 Seasonal information summary for documentation
 
@@ -756,98 +760,6 @@ Please provide:
 4. guidance on how to derive reference-relative statistics from multiple reference sites
 5. the recommended first raster products to generate for contract reporting
 6. the best naming conventions and export strategy for raster outputs
-
-Use the existing repo structure and function names exactly where relevant.
-
-
-# 7. Landscape structure and landscape metrics
-
-You are a Remote Sensing and Google Earth Engine expert helping continue an existing TGBS biodiversity verification workflow for East African rangelands.
-
-## Project context
-The project compares:
-- 1 focal site
-- 3 reference sites
-- 3 degraded sites
-
-Date windows:
-- `BASELINE_START = "2014-01-01"`
-- `BASELINE_END = "2017-12-31"`
-- `CURRENT_START = "2018-01-01"`
-- `CURRENT_END = "2025-12-31"`
-
-The contract requires landscape metrics including:
-- connectivity
-- fragmentation
-- patch size
-- edge effects
-
-## Current repository capabilities
-Site polygons and metadata:
-- `build_default_sites_featurecollection()`
-
-Processed collections:
-- `get_s2_sr_collection()`
-- `get_l8_sr_collection()`
-- `get_hls_merged_collection()`
-
-Compositing utilities:
-- `build_period_composites()`
-- `build_annual_band_composites()`
-- `build_monthly_band_composites()`
-- `build_annual_multiband_composites()`
-
-There is not yet a dedicated module for structural landscape metrics.
-
-## Analysis goal
-Design a practical landscape-structure workflow using remote-sensing-derived vegetation masks and period summaries.
-
-Likely base layers:
-- thresholded `NDVI`
-- thresholded `SAVI`
-- optionally `NIRv` as a stricter support proxy
-
-The workflow should support:
-- baseline vegetation-state masks
-- current vegetation-state masks
-- patch metrics
-- fragmentation metrics
-- edge metrics
-- focal vs reference comparisons
-- focal vs degraded comparisons
-- baseline-to-current structural deltas
-- maps of structural change hotspots
-
-## Required implementation direction
-The analysis should make clear which steps occur:
-- in Earth Engine
-- in exported raster / GIS post-processing if needed
-
-The answer should help determine the cleanest first implementation path and module structure.
-
-Potential modules:
-- `landscape_metrics.py`
-- `spatial_change.py`
-- `comparisons.py`
-
-## Important design constraints
-- Keep methods practical and defensible
-- Avoid overengineering
-- Build from existing composited products where possible
-- Prioritize outputs that best satisfy the contract requirement for structure and fragmentation interpretation
-
-## Requested output
-Please provide:
-1. a concrete implementation plan for landscape structure analysis
-2. the recommended first vegetation mask strategy
-3. the recommended module structure and function list
-4. code or pseudo-code for:
-   - baseline vegetation mask generation
-   - current vegetation mask generation
-   - patch-oriented summary workflow
-   - baseline/current structural comparison summaries
-5. guidance on which metrics are best done in Earth Engine vs downstream GIS
-6. the best first tables, maps, and summary outputs for reporting
 
 Use the existing repo structure and function names exactly where relevant.
 

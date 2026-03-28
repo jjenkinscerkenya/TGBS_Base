@@ -4,7 +4,7 @@ from pathlib import Path
 #################### FILE PATH HANDLING #######################
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
-DATA_DIR = REPO_ROOT / "data"
+DATA_DIR = REPO_ROOT / "aoi"
 OUTPUTS_DIR = REPO_ROOT / "outputs"
 RASTER_DIR = OUTPUTS_DIR / "rasters"
 TABLES_DIR = OUTPUTS_DIR / "tables"
@@ -172,6 +172,8 @@ S2_VEGETATION_INDEX_BANDS = ["NDVI", "EVI", "SAVI", "NIRv", "NDRE"]
 S2_MOISTURE_INDEX_BANDS = ["NDMI", "NDWI", "MNDWI"]
 S2_DISTURBANCE_INDEX_BANDS = ["NBR"]
 
+PRIORITY_INDICES = ["NBR", "NDMI", "NDVI", "NIRv", "SAVI"]
+
 #################### LANDSAT VARIABLES #########################
 # Core optical SR bands used for the translated workflow
 L8_BANDS = ["SR_B2", "SR_B3", "SR_B4", "SR_B5", "SR_B6", "SR_B7"]
@@ -288,6 +290,7 @@ DEFAULT_FILE_FORMAT = "GeoTIFF"
 DEFAULT_CRS = "EPSG:4326"
 DRIVE_FOLDER = "TGBS_Kwale_Baseline"
 LAND_METRICS_DRIVE_FOLDER = "TGBS_Kwale_Landscape_Metrics"
+SPATIAL_CHANGE_DRIVE_FOLDER = "TGBS_Kwale_Spatial_Change"
 
 PLOTTING_SCALE_DICT = {
     "hillshade": 30,

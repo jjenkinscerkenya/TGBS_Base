@@ -12,13 +12,13 @@ import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 
-from tgbs_rs.config import (
+from tgbs_rs.config.config import (
     ESA_CLASS_VALUES,
     ESA_CLASS_NAMES,
     DATA_DIR,
     RASTER_DIR,
 )
-from tgbs_rs.config import BASELINE_VIS_PARAMS
+from tgbs_rs.config.config_vis import BASELINE_VIS_PARAMS
 
 
 sns.set_theme(style="whitegrid", context="talk")
