@@ -1,5 +1,7 @@
 ## References
 
+Masek, J., Ju, J., Roger, J., Skakun, S., Vermote, E., Claverie, M., Dungan, J., Yin, Z., Freitag, B., Justice, C. (2021). HLS Operational Land Imager Surface Reflectance and TOA Brightness Daily Global 30m v2.0 [Data set]. NASA EOSDIS Land Processes Distributed Active Archive Center. Accessed 2023-09-12 from https://doi.org/10.5067/HLS/HLSL30.002
+
 Tolan, J., Yang, H.I., Nosarzewski, B., Couairon, G., Vo, H.V., Brandt, J., Spore, J., Majumdar, S., Haziza, D., Vamaraju, J. and Moutakanni, T.,
 2024. Very high resolution canopy height maps from RGB imagery using self-supervised vision transformer and convolutional decoder trained on aerial
 lidar. Remote Sensing of Environment, 300, p.113888.
@@ -137,7 +139,7 @@ Section 4 says the remote sensing survey must generate a report for assessors an
 
 Sentinel-2 SR vs Landsat-8
 For TGBS reporting, I would document the workflow like this:
-Core long-term optical archive: Landsat 8 C2 L2 SR (2013–2017) + Sentinel-2 SR Harmonized (2017–present)
+Core long-term optical archive: Landsat 8 C2 L2 SR (2013–2017) + Sentinel-2 SR Harmonized (2019–present)
 Common analytical support: 30 m, matched seasonal windows, matched site categories
 Cross-sensor harmonization step: overlap-year regression / bias analysis per metric
 Metric eligibility table: “fully comparable,” “proxy comparable,” or “Sentinel-era only”

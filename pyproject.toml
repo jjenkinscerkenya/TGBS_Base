@@ -7,6 +7,24 @@ name = "tgbs-rs"
 version = "0.1.0"
 description = "TGBS remote sensing workflow utilities"
 requires-python = ">=3.10"
+dependencies = [
+  "earthengine-api",
+  "geemap",
+  "geopandas",
+  "Shapely",
+  "pandas",
+  "numpy",
+  "matplotlib",
+]
+
+[project.optional-dependencies]
+dev = [
+  "jupyter",
+  "ipykernel",
+  "pytest",
+  "black",
+  "ruff",
+]
 
 [tool.setuptools]
 package-dir = {"" = "src"}

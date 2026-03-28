@@ -2,7 +2,7 @@ import ee
 import json
 from pathlib import Path
 
-from tgbs_rs.config.config import AOI_PATHS
+from tgbs_rs.config import AOI_PATHS
 
 
 def _clip_and_mask_image(image, geometry):

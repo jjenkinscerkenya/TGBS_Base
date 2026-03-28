@@ -1,12 +1,22 @@
 from pathlib import Path
 
 
+#################### FILE PATH HANDLING #######################
+
 REPO_ROOT = Path(__file__).resolve().parents[3]
 DATA_DIR = REPO_ROOT / "data"
 OUTPUTS_DIR = REPO_ROOT / "outputs"
 RASTER_DIR = OUTPUTS_DIR / "rasters"
 TABLES_DIR = OUTPUTS_DIR / "tables"
-LANDSCAPE_RASTER_DIR = OUTPUTS_DIR / "rasters" / "landscape_metrics"
+LANDSCAPE_RASTER_DIR = RASTER_DIR / "landscape_metrics"
+
+# Output directory names
+OUTPUT_DIRS = {
+    "plots": OUTPUTS_DIR / "plots",
+    "maps": OUTPUTS_DIR / "maps",
+    "tables": OUTPUTS_DIR / "tables",
+    "rasters": OUTPUTS_DIR / "rasters",
+}
 
 #################### AOI BOUNDARIES ##########################
 AOI_PATHS = {
@@ -18,14 +28,6 @@ AOI_PATHS = {
     "degraded_1": DATA_DIR / "degraded_1_aoi.geojson",
     "degraded_2": DATA_DIR / "degraded_2_aoi.geojson",
     "degraded_3": DATA_DIR / "degraded_3_aoi.geojson",
-}
-
-# Output directory names
-OUTPUT_DIRS = {
-    "plots": OUTPUTS_DIR / "plots",
-    "maps": OUTPUTS_DIR / "maps",
-    "tables": OUTPUTS_DIR / "tables",
-    "rasters": OUTPUTS_DIR / "rasters",
 }
 
 #################### EE DATASETS ##########################
