@@ -31,15 +31,16 @@ from tgbs_rs.visualization.tables import (
 )
 
 
-def _validate_composite_stat(composite_stat: str) -> None:
+def _validate_composite_stat(composite_stat: str):
     """Validate the requested compositing statistic.
 
     Returns
     -------
     None
     """
-    if composite_stat not in {"median", "mean"}:
-        raise ValueError("composite_stat must be either 'median' or 'mean'")
+    valid = {"mean", "median", "sum"}
+    if composite_stat not in valid:
+        raise ValueError(f"composite_stat must be one of {sorted(valid)}")
 
 
 def _apply_stat(
@@ -51,9 +52,13 @@ def _apply_stat(
     -------
     ee.Image
     """
-    return (
-        collection.median() if composite_stat == "median" else collection.mean()
-    )
+    if composite_stat == "mean":
+        return collection.mean()
+    if composite_stat == "median":
+        return collection.median()
+    if composite_stat == "sum":
+        return collection.sum()
+    raise ValueError(f"Unsupported composite_stat: {composite_stat}")
 
 
 def _time_windows(
@@ -287,6 +292,74 @@ def build_index_timeseries(
         )
         for band, col in collections.items()
     }
+
+
+def reduce_image_over_region(
+    image: ee.Image,
+    region: ee.Geometry,
+    bands: list[str],
+    reducer: ee.Reducer | None = None,
+    scale: int = 5566,
+    tile_scale: int = 4,
+) -> ee.Feature:
+    """
+    Reduce one image over a single region geometry and return a Feature with
+    the reduced band values plus key image properties.
+    """
+    image = ee.Image(image).select(bands)
+    reducer = reducer or ee.Reducer.mean()
+
+    stats = image.reduceRegion(
+        reducer=reducer,
+        geometry=region,
+        scale=scale,
+        maxPixels=1e13,
+        tileScale=tile_scale,
+    )
+
+    props = ee.Dictionary(
+        {
+            "date": image.get("date"),
+            "year": image.get("year"),
+            "month": image.get("month"),
+            "day": image.get("day"),
+            "image_count": image.get("image_count"),
+            "temporal_scale": image.get("temporal_scale"),
+            "composite_stat": image.get("composite_stat"),
+            "system_time_start": image.get("system:time_start"),
+        }
+    ).combine(stats, overwrite=True)
+
+    return ee.Feature(None, props)
+
+
+def collection_to_region_timeseries(
+    collection: ee.ImageCollection,
+    region: ee.Geometry,
+    bands: list[str],
+    reducer: ee.Reducer | None = None,
+    scale: int = 5566,
+    tile_scale: int = 4,
+) -> ee.FeatureCollection:
+    """
+    Reduce every image in a collection over a single region geometry and return
+    a long-format FeatureCollection.
+    """
+    collection = ee.ImageCollection(collection)
+    reducer = reducer or ee.Reducer.mean()
+
+    fc = collection.map(
+        lambda image: reduce_image_over_region(
+            image=ee.Image(image),
+            region=region,
+            bands=bands,
+            reducer=reducer,
+            scale=scale,
+            tile_scale=tile_scale,
+        )
+    )
+
+    return ee.FeatureCollection(fc)
 
 
 ################################### Annual Metrics ############################################

@@ -97,3 +97,8 @@ Thumbs.db
 .env
 .env.*
 *.local
+
+# -----------------------------
+# TIF sidecar files
+# -----------------------------
+.tif.aux.xml

@@ -8,6 +8,7 @@ import rasterio
 from rasterio.features import geometry_mask
 import seaborn as sns
 import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
 
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
@@ -1295,3 +1296,66 @@ def order_sites(
         out[site_col], categories=order, ordered=True
     )
     return out
+
+
+def plot_annual_total_precipitation(
+    df: pd.DataFrame,
+    date_col: str = "date",
+    precip_col: str = "precipitation",
+    figsize: tuple = (10, 5),
+):
+    """
+    Plot annual total precipitation as a clean lineplot.
+    """
+    d = df.copy()
+    d[date_col] = pd.to_datetime(d[date_col])
+    d = d.sort_values(date_col)
+
+    fig, ax = plt.subplots(figsize=figsize)
+
+    sns.lineplot(
+        data=d,
+        x=date_col,
+        y=precip_col,
+        linewidth=2,
+        ax=ax,
+    )
+
+    plt.xlabel("Date", labelpad=10)
+    plt.ylabel("Precipitation (mm)", labelpad=10)
+    ax.set_title("Annual Total Rainfall", pad=12)
+    plt.tight_layout()
+
+    return fig, ax
+
+
+def plot_monthly_total_precipitation(
+    df: pd.DataFrame,
+    date_col: str = "date",
+    precip_col: str = "precipitation",
+    figsize: tuple = (12, 5),
+):
+    """
+    Plot monthly total precipitation as a clean lineplot with monthly date labels.
+    """
+    d = df.copy()
+    d[date_col] = pd.to_datetime(d[date_col])
+    d = d.sort_values(date_col)
+
+    fig, ax = plt.subplots(figsize=figsize)
+
+    sns.lineplot(
+        data=d,
+        x=date_col,
+        y=precip_col,
+        linewidth=1.8,
+        ax=ax,
+    )
+
+    plt.xlabel("Date", labelpad=10)
+    plt.ylabel("Precipitation (mm)", labelpad=10)
+    ax.set_title("Monthly Total Rainfall", pad=12)
+
+    ax.xaxis.set_major_locator(mdates.MonthLocator(interval=6))
+    ax.xaxis.set_major_formatter(mdates.DateFormatter("%b %Y"))
+    plt.xticks(rotation=45)

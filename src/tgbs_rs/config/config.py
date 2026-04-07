@@ -31,6 +31,10 @@ AOI_PATHS = {
 }
 
 #################### EE DATASETS ##########################
+# CHIRPS Precipitation Daily Reanalysis: Climate Hazards Center InfraRed Precipitation With Station Data
+CHIRPS_COLLECTION = "UCSB-CHC/CHIRPS/V3/DAILY_RNL"
+CHIRPS_PRECIP_BAND = "precipitation"
+
 # Global Biodiversity Intactness Index
 BII_1KM = "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/BII/BII_1km"
 BII_MASK = "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/BII/BII_Mask"
