@@ -116,7 +116,7 @@ This command:
 
 After syncing, repository modules should be importable in notebooks and scripts, for example:
 ```bash
-from tgbs_rs.data.sensors.hls import get_hls_merged_collection
+from tgbs_rs.data.sensors.hls.hls_preprocessing import get_hls_merged_collection
 ```
 
 ### Step 4: Activate the Virtual Environment (Optional)
@@ -218,6 +218,11 @@ The framework progresses through these stages:
    ```bash
    earthengine authenticate
    ```
+4. Initialize Earth Engine Project:
+  ```bash
+  ee.Initialize(project="GEE_PROJECT") 
+  ```
+  The project variable **MUST** be set to your registered Earth Engine Project. The GEE_PROJECT variable is located in **`tgbs_rs/config/config.py`** 
 
 ### Data Preparation (Earth Engine Notebooks)
 
@@ -273,7 +278,7 @@ jupyter notebook
 | Issue | Solution |
 |-------|----------|
 | "Module not found" | Run `uv pip install -e .` and verify `(.venv)` is active |
-| "Authentication failed" | Re-run `earthengine authenticate` |
+| "Authentication failed" | Re-run `earthengine authenticate` this may need to be done **BEFORE** `import ee`|
 | Notebook hangs | Earth Engine queues are slow; try off-peak hours |
 | CSV export fails | Check `outputs/tables/` exists and you have write permissions |
 
