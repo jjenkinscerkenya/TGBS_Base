@@ -114,22 +114,14 @@ This command:
 - Installs all core dependencies (earthengine-api, geemap, geopandas, pandas, numpy, matplotlib)
 - Installs optional development dependencies (jupyter, pytest, black, ruff) specified in `--all-groups`
 
-### Step 4: Install the Package in Editable Mode
-
-The `pyproject.toml` file defines the `tgbs_rs` package. Install it in editable mode so that module imports work throughout the repository:
-
+After syncing, repository modules should be importable in notebooks and scripts, for example:
 ```bash
-uv pip install -e .
+from tgbs_rs.data.sensors.hls import get_hls_merged_collection
 ```
 
-This allows you to:
-- Import `tgbs_rs` modules in notebooks and scripts: `from tgbs_rs.data.sensors.hls import get_hls_merged_collection`
-- Edit source code in `src/tgbs_rs/` and have changes immediately reflected
-- Run scripts from any directory without path manipulations
+### Step 4: Activate the Virtual Environment (Optional)
 
-### Step 5: Activate the Virtual Environment
-
-Before using the repository, activate the virtual environment. The activation method depends on your operating system:
+Activation is only needed if you want your shell session to use the repo environment directly. The activation method depends on your operating system:
 
 **On macOS/Linux:**
 ```bash
@@ -148,7 +140,7 @@ source .venv/bin/activate
 
 After activation, you should see `(.venv)` prepended to your terminal prompt.
 
-### Step 6: Verify the Setup
+### Step 5: Verify the Setup
 
 Test that the environment is configured correctly:
 
@@ -171,6 +163,11 @@ jupyter lab
 ```
 
 The Jupyter kernel will automatically use the `.venv` Python interpreter, allowing access to all installed packages and the `tgbs_rs` modules.
+
+### Using Jupyter Notebooks with VSCode
+
+In VS Code, select the Python interpreter (Ctrl + Shift + P) and notebook kernel from the repository .venv
+Ensure that both point to `.venv/Scripts/python.exe`.
 
 ### Reproducibility
 
