@@ -272,6 +272,9 @@ SPATIAL_CHANGE = ["NDVI", "NIRV", "NDMI", "NBR", "SAVI"]
 
 
 #################### GLOBAL VARIABLES ##########################
+# Google Earth Engine Project
+GEE_PROJECT = "charrell-personal"
+
 # Time-series defaults
 S2_BASELINE_START = "2019-01-01"
 BASELINE_START = "2014-01-01"

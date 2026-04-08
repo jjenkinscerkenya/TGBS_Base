@@ -1,19 +1,4 @@
-## References
 
-Masek, J., Ju, J., Roger, J., Skakun, S., Vermote, E., Claverie, M., Dungan, J., Yin, Z., Freitag, B., Justice, C. (2021). HLS Operational Land Imager Surface Reflectance and TOA Brightness Daily Global 30m v2.0 [Data set]. NASA EOSDIS Land Processes Distributed Active Archive Center. Accessed 2023-09-12 from https://doi.org/10.5067/HLS/HLSL30.002
-
-Tolan, J., Yang, H.I., Nosarzewski, B., Couairon, G., Vo, H.V., Brandt, J., Spore, J., Majumdar, S., Haziza, D., Vamaraju, J. and Moutakanni, T.,
-2024. Very high resolution canopy height maps from RGB imagery using self-supervised vision transformer and convolutional decoder trained on aerial
-lidar. Remote Sensing of Environment, 300, p.113888.
-
-Hansen, M. C., P. V. Potapov, R. Moore, M. Hancher, S. A. Turubanova, A. Tyukavina, D. Thau, S. V. Stehman, S. J. Goetz, T. R. Loveland, A. Kommareddy, A. Egorov, L. Chini, C. O. Justice, and J. R. G. Townshend. 2013. "High-Resolution Global Maps of 21st-Century Forest Cover Change." Science 342 (15 November): 850-53. 10.1126/science.1244693 Data available on-line at: https://glad.earthengine.app/view/global-forest-change.
-
-Brown, C.F., Brumby, S.P., Guzder-Williams, B. et al. Dynamic World, Near real-time global 10 m land use land cover mapping. Sci Data 9, 251 (2022). doi:10.1038/s41597-022-01307-4
-
-Hengl, T., Miller, M.A.E., Križan, J., et al. African soil properties and nutrients mapped at 30 m spatial resolution using two-scale ensemble machine learning. Sci Rep 11, 6130 (2021). doi:10.1038/s41598-021-85639-y
-
-Clements, H.S., Biggs, R., De Vos, A. et al. A place-based assessment of biodiversity intactness in sub-Saharan Africa.
-Nature (2025). https://doi.org/10.1038/s41586-025-09781-7
 
 ## Spatial Change Interpretation
 Positive delta values indicate that the index is higher in the current period than in the baseline period, which is interpreted as a relative increase in the biophysical property represented by that index at a given pixel, whereas negative delta values indicate that the index is lower in the current period than in the baseline period, reflecting a relative decline from baseline conditions. The ecological meaning of the sign depends on the index itself: for vegetation and productivity metrics such as NDVI, SAVI, and NIRv, positive deltas generally suggest increased vegetation cover, vigor, or productivity, while negative deltas suggest reduced cover or productivity; for NDMI, positive deltas generally indicate wetter or less water-stressed vegetation conditions, while negative deltas indicate drying or moisture loss; for NBR, positive deltas generally indicate recovery or increased vegetation condition, while negative deltas indicate disturbance, biomass loss, or burn-related decline. Accordingly, positive and negative delta values should not be interpreted as universally “good” or “bad” in isolation, but rather as directional measures of change whose significance must be evaluated in relation to the specific index, the local disturbance history, restoration timing, and corroborating spatial patterns such as known fire-affected or restoration-treatment blocks.
@@ -29,7 +14,7 @@ For each site and year, wet- and dry-season productivity metrics were computed f
 These seasonal products will be used to distinguish interannual ecological change from normal seasonal variation. In particular, they support focal-versus-reference and focal-versus-degraded seasonal comparisons, help assess whether the focal site is moving toward or away from intact seasonal behavior, and provide an auditable basis for interpreting disturbance and recovery dynamics.
 
 
-# Landscape Metrics Calculations
+## Landscape Metrics Calculations
 The shimba_hills 2022 site-year raster was excluded from the primary landscape-metrics analysis because valid pixel coverage was approximately 55%, substantially lower than the other site-years, which were near complete coverage. This level of masking was considered likely to distort patch configuration and fragmentation metrics by introducing artificial gaps and patch breaks, so the site-year was omitted under the study’s raster quality-control rule.
 
 AI (Aggregation Index) measures how spatially clumped or aggregated patches of the same class are. Higher AI means cells of the same class are more often adjacent to one another, so the class is forming more continuous, consolidated areas rather than being broken into scattered pieces. In ecological terms, increasing AI often suggests stronger structural cohesion or connectivity within a class, while decreasing AI suggests that the class is becoming more dispersed or fragmented across the landscape.
@@ -57,7 +42,7 @@ For class-level ED, the metric measures the amount of edge associated with a spe
 For class-level LPI, the metric measures how much of the landscape is occupied by the single largest patch of that specific class. A high value means one patch of that class is especially dominant, while a low value means the class is spread among smaller patches without one strongly dominant patch. This is useful for distinguishing whether increases in class area come from one major block or from many smaller pieces.
 
 
-### Summary of Landscape Metrics Results:
+## Summary of Landscape Metrics Results:
 AI (Aggregation Index). AI is highest and most stable at buda and shimba_hills, showing that those landscapes have the most spatially consolidated patch structure, with cells of the same class occurring in strongly clumped blocks. Gogoni is somewhat lower but still relatively aggregated. The degraded sites, especially degraded_3, have the lowest AI, indicating more broken and spatially dispersed patterning. Ks_rehab also trends downward, but with the mining context this should be interpreted differently: rather than simply worsening fragmentation, the decline in AI after 2021 likely reflects the site shifting from active mining surfaces into a more heterogeneous rehabilitation mosaic, where recovering woody patches and disturbed ground are interspersed.
 
 ED (Edge Density). Edge density is lowest at buda and shimba_hills, which is consistent with smoother, less fragmented patch boundaries and a more cohesive woody landscape. Gogoni is intermediate, while all three degraded sites have much higher ED, especially degraded_3, indicating far more fragmented and edge-rich structure. Ks_rehab also shows elevated and increasing ED, but in this case the increase after the mining period is plausibly explained by rehabilitation creating many new boundaries between recovering vegetation, bare ground, and residual disturbed surfaces. So for ks_rehab, higher ED likely reflects early-stage landscape reorganization rather than just ecological decline.
@@ -83,683 +68,75 @@ Class-level ED. Woody edge density is low where woody patches are large and smoo
 Class-level LPI. For woody cover, class-level LPI is high at buda, gogoni, and shimba_hills, showing that one large woody patch dominates each site. The degraded sites are generally lower, which indicates weaker woody dominance and greater subdivision. Ks_rehab declines over time as well, suggesting that the largest woody patch loses dominance through the mining and rehabilitation period. In context, that is compatible with a site shifting from a disturbed or simplified state into a more patchy recovering one, but not yet back to a consolidated woody landscape.
 
 Overall, the cross-site pattern remains clear: buda and shimba_hills are the most spatially consolidated and woody-dominated landscapes, gogoni is somewhat intermediate but still relatively intact, and the degraded sites are more fragmented, less aggregated, and less woody-dominated. Ks_rehab is best understood separately from both the degraded and reference sites: its trends reflect a landscape that moved through active mining disturbance from 2018–2021 and then into an early rehabilitation phase from 2021–2025, producing increasing patchiness, edge, and class mixing that are consistent with landscape reorganization during recovery, not yet recovery completion.
+
+
+## Rainfall Data
+The precipitation series shows a clear bimodal rainfall regime, which is consistent with the expected climate of coastal Kenya: a primary long-rains season in March–May and a secondary short-rains season in October–December.
+
+At the annual scale, rainfall totals vary substantially across the 2014–2025 series, ranging from about 919 mm in 2022 to about 2,230 mm in 2023. The baseline years (2014–2017) were comparatively moderate and less variable, averaging about 1,277 mm/year, whereas the more recent complete current-period years (2018–2024) were wetter on average, about 1,578 mm/year, and considerably more variable. This suggests that the current-period environmental context was not simply wetter or drier overall, but more hydrologically volatile, with distinct wet and dry departures that could plausibly affect vegetation response and the interpretation of biodiversity-condition trajectories.
+
+The monthly series reinforces this interpretation. The strongest and most recurrent rainfall peak occurs in April–May, with April averaging about 249 mm and May about 290 mm across 2018–2025. A second peak occurs in October–November, with particularly high interannual variability in November. This seasonal structure is ecologically important because it indicates that site condition should be interpreted against a background of pulsed moisture availability rather than uniform annual recharge. The monthly data also show that rainfall does not fall to zero for the entire dry season; instead, there is typically a weaker but still meaningful contribution through mid-year, which is consistent with coastal Kenya’s more humid maritime setting.
+
+Several years stand out as notable anomalies. 2022 was the driest year in the annual record and appears to represent a pronounced rainfall deficit relative to both the baseline and the surrounding current-period years. In contrast, 2023 was an exceptionally wet year and is the clearest positive outlier in the record. The monthly series shows that this was driven especially strongly by the short rains, with November 2023 reaching about 810 mm, by far the wettest month in the dataset.
+
+Other secondary anomalies are also evident. The long rains of 2020 were notably strong, with April 2020 and May 2020 both well above the multi-year monthly average, while 2019 combined a very wet May with an unusually strong October, producing one of the wetter years overall. Conversely, 2024 returned to a relatively dry annual total after the extreme wetness of 2023, indicating that the 2023 peak was not the start of a sustained upward trend so much as an episodic high-rainfall year within a highly variable recent period.
+
+Overall, the rainfall record indicates that the study region experienced a seasonally coherent but highly variable hydroclimatic regime, with especially strong departures in 2022 and 2023. For interpretation of biodiversity and vegetation trajectories, this means that observed site-level change should not be attributed only to management or degradation history without considering the strong influence of interannual rainfall variability, particularly the intensity or failure of the MAM and OND seasons.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ########################################################################
 
-## Development Notes
+## References
 
-1. Site model completion
-Add at least one degraded site and make site_category formally constrained to focal | reference | degraded. This is foundational for every later comparison step. TGBS explicitly expects all three site types in the remote sensing survey design.
+Masek, J., Ju, J., Roger, J., Skakun, S., Vermote, E., Claverie, M., Dungan, J., Yin, Z., Freitag, B., Justice, C. (2021). HLS Operational Land Imager Surface Reflectance and TOA Brightness Daily Global 30m v2.0 [Data set]. NASA EOSDIS Land Processes Distributed Active Archive Center. Accessed 2023-09-12 from https://doi.org/10.5067/HLS/HLSL30.002
 
-2. Comparison layer
-Add a new module centered on grouped comparisons, something like comparisons.py, with functions for:
-focal vs reference envelopes
-focal vs degraded envelopes
-reference baseline ranges
-site-category grouped summaries
-standardized baseline-to-current deltas
-This is where the repo becomes explicitly TGBS-oriented rather than just a general EO workflow.
+Tolan, J., Yang, H.I., Nosarzewski, B., Couairon, G., Vo, H.V., Brandt, J., Spore, J., Majumdar, S., Haziza, D., Vamaraju, J. and Moutakanni, T.,
+2024. Very high resolution canopy height maps from RGB imagery using self-supervised vision transformer and convolutional decoder trained on aerial
+lidar. Remote Sensing of Environment, 300, p.113888.
 
-3. Temporal products layer
-Your monthly composites are a good core product, but TGBS interpretation will benefit from additional derived summaries:
-baseline period summaries
-current period summaries
-annual dry-season summaries
-annual wet-season summaries
-trend statistics per site
-TGBS stresses distinguishing real ecological trajectories from normal seasonal variation, especially through interpretation relative to reference-site temporal patterns.
+Hansen, M. C., P. V. Potapov, R. Moore, M. Hancher, S. A. Turubanova, A. Tyukavina, D. Thau, S. V. Stehman, S. J. Goetz, T. R. Loveland, A. Kommareddy, A. Egorov, L. Chini, C. O. Justice, and J. R. G. Townshend. 2013. "High-Resolution Global Maps of 21st-Century Forest Cover Change." Science 342 (15 November): 850-53. 10.1126/science.1244693 Data available on-line at: https://glad.earthengine.app/view/global-forest-change.
 
-4. Spatial change layer
-Add explicit raster outputs for:
-baseline mean
-current mean
-current minus baseline
-trend slope
-z-score or percentile anomaly relative to reference behavior
-This will satisfy the TGBS requirement for spatial analysis and heat maps of where change is strongest.
+Brown, C.F., Brumby, S.P., Guzder-Williams, B. et al. Dynamic World, Near real-time global 10 m land use land cover mapping. Sci Data 9, 251 (2022). doi:10.1038/s41597-022-01307-4
 
-5. Interpretation and limitations layer
-Add a reporting schema or markdown generator that records:
-indicator type
-ecological interpretation
-whether it is direct or indirect
-spatial/spectral/temporal resolution considerations
-seasonal caveats
-known limitations for the site
-TGBS explicitly requires these limitations to be identified and considered before assessment conclusions are made.
+Hengl, T., Miller, M.A.E., Križan, J., et al. African soil properties and nutrients mapped at 30 m spatial resolution using two-scale ensemble machine learning. Sci Rep 11, 6130 (2021). doi:10.1038/s41598-021-85639-y
 
-6. Audit package layer
-Create a reproducible export bundle for each analytical component:
-source AOIs
-parameter settings
-sensor used
-date ranges
-exported tables
-exported rasters
-figure-ready summaries
-processing notes
-Section 4 says the remote sensing survey must generate a report for assessors and support comparison with field results.
+Clements, H.S., Biggs, R., De Vos, A. et al. A place-based assessment of biodiversity intactness in sub-Saharan Africa.
+Nature (2025). https://doi.org/10.1038/s41586-025-09781-7
 
-
-
-Sentinel-2 SR vs Landsat-8
-For TGBS reporting, I would document the workflow like this:
-Core long-term optical archive: Landsat 8 C2 L2 SR (2013–2017) + Sentinel-2 SR Harmonized (2019–present)
-Common analytical support: 30 m, matched seasonal windows, matched site categories
-Cross-sensor harmonization step: overlap-year regression / bias analysis per metric
-Metric eligibility table: “fully comparable,” “proxy comparable,” or “Sentinel-era only”
-Audit note: trend breaks attributable to sensor transition explicitly tested and documented
-
-
-
-###########################################################
-
-# 1. Ecosystem functionality / productivity trajectories
-
-You are a Remote Sensing and Google Earth Engine expert helping continue an existing TGBS biodiversity verification workflow for East African rangelands.
-
-## Project context
-The project evaluates biodiversity outcome trajectories for:
-- 1 focal site
-- 3 reference sites
-- 3 degraded sites
-
-The assessment must support:
-- focal vs reference vs degraded temporal comparisons
-- baseline-to-current summaries
-- spatial change products
-- TGBS-style auditability and ecological interpretation
-
-The current temporal windows are:
-- `BASELINE_START = "2014-01-01"`
-- `BASELINE_END = "2017-12-31"`
-- `CURRENT_START = "2018-01-01"`
-- `CURRENT_END = "2025-12-31"`
-
-Season definitions:
-- `WET_MONTHS = [3, 4, 5]`
-- `DRY_MONTHS = [7, 8, 9, 10]`
-
-## Current repository capabilities
-The repo already contains:
-
-### Site inputs
-A function:
-- `build_default_sites_featurecollection()`
-
-This returns the site polygons and metadata including:
-- path
-- site_id
-- site_name
-- site_category (`focal`, `reference`, `degraded`)
-
-### Sensor-specific processed collection builders
-These functions already exist and return multiband / multi-index collections:
-- `get_s2_sr_collection()`
-- `get_l8_sr_collection()`
-- `get_hls_merged_collection()`
-
-The official long-term 30 m trend product should use:
-- `get_hls_merged_collection()`
-
-### Collection processing utilities
-The repo already contains collection-agnostic compositing and reduction functions:
-- `build_period_composites()`
-- `build_annual_band_composites()`
-- `build_monthly_band_composites()`
-- `build_annual_multiband_composites()`
-- `reduce_image_over_sites()`
-- `collection_to_site_timeseries()`
-- `build_annual_index_timeseries()`
-- `annual_collection_to_site_timeseries_df()`
-
-These functions should be reused rather than rewritten.
-
-## Analysis goal
-Design and implement the ecosystem functionality / productivity trajectory layer.
-
-Use the following indices:
-- primary: `NIRv`
-- secondary: `EVI`
-- supporting: `NDVI`
-
-The analysis must produce:
-- focal vs reference envelopes
-- focal vs degraded envelopes
-- reference baseline ranges
-- site-category grouped summaries
-- standardized baseline-to-current deltas
-- annual trajectories
-- wet-season trajectories
-- dry-season trajectories
-- trend statistics per site
-
-## Required implementation direction
-Create or design a new module centered on grouped temporal comparisons, likely:
-- `comparisons.py`
-
-This module should operate mostly on long-format pandas DataFrames produced from existing Earth Engine outputs.
-
-Focus on:
-1. site-category grouped summaries
-2. reference envelope generation
-3. degraded envelope generation
-4. focal-vs-reference comparison summaries
-5. focal-vs-degraded comparison summaries
-6. standardized focal anomalies relative to reference baseline
-7. baseline vs current summaries
-8. trend statistics per site
-
-## Important design constraints
-- Reuse existing collection builders and timeseries functions
-- Assume HLS is the official long-term trend source at 30 m
-- Keep outputs auditable and ecologically interpretable
-- Prefer compact, modular functions
-- Avoid overcomplicated abstractions
-- Keep DataFrame outputs suitable for plotting and reporting
-
-## Requested output
-Please provide:
-1. a concrete implementation plan for this analysis
-2. the recommended function list for `comparisons.py`
-3. the exact function signatures
-4. concise but complete pandas-based code where appropriate
-5. an explanation of how to generate:
-   - annual site-level productivity summaries
-   - wet/dry seasonal summaries
-   - focal vs reference envelopes
-   - standardized baseline-to-current deltas
-6. guidance on which plots/tables should be generated first
-
-Use the existing repo structure and function names exactly where relevant.
-
-
-
-# 2. Vegetation cover change in dryland systems
-
-You are a Remote Sensing and Google Earth Engine expert helping continue an existing TGBS biodiversity verification workflow for East African rangelands.
-
-## Project context
-The project compares:
-- 1 focal site
-- 3 reference sites
-- 3 degraded sites
-
-Time windows:
-- `BASELINE_START = "2014-01-01"`
-- `BASELINE_END = "2017-12-31"`
-- `CURRENT_START = "2018-01-01"`
-- `CURRENT_END = "2025-12-31"`
-
-Season definitions:
-- `WET_MONTHS = [3, 4, 5]`
-- `DRY_MONTHS = [7, 8, 9, 10]`
-
-## Current repository capabilities
-Site polygons and metadata are provided through:
-- `build_default_sites_featurecollection()`
-
-Processed collections already exist:
-- `get_s2_sr_collection()`
-- `get_l8_sr_collection()`
-- `get_hls_merged_collection()`
-
-Collection-agnostic temporal and site-reduction utilities already exist:
-- `build_period_composites()`
-- `build_annual_band_composites()`
-- `build_monthly_band_composites()`
-- `build_annual_multiband_composites()`
-- `reduce_image_over_sites()`
-- `collection_to_site_timeseries()`
-- `build_annual_index_timeseries()`
-- `annual_collection_to_site_timeseries_df()`
-
-## Analysis goal
-Design and implement the vegetation cover change workflow for dryland systems.
-
-Use the following indices:
-- primary: `NDVI`
-- dryland support: `SAVI`
-- optional support: `EVI`
-
-This analysis must support:
-- annual cover trajectories
-- wet-season cover trajectories
-- dry-season cover trajectories
-- focal vs reference cover envelopes
-- focal vs degraded cover envelopes
-- baseline period summaries
-- current period summaries
-- baseline-to-current deltas
-- standardized anomalies relative to reference behavior
-- spatial change products and heatmaps
-
-## Required implementation direction
-This work should reuse the existing repo functions and likely extend:
-- `comparisons.py` for grouped cover summaries
-- a future `spatial_change.py` for raster outputs
-
-The workflow should emphasize:
-- dryland-appropriate vegetation cover interpretation
-- avoiding confusion between seasonal variability and real ecological trajectory
-- reference-relative interpretation
-
-## Important design constraints
-- Use `get_hls_merged_collection()` as the official long-term 30 m trend collection
-- Keep Sentinel-2 available as a recent high-resolution support product if needed
-- Prefer modular functions operating on DataFrames for summaries
-- Keep spatial outputs exportable and heatmap-ready
-
-## Requested output
-Please provide:
-1. a concrete implementation plan for the vegetation cover analysis
-2. recommended function list additions for `comparisons.py`
-3. any seasonal filtering helpers needed upstream of compositing
-4. exact code or pseudo-code for:
-   - annual NDVI/SAVI summaries
-   - annual wet-season NDVI/SAVI summaries
-   - annual dry-season NDVI/SAVI summaries
-   - baseline/current site summaries
-   - focal vs reference envelopes
-   - standardized baseline-to-current cover anomalies
-5. guidance on the most important raster products to generate first
-6. guidance on the best first plots and tables for contract reporting
-
-Use the existing repo structure and function names exactly where relevant.
-
-
-
-# 3. Historical disturbance, degradation, and moisture trajectories
-
-You are a Remote Sensing and Google Earth Engine expert helping continue an existing TGBS biodiversity verification workflow for East African rangelands.
-
-## Project context
-The project must evaluate biodiversity and ecological condition trajectories for:
-- 1 focal site
-- 3 reference sites
-- 3 degraded sites
-
-Date windows:
-- `BASELINE_START = "2014-01-01"`
-- `BASELINE_END = "2017-12-31"`
-- `CURRENT_START = "2018-01-01"`
-- `CURRENT_END = "2025-12-31"`
-
-Season definitions:
-- `WET_MONTHS = [3, 4, 5]`
-- `DRY_MONTHS = [7, 8, 9, 10]`
-
-Critical ecological context:
-- major focal-site disturbance events occurred from `2018–2024`
-- recovery efforts began in `2020` and continue to present
-
-## Current repository capabilities
-Site polygons come from:
-- `build_default_sites_featurecollection()`
-
-Processed sensor collections already exist:
-- `get_s2_sr_collection()`
-- `get_l8_sr_collection()`
-- `get_hls_merged_collection()`
-
-Temporal aggregation and reduction utilities already exist:
-- `build_period_composites()`
-- `build_annual_band_composites()`
-- `build_monthly_band_composites()`
-- `build_annual_multiband_composites()`
-- `reduce_image_over_sites()`
-- `collection_to_site_timeseries()`
-- `build_annual_index_timeseries()`
-- `annual_collection_to_site_timeseries_df()`
-
-## Analysis goal
-Design and implement the disturbance / degradation / moisture trajectory workflow.
-
-Use the following indices:
-- primary moisture indicator: `NDMI`
-- primary disturbance indicator: `NBR`
-- contextual support: `NDVI`
-
-The workflow must produce:
-- annual NDMI trajectories
-- annual NBR trajectories
-- annual dry-season summaries
-- annual wet-season summaries where useful
-- disturbance-period summaries
-- recovery-period summaries
-- focal vs reference comparisons
-- focal vs degraded comparisons
-- trend statistics per site
-- spatial change products and heatmaps
-
-## Required implementation direction
-Extend a grouped temporal summary module such as:
-- `comparisons.py`
-
-Potential function categories:
-- disturbance-era summary
-- recovery-era summary
-- year-of-max-decline
-- year-of-recovery-initiation
-- focal anomaly relative to reference
-- baseline/current deltas
-- slope estimates
-
-This analysis should clearly distinguish:
-- disturbance decline
-- post-2020 recovery
-- persistent moisture stress
-- reference-relative departure
-
-## Important design constraints
-- Use HLS as the official long-term trend collection
-- Keep outputs interpretable for audit review
-- Use compact, modular code
-- Reuse existing compositing and site-timeseries functions rather than recreating them
-
-## Requested output
-Please provide:
-1. a concrete implementation plan for this disturbance/moisture analysis
-2. recommended function list for grouped temporal comparisons
-3. suggested function signatures
-4. code or pseudo-code for:
-   - annual NDMI and NBR summaries
-   - dry-season NDMI and NBR summaries
-   - disturbance-period summaries
-   - recovery-period summaries
-   - slope calculations per site
-   - focal vs reference anomaly summaries
-5. guidance on which plots and summary tables to generate first
-6. guidance on the most important raster change products for NDMI and NBR
-
-Use the existing repo structure and function names exactly where relevant.
-
-
-
-# 4. Aboveground biomass proxy analysis
-
-You are a Remote Sensing and Google Earth Engine expert helping continue an existing TGBS biodiversity verification workflow for East African rangelands.
-
-## Project context
-The project compares:
-- 1 focal site
-- 3 reference sites
-- 3 degraded sites
-
-Date windows:
-- `BASELINE_START = "2014-01-01"`
-- `BASELINE_END = "2017-12-31"`
-- `CURRENT_START = "2018-01-01"`
-- `CURRENT_END = "2025-12-31"`
-
-Season definitions:
-- `WET_MONTHS = [3, 4, 5]`
-- `DRY_MONTHS = [7, 8, 9, 10]`
-
-Ecological context:
-- focal disturbance: `2018–2024`
-- recovery period: `2020–present`
-
-## Current repository capabilities
-Site polygons and metadata:
-- `build_default_sites_featurecollection()`
-
-Processed image collections:
-- `get_s2_sr_collection()`
-- `get_l8_sr_collection()`
-- `get_hls_merged_collection()`
-
-Collection-agnostic utilities:
-- `build_period_composites()`
-- `build_annual_band_composites()`
-- `build_monthly_band_composites()`
-- `build_annual_multiband_composites()`
-- `reduce_image_over_sites()`
-- `collection_to_site_timeseries()`
-- `build_annual_index_timeseries()`
-- `annual_collection_to_site_timeseries_df()`
-
-## Analysis goal
-Design and implement the aboveground biomass proxy analysis.
-
-Use the following indices:
-- primary: `NIRv`
-- secondary: `EVI`
-- supporting context: `NDVI`
-
-The workflow must produce:
-- annual NIRv trajectories
-- annual wet-season NIRv summaries
-- annual dry-season NIRv summaries
-- baseline period NIRv summaries
-- current period NIRv summaries
-- standardized baseline-to-current deltas
-- focal vs reference envelopes
-- focal vs degraded envelopes
-- pre-2020 vs post-2020 trend comparisons
-- raster change products for biomass-proxy interpretation
-
-## Required implementation direction
-This work should mainly reuse:
-- `get_hls_merged_collection()`
-- `build_period_composites()`
-- `annual_collection_to_site_timeseries_df()`
-
-Grouped summaries should likely live in:
-- `comparisons.py`
-
-Spatial raster products should likely live in:
-- `spatial_change.py`
-
-## Important design constraints
-- Treat NIRv as the main biomass / productivity proxy
-- Keep the workflow compact, modular, and auditable
-- Prioritize HLS for the official long-term trend product
-- Reuse current repo functions wherever possible
-
-## Requested output
-Please provide:
-1. a concrete implementation plan for the biomass-proxy analysis
-2. recommended `comparisons.py` functions for NIRv-based grouped summaries
-3. code or pseudo-code for:
-   - annual NIRv time series
-   - wet-season and dry-season NIRv summaries
-   - baseline/current NIRv summaries
-   - standardized focal anomaly relative to reference baseline
-   - pre-2020 vs post-2020 trend comparisons
-4. recommended plots and summary tables
-5. recommended raster products to generate first for this analysis
-
-Use the existing repo structure and function names exactly where relevant.
-
-
-
-# 5. Spectral diversity metrics (α and β)
-
-You are a Remote Sensing and Google Earth Engine expert helping continue an existing TGBS biodiversity verification workflow for East African rangelands.
-
-## Project context
-The project compares:
-- 1 focal site
-- 3 reference sites
-- 3 degraded sites
-
-Date windows:
-- `BASELINE_START = "2014-01-01"`
-- `BASELINE_END = "2017-12-31"`
-- `CURRENT_START = "2018-01-01"`
-- `CURRENT_END = "2025-12-31"`
-
-## Current repository capabilities
-Site polygons and metadata:
-- `build_default_sites_featurecollection()`
-
-Processed collection builders:
-- `get_s2_sr_collection()`
-- `get_l8_sr_collection()`
-- `get_hls_merged_collection()`
-
-Temporal aggregation functions:
-- `build_period_composites()`
-- `build_annual_band_composites()`
-- `build_monthly_band_composites()`
-- `build_annual_multiband_composites()`
-
-Site-reduction and timeseries utilities:
-- `reduce_image_over_sites()`
-- `collection_to_site_timeseries()`
-- `build_annual_index_timeseries()`
-- `annual_collection_to_site_timeseries_df()`
-
-Important note:
-- `build_annual_multiband_composites()` already exists and is likely the key starting point for spectral diversity analysis.
-
-## Analysis goal
-Design and implement a practical, auditable spectral diversity workflow for TGBS.
-
-Use the merged HLS reflectance stack as the main basis, with common 30 m bands:
-- `BLUE`
-- `GREEN`
-- `RED`
-- `NIR`
-- `SWIR1`
-- `SWIR2`
-
-The workflow should support:
-- alpha spectral diversity
-- beta spectral diversity
-- baseline period summaries
-- current period summaries
-- baseline-to-current deltas
-- focal-to-reference comparisons
-- focal-to-degraded comparisons
-- spatial diversity surfaces and change maps
-
-## Required implementation direction
-Keep the methods simple, interpretable, and reproducible.
-
-Possible implementation pathways include:
-- local spectral variance / standard deviation
-- neighborhood spectral heterogeneity
-- PCA-based spectral dispersion
-- inter-site spectral distance between focal and reference / degraded summaries
-
-The answer should help decide which metric family is the most practical and defensible first implementation.
-
-## Important design constraints
-- Reuse `build_annual_multiband_composites()` if possible
-- Prefer HLS as the official long-term 30 m product
-- Avoid overly experimental methods that are hard to explain in audit documentation
-- Keep code modular and practical
-
-## Requested output
-Please provide:
-1. a concrete implementation plan for spectral diversity
-2. the recommended first spectral diversity method to implement
-3. recommended module structure and function list
-4. code or pseudo-code for:
-   - baseline multi-band composite generation
-   - current multi-band composite generation
-   - alpha diversity surface generation
-   - beta diversity summary generation
-   - site-level summary extraction
-5. guidance on which outputs belong in:
-   - a `spectral_diversity.py` module
-   - `comparisons.py`
-   - `spatial_change.py`
-6. guidance on the best first tables, figures, and maps
-
-Use the existing repo structure and function names exactly where relevant.
-
-
-
-# 6. Spatial change layer and heatmap production
-
-You are a Remote Sensing and Google Earth Engine expert helping continue an existing TGBS biodiversity verification workflow for East African rangelands.
-
-## Project context
-The project compares:
-- 1 focal site
-- 3 reference sites
-- 3 degraded sites
-
-Time windows:
-- `BASELINE_START = "2014-01-01"`
-- `BASELINE_END = "2017-12-31"`
-- `CURRENT_START = "2018-01-01"`
-- `CURRENT_END = "2025-12-31"`
-
-The contract requires:
-- spatial change products
-- baseline vs current summaries
-- heatmaps highlighting where change is strongest
-- reference-relative interpretation where feasible
-
-## Current repository capabilities
-Site polygons and metadata:
-- `build_default_sites_featurecollection()`
-
-Processed collections:
-- `get_s2_sr_collection()`
-- `get_l8_sr_collection()`
-- `get_hls_merged_collection()`
-
-Compositing functions:
-- `build_period_composites()`
-- `build_annual_band_composites()`
-- `build_monthly_band_composites()`
-- `build_annual_multiband_composites()`
-
-The repo currently needs a dedicated spatial change layer.
-
-## Analysis goal
-Design and implement a `spatial_change.py` module that creates explicit raster outputs for:
-- baseline mean
-- current mean
-- current minus baseline
-- trend slope
-- z-score anomaly relative to reference behavior
-- percentile anomaly relative to reference behavior
-
-Prioritized indices:
-- `NDVI`
-- `NIRv`
-- `NDMI`
-- `NBR`
-- `SAVI`
-
-These outputs should satisfy TGBS spatial comparison and heatmap requirements.
-
-## Required implementation direction
-The design should focus on compact Earth Engine functions that:
-1. build baseline and current summary images
-2. compute delta images
-3. compute trend slope images
-4. compute focal anomalies relative to reference behavior
-5. remain compatible with export workflows
-
-Assume HLS is the official long-term 30 m trend source.
-
-## Important design constraints
-- Reuse existing collection builders rather than rebuilding sensor preprocessing
-- Keep the outputs easy to export as GeoTIFFs
-- Use compact, modular function design
-- Prioritize the highest-impact first products
-- Keep the implementation auditable and ecologically interpretable
-
-## Requested output
-Please provide:
-1. a concrete implementation plan for `spatial_change.py`
-2. the recommended function list and signatures
-3. code or pseudo-code for:
-   - baseline mean image
-   - current mean image
-   - delta image
-   - trend slope image
-   - reference z-score anomaly image
-   - reference percentile anomaly image
-4. guidance on how to derive reference-relative statistics from multiple reference sites
-5. the recommended first raster products to generate for contract reporting
-6. the best naming conventions and export strategy for raster outputs
-
-Use the existing repo structure and function names exactly where relevant.
-
+Climate Hazards Center Infrared Precipitation with Stations version 3. CHIRPS3 Data Repository doi:10.15780/G2JQ0P (2025).
