@@ -1,0 +1,1724 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="plot_footprints" id="plot_footprints">
+	<SimpleField name="fid" type="float"></SimpleField>
+	<SimpleField name="grid_id" type="string"></SimpleField>
+	<SimpleField name="offset_x" type="float"></SimpleField>
+	<SimpleField name="offset_y" type="float"></SimpleField>
+	<SimpleField name="Block" type="string"></SimpleField>
+	<SimpleField name="Year" type="string"></SimpleField>
+	<SimpleField name="Stratum" type="string"></SimpleField>
+	<SimpleField name="target_n" type="float"></SimpleField>
+	<SimpleField name="selected_n" type="float"></SimpleField>
+	<SimpleField name="constraint_limited" type="int"></SimpleField>
+	<SimpleField name="Plot_ID" type="string"></SimpleField>
+	<SimpleField name="Easting_UTM37S" type="float"></SimpleField>
+	<SimpleField name="Northing_UTM37S" type="float"></SimpleField>
+	<SimpleField name="Longitude" type="float"></SimpleField>
+	<SimpleField name="Latitude" type="float"></SimpleField>
+</Schema>
+<Folder><name>plot_footprints</name>
+  <Placemark id="plot_footprints.1">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">1</SimpleData>
+		<SimpleData name="grid_id">G0028</SimpleData>
+		<SimpleData name="offset_x">63.9426798457884</SimpleData>
+		<SimpleData name="offset_y">2.50107552226669</SimpleData>
+		<SimpleData name="Block">1011</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">27</SimpleData>
+		<SimpleData name="selected_n">6</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0001</SimpleData>
+		<SimpleData name="Easting_UTM37S">546813.942679846</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512752.50107552</SimpleData>
+		<SimpleData name="Longitude">39.4219411132528</SimpleData>
+		<SimpleData name="Latitude">-4.40807387094641</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.422031294135,-4.40816428503496 39.4220311920819,-4.40798335443561 39.4218509323923,-4.40798345684458 39.4218510344019,-4.40816438744815 39.422031294135,-4.40816428503496</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.2">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">2</SimpleData>
+		<SimpleData name="grid_id">G0017</SimpleData>
+		<SimpleData name="offset_x">63.9426798457884</SimpleData>
+		<SimpleData name="offset_y">2.50107552226669</SimpleData>
+		<SimpleData name="Block">1011</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">27</SimpleData>
+		<SimpleData name="selected_n">6</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0002</SimpleData>
+		<SimpleData name="Easting_UTM37S">546713.942679846</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512452.50107552</SimpleData>
+		<SimpleData name="Longitude">39.421041342319</SimpleData>
+		<SimpleData name="Latitude">-4.41078834169377</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4211315234615,-4.41087875586404 39.421131421563,-4.41069782525684 39.4209511611983,-4.41069792751023 39.4209512630532,-4.41087885812164 39.4211315234615,-4.41087875586404</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.3">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">3</SimpleData>
+		<SimpleData name="grid_id">G0031</SimpleData>
+		<SimpleData name="offset_x">63.9426798457884</SimpleData>
+		<SimpleData name="offset_y">2.50107552226669</SimpleData>
+		<SimpleData name="Block">1011</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">27</SimpleData>
+		<SimpleData name="selected_n">6</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0003</SimpleData>
+		<SimpleData name="Easting_UTM37S">546813.942679846</SimpleData>
+		<SimpleData name="Northing_UTM37S">9513052.50107552</SimpleData>
+		<SimpleData name="Longitude">39.4219395832584</SimpleData>
+		<SimpleData name="Latitude">-4.40535991182533</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4220297637821,-4.40545032595215 39.4220296617924,-4.40526939533958 39.4218494027564,-4.40526949768526 39.4218495047025,-4.40545042830205 39.4220297637821,-4.40545032595215</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.4">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">4</SimpleData>
+		<SimpleData name="grid_id">G0042</SimpleData>
+		<SimpleData name="offset_x">63.9426798457884</SimpleData>
+		<SimpleData name="offset_y">2.50107552226669</SimpleData>
+		<SimpleData name="Block">1011</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">27</SimpleData>
+		<SimpleData name="selected_n">6</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0004</SimpleData>
+		<SimpleData name="Easting_UTM37S">547013.942679846</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512552.50107552</SimpleData>
+		<SimpleData name="Longitude">39.4237447350391</SimpleData>
+		<SimpleData name="Latitude">-4.40988215019581</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4238349163573,-4.40997256401888 39.4238348138258,-4.40979163347064 39.4236545537427,-4.40979173635947 39.4236546562306,-4.40997266691194 39.4238349163573,-4.40997256401888</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.5">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">5</SimpleData>
+		<SimpleData name="grid_id">G0011</SimpleData>
+		<SimpleData name="offset_x">63.9426798457884</SimpleData>
+		<SimpleData name="offset_y">2.50107552226669</SimpleData>
+		<SimpleData name="Block">1011</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">27</SimpleData>
+		<SimpleData name="selected_n">6</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0005</SimpleData>
+		<SimpleData name="Easting_UTM37S">546613.942679846</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512652.50107552</SimpleData>
+		<SimpleData name="Longitude">39.420139023958</SimpleData>
+		<SimpleData name="Latitude">-4.40897954607661</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4202292047629,-4.40906996039226 39.4202291031246,-4.4088890297552 39.4200488431749,-4.40888913174771 39.4200489447696,-4.40907006238896 39.4202292047629,-4.40906996039226</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.6">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">6</SimpleData>
+		<SimpleData name="grid_id">G0014</SimpleData>
+		<SimpleData name="offset_x">63.9426798457884</SimpleData>
+		<SimpleData name="offset_y">2.50107552226669</SimpleData>
+		<SimpleData name="Block">1011</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">27</SimpleData>
+		<SimpleData name="selected_n">6</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0006</SimpleData>
+		<SimpleData name="Easting_UTM37S">546613.942679846</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512952.50107552</SimpleData>
+		<SimpleData name="Longitude">39.4201375001837</SimpleData>
+		<SimpleData name="Latitude">-4.40626558639009</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4202276806302,-4.40635600074386 39.420227579055,-4.40617507009358 39.420047319759,-4.40617517202307 39.4200474212906,-4.40635610267755 39.4202276806302,-4.40635600074386</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.7">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">7</SimpleData>
+		<SimpleData name="grid_id">G0023</SimpleData>
+		<SimpleData name="offset_x">3.855183933738</SimpleData>
+		<SimpleData name="offset_y">69.6224322637053</SimpleData>
+		<SimpleData name="Block">1012</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">19</SimpleData>
+		<SimpleData name="selected_n">5</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0007</SimpleData>
+		<SimpleData name="Easting_UTM37S">547053.855183934</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511819.62243226</SimpleData>
+		<SimpleData name="Longitude">39.4241082290396</SimpleData>
+		<SimpleData name="Latitude">-4.41651195068783</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4241984112745,-4.41660236436911 39.4241983085002,-4.41642143386168 39.4240180468265,-4.41642153699326 39.4240181495571,-4.41660246750493 39.4241984112745,-4.41660236436911</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.8">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">8</SimpleData>
+		<SimpleData name="grid_id">G0021</SimpleData>
+		<SimpleData name="offset_x">3.855183933738</SimpleData>
+		<SimpleData name="offset_y">69.6224322637053</SimpleData>
+		<SimpleData name="Block">1012</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">19</SimpleData>
+		<SimpleData name="selected_n">5</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0008</SimpleData>
+		<SimpleData name="Easting_UTM37S">546953.855183934</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512319.62243226</SimpleData>
+		<SimpleData name="Longitude">39.4232043584819</SimpleData>
+		<SimpleData name="Latitude">-4.41198920226414</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4232945400196,-4.41207961612953 39.4232944375697,-4.41189868557884 39.423114176966,-4.41189878838546 39.4231142793722,-4.41207971894038 39.4232945400196,-4.41207961612953</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.9">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">9</SimpleData>
+		<SimpleData name="grid_id">G0026</SimpleData>
+		<SimpleData name="offset_x">3.855183933738</SimpleData>
+		<SimpleData name="offset_y">69.6224322637053</SimpleData>
+		<SimpleData name="Block">1012</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">19</SimpleData>
+		<SimpleData name="selected_n">5</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0009</SimpleData>
+		<SimpleData name="Easting_UTM37S">547053.855183934</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512119.62243226</SimpleData>
+		<SimpleData name="Longitude">39.4241066882309</SimpleData>
+		<SimpleData name="Latitude">-4.41379799294524</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4241968701065,-4.41388840666495 39.424196767396,-4.41370747614428 39.4240165063771,-4.41370757921224 39.424016609044,-4.41388850973715 39.4241968701065,-4.41388840666495</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.10">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">10</SimpleData>
+		<SimpleData name="grid_id">G0012</SimpleData>
+		<SimpleData name="offset_x">3.855183933738</SimpleData>
+		<SimpleData name="offset_y">69.6224322637053</SimpleData>
+		<SimpleData name="Block">1012</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">19</SimpleData>
+		<SimpleData name="selected_n">5</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0010</SimpleData>
+		<SimpleData name="Easting_UTM37S">546853.855183934</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512119.62243226</SimpleData>
+		<SimpleData name="Longitude">39.4223040776122</SimpleData>
+		<SimpleData name="Latitude">-4.41379902145575</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4223942592907,-4.41388943541565 39.4223941570167,-4.41370850485265 39.4222138959554,-4.41370860748256 39.4222139981859,-4.41388953804979 39.4223942592907,-4.41388943541565</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.11">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">11</SimpleData>
+		<SimpleData name="grid_id">G0007</SimpleData>
+		<SimpleData name="offset_x">3.855183933738</SimpleData>
+		<SimpleData name="offset_y">69.6224322637053</SimpleData>
+		<SimpleData name="Block">1012</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">19</SimpleData>
+		<SimpleData name="selected_n">5</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0011</SimpleData>
+		<SimpleData name="Easting_UTM37S">546753.855183934</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512319.62243226</SimpleData>
+		<SimpleData name="Longitude">39.4214017520147</SimpleData>
+		<SimpleData name="Latitude">-4.41199022816206</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4214919333554,-4.41208064226752 39.4214918313418,-4.41189971167458 39.4213115706958,-4.41189981404333 39.4213116726658,-4.41208074464048 39.4214919333554,-4.41208064226752</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.12">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">12</SimpleData>
+		<SimpleData name="grid_id">G0032</SimpleData>
+		<SimpleData name="offset_x">40.8535879254494</SimpleData>
+		<SimpleData name="offset_y">54.1972009104596</SimpleData>
+		<SimpleData name="Block">1013</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">30</SimpleData>
+		<SimpleData name="selected_n">7</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0012</SimpleData>
+		<SimpleData name="Easting_UTM37S">546490.853587925</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512204.19720091</SimpleData>
+		<SimpleData name="Longitude">39.4190318948634</SimpleData>
+		<SimpleData name="Latitude">-4.41303576865477</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.419122076083,-4.41312618306113 39.4191219746188,-4.41294525241802 39.4189417136656,-4.41294535423515 39.4189418150861,-4.41312628488245 39.419122076083,-4.41312618306113</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.13">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">13</SimpleData>
+		<SimpleData name="grid_id">G0053</SimpleData>
+		<SimpleData name="offset_x">40.8535879254494</SimpleData>
+		<SimpleData name="offset_y">54.1972009104596</SimpleData>
+		<SimpleData name="Block">1013</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">30</SimpleData>
+		<SimpleData name="selected_n">7</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0013</SimpleData>
+		<SimpleData name="Easting_UTM37S">546690.853587925</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511904.19720091</SimpleData>
+		<SimpleData name="Longitude">39.4208360330591</SimpleData>
+		<SimpleData name="Latitude">-4.41574870722139</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4209262148349,-4.41583912134956 39.420926112871,-4.4156581907617 39.4207458513052,-4.41565829307994 39.4207459532253,-4.415839223672 39.4209262148349,-4.41583912134956</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.14">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">14</SimpleData>
+		<SimpleData name="grid_id">G0039</SimpleData>
+		<SimpleData name="offset_x">40.8535879254494</SimpleData>
+		<SimpleData name="offset_y">54.1972009104596</SimpleData>
+		<SimpleData name="Block">1013</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">30</SimpleData>
+		<SimpleData name="selected_n">7</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0014</SimpleData>
+		<SimpleData name="Easting_UTM37S">546590.853587925</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511704.19720091</SimpleData>
+		<SimpleData name="Longitude">39.4199357425152</SimpleData>
+		<SimpleData name="Latitude">-4.41755852434093</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4200259244318,-4.41764893856377 39.4200258226441,-4.41746800796372 39.4198455606205,-4.41746811010482 39.4198456623644,-4.41764904070907 39.4200259244318,-4.41764893856377</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.15">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">15</SimpleData>
+		<SimpleData name="grid_id">G0018</SimpleData>
+		<SimpleData name="offset_x">40.8535879254494</SimpleData>
+		<SimpleData name="offset_y">54.1972009104596</SimpleData>
+		<SimpleData name="Block">1013</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">30</SimpleData>
+		<SimpleData name="selected_n">7</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0015</SimpleData>
+		<SimpleData name="Easting_UTM37S">546390.853587925</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512004.19720091</SimpleData>
+		<SimpleData name="Longitude">39.4181316023871</SimpleData>
+		<SimpleData name="Latitude">-4.41484558382063</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4182217837473,-4.41493599832163 39.4182216824594,-4.41475506766642 39.4180414210488,-4.41475516930638 39.418041522293,-4.41493609996577 39.4182217837473,-4.41493599832163</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.16">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">16</SimpleData>
+		<SimpleData name="grid_id">G0016</SimpleData>
+		<SimpleData name="offset_x">40.8535879254494</SimpleData>
+		<SimpleData name="offset_y">54.1972009104596</SimpleData>
+		<SimpleData name="Block">1013</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">30</SimpleData>
+		<SimpleData name="selected_n">7</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0016</SimpleData>
+		<SimpleData name="Easting_UTM37S">546390.853587925</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511804.19720091</SimpleData>
+		<SimpleData name="Longitude">39.4181326152577</SimpleData>
+		<SimpleData name="Latitude">-4.41665489034952</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4182227968572,-4.41674530482519 39.4182226955273,-4.41656437417881 39.4180424336801,-4.41656447586058 39.4180425349662,-4.41674540651115 39.4182227968572,-4.41674530482519</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.17">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">17</SimpleData>
+		<SimpleData name="grid_id">G0055</SimpleData>
+		<SimpleData name="offset_x">40.8535879254494</SimpleData>
+		<SimpleData name="offset_y">54.1972009104596</SimpleData>
+		<SimpleData name="Block">1013</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">30</SimpleData>
+		<SimpleData name="selected_n">7</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0017</SimpleData>
+		<SimpleData name="Easting_UTM37S">546690.853587925</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512104.19720091</SimpleData>
+		<SimpleData name="Longitude">39.42083501385</SimpleData>
+		<SimpleData name="Latitude">-4.41393940127759</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4209251953864,-4.41402981543122 39.4209250934648,-4.41384888483453 39.4207448323354,-4.41384898711068 39.4207449342134,-4.41402991771158 39.4209251953864,-4.41402981543122</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.18">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">18</SimpleData>
+		<SimpleData name="grid_id">G0014</SimpleData>
+		<SimpleData name="offset_x">40.8535879254494</SimpleData>
+		<SimpleData name="offset_y">54.1972009104596</SimpleData>
+		<SimpleData name="Block">1013</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">30</SimpleData>
+		<SimpleData name="selected_n">7</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0018</SimpleData>
+		<SimpleData name="Easting_UTM37S">546390.853587925</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511604.19720091</SimpleData>
+		<SimpleData name="Longitude">39.4181336285474</SimpleData>
+		<SimpleData name="Latitude">-4.41846419679007</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4182238103862,-4.41855461124041 39.4182237090144,-4.41837368060286 39.4180434467304,-4.41837378232646 39.4180435480584,-4.41855471296818 39.4182238103862,-4.41855461124041</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.19">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">19</SimpleData>
+		<SimpleData name="grid_id">G0039</SimpleData>
+		<SimpleData name="offset_x">27.1875414384091</SimpleData>
+		<SimpleData name="offset_y">48.8028207850908</SimpleData>
+		<SimpleData name="Block">1014</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">24</SimpleData>
+		<SimpleData name="selected_n">6</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0019</SimpleData>
+		<SimpleData name="Easting_UTM37S">546777.187541438</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511498.80282078</SimpleData>
+		<SimpleData name="Longitude">39.4216162388207</SimpleData>
+		<SimpleData name="Latitude">-4.41941567679531</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4217064211671,-4.4195060907681 39.4217063189291,-4.41932516021634 39.4215260564961,-4.41932526280921 39.4215261586904,-4.41950619336519 39.4217064211671,-4.4195060907681</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.20">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">20</SimpleData>
+		<SimpleData name="grid_id">G0024</SimpleData>
+		<SimpleData name="offset_x">27.1875414384091</SimpleData>
+		<SimpleData name="offset_y">48.8028207850908</SimpleData>
+		<SimpleData name="Block">1014</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">24</SimpleData>
+		<SimpleData name="selected_n">6</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0020</SimpleData>
+		<SimpleData name="Easting_UTM37S">546677.187541438</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511098.80282078</SimpleData>
+		<SimpleData name="Longitude">39.4207169672897</SimpleData>
+		<SimpleData name="Latitude">-4.42303480054369</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4208071500168,-4.42312521458575 39.4208070479129,-4.42294428403061 39.4206267845844,-4.42294438648832 39.4206268866446,-4.42312531704767 39.4208071500168,-4.42312521458575</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.21">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">21</SimpleData>
+		<SimpleData name="grid_id">G0061</SimpleData>
+		<SimpleData name="offset_x">27.1875414384091</SimpleData>
+		<SimpleData name="offset_y">48.8028207850908</SimpleData>
+		<SimpleData name="Block">1014</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">24</SimpleData>
+		<SimpleData name="selected_n">6</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0021</SimpleData>
+		<SimpleData name="Easting_UTM37S">546977.187541438</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511498.80282078</SimpleData>
+		<SimpleData name="Longitude">39.4234188631579</SimpleData>
+		<SimpleData name="Latitude">-4.41941464865247</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4235090457017,-4.41950506238483 39.4235089430267,-4.41932413187533 39.423328680636,-4.4193242349068 39.4233287832673,-4.41950516542054 39.4235090457017,-4.41950506238483</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.22">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">22</SimpleData>
+		<SimpleData name="grid_id">G0053</SimpleData>
+		<SimpleData name="offset_x">27.1875414384091</SimpleData>
+		<SimpleData name="offset_y">48.8028207850908</SimpleData>
+		<SimpleData name="Block">1014</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">24</SimpleData>
+		<SimpleData name="selected_n">6</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0022</SimpleData>
+		<SimpleData name="Easting_UTM37S">546877.187541438</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511798.80282078</SimpleData>
+		<SimpleData name="Longitude">39.4225160149991</SimpleData>
+		<SimpleData name="Latitude">-4.41670120518122</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4226061970848,-4.41679161907213 39.4226060946919,-4.41661068852822 39.4224258329353,-4.41661079127701 39.4224259352846,-4.41679172182515 39.4226061970848,-4.41679161907213</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.23">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">23</SimpleData>
+		<SimpleData name="grid_id">G0037</SimpleData>
+		<SimpleData name="offset_x">27.1875414384091</SimpleData>
+		<SimpleData name="offset_y">48.8028207850908</SimpleData>
+		<SimpleData name="Block">1014</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">24</SimpleData>
+		<SimpleData name="selected_n">6</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0023</SimpleData>
+		<SimpleData name="Easting_UTM37S">546777.187541438</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511298.80282078</SimpleData>
+		<SimpleData name="Longitude">39.4216172611933</SimpleData>
+		<SimpleData name="Latitude">-4.42122498228981</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4217074437795,-4.42131539623711 39.4217073414992,-4.42113446569419 39.4215270786291,-4.42113456832922 39.4215271808656,-4.42131549887636 39.4217074437795,-4.42131539623711</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.24">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">24</SimpleData>
+		<SimpleData name="grid_id">G0001</SimpleData>
+		<SimpleData name="offset_x">27.1875414384091</SimpleData>
+		<SimpleData name="offset_y">48.8028207850908</SimpleData>
+		<SimpleData name="Block">1014</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">24</SimpleData>
+		<SimpleData name="selected_n">6</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0024</SimpleData>
+		<SimpleData name="Easting_UTM37S">546477.187541438</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510998.80282078</SimpleData>
+		<SimpleData name="Longitude">39.4189148418513</SimpleData>
+		<SimpleData name="Latitude">-4.42394047593203</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4190050245006,-4.4240308902019 39.4190049228131,-4.42384995960919 39.4188246592239,-4.42385006164888 39.4188247608676,-4.42403099224578 39.4190050245006,-4.4240308902019</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.25">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">25</SimpleData>
+		<SimpleData name="grid_id">G0043</SimpleData>
+		<SimpleData name="offset_x">88.8268076452488</SimpleData>
+		<SimpleData name="offset_y">39.9994395971013</SimpleData>
+		<SimpleData name="Block">1015</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">24</SimpleData>
+		<SimpleData name="selected_n">5</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0025</SimpleData>
+		<SimpleData name="Easting_UTM37S">546338.826807645</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510689.9994396</SimpleData>
+		<SimpleData name="Longitude">39.4176693370361</SimpleData>
+		<SimpleData name="Latitude">-4.42673478012325</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4177595199188,-4.42682519452038 39.4177594184692,-4.42664426391239 39.4175791541754,-4.42664436571283 39.4175792555811,-4.426825296325 39.4177595199188,-4.42682519452038</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.26">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">26</SimpleData>
+		<SimpleData name="grid_id">G0050</SimpleData>
+		<SimpleData name="offset_x">88.8268076452488</SimpleData>
+		<SimpleData name="offset_y">39.9994395971013</SimpleData>
+		<SimpleData name="Block">1015</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">24</SimpleData>
+		<SimpleData name="selected_n">5</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0026</SimpleData>
+		<SimpleData name="Easting_UTM37S">546438.826807645</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510489.9994396</SimpleData>
+		<SimpleData name="Longitude">39.4185716752373</SimpleData>
+		<SimpleData name="Latitude">-4.42854357640884</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4186618584588,-4.42863399066032 39.4186617567485,-4.4284530600821 39.4184814920377,-4.42845316214406 39.4184815937043,-4.42863409272647 39.4186618584588,-4.42863399066032</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.27">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">27</SimpleData>
+		<SimpleData name="grid_id">G0021</SimpleData>
+		<SimpleData name="offset_x">88.8268076452488</SimpleData>
+		<SimpleData name="offset_y">39.9994395971013</SimpleData>
+		<SimpleData name="Block">1015</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">24</SimpleData>
+		<SimpleData name="selected_n">5</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0027</SimpleData>
+		<SimpleData name="Easting_UTM37S">546138.826807645</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510289.9994396</SimpleData>
+		<SimpleData name="Longitude">39.4158687143012</SimpleData>
+		<SimpleData name="Latitude">-4.43035440880979</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4159588974655,-4.43044482339698 39.4159587963703,-4.43026389276502 39.4157785311588,-4.43026399420931 39.4157786322102,-4.43044492484542 39.4159588974655,-4.43044482339698</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.28">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">28</SimpleData>
+		<SimpleData name="grid_id">G0054</SimpleData>
+		<SimpleData name="offset_x">88.8268076452488</SimpleData>
+		<SimpleData name="offset_y">39.9994395971013</SimpleData>
+		<SimpleData name="Block">1015</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">24</SimpleData>
+		<SimpleData name="selected_n">5</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0028</SimpleData>
+		<SimpleData name="Easting_UTM37S">546438.826807645</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510889.9994396</SimpleData>
+		<SimpleData name="Longitude">39.4185696423074</SimpleData>
+		<SimpleData name="Latitude">-4.42492496462547</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4186598250492,-4.42501537892766 39.4186597234228,-4.42483444833174 39.4184794595875,-4.42483455030999 39.4184795611702,-4.4250154809101 39.4186598250492,-4.42501537892766</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.29">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">29</SimpleData>
+		<SimpleData name="grid_id">G0023</SimpleData>
+		<SimpleData name="offset_x">88.8268076452488</SimpleData>
+		<SimpleData name="offset_y">39.9994395971013</SimpleData>
+		<SimpleData name="Block">1015</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">24</SimpleData>
+		<SimpleData name="selected_n">5</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0029</SimpleData>
+		<SimpleData name="Easting_UTM37S">546138.826807645</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510489.9994396</SimpleData>
+		<SimpleData name="Longitude">39.4158677037769</SimpleData>
+		<SimpleData name="Latitude">-4.42854510242509</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4159578867013,-4.42863551703751 39.4159577856478,-4.42845458639669 39.4157775208743,-4.42845468779939 39.415777621884,-4.42863561844436 39.4159578867013,-4.42863551703751</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.30">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">30</SimpleData>
+		<SimpleData name="grid_id">G0070</SimpleData>
+		<SimpleData name="offset_x">35.1846255827883</SimpleData>
+		<SimpleData name="offset_y">43.0186245990098</SimpleData>
+		<SimpleData name="Block">1016</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">38</SimpleData>
+		<SimpleData name="selected_n">10</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0030</SimpleData>
+		<SimpleData name="Easting_UTM37S">546185.184625583</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511293.0186246</SimpleData>
+		<SimpleData name="Longitude">39.4162814806666</SimpleData>
+		<SimpleData name="Latitude">-4.42128032806543</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4163716626747,-4.42137074272343 39.4163715616873,-4.42118981205673 39.4161912986803,-4.42118991339415 39.416191399624,-4.42137084406501 39.4163716626747,-4.42137074272343</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.31">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">31</SimpleData>
+		<SimpleData name="grid_id">G0092</SimpleData>
+		<SimpleData name="offset_x">35.1846255827883</SimpleData>
+		<SimpleData name="offset_y">43.0186245990098</SimpleData>
+		<SimpleData name="Block">1016</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">38</SimpleData>
+		<SimpleData name="selected_n">10</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0031</SimpleData>
+		<SimpleData name="Easting_UTM37S">546385.184625583</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511093.0186246</SimpleData>
+		<SimpleData name="Longitude">39.4180851249837</SimpleData>
+		<SimpleData name="Latitude">-4.42308861870285</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4181753074291,-4.42317903309526 39.4181752059626,-4.42299810247913 39.4179949425601,-4.42299820429715 39.4179950439829,-4.42317913491746 39.4181753074291,-4.42317903309526</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.32">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">32</SimpleData>
+		<SimpleData name="grid_id">G0094</SimpleData>
+		<SimpleData name="offset_x">35.1846255827883</SimpleData>
+		<SimpleData name="offset_y">43.0186245990098</SimpleData>
+		<SimpleData name="Block">1016</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">38</SimpleData>
+		<SimpleData name="selected_n">10</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0032</SimpleData>
+		<SimpleData name="Easting_UTM37S">546385.184625583</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511293.0186246</SimpleData>
+		<SimpleData name="Longitude">39.4180841107468</SimpleData>
+		<SimpleData name="Latitude">-4.42127931247639</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4181742929526,-4.42136972689413 39.418174191528,-4.42118879626915 39.4179939285628,-4.42118889804537 39.4179940299436,-4.42136982867453 39.4181742929526,-4.42136972689413</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.33">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">33</SimpleData>
+		<SimpleData name="grid_id">G0025</SimpleData>
+		<SimpleData name="offset_x">35.1846255827883</SimpleData>
+		<SimpleData name="offset_y">43.0186245990098</SimpleData>
+		<SimpleData name="Block">1016</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">38</SimpleData>
+		<SimpleData name="selected_n">10</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0033</SimpleData>
+		<SimpleData name="Easting_UTM37S">545885.184625583</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510393.0186246</SimpleData>
+		<SimpleData name="Longitude">39.4135820529021</SimpleData>
+		<SimpleData name="Latitude">-4.4294237252219</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4136722356914,-4.42951414012715 39.4136721351732,-4.42933320943802 39.4134918701346,-4.42933331030337 39.4134919706091,-4.42951424099664 39.4136722356914,-4.42951414012715</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.34">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">34</SimpleData>
+		<SimpleData name="grid_id">G0041</SimpleData>
+		<SimpleData name="offset_x">35.1846255827883</SimpleData>
+		<SimpleData name="offset_y">43.0186245990098</SimpleData>
+		<SimpleData name="Block">1016</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">38</SimpleData>
+		<SimpleData name="selected_n">10</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0034</SimpleData>
+		<SimpleData name="Easting_UTM37S">545985.184625583</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510793.0186246</SimpleData>
+		<SimpleData name="Longitude">39.4144813646768</SimpleData>
+		<SimpleData name="Latitude">-4.42580460674819</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4145715470859,-4.42589502158349 39.4145714464318,-4.42571409089736 39.4143911822896,-4.42571419189961 39.4143912828999,-4.42589512258989 39.4145715470859,-4.42589502158349</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.35">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">35</SimpleData>
+		<SimpleData name="grid_id">G0056</SimpleData>
+		<SimpleData name="offset_x">35.1846255827883</SimpleData>
+		<SimpleData name="offset_y">43.0186245990098</SimpleData>
+		<SimpleData name="Block">1016</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">38</SimpleData>
+		<SimpleData name="selected_n">10</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0035</SimpleData>
+		<SimpleData name="Easting_UTM37S">546085.184625583</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511093.0186246</SimpleData>
+		<SimpleData name="Longitude">39.4153811731477</SimpleData>
+		<SimpleData name="Latitude">-4.42309014106601</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4154713552965,-4.42318055581892 39.415471254486,-4.42299962514027 39.4152909910208,-4.42299972629983 39.4152910917876,-4.42318065698264 39.4154713552965,-4.42318055581892</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.36">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">36</SimpleData>
+		<SimpleData name="grid_id">G0039</SimpleData>
+		<SimpleData name="offset_x">35.1846255827883</SimpleData>
+		<SimpleData name="offset_y">43.0186245990098</SimpleData>
+		<SimpleData name="Block">1016</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">38</SimpleData>
+		<SimpleData name="selected_n">10</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0036</SimpleData>
+		<SimpleData name="Easting_UTM37S">545985.184625583</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510593.0186246</SimpleData>
+		<SimpleData name="Longitude">39.4144823712069</SimpleData>
+		<SimpleData name="Latitude">-4.42761391358602</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4145725538556,-4.42770432839617 39.4145724531599,-4.42752339771888 39.4143921885801,-4.42752349876259 39.4143922892319,-4.42770442944401 39.4145725538556,-4.42770432839617</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.37">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">37</SimpleData>
+		<SimpleData name="grid_id">G0119</SimpleData>
+		<SimpleData name="offset_x">35.1846255827883</SimpleData>
+		<SimpleData name="offset_y">43.0186245990098</SimpleData>
+		<SimpleData name="Block">1016</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">38</SimpleData>
+		<SimpleData name="selected_n">10</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0037</SimpleData>
+		<SimpleData name="Easting_UTM37S">546585.184625583</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511393.0186246</SimpleData>
+		<SimpleData name="Longitude">39.4198862312609</SimpleData>
+		<SimpleData name="Latitude">-4.42037363956246</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4199764135445,-4.42046405375255 39.4199763117038,-4.42028312316506 39.4197960489991,-4.42028322535907 39.4197961507961,-4.42046415595076 39.4199764135445,-4.42046405375255</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.38">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">38</SimpleData>
+		<SimpleData name="grid_id">G0015</SimpleData>
+		<SimpleData name="offset_x">35.1846255827883</SimpleData>
+		<SimpleData name="offset_y">43.0186245990098</SimpleData>
+		<SimpleData name="Block">1016</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">38</SimpleData>
+		<SimpleData name="selected_n">10</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0038</SimpleData>
+		<SimpleData name="Easting_UTM37S">545785.184625583</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510593.0186246</SimpleData>
+		<SimpleData name="Longitude">39.4126797249815</SimpleData>
+		<SimpleData name="Latitude">-4.42761492184659</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4127699074321,-4.42770533689715 39.4127698071742,-4.42752440617849 39.4125895425529,-4.42752450678277 39.412589642767,-4.42770543750555 39.4127699074321,-4.42770533689715</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.39">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">39</SimpleData>
+		<SimpleData name="grid_id">G0065</SimpleData>
+		<SimpleData name="offset_x">35.1846255827883</SimpleData>
+		<SimpleData name="offset_y">43.0186245990098</SimpleData>
+		<SimpleData name="Block">1016</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">38</SimpleData>
+		<SimpleData name="selected_n">10</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0039</SimpleData>
+		<SimpleData name="Easting_UTM37S">546185.184625583</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510793.0186246</SimpleData>
+		<SimpleData name="Longitude">39.4162840061094</SimpleData>
+		<SimpleData name="Latitude">-4.42580359450868</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4163741887165,-4.42589400910358 39.4163740876248,-4.425713078459 39.4161938235242,-4.42571317990049 39.4161939245722,-4.42589411054924 39.4163741887165,-4.42589400910358</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.40">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">40</SimpleData>
+		<SimpleData name="grid_id">G0081</SimpleData>
+		<SimpleData name="offset_x">54.815782841633</SimpleData>
+		<SimpleData name="offset_y">13.1891463375876</SimpleData>
+		<SimpleData name="Block">1019</SimpleData>
+		<SimpleData name="Year">2023</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="target_n">24</SimpleData>
+		<SimpleData name="selected_n">6</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0040</SimpleData>
+		<SimpleData name="Easting_UTM37S">545704.815782842</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509363.18914634</SimpleData>
+		<SimpleData name="Longitude">39.4119615025561</SimpleData>
+		<SimpleData name="Latitude">-4.43874102180891</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4120516864018,-4.4388314368021 39.4120515860659,-4.43865050612139 39.4118713187324,-4.43865060680242 39.4118714190244,-4.43883153748725 39.4120516864018,-4.4388314368021</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.41">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">41</SimpleData>
+		<SimpleData name="grid_id">G0066</SimpleData>
+		<SimpleData name="offset_x">54.815782841633</SimpleData>
+		<SimpleData name="offset_y">13.1891463375876</SimpleData>
+		<SimpleData name="Block">1019</SimpleData>
+		<SimpleData name="Year">2023</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="target_n">24</SimpleData>
+		<SimpleData name="selected_n">6</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0041</SimpleData>
+		<SimpleData name="Easting_UTM37S">545504.815782842</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509263.18914634</SimpleData>
+		<SimpleData name="Longitude">39.4101593282219</SimpleData>
+		<SimpleData name="Latitude">-4.43964668004536</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4102495119887,-4.43973709526691 39.4102494120712,-4.43955616454952 39.410069144477,-4.43955626481053 39.4100692443506,-4.43973719553202 39.4102495119887,-4.43973709526691</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.42">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">42</SimpleData>
+		<SimpleData name="grid_id">G0012</SimpleData>
+		<SimpleData name="offset_x">54.815782841633</SimpleData>
+		<SimpleData name="offset_y">13.1891463375876</SimpleData>
+		<SimpleData name="Block">1019</SimpleData>
+		<SimpleData name="Year">2023</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="target_n">24</SimpleData>
+		<SimpleData name="selected_n">6</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0042</SimpleData>
+		<SimpleData name="Easting_UTM37S">544704.815782842</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509463.18914634</SimpleData>
+		<SimpleData name="Longitude">39.4029476391123</SimpleData>
+		<SimpleData name="Latitude">-4.43784134645185</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.403037821843,-4.43793176266059 39.4030377237219,-4.43775083177166 39.4028574564036,-4.43775093022987 39.4028575544808,-4.43793186112282 39.403037821843,-4.43793176266059</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.43">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">43</SimpleData>
+		<SimpleData name="grid_id">G0023</SimpleData>
+		<SimpleData name="offset_x">54.815782841633</SimpleData>
+		<SimpleData name="offset_y">13.1891463375876</SimpleData>
+		<SimpleData name="Block">1019</SimpleData>
+		<SimpleData name="Year">2023</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="target_n">24</SimpleData>
+		<SimpleData name="selected_n">6</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0043</SimpleData>
+		<SimpleData name="Easting_UTM37S">544904.815782842</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509163.18914634</SimpleData>
+		<SimpleData name="Longitude">39.4047517908385</SimpleData>
+		<SimpleData name="Latitude">-4.44055432230583</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.404841974128,-4.44064473823712 39.4048418755072,-4.4404638074019 39.404661607571,-4.44046390636127 39.4046617061478,-4.44064483720054 39.404841974128,-4.44064473823712</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.44">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">44</SimpleData>
+		<SimpleData name="grid_id">G0032</SimpleData>
+		<SimpleData name="offset_x">54.815782841633</SimpleData>
+		<SimpleData name="offset_y">13.1891463375876</SimpleData>
+		<SimpleData name="Block">1019</SimpleData>
+		<SimpleData name="Year">2023</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="target_n">24</SimpleData>
+		<SimpleData name="selected_n">6</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0044</SimpleData>
+		<SimpleData name="Easting_UTM37S">545004.815782842</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509363.18914634</SimpleData>
+		<SimpleData name="Longitude">39.4056521425984</SimpleData>
+		<SimpleData name="Latitude">-4.43874451873377</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4057423257476,-4.43883493456947 39.405742226948,-4.43865400374564 39.405561959471,-4.4386541028848 39.4055620582268,-4.43883503371268 39.4057423257476,-4.43883493456947</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.45">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">45</SimpleData>
+		<SimpleData name="grid_id">G0037</SimpleData>
+		<SimpleData name="offset_x">54.815782841633</SimpleData>
+		<SimpleData name="offset_y">13.1891463375876</SimpleData>
+		<SimpleData name="Block">1019</SimpleData>
+		<SimpleData name="Year">2023</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="target_n">24</SimpleData>
+		<SimpleData name="selected_n">6</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0045</SimpleData>
+		<SimpleData name="Easting_UTM37S">545104.815782842</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509163.18914634</SimpleData>
+		<SimpleData name="Longitude">39.4065544702176</SimpleData>
+		<SimpleData name="Latitude">-4.44055333048827</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4066446537063,-4.44064374617891 39.4066445546464,-4.44046281538427 39.4064642867508,-4.44046291478436 39.4064643857668,-4.44064384558306 39.4066446537063,-4.44064374617891</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.46">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">46</SimpleData>
+		<SimpleData name="grid_id">G0011</SimpleData>
+		<SimpleData name="offset_x">6.68839763427517</SimpleData>
+		<SimpleData name="offset_y">41.3242816428259</SimpleData>
+		<SimpleData name="Block">1020</SimpleData>
+		<SimpleData name="Year">2023</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="target_n">17</SimpleData>
+		<SimpleData name="selected_n">4</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0046</SimpleData>
+		<SimpleData name="Easting_UTM37S">544456.688397634</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509391.32428164</SimpleData>
+		<SimpleData name="Longitude">39.400711526177</SimpleData>
+		<SimpleData name="Latitude">-4.43849269346931</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4008017087465,-4.43858310996741 39.4008016111555,-4.43840217903181 39.4006213436295,-4.43840227695798 39.4006214411767,-4.43858320789759 39.4008017087465,-4.43858310996741</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.47">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">47</SimpleData>
+		<SimpleData name="grid_id">G0021</SimpleData>
+		<SimpleData name="offset_x">6.68839763427517</SimpleData>
+		<SimpleData name="offset_y">41.3242816428259</SimpleData>
+		<SimpleData name="Block">1020</SimpleData>
+		<SimpleData name="Year">2023</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="target_n">17</SimpleData>
+		<SimpleData name="selected_n">4</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0047</SimpleData>
+		<SimpleData name="Easting_UTM37S">544656.688397634</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509191.32428164</SimpleData>
+		<SimpleData name="Longitude">39.4025151817371</SimpleData>
+		<SimpleData name="Latitude">-4.440301020915</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4026053647456,-4.44039143714819 39.4026052666752,-4.44021050626163 39.4024249987505,-4.44021060466857 39.402425096777,-4.44039153555915 39.4026053647456,-4.44039143714819</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.48">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">48</SimpleData>
+		<SimpleData name="grid_id">G0009</SimpleData>
+		<SimpleData name="offset_x">6.68839763427517</SimpleData>
+		<SimpleData name="offset_y">41.3242816428259</SimpleData>
+		<SimpleData name="Block">1020</SimpleData>
+		<SimpleData name="Year">2023</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="target_n">17</SimpleData>
+		<SimpleData name="selected_n">4</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0048</SimpleData>
+		<SimpleData name="Easting_UTM37S">544456.688397634</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509191.32428164</SimpleData>
+		<SimpleData name="Longitude">39.4007125020691</SimpleData>
+		<SimpleData name="Latitude">-4.44030200280103</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4008026848782,-4.44039241927465 39.4008025872469,-4.44021148834792 39.400622319282,-4.44021158631417 39.4006224168693,-4.4403925172449 39.4008026848782,-4.44039241927465</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.49">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">49</SimpleData>
+		<SimpleData name="grid_id">G0007</SimpleData>
+		<SimpleData name="offset_x">6.68839763427517</SimpleData>
+		<SimpleData name="offset_y">41.3242816428259</SimpleData>
+		<SimpleData name="Block">1020</SimpleData>
+		<SimpleData name="Year">2023</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="target_n">17</SimpleData>
+		<SimpleData name="selected_n">4</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0049</SimpleData>
+		<SimpleData name="Easting_UTM37S">544456.688397634</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508991.32428164</SimpleData>
+		<SimpleData name="Longitude">39.4007134783629</SimpleData>
+		<SimpleData name="Latitude">-4.44211131204395</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4008036614116,-4.44220172849309 39.4008035637402,-4.44202079757525 39.4006232953361,-4.44202089558157 39.4006233929636,-4.44220182650342 39.4008036614116,-4.44220172849309</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.50">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">50</SimpleData>
+		<SimpleData name="grid_id">G0042</SimpleData>
+		<SimpleData name="offset_x">49.7536568758602</SimpleData>
+		<SimpleData name="offset_y">26.6173723072541</SimpleData>
+		<SimpleData name="Block">10171</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">27</SimpleData>
+		<SimpleData name="selected_n">6</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0050</SimpleData>
+		<SimpleData name="Easting_UTM37S">545799.753656876</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510476.61737231</SimpleData>
+		<SimpleData name="Longitude">39.4128116226772</SimpleData>
+		<SimpleData name="Latitude">-4.42866787663904</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4129018052816,-4.4287582916575 39.4129017049678,-4.428577360947 39.4127214400946,-4.42857746160732 39.4127215403647,-4.42875839232194 39.4129018052816,-4.4287582916575</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.51">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">51</SimpleData>
+		<SimpleData name="grid_id">G0023</SimpleData>
+		<SimpleData name="offset_x">49.7536568758602</SimpleData>
+		<SimpleData name="offset_y">26.6173723072541</SimpleData>
+		<SimpleData name="Block">10171</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">27</SimpleData>
+		<SimpleData name="selected_n">6</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0051</SimpleData>
+		<SimpleData name="Easting_UTM37S">545599.753656876</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510376.61737231</SimpleData>
+		<SimpleData name="Longitude">39.4110094728414</SimpleData>
+		<SimpleData name="Latitude">-4.4295735348228</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4110996553674,-4.42966395006913 39.4110995554709,-4.42948301932187 39.4109192903374,-4.42948311956321 39.4109193901901,-4.42966405031458 39.4110996553674,-4.42966395006913</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.52">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">52</SimpleData>
+		<SimpleData name="grid_id">G0021</SimpleData>
+		<SimpleData name="offset_x">49.7536568758602</SimpleData>
+		<SimpleData name="offset_y">26.6173723072541</SimpleData>
+		<SimpleData name="Block">10171</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">27</SimpleData>
+		<SimpleData name="selected_n">6</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0052</SimpleData>
+		<SimpleData name="Easting_UTM37S">545599.753656876</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510176.61737231</SimpleData>
+		<SimpleData name="Longitude">39.4110104717937</SimpleData>
+		<SimpleData name="Latitude">-4.43138284227169</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4111006545593,-4.43147325749304 39.4111005546215,-4.43129232675463 39.41092028905,-4.43129242703707 39.4109203889439,-4.43147335777959 39.4111006545593,-4.43147325749304</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.53">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">53</SimpleData>
+		<SimpleData name="grid_id">G0040</SimpleData>
+		<SimpleData name="offset_x">49.7536568758602</SimpleData>
+		<SimpleData name="offset_y">26.6173723072541</SimpleData>
+		<SimpleData name="Block">10171</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">27</SimpleData>
+		<SimpleData name="selected_n">6</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0053</SimpleData>
+		<SimpleData name="Easting_UTM37S">545799.753656876</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510276.61737231</SimpleData>
+		<SimpleData name="Longitude">39.4128126258035</SimpleData>
+		<SimpleData name="Latitude">-4.4304771837203</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4129028086477,-4.43056759871368 39.4129027082925,-4.43038666801205 39.4127224429813,-4.43038676871364 39.4127225432927,-4.4305676994194 39.4129028086477,-4.43056759871368</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.54">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">54</SimpleData>
+		<SimpleData name="grid_id">G0061</SimpleData>
+		<SimpleData name="offset_x">49.7536568758602</SimpleData>
+		<SimpleData name="offset_y">26.6173723072541</SimpleData>
+		<SimpleData name="Block">10171</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">27</SimpleData>
+		<SimpleData name="selected_n">6</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0054</SimpleData>
+		<SimpleData name="Easting_UTM37S">545999.753656876</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510576.61737231</SimpleData>
+		<SimpleData name="Longitude">39.4146137678234</SimpleData>
+		<SimpleData name="Latitude">-4.42776221445059</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4147039505062,-4.42785262924116 39.4147038497752,-4.42767169856762 39.4145235851624,-4.42767179964674 39.4145236858496,-4.42785273032442 39.4147039505062,-4.42785262924116</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.55">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">55</SimpleData>
+		<SimpleData name="grid_id">G0044</SimpleData>
+		<SimpleData name="offset_x">49.7536568758602</SimpleData>
+		<SimpleData name="offset_y">26.6173723072541</SimpleData>
+		<SimpleData name="Block">10171</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">27</SimpleData>
+		<SimpleData name="selected_n">6</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0055</SimpleData>
+		<SimpleData name="Easting_UTM37S">545799.753656876</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510676.61737231</SimpleData>
+		<SimpleData name="Longitude">39.4128106199646</SimpleData>
+		<SimpleData name="Latitude">-4.42685856946922</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4129008023295,-4.42694898451274 39.412900702057,-4.4267680537934 39.4127204376217,-4.42676815441243 39.4127205378503,-4.4269490851359 39.4129008023295,-4.42694898451274</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.56">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">56</SimpleData>
+		<SimpleData name="grid_id">G0018</SimpleData>
+		<SimpleData name="offset_x">24.3517762709337</SimpleData>
+		<SimpleData name="offset_y">50.2208989503156</SimpleData>
+		<SimpleData name="Block">10172</SimpleData>
+		<SimpleData name="Year">2022</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="target_n">28</SimpleData>
+		<SimpleData name="selected_n">7</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0056</SimpleData>
+		<SimpleData name="Easting_UTM37S">544974.351776271</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509600.22089895</SimpleData>
+		<SimpleData name="Longitude">39.4053763894851</SimpleData>
+		<SimpleData name="Latitude">-4.43660035202128</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4054665723199,-4.43669076792291 39.4054664736353,-4.43650983708238 39.4052862066722,-4.4365099361064 39.405286305313,-4.43669086695097 39.4054665723199,-4.43669076792291</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.57">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">57</SimpleData>
+		<SimpleData name="grid_id">G0038</SimpleData>
+		<SimpleData name="offset_x">24.3517762709337</SimpleData>
+		<SimpleData name="offset_y">50.2208989503156</SimpleData>
+		<SimpleData name="Block">10172</SimpleData>
+		<SimpleData name="Year">2022</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="target_n">28</SimpleData>
+		<SimpleData name="selected_n">7</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0057</SimpleData>
+		<SimpleData name="Easting_UTM37S">545174.351776271</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510000.22089895</SimpleData>
+		<SimpleData name="Longitude">39.4071770779198</SimpleData>
+		<SimpleData name="Latitude">-4.43298074334341</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4072672604742,-4.43307115905414 39.4072671614325,-4.43289022823652 39.4070868953872,-4.43289032761941 39.4070869943851,-4.43307125844111 39.4072672604742,-4.43307115905414</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.58">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">58</SimpleData>
+		<SimpleData name="grid_id">G0021</SimpleData>
+		<SimpleData name="offset_x">24.3517762709337</SimpleData>
+		<SimpleData name="offset_y">50.2208989503156</SimpleData>
+		<SimpleData name="Block">10172</SimpleData>
+		<SimpleData name="Year">2022</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="target_n">28</SimpleData>
+		<SimpleData name="selected_n">7</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0058</SimpleData>
+		<SimpleData name="Easting_UTM37S">544974.351776271</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509900.22089895</SimpleData>
+		<SimpleData name="Longitude">39.4053749100017</SimpleData>
+		<SimpleData name="Latitude">-4.43388638928321</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4054650924771,-4.4339768052219 39.4054649938535,-4.43379587436807 39.4052847275482,-4.43379597333128 39.4052848261281,-4.43397690418916 39.4054650924771,-4.4339768052219</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.59">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">59</SimpleData>
+		<SimpleData name="grid_id">G0034</SimpleData>
+		<SimpleData name="offset_x">24.3517762709337</SimpleData>
+		<SimpleData name="offset_y">50.2208989503156</SimpleData>
+		<SimpleData name="Block">10172</SimpleData>
+		<SimpleData name="Year">2022</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="target_n">28</SimpleData>
+		<SimpleData name="selected_n">7</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0059</SimpleData>
+		<SimpleData name="Easting_UTM37S">545174.351776271</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509600.22089895</SimpleData>
+		<SimpleData name="Longitude">39.4071790591317</SimpleData>
+		<SimpleData name="Latitude">-4.43659935955924</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4072692421656,-4.43668977522039 39.4072691430422,-4.4365088444205 39.4070888761199,-4.43650894388483 39.4070889751993,-4.43668987468879 39.4072692421656,-4.43668977522039</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.60">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">60</SimpleData>
+		<SimpleData name="grid_id">G0052</SimpleData>
+		<SimpleData name="offset_x">24.3517762709337</SimpleData>
+		<SimpleData name="offset_y">50.2208989503156</SimpleData>
+		<SimpleData name="Block">10172</SimpleData>
+		<SimpleData name="Year">2022</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="target_n">28</SimpleData>
+		<SimpleData name="selected_n">7</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0060</SimpleData>
+		<SimpleData name="Easting_UTM37S">545374.351776271</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509800.22089895</SimpleData>
+		<SimpleData name="Longitude">39.4089807331739</SimpleData>
+		<SimpleData name="Latitude">-4.43478905503843</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4090709161669,-4.43487947048389 39.4090708166458,-4.43469853971595 39.408890550203,-4.43469863957971 39.4088906496802,-4.43487957035173 39.4090709161669,-4.43487947048389</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.61">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">61</SimpleData>
+		<SimpleData name="grid_id">G0036</SimpleData>
+		<SimpleData name="offset_x">24.3517762709337</SimpleData>
+		<SimpleData name="offset_y">50.2208989503156</SimpleData>
+		<SimpleData name="Block">10172</SimpleData>
+		<SimpleData name="Year">2022</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="target_n">28</SimpleData>
+		<SimpleData name="selected_n">7</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0061</SimpleData>
+		<SimpleData name="Easting_UTM37S">545174.351776271</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509800.22089895</SimpleData>
+		<SimpleData name="Longitude">39.4071780683217</SimpleData>
+		<SimpleData name="Latitude">-4.43479005149567</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4072682511158,-4.43488046718161 39.4072681520333,-4.43469953637285 39.4070878855495,-4.43469963579647 39.4070879845882,-4.43488056660929 39.4072682511158,-4.43488046718161</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.62">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">62</SimpleData>
+		<SimpleData name="grid_id">G0054</SimpleData>
+		<SimpleData name="offset_x">24.3517762709337</SimpleData>
+		<SimpleData name="offset_y">50.2208989503156</SimpleData>
+		<SimpleData name="Block">10172</SimpleData>
+		<SimpleData name="Year">2022</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="target_n">28</SimpleData>
+		<SimpleData name="selected_n">7</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0062</SimpleData>
+		<SimpleData name="Easting_UTM37S">545374.351776271</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510000.22089895</SimpleData>
+		<SimpleData name="Longitude">39.4089797383876</SimpleData>
+		<SimpleData name="Latitude">-4.43297974729427</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4090699211408,-4.43307016276461 39.4090698216608,-4.43288923198781 39.4088895556564,-4.43288933181066 39.4088896550926,-4.43307026259156 39.4090699211408,-4.43307016276461</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.63">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">63</SimpleData>
+		<SimpleData name="grid_id">G0054</SimpleData>
+		<SimpleData name="offset_x">97.8354858370997</SimpleData>
+		<SimpleData name="offset_y">5.45226550104574</SimpleData>
+		<SimpleData name="Block">10181</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">28</SimpleData>
+		<SimpleData name="selected_n">5</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0063</SimpleData>
+		<SimpleData name="Easting_UTM37S">546247.835485837</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509955.4522655</SimpleData>
+		<SimpleData name="Longitude">39.4168529332475</SimpleData>
+		<SimpleData name="Latitude">-4.43338034634267</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4169431169213,-4.4334707607564 39.4169430155174,-4.43328983016196 39.4167627495957,-4.43328993191563 39.4167628509557,-4.43347086251423 39.4169431169213,-4.4334707607564</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.64">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">64</SimpleData>
+		<SimpleData name="grid_id">G0031</SimpleData>
+		<SimpleData name="offset_x">97.8354858370997</SimpleData>
+		<SimpleData name="offset_y">5.45226550104574</SimpleData>
+		<SimpleData name="Block">10181</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">28</SimpleData>
+		<SimpleData name="selected_n">5</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0064</SimpleData>
+		<SimpleData name="Easting_UTM37S">545947.835485837</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509755.4522655</SimpleData>
+		<SimpleData name="Longitude">39.4141499510746</SimpleData>
+		<SimpleData name="Latitude">-4.43519117427299</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4142401346908,-4.43528158902275 39.414240033903,-4.43510065837484 39.4140597674803,-4.43510075950993 39.4140598682242,-4.43528169016198 39.4142401346908,-4.43528158902275</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.65">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">65</SimpleData>
+		<SimpleData name="grid_id">G0019</SimpleData>
+		<SimpleData name="offset_x">97.8354858370997</SimpleData>
+		<SimpleData name="offset_y">5.45226550104574</SimpleData>
+		<SimpleData name="Block">10181</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">28</SimpleData>
+		<SimpleData name="selected_n">5</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0065</SimpleData>
+		<SimpleData name="Easting_UTM37S">545747.835485837</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509955.4522655</SimpleData>
+		<SimpleData name="Longitude">39.4123462833546</SimpleData>
+		<SimpleData name="Latitude">-4.43338287648622</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4124364665324,-4.4334732915018 39.4124363662245,-4.43329236080369 39.4122561001988,-4.43329246145736 39.4122562004629,-4.4334733921596 39.4124364665324,-4.4334732915018</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.66">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">66</SimpleData>
+		<SimpleData name="grid_id">G0033</SimpleData>
+		<SimpleData name="offset_x">97.8354858370997</SimpleData>
+		<SimpleData name="offset_y">5.45226550104574</SimpleData>
+		<SimpleData name="Block">10181</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">28</SimpleData>
+		<SimpleData name="selected_n">5</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0066</SimpleData>
+		<SimpleData name="Easting_UTM37S">545947.835485837</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509955.4522655</SimpleData>
+		<SimpleData name="Longitude">39.4141489436234</SimpleData>
+		<SimpleData name="Latitude">-4.43338186772886</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4142391269996,-4.43347228250376 39.4142390262533,-4.43329135184699 39.4140587602691,-4.43329145294066 39.4140588609715,-4.43347238360157 39.4142391269996,-4.43347228250376</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.67">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">67</SimpleData>
+		<SimpleData name="grid_id">G0017</SimpleData>
+		<SimpleData name="offset_x">97.8354858370997</SimpleData>
+		<SimpleData name="offset_y">5.45226550104574</SimpleData>
+		<SimpleData name="Block">10181</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="target_n">28</SimpleData>
+		<SimpleData name="selected_n">5</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0067</SimpleData>
+		<SimpleData name="Easting_UTM37S">545747.835485837</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509755.4522655</SimpleData>
+		<SimpleData name="Longitude">39.412347286421</SimpleData>
+		<SimpleData name="Latitude">-4.43519218344362</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4124374698387,-4.43528259843415 39.4124373694894,-4.4351016677449 39.4122571030253,-4.43510176843981 39.4122572033307,-4.43528269913318 39.4124374698387,-4.43528259843415</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.68">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">68</SimpleData>
+		<SimpleData name="grid_id">G0008</SimpleData>
+		<SimpleData name="offset_x">61.7141476669952</SimpleData>
+		<SimpleData name="offset_y">89.013855320255</SimpleData>
+		<SimpleData name="Block">10182</SimpleData>
+		<SimpleData name="Year">2022</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="target_n">15</SimpleData>
+		<SimpleData name="selected_n">2</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0068</SimpleData>
+		<SimpleData name="Easting_UTM37S">545311.714147667</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509339.01385532</SimpleData>
+		<SimpleData name="Longitude">39.4084184523668</SimpleData>
+		<SimpleData name="Latitude">-4.43896169492597</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4085086358505,-4.43905211038943 39.4085085363724,-4.43887117962915 39.408328268905,-4.43887127944924 39.4083283683392,-4.4390522102136 39.4085086358505,-4.43905211038943</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.69">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">69</SimpleData>
+		<SimpleData name="grid_id">G0023</SimpleData>
+		<SimpleData name="offset_x">61.7141476669952</SimpleData>
+		<SimpleData name="offset_y">89.013855320255</SimpleData>
+		<SimpleData name="Block">10182</SimpleData>
+		<SimpleData name="Year">2022</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="target_n">15</SimpleData>
+		<SimpleData name="selected_n">2</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0069</SimpleData>
+		<SimpleData name="Easting_UTM37S">545511.714147667</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509639.01385532</SimpleData>
+		<SimpleData name="Longitude">39.4102196290906</SimpleData>
+		<SimpleData name="Latitude">-4.43624673358113</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4103098124133,-4.43633714884125 39.4103097125579,-4.43615621810861 39.4101294457898,-4.43615631830772 39.4101295456013,-4.43633724904447 39.4103098124133,-4.43633714884125</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.70">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">70</SimpleData>
+		<SimpleData name="grid_id">G0007</SimpleData>
+		<SimpleData name="offset_x">91.3642972554891</SimpleData>
+		<SimpleData name="offset_y">13.7478019587231</SimpleData>
+		<SimpleData name="Block">1022</SimpleData>
+		<SimpleData name="Year">2024</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="target_n">18</SimpleData>
+		<SimpleData name="selected_n">4</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0070</SimpleData>
+		<SimpleData name="Easting_UTM37S">542941.364297256</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508363.74780196</SimpleData>
+		<SimpleData name="Longitude">39.3870581740364</SimpleData>
+		<SimpleData name="Latitude">-4.44779601963343</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.3871483563212,-4.44788643782734 39.3871482618562,-4.44770550663886 39.3869679917736,-4.44770560142632 39.3869680861947,-4.44788653261867 39.3871483563212,-4.44788643782734</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.71">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">71</SimpleData>
+		<SimpleData name="grid_id">G0035</SimpleData>
+		<SimpleData name="offset_x">91.3642972554891</SimpleData>
+		<SimpleData name="offset_y">13.7478019587231</SimpleData>
+		<SimpleData name="Block">1022</SimpleData>
+		<SimpleData name="Year">2024</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="target_n">18</SimpleData>
+		<SimpleData name="selected_n">4</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0071</SimpleData>
+		<SimpleData name="Easting_UTM37S">543341.364297256</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508763.74780196</SimpleData>
+		<SimpleData name="Longitude">39.3906616696771</SimpleData>
+		<SimpleData name="Latitude">-4.44417549258602</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.3907518518839,-4.44426591034755 39.3907517566175,-4.44408497921909 39.3905714874922,-4.44408507481129 39.3905715827147,-4.44426600594366 39.3907518518839,-4.44426591034755</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.72">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">72</SimpleData>
+		<SimpleData name="grid_id">G0023</SimpleData>
+		<SimpleData name="offset_x">91.3642972554891</SimpleData>
+		<SimpleData name="offset_y">13.7478019587231</SimpleData>
+		<SimpleData name="Block">1022</SimpleData>
+		<SimpleData name="Year">2024</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="target_n">18</SimpleData>
+		<SimpleData name="selected_n">4</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0072</SimpleData>
+		<SimpleData name="Easting_UTM37S">543141.364297256</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508763.74780196</SimpleData>
+		<SimpleData name="Longitude">39.3888589780092</SimpleData>
+		<SimpleData name="Latitude">-4.44417644632211</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.3889491600158,-4.44426686432368 39.3889490651889,-4.44408593315623 39.3887687960245,-4.44408602830735 39.3887688908075,-4.44426695947869 39.3889491600158,-4.44426686432368</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.73">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">73</SimpleData>
+		<SimpleData name="grid_id">G0015</SimpleData>
+		<SimpleData name="offset_x">91.3642972554891</SimpleData>
+		<SimpleData name="offset_y">13.7478019587231</SimpleData>
+		<SimpleData name="Block">1022</SimpleData>
+		<SimpleData name="Year">2024</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="target_n">18</SimpleData>
+		<SimpleData name="selected_n">4</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0073</SimpleData>
+		<SimpleData name="Easting_UTM37S">543041.364297256</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508563.74780196</SimpleData>
+		<SimpleData name="Longitude">39.3879585780752</SimpleData>
+		<SimpleData name="Latitude">-4.4459862333798</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.3880487602209,-4.44607665147751 39.3880486655749,-4.44589572029952 39.3878683959515,-4.4458958152689 39.3878684905536,-4.44607674645077 39.3880487602209,-4.44607665147751</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.74">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">74</SimpleData>
+		<SimpleData name="grid_id">G0003</SimpleData>
+		<SimpleData name="offset_x">9.03398542693495</SimpleData>
+		<SimpleData name="offset_y">95.0633564563444</SimpleData>
+		<SimpleData name="Block">1021</SimpleData>
+		<SimpleData name="Year">2024</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="target_n">19</SimpleData>
+		<SimpleData name="selected_n">4</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0074</SimpleData>
+		<SimpleData name="Easting_UTM37S">543459.033985427</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508745.06335646</SimpleData>
+		<SimpleData name="Longitude">39.3917223695491</SimpleData>
+		<SimpleData name="Latitude">-4.44434395926631</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.391812551896,-4.44443437688433 39.3918124563674,-4.44425344577972 39.3916321872241,-4.44425354163509 39.3916322827088,-4.44443447274361 39.391812551896,-4.44443437688433</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.75">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">75</SimpleData>
+		<SimpleData name="grid_id">G0014</SimpleData>
+		<SimpleData name="offset_x">9.03398542693495</SimpleData>
+		<SimpleData name="offset_y">95.0633564563444</SimpleData>
+		<SimpleData name="Block">1021</SimpleData>
+		<SimpleData name="Year">2024</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="target_n">19</SimpleData>
+		<SimpleData name="selected_n">4</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0075</SimpleData>
+		<SimpleData name="Easting_UTM37S">543659.033985427</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508645.06335646</SimpleData>
+		<SimpleData name="Longitude">39.3935255407846</SimpleData>
+		<SimpleData name="Latitude">-4.44524765381294</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.3936157234513,-4.44533807117871 39.3936156274635,-4.44515714011782 39.3934353581398,-4.44515723643396 39.3934354540837,-4.44533816749878 39.3936157234513,-4.44533807117871</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.76">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">76</SimpleData>
+		<SimpleData name="grid_id">G0016</SimpleData>
+		<SimpleData name="offset_x">9.03398542693495</SimpleData>
+		<SimpleData name="offset_y">95.0633564563444</SimpleData>
+		<SimpleData name="Block">1021</SimpleData>
+		<SimpleData name="Year">2024</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="target_n">19</SimpleData>
+		<SimpleData name="selected_n">4</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0076</SimpleData>
+		<SimpleData name="Easting_UTM37S">543659.033985427</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508845.06335646</SimpleData>
+		<SimpleData name="Longitude">39.3935245813234</SimpleData>
+		<SimpleData name="Latitude">-4.4434383431399</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.3936147637506,-4.44352876052979 39.3936146678023,-4.44334782946001 39.3934343989181,-4.4433479257368 39.3934344948225,-4.44352885681051 39.3936147637506,-4.44352876052979</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.77">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">77</SimpleData>
+		<SimpleData name="grid_id">G0027</SimpleData>
+		<SimpleData name="offset_x">9.03398542693495</SimpleData>
+		<SimpleData name="offset_y">95.0633564563444</SimpleData>
+		<SimpleData name="Block">1021</SimpleData>
+		<SimpleData name="Year">2024</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="target_n">19</SimpleData>
+		<SimpleData name="selected_n">4</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0077</SimpleData>
+		<SimpleData name="Easting_UTM37S">543859.033985427</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508745.06335646</SimpleData>
+		<SimpleData name="Longitude">39.3953277520658</SimpleData>
+		<SimpleData name="Latitude">-4.44434203329771</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.3954179348128,-4.44443245043526 39.3954178384052,-4.44425151940937 39.3952375693408,-4.44425161614693 39.3952376657044,-4.44443254717677 39.3954179348128,-4.44443245043526</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.78">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">78</SimpleData>
+		<SimpleData name="grid_id">G0170</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">23</SimpleData>
+		<SimpleData name="selected_n">4</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0078</SimpleData>
+		<SimpleData name="Easting_UTM37S">545946.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509505.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4141399996299</SimpleData>
+		<SimpleData name="Latitude">-4.4374480793356</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4142301835444,-4.43753849405549 39.4142300827075,-4.43735756341839 39.4140498157374,-4.4373576646024 39.4140499165304,-4.43753859524364 39.4142301835444,-4.43753849405549</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.79">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">79</SimpleData>
+		<SimpleData name="grid_id">G0121</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">23</SimpleData>
+		<SimpleData name="selected_n">4</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0079</SimpleData>
+		<SimpleData name="Easting_UTM37S">545446.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509105.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4096353187151</SimpleData>
+		<SimpleData name="Latitude">-4.44106920989013</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4097255026127,-4.44115962516219 39.4097254027907,-4.44097869443985 39.4095451348394,-4.44097879460478 39.4095452346175,-4.44115972533122 39.4097255026127,-4.44115962516219</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.80">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">80</SimpleData>
+		<SimpleData name="grid_id">G0149</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">23</SimpleData>
+		<SimpleData name="selected_n">4</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0080</SimpleData>
+		<SimpleData name="Easting_UTM37S">545746.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509205.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4123388356088</SimpleData>
+		<SimpleData name="Latitude">-4.44016304910192</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4124290196848,-4.4402534640251 39.4124289192247,-4.44007253335998 39.4122486515548,-4.44007263416544 39.4122487519709,-4.44025356483468 39.4124290196848,-4.4402534640251</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.81">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">81</SimpleData>
+		<SimpleData name="grid_id">G0075</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">23</SimpleData>
+		<SimpleData name="selected_n">4</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0081</SimpleData>
+		<SimpleData name="Easting_UTM37S">544946.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509005.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4051291116663</SimpleData>
+		<SimpleData name="Latitude">-4.44197635441053</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.405219295186,-4.44206677027214 39.4052191964416,-4.44188583945237 39.4050389281686,-4.44188593853564 39.4050390268691,-4.44206686935947 39.405219295186,-4.44206677027214</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+</Folder>
+</Document></kml>

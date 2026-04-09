@@ -15,6 +15,7 @@ OUTPUT_DIRS = {
     "maps": OUTPUTS_DIR / "maps",
     "tables": OUTPUTS_DIR / "tables",
     "rasters": OUTPUTS_DIR / "rasters",
+    "sampling_design": OUTPUTS_DIR / "sampling_design",
 }
 
 #################### AOI BOUNDARIES ##########################
@@ -27,6 +28,7 @@ AOI_PATHS = {
     "degraded_1": DATA_DIR / "degraded_1_aoi.geojson",
     "degraded_2": DATA_DIR / "degraded_2_aoi.geojson",
     "degraded_3": DATA_DIR / "degraded_3_aoi.geojson",
+    "corridor": DATA_DIR / "corridor_dissolved_aoi.geojson",
 }
 
 #################### EE DATASETS ##########################
