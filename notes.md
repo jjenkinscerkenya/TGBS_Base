@@ -84,6 +84,29 @@ Other secondary anomalies are also evident. The long rains of 2020 were notably 
 Overall, the rainfall record indicates that the study region experienced a seasonally coherent but highly variable hydroclimatic regime, with especially strong departures in 2022 and 2023. For interpretation of biodiversity and vegetation trajectories, this means that observed site-level change should not be attributed only to management or degradation history without considering the strong influence of interannual rainfall variability, particularly the intensity or failure of the MAM and OND seasons.
 
 
+###############################################################
+
+Project Overview 
+Kwale County, Kenya's southernmost county is known for its white sand beaches which stretch for hundreds of kilometers along Kenya's southern coast. The county covers 8,270 km2 and is comprised of a mosaic of coastal plains, mangrove lagoons, coastal forests, and semi-arid grasslands. The county holds one of the largest coastal forest ecosystems in East Africa after the Arabuko-Sokoke forest. Kwale is home to several IUCN designated protected areas including the Shimba Hills National Reserve, Buda Forest, Gogoni Forest, and the Diani-Chale Marine National Reserve among others.  
+ 
+The coastal forests of Kwale county play a crucial role in supporting high concentrations of both plant and animal biodiversity. For example, over 50% of the 159 rare plants in Kenya are found in the Shimba Hills National Reserve, including some endangered species of cycad and orchids. Furthermore, the reserve is home to Kenya's only population of sable antelope as well as containing the highest density of Elephants in the country. Birdlife is also abundant, with over 111 species recorded, of which 22 are coastal endemic.
+
+However, these delicate ecosystems face increasing anthropogenic pressures from illegal logging, charcoal production, poaching, and changing climatic conditions. Community conservation and restoration efforts are crucial to preserving the ecological integrity and cultural heritage of these coastal ecosystems.
+
+
+1.1 Objective
+The objective of this report is to present the findings of a comprehensive remote sensing survey to support the assessment of restoration sites applying for the Global Biodiversity Standard. Wapi GIS Ltd used a variety of remote sensing and geoprocessing methods to understand baseline conditions and track signatures of ecological change throughout the restoration process.
+By comparing these results with the same ecological change metrics from reference and degraded sites in the region, it is possible to evaluate and quantify the progress of current restoration efforts.  
+
+1.2 Restoration Site
+One of the key economic entities in Kwale county is the Kwale Mineral Sands Operation, operated by Base Resources, which was acquired in 2010 and commenced production in late 2013. In the 2022 financial year, the Kwale operation accounted for approximately 65% of Kenya’s mining industry by mineral output value, representing a significant contribution to Kenya’s export market. 
+
+In 2020, mining operations transitioned from the Central Dune orebody to the South Dune orebody, an area roughly 4.5km2. The South Dune, hereafter referred to as the “focal” site, is located approximately 12km south of Shimba Hills National Reserve, between the Buda and Gogoni forests. Mining in the South Dune extension continued through the end of 2024. 
+
+Following the depletion of each subsequent mining block of the South Dune orebody, environmental restoration efforts were undertaken to stabilize soil banks, improve soil health, and introduce a variety of pioneer plant species. The South Dune extension restoration efforts are composed of 14 main rehabilitation blocks with an additional 9 peripheral rehabilitation areas. 
+
+For the purposes of this remote sensing survey, the rehabilitation blocks have been grouped into “old” rehabilitation blocks, those in which rehabilitation efforts have been taking place since 2020 - 2021, and “new” rehabilitation blocks, those in which rehabilitation efforts have been taking place since 2022 - 2024.
+
 
 
 
