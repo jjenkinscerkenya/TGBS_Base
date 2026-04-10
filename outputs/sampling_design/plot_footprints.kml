@@ -248,7 +248,7 @@
 		<SimpleData name="Longitude">39.4214017520147</SimpleData>
 		<SimpleData name="Latitude">-4.41199022816206</SimpleData>
 	</SchemaData></ExtendedData>
-      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4214919333554,-4.41208064226752 39.4214918313418,-4.41189971167458 39.4213115706958,-4.41189981404333 39.4213116726658,-4.41208074464048 39.4214919333554,-4.41208064226752</coordinates></LinearRing></outerBoundaryIs></Polygon>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4214919333554,-4.41208064226751 39.4214918313418,-4.41189971167458 39.4213115706958,-4.41189981404333 39.4213116726658,-4.41208074464048 39.4214919333554,-4.41208064226751</coordinates></LinearRing></outerBoundaryIs></Polygon>
   </Placemark>
   <Placemark id="plot_footprints.12">
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
@@ -1640,37 +1640,1549 @@
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
 	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
 		<SimpleData name="fid">78</SimpleData>
-		<SimpleData name="grid_id">G0170</SimpleData>
+		<SimpleData name="grid_id">G2318</SimpleData>
 		<SimpleData name="offset_x">96.5919188024944</SimpleData>
 		<SimpleData name="offset_y">55.9755913998905</SimpleData>
 		<SimpleData name="Block">corridor</SimpleData>
 		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
 		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
-		<SimpleData name="target_n">23</SimpleData>
-		<SimpleData name="selected_n">4</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
 		<SimpleData name="constraint_limited">1</SimpleData>
 		<SimpleData name="Plot_ID">P0078</SimpleData>
-		<SimpleData name="Easting_UTM37S">545946.591918803</SimpleData>
-		<SimpleData name="Northing_UTM37S">9509505.9755914</SimpleData>
-		<SimpleData name="Longitude">39.4141399996299</SimpleData>
-		<SimpleData name="Latitude">-4.4374480793356</SimpleData>
+		<SimpleData name="Easting_UTM37S">546446.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510005.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4186441266435</SimpleData>
+		<SimpleData name="Latitude">-4.43292227226677</SimpleData>
 	</SchemaData></ExtendedData>
-      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4142301835444,-4.43753849405549 39.4142300827075,-4.43735756341839 39.4140498157374,-4.4373576646024 39.4140499165304,-4.43753859524364 39.4142301835444,-4.43753849405549</coordinates></LinearRing></outerBoundaryIs></Polygon>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4187343104536,-4.43301268644752 39.4187342086247,-4.43283175589237 39.4185539428553,-4.43283185807272 39.4185540446404,-4.43301278863205 39.4187343104536,-4.43301268644752</coordinates></LinearRing></outerBoundaryIs></Polygon>
   </Placemark>
   <Placemark id="plot_footprints.79">
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
 	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
 		<SimpleData name="fid">79</SimpleData>
+		<SimpleData name="grid_id">G2165</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0079</SimpleData>
+		<SimpleData name="Easting_UTM37S">546146.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511505.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4159325648166</SimpleData>
+		<SimpleData name="Latitude">-4.41935400107506</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4160227465317,-4.41944441580627 39.416022645673,-4.41926348512212 39.4158423831233,-4.41926358633058 39.4158424839382,-4.41944451701889 39.4160227465317,-4.41944441580627</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.80">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">80</SimpleData>
+		<SimpleData name="grid_id">G1537</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0080</SimpleData>
+		<SimpleData name="Easting_UTM37S">545046.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510305.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4060240304522</SimpleData>
+		<SimpleData name="Latitude">-4.43021535445928</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4061142125136,-4.43030577036135 39.4061141138141,-4.4301248395042 39.4059338484127,-4.43012493854397 39.4059339470683,-4.43030586940518 39.4061142125136,-4.43030577036135</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.81">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">81</SimpleData>
+		<SimpleData name="grid_id">G2179</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0081</SimpleData>
+		<SimpleData name="Easting_UTM37S">546146.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512905.9755914</SimpleData>
+		<SimpleData name="Longitude">39.415925516454</SimpleData>
+		<SimpleData name="Latitude">-4.40668885087548</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4160156964959,-4.40677926578318 39.4160155959291,-4.40659833503725 39.4158353364338,-4.40659843595455 39.415835436957,-4.40677936670465 39.4160156964959,-4.40677926578318</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.82">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">82</SimpleData>
+		<SimpleData name="grid_id">G2064</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0082</SimpleData>
+		<SimpleData name="Easting_UTM37S">545946.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512605.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4141244231811</SimpleData>
+		<SimpleData name="Latitude">-4.40940381962618</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.414214603384,-4.40949423473563 39.4142145031907,-4.40931330396141 39.4140342430001,-4.40931340450349 39.4140343431498,-4.40949433528186 39.414214603384,-4.40949423473563</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.83">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">83</SimpleData>
+		<SimpleData name="grid_id">G1479</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0083</SimpleData>
+		<SimpleData name="Easting_UTM37S">544946.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510105.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4051236880728</SimpleData>
+		<SimpleData name="Latitude">-4.43202515786899</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4052138702742,-4.43211557386644 39.4052137717532,-4.43193464299786 39.4050335058933,-4.4319347418583 39.4050336043705,-4.43211567273093 39.4052138702742,-4.43211557386644</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.84">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">84</SimpleData>
+		<SimpleData name="grid_id">G2002</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0084</SimpleData>
+		<SimpleData name="Easting_UTM37S">545846.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512005.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4132261225365</SimpleData>
+		<SimpleData name="Latitude">-4.41483224531223</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4133163033573,-4.4149226604662 39.4133162032577,-4.41474172969776 39.4131359417376,-4.41474183014501 39.4131360417935,-4.41492276091758 39.4133163033573,-4.4149226604662</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.85">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">85</SimpleData>
+		<SimpleData name="grid_id">G0734</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0085</SimpleData>
+		<SimpleData name="Easting_UTM37S">543646.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508405.9755914</SimpleData>
+		<SimpleData name="Longitude">39.3934145417913</SimpleData>
+		<SimpleData name="Latitude">-4.44741063386237</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.3935047247319,-4.44750105121425 39.3935046287243,-4.44732012016154 39.3933243588726,-4.44732021649726 39.3933244548362,-4.44750114755391 39.3935047247319,-4.44750105121425</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.86">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">86</SimpleData>
+		<SimpleData name="grid_id">G0451</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0086</SimpleData>
+		<SimpleData name="Easting_UTM37S">543146.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508105.9755914</SimpleData>
+		<SimpleData name="Longitude">39.3889092174517</SimpleData>
+		<SimpleData name="Latitude">-4.45012699569778</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.3889994002508,-4.45021741361449 39.3889993052842,-4.4500364824773 39.3888190346745,-4.45003657776786 39.3888191295972,-4.45021750890894 39.3889994002508,-4.45021741361449</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.87">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">87</SimpleData>
+		<SimpleData name="grid_id">G2285</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0087</SimpleData>
+		<SimpleData name="Easting_UTM37S">546346.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512305.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4177311427212</SimpleData>
+		<SimpleData name="Latitude">-4.41211576028803</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4178213236769,-4.41220617488031 39.4178212225488,-4.41202524420253 39.4176409617873,-4.41202534568249 39.4176410628718,-4.41220627636446 39.4178213236769,-4.41220617488031</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.88">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">88</SimpleData>
+		<SimpleData name="grid_id">G0911</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0088</SimpleData>
+		<SimpleData name="Easting_UTM37S">543946.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509305.9755914</SimpleData>
+		<SimpleData name="Longitude">39.3961142444325</SimpleData>
+		<SimpleData name="Latitude">-4.43926728813548</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.3962044265954,-4.43935770523582 39.3962043301067,-4.43917677420236 39.3960240622916,-4.43917687102192 39.3960241587363,-4.43935780205934 39.3962044265954,-4.43935770523582</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.89">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">89</SimpleData>
+		<SimpleData name="grid_id">G1252</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0089</SimpleData>
+		<SimpleData name="Easting_UTM37S">544546.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509805.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4015198344183</SimpleData>
+		<SimpleData name="Latitude">-4.43474109049019</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4016100165809,-4.43483150693109 39.401609918876,-4.43465057599512 39.4014296522777,-4.43465067403607 39.4014297499387,-4.43483160497605 39.4016100165809,-4.43483150693109</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.90">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">90</SimpleData>
+		<SimpleData name="grid_id">G1427</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0090</SimpleData>
+		<SimpleData name="Easting_UTM37S">544846.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510505.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4042203938236</SimpleData>
+		<SimpleData name="Latitude">-4.42840703363759</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.404310575447,-4.42849744980441 39.4043104772262,-4.42831651889788 39.4041302122221,-4.42831661745754 39.4041303103992,-4.42849754836812 39.404310575447,-4.42849744980441</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.91">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">91</SimpleData>
+		<SimpleData name="grid_id">G0404</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0091</SimpleData>
+		<SimpleData name="Easting_UTM37S">543046.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509005.9755914</SimpleData>
+		<SimpleData name="Longitude">39.3880036055761</SimpleData>
+		<SimpleData name="Latitude">-4.44198556857271</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.3880937871982,-4.44207598671688 39.3880936926267,-4.44189505552026 39.387913423976,-4.44189515041537 39.3879135185036,-4.44207608161587 39.3880937871982,-4.44207598671688</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.92">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">92</SimpleData>
+		<SimpleData name="grid_id">G0228</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0092</SimpleData>
+		<SimpleData name="Easting_UTM37S">542746.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508205.9755914</SimpleData>
+		<SimpleData name="Longitude">39.3853033337673</SimpleData>
+		<SimpleData name="Latitude">-4.44922423662039</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.3853935160455,-4.44931465502936 39.3853934219783,-4.44913372381028 39.3852131515111,-4.44913381819823 39.3852132455343,-4.44931474942117 39.3853935160455,-4.44931465502936</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.93">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">93</SimpleData>
+		<SimpleData name="grid_id">G1991</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0093</SimpleData>
+		<SimpleData name="Easting_UTM37S">545846.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510905.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4132316330787</SimpleData>
+		<SimpleData name="Latitude">-4.42478343635349</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4133218152152,-4.4248738513695 39.4133217148878,-4.42469292064968 39.413141450964,-4.42469302132421 39.4131415512477,-4.42487395204817 39.4133218152152,-4.4248738513695</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.94">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">94</SimpleData>
+		<SimpleData name="grid_id">G1939</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0094</SimpleData>
+		<SimpleData name="Easting_UTM37S">545746.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511305.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4123283123889</SimpleData>
+		<SimpleData name="Latitude">-4.42116532416007</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4124184939477,-4.42125573934627 39.4124183939217,-4.42107480858812 39.4122381308519,-4.42107490896061 39.4122382308342,-4.42125583972289 39.4124184939477,-4.42125573934627</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.95">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">95</SimpleData>
+		<SimpleData name="grid_id">G2349</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0095</SimpleData>
+		<SimpleData name="Easting_UTM37S">546446.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9513105.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4186283969639</SimpleData>
+		<SimpleData name="Latitude">-4.40487802526627</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4187185770624,-4.40496843983999 39.418718475884,-4.40478750914785 39.4185382168871,-4.4047876106793 39.4185383180219,-4.40496854137563 39.4187185770624,-4.40496843983999</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.96">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">96</SimpleData>
+		<SimpleData name="grid_id">G0965</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0096</SimpleData>
+		<SimpleData name="Easting_UTM37S">544046.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509105.9755914</SimpleData>
+		<SimpleData name="Longitude">39.3970165506287</SimpleData>
+		<SimpleData name="Latitude">-4.44107611358874</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.3971067331308,-4.44116653054472 39.3971066363829,-4.44098559953997 39.3969263681486,-4.44098569661954 39.3969264648525,-4.44116662762826 39.3971067331308,-4.44116653054472</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.97">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">97</SimpleData>
+		<SimpleData name="grid_id">G0565</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0097</SimpleData>
+		<SimpleData name="Easting_UTM37S">543346.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508305.9755914</SimpleData>
+		<SimpleData name="Longitude">39.3907109699217</SimpleData>
+		<SimpleData name="Latitude">-4.44831672951828</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.3908011526817,-4.44840714721864 39.3908010573142,-4.44822621611154 39.3906207871836,-4.44822631180471 39.3906208825071,-4.44840724291571 39.3908011526817,-4.44840714721864</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.98">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">98</SimpleData>
+		<SimpleData name="grid_id">G2050</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0098</SimpleData>
+		<SimpleData name="Easting_UTM37S">545946.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511205.9755914</SimpleData>
+		<SimpleData name="Longitude">39.414131445357</SimpleData>
+		<SimpleData name="Latitude">-4.42206897180398</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4142216272334,-4.42215938673756 39.4142215267495,-4.42197845602516 39.4140412635025,-4.42197855685714 39.4140413639427,-4.42215948757368 39.4142216272334,-4.42215938673756</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.99">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">99</SimpleData>
+		<SimpleData name="grid_id">G1820</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0099</SimpleData>
+		<SimpleData name="Easting_UTM37S">545546.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510605.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4105291686308</SimpleData>
+		<SimpleData name="Latitude">-4.42749890321753</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4106193508293,-4.42758931855637 39.4106192510964,-4.42740838778803 39.4104389864541,-4.42740848786543 39.4104390861433,-4.42758941863787 39.4106193508293,-4.42758931855637</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.100">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">100</SimpleData>
+		<SimpleData name="grid_id">G2177</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0100</SimpleData>
+		<SimpleData name="Easting_UTM37S">546146.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512705.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4159265221123</SimpleData>
+		<SimpleData name="Latitude">-4.40849815831155</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4160167023929,-4.40858857319404 39.4160166017845,-4.40840764245692 39.4158363418534,-4.40840774341582 39.4158364424183,-4.4085886741571 39.4160167023929,-4.40858857319404</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.101">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">101</SimpleData>
+		<SimpleData name="grid_id">G0232</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0101</SimpleData>
+		<SimpleData name="Easting_UTM37S">542746.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508605.9755914</SimpleData>
+		<SimpleData name="Longitude">39.3853014536362</SimpleData>
+		<SimpleData name="Latitude">-4.44560561202232</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.385391635436,-4.44569603047872 39.3853915414461,-4.44551509924185 39.3852112718584,-4.44551519355274 39.3852113658043,-4.44569612479346 39.385391635436,-4.44569603047872</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.102">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">102</SimpleData>
+		<SimpleData name="grid_id">G1998</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0102</SimpleData>
+		<SimpleData name="Easting_UTM37S">545846.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511605.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4132281249204</SimpleData>
+		<SimpleData name="Latitude">-4.41845086054567</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4133183062193,-4.41854127564948 39.4133182060368,-4.41836034489871 39.4131379436433,-4.41836044542861 39.413138043782,-4.41854137618351 39.4133183062193,-4.41854127564948</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.103">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">103</SimpleData>
+		<SimpleData name="grid_id">G0511</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0103</SimpleData>
+		<SimpleData name="Easting_UTM37S">543246.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508505.9755914</SimpleData>
+		<SimpleData name="Longitude">39.3898086680493</SimpleData>
+		<SimpleData name="Latitude">-4.44650789611189</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.3898988504697,-4.44659831395633 39.3898987553612,-4.44641738282082 39.3897184856509,-4.44641747825426 39.3897185807154,-4.44659840939366 39.3898988504697,-4.44659831395633</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.104">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">104</SimpleData>
+		<SimpleData name="grid_id">G2436</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0104</SimpleData>
+		<SimpleData name="Easting_UTM37S">546646.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510605.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4204437188824</SimpleData>
+		<SimpleData name="Latitude">-4.42749333238513</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4205339021703,-4.42758374640127 39.4205338000295,-4.42740281586151 39.4203535356164,-4.42740291835567 39.4203536377134,-4.42758384889964 39.4205339021703,-4.42758374640127</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.105">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">105</SimpleData>
+		<SimpleData name="grid_id">G1194</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0105</SimpleData>
+		<SimpleData name="Easting_UTM37S">544446.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509605.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4006194761046</SimpleData>
+		<SimpleData name="Latitude">-4.43655088969067</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4007096584069,-4.43664130622716 39.4007095608811,-4.43646037528001 39.4005292938241,-4.43646047314095 39.400529391306,-4.43664140409211 39.4007096584069,-4.43664130622716</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.106">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">106</SimpleData>
+		<SimpleData name="grid_id">G2144</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0106</SimpleData>
+		<SimpleData name="Easting_UTM37S">546146.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509405.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4159431756638</SimpleData>
+		<SimpleData name="Latitude">-4.43835171824994</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.416033359897,-4.43844213271624 39.4160332586005,-4.4382612021251 39.4158529914525,-4.43826130377031 39.4158530927051,-4.43844223436562 39.416033359897,-4.43844213271624</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.107">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">107</SimpleData>
+		<SimpleData name="grid_id">G1078</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0107</SimpleData>
+		<SimpleData name="Easting_UTM37S">544246.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509205.9755914</SimpleData>
+		<SimpleData name="Longitude">39.3988187472168</SimpleData>
+		<SimpleData name="Latitude">-4.44017048572358</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.3989089297987,-4.44026090245146 39.3989088326317,-4.44007997148207 39.3987285646568,-4.44008006898246 39.3987286617799,-4.44026099995583 39.3989089297987,-4.44026090245146</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.108">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">108</SimpleData>
+		<SimpleData name="grid_id">G1024</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0108</SimpleData>
+		<SimpleData name="Easting_UTM37S">544146.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509405.9755914</SimpleData>
+		<SimpleData name="Longitude">39.3979164381263</SimpleData>
+		<SimpleData name="Latitude">-4.43836166272725</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.3980066203691,-4.4384520795996 39.3980065234614,-4.43827114860142 39.3978262559055,-4.43827124584168 39.3978263527693,-4.43845217684384 39.3980066203691,-4.4384520795996</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.109">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">109</SimpleData>
+		<SimpleData name="grid_id">G2118</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0109</SimpleData>
+		<SimpleData name="Easting_UTM37S">546046.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512405.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4150267282946</SimpleData>
+		<SimpleData name="Latitude">-4.4112126238699</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.415116908835,-4.41130303883442 39.415116808382,-4.41112210808975 39.4149365477761,-4.41112220889215 39.4149366481854,-4.41130313964097 39.415116908835,-4.41130303883442</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.110">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">110</SimpleData>
+		<SimpleData name="grid_id">G1083</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0110</SimpleData>
+		<SimpleData name="Easting_UTM37S">544246.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509705.9755914</SimpleData>
+		<SimpleData name="Longitude">39.3988163198383</SimpleData>
+		<SimpleData name="Latitude">-4.43564721116172</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.3989065018218,-4.43573762795056 39.3989064047547,-4.43555669695899 39.3987261378769,-4.43555679435967 39.3987262349001,-4.43573772535522 39.3989065018218,-4.43573762795056</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.111">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">111</SimpleData>
+		<SimpleData name="grid_id">G0119</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0111</SimpleData>
+		<SimpleData name="Easting_UTM37S">542546.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508505.9755914</SimpleData>
+		<SimpleData name="Longitude">39.3834992250365</SimpleData>
+		<SimpleData name="Latitude">-4.44651120931936</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.3835894067553,-4.44660162800379 39.3835893131858,-4.44642069673292 39.3834090433397,-4.44642079062176 39.3834091368653,-4.44660172189647 39.3835894067553,-4.44660162800379</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.112">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">112</SimpleData>
+		<SimpleData name="grid_id">G1019</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0112</SimpleData>
+		<SimpleData name="Easting_UTM37S">544146.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508905.9755914</SimpleData>
+		<SimpleData name="Longitude">39.397918861515</SimpleData>
+		<SimpleData name="Latitude">-4.44288493745422</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.3980090443565,-4.44297535426573 39.3980089473491,-4.44279442328974 39.3978286786955,-4.44279452062948 39.3978287756589,-4.44297545160945 39.3980090443565,-4.44297535426573</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.113">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">113</SimpleData>
+		<SimpleData name="grid_id">G2903</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0113</SimpleData>
+		<SimpleData name="Easting_UTM37S">547446.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512505.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4276444445746</SimpleData>
+		<SimpleData name="Latitude">-4.41030080802666</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.427734626374,-4.41039122132428 39.4277345228893,-4.4102102908702 39.427554262797,-4.41021039471573 39.4275543662381,-4.41039132517408 39.427734626374,-4.41039122132428</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.114">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">114</SimpleData>
+		<SimpleData name="grid_id">G1198</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0114</SimpleData>
+		<SimpleData name="Easting_UTM37S">544446.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510005.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4006175268304</SimpleData>
+		<SimpleData name="Latitude">-4.43293227053018</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4007077086541,-4.43302268711561 39.4007076112087,-4.43284175615072 39.4005273450287,-4.43284185393153 39.4005274424303,-4.43302278490043 39.4007077086541,-4.43302268711561</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.115">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">115</SimpleData>
+		<SimpleData name="grid_id">G0116</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0115</SimpleData>
+		<SimpleData name="Easting_UTM37S">542546.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508205.9755914</SimpleData>
+		<SimpleData name="Longitude">39.383500628682</SimpleData>
+		<SimpleData name="Latitude">-4.44922517831122</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.3835908107595,-4.44931559696021 39.3835907171323,-4.44913466570267 39.3834104466265,-4.44913475964904 39.3834105402097,-4.44931569091041 39.3835908107595,-4.44931559696021</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.116">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">116</SimpleData>
+		<SimpleData name="grid_id">G2111</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0116</SimpleData>
+		<SimpleData name="Easting_UTM37S">546046.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511705.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4150302459316</SimpleData>
+		<SimpleData name="Latitude">-4.41754519946526</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4151204273086,-4.41763561434169 39.41512032671,-4.41745468362792 39.4149400645764,-4.41745478457558 39.4149401651313,-4.4176357152935 39.4151204273086,-4.41763561434169</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.117">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">117</SimpleData>
+		<SimpleData name="grid_id">G2114</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0117</SimpleData>
+		<SimpleData name="Easting_UTM37S">546046.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512005.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4150287377489</SimpleData>
+		<SimpleData name="Latitude">-4.41483123862826</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4151189187672,-4.41492165354244 39.4151188182311,-4.41474072281543 39.4149385567524,-4.41474082370083 39.4149386572449,-4.41492175443199 39.4151189187672,-4.41492165354244</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.118">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">118</SimpleData>
+		<SimpleData name="grid_id">G0574</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0118</SimpleData>
+		<SimpleData name="Easting_UTM37S">543346.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509205.9755914</SimpleData>
+		<SimpleData name="Longitude">39.3907066833384</SimpleData>
+		<SimpleData name="Latitude">-4.44017482871117</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.3907968650214,-4.44026524651945 39.3907967698302,-4.44008431537237 39.3906165016772,-4.4400844108897 39.3906165968246,-4.44026534204069 39.3907968650214,-4.44026524651945</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.119">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">119</SimpleData>
+		<SimpleData name="grid_id">G1879</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0119</SimpleData>
+		<SimpleData name="Easting_UTM37S">545646.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510905.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4114289934151</SimpleData>
+		<SimpleData name="Latitude">-4.42478444092373</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4115191753536,-4.42487485617993 39.4115190754637,-4.42469392541887 39.4113388114986,-4.42469402565426 39.4113389113447,-4.42487495641944 39.4115191753536,-4.42487485617993</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.120">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">120</SimpleData>
+		<SimpleData name="grid_id">G0676</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0120</SimpleData>
+		<SimpleData name="Easting_UTM37S">543546.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508205.9755914</SimpleData>
+		<SimpleData name="Longitude">39.3925141502277</SimpleData>
+		<SimpleData name="Latitude">-4.44922042569792</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.3926043333079,-4.44931084314591 39.3926042374808,-4.44912991208243 39.3924239671695,-4.44913000823671 39.3924240629526,-4.44931093930411 39.3926043333079,-4.44931084314591</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.121">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">121</SimpleData>
+		<SimpleData name="grid_id">G2287</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0121</SimpleData>
+		<SimpleData name="Easting_UTM37S">546346.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512505.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4177301318674</SimpleData>
+		<SimpleData name="Latitude">-4.41030645344519</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.417820312584,-4.41039686806277 39.4178202114978,-4.41021593737616 39.4176399511725,-4.41021603881435 39.4176400522152,-4.41039696950513 39.417820312584,-4.41039686806277</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.122">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">122</SimpleData>
+		<SimpleData name="grid_id">G2142</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0122</SimpleData>
+		<SimpleData name="Easting_UTM37S">546146.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509205.9755914</SimpleData>
+		<SimpleData name="Longitude">39.415944188618</SimpleData>
+		<SimpleData name="Latitude">-4.4401610241378</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4160343730916,-4.44025143857887 39.4160342717534,-4.4400705079966 39.4158540041664,-4.44007060968341 39.4158541054608,-4.44025154026984 39.4160343730916,-4.44025143857887</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.123">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">123</SimpleData>
+		<SimpleData name="grid_id">G0970</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0123</SimpleData>
+		<SimpleData name="Easting_UTM37S">544046.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509605.9755914</SimpleData>
+		<SimpleData name="Longitude">39.3970141337239</SimpleData>
+		<SimpleData name="Latitude">-4.43655283814298</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.3971043156276,-4.43664325515969 39.3971042189792,-4.43646232413275 39.3969239518422,-4.43646242111305 39.3969240484467,-4.43664335214396 39.3971043156276,-4.43664325515969</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.124">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">124</SimpleData>
+		<SimpleData name="grid_id">G1948</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0124</SimpleData>
+		<SimpleData name="Easting_UTM37S">545746.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512205.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4123238163865</SimpleData>
+		<SimpleData name="Latitude">-4.41302343905554</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4124139968696,-4.41311385435441 39.4124138970296,-4.4129329235565 39.4122336359252,-4.41293302374344 39.4122337357216,-4.41311395454547 39.4124139968696,-4.41311385435441</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.125">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">125</SimpleData>
+		<SimpleData name="grid_id">G2066</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0125</SimpleData>
+		<SimpleData name="Easting_UTM37S">545946.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512805.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4141234216735</SimpleData>
+		<SimpleData name="Latitude">-4.40759451181916</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4142136016376,-4.40768492695373 39.4142135014858,-4.40750399617069 39.4140332417311,-4.40750409667137 39.4140333418393,-4.40768502745855 39.4142136016376,-4.40768492695373</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.126">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">126</SimpleData>
 		<SimpleData name="grid_id">G0121</SimpleData>
 		<SimpleData name="offset_x">96.5919188024944</SimpleData>
 		<SimpleData name="offset_y">55.9755913998905</SimpleData>
 		<SimpleData name="Block">corridor</SimpleData>
 		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
 		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
-		<SimpleData name="target_n">23</SimpleData>
-		<SimpleData name="selected_n">4</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
 		<SimpleData name="constraint_limited">1</SimpleData>
-		<SimpleData name="Plot_ID">P0079</SimpleData>
+		<SimpleData name="Plot_ID">P0126</SimpleData>
+		<SimpleData name="Easting_UTM37S">542546.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508705.9755914</SimpleData>
+		<SimpleData name="Longitude">39.3834982897534</SimpleData>
+		<SimpleData name="Latitude">-4.444701896547</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.3835884712331,-4.44479231525505 39.3835883777021,-4.44461138397529 39.3834081082956,-4.44461147782578 39.3834082017827,-4.44479240910938 39.3835884712331,-4.44479231525505</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.127">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">127</SimpleData>
+		<SimpleData name="grid_id">G2290</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0127</SimpleData>
+		<SimpleData name="Easting_UTM37S">546346.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512805.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4177286163717</SimpleData>
+		<SimpleData name="Latitude">-4.40759249301553</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.41781879673,-4.40768290767106 39.4178186957066,-4.40750197697122 39.4176384360352,-4.40750207834676 39.417638537015,-4.40768300905077 39.41781879673,-4.40768290767106</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.128">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">128</SimpleData>
+		<SimpleData name="grid_id">G2052</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0128</SimpleData>
+		<SimpleData name="Easting_UTM37S">545946.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511405.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4141304409438</SimpleData>
+		<SimpleData name="Latitude">-4.42025966461504</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4142206225808,-4.42035007957375 39.4142205221384,-4.42016914885251 39.4140402593286,-4.42016924964307 39.4140403597273,-4.42035018036846 39.4142206225808,-4.42035007957375</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.129">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">129</SimpleData>
+		<SimpleData name="grid_id">G1369</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0129</SimpleData>
+		<SimpleData name="Easting_UTM37S">544746.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510305.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4033200486454</SimpleData>
+		<SimpleData name="Latitude">-4.43021683513976</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4034102304087,-4.43030725140196 39.4034101323663,-4.43012632048409 39.4032298669041,-4.43012641886434 39.4032299649026,-4.43030734978624 39.4034102304087,-4.43030725140196</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.130">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">130</SimpleData>
+		<SimpleData name="grid_id">G2116</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0130</SimpleData>
+		<SimpleData name="Easting_UTM37S">546046.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512205.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4150277328138</SimpleData>
+		<SimpleData name="Latitude">-4.41302193129321</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4151179135931,-4.41311234623256 39.4151178130985,-4.41293141549672 39.4149375520563,-4.41293151634062 39.4149376525072,-4.41311244708061 39.4151179135931,-4.41311234623256</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.131">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">131</SimpleData>
+		<SimpleData name="grid_id">G0741</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0131</SimpleData>
+		<SimpleData name="Easting_UTM37S">543646.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509105.9755914</SimpleData>
+		<SimpleData name="Longitude">39.3934111847093</SimpleData>
+		<SimpleData name="Latitude">-4.44107804640414</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.3935013668118,-4.44116846384043 39.3935012709423,-4.44098753275661 39.3933210026287,-4.44098762895464 39.3933210984544,-4.44116856004239 39.3935013668118,-4.44116846384043</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.132">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">132</SimpleData>
+		<SimpleData name="grid_id">G1366</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0132</SimpleData>
+		<SimpleData name="Easting_UTM37S">544746.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510005.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4033215194066</SimpleData>
+		<SimpleData name="Latitude">-4.43293079883836</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4034117015289,-4.43302121506365 39.4034116034259,-4.43284028415908 39.4032313373063,-4.43284038259983 39.4032314353655,-4.43302131350843 39.4034117015289,-4.43302121506365</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.133">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">133</SimpleData>
+		<SimpleData name="grid_id">G2433</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0133</SimpleData>
+		<SimpleData name="Easting_UTM37S">546646.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510305.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4204452511404</SimpleData>
+		<SimpleData name="Latitude">-4.43020729041351</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4205354347883,-4.43029770439147 39.4205353325843,-4.43011677386499 39.4203550675143,-4.43011687642223 39.4203551696745,-4.43029780695291 39.4205354347883,-4.43029770439147</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.134">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">134</SimpleData>
+		<SimpleData name="grid_id">G3017</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0134</SimpleData>
+		<SimpleData name="Easting_UTM37S">547646.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512705.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4294460067261</SimpleData>
+		<SimpleData name="Latitude">-4.40849046318379</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4295361884825,-4.40858087626702 39.4295360846048,-4.40839994584698 39.4293558249914,-4.40840005008726 39.4293559288256,-4.40858098051159 39.4295361884825,-4.40858087626702</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.135">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">135</SimpleData>
+		<SimpleData name="grid_id">G0179</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0135</SimpleData>
+		<SimpleData name="Easting_UTM37S">542646.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508905.9755914</SimpleData>
+		<SimpleData name="Longitude">39.3843986997514</SimpleData>
+		<SimpleData name="Latitude">-4.44289211406432</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.3844888810924,-4.44298253267615 39.3844887873801,-4.44280160140671 39.3843085184324,-4.44280169543932 39.3843086121007,-4.4429826267126 39.3844888810924,-4.44298253267615</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.136">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">136</SimpleData>
+		<SimpleData name="grid_id">G0453</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0136</SimpleData>
+		<SimpleData name="Easting_UTM37S">543146.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508305.9755914</SimpleData>
+		<SimpleData name="Longitude">39.3889082682003</SimpleData>
+		<SimpleData name="Latitude">-4.44831768426194</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.3889984507599,-4.44840810220254 39.3889983558323,-4.44822717105645 39.3888180856626,-4.44822726630812 39.3888181805463,-4.4484081974581 39.3889984507599,-4.44840810220254</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.137">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">137</SimpleData>
+		<SimpleData name="grid_id">G1706</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0137</SimpleData>
+		<SimpleData name="Easting_UTM37S">545346.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510405.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4087275147211</SimpleData>
+		<SimpleData name="Latitude">-4.42930920988426</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4088176969607,-4.42939962543843 39.4088175976246,-4.42921869463797 39.4086373325035,-4.42921879431683 39.4086374317957,-4.42939972512138 39.4088176969607,-4.42939962543843</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.138">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">138</SimpleData>
+		<SimpleData name="grid_id">G2792</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0138</SimpleData>
+		<SimpleData name="Easting_UTM37S">547246.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512605.9755914</SimpleData>
+		<SimpleData name="Longitude">39.425841328139</SimpleData>
+		<SimpleData name="Latitude">-4.4093971918093</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4259315096221,-4.40948760535997 39.4259314065948,-4.4093066748588 39.4257511466777,-4.40930677824534 39.4257512496614,-4.40948770875077 39.4259315096221,-4.40948760535997</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.139">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">139</SimpleData>
+		<SimpleData name="grid_id">G0857</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0139</SimpleData>
+		<SimpleData name="Easting_UTM37S">543846.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509505.9755914</SimpleData>
+		<SimpleData name="Longitude">39.395211942924</SimpleData>
+		<SimpleData name="Latitude">-4.43745846109582</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.3953021247477,-4.43754887834041 39.3953020285182,-4.43736794727828 39.3951217611221,-4.43736804383803 39.3951218573077,-4.4375489749041 39.3953021247477,-4.43754887834041</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.140">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">140</SimpleData>
+		<SimpleData name="grid_id">G2030</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0140</SimpleData>
+		<SimpleData name="Easting_UTM37S">545946.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509205.9755914</SimpleData>
+		<SimpleData name="Longitude">39.414141512321</SimpleData>
+		<SimpleData name="Latitude">-4.44016203882328</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4142316965958,-4.44025245350544 39.4142315956967,-4.44007152288166 39.4140513280681,-4.4400716241278 39.4140514289234,-4.44025255475572 39.4142316965958,-4.44025245350544</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.141">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">141</SimpleData>
+		<SimpleData name="grid_id">G0230</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0141</SimpleData>
+		<SimpleData name="Easting_UTM37S">542746.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508405.9755914</SimpleData>
+		<SimpleData name="Longitude">39.3853023935086</SimpleData>
+		<SimpleData name="Latitude">-4.44741492436581</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.3853925755476,-4.4475053427985 39.385392481519,-4.44732441157052 39.3852122114917,-4.44732450591994 39.3852123054762,-4.44750543715177 39.3853925755476,-4.4475053427985</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.142">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">142</SimpleData>
+		<SimpleData name="grid_id">G0291</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0142</SimpleData>
+		<SimpleData name="Easting_UTM37S">542846.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508905.9755914</SimpleData>
+		<SimpleData name="Longitude">39.3862013892556</SimpleData>
+		<SimpleData name="Latitude">-4.44289117151417</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.3862915707969,-4.44298158988625 39.3862914766453,-4.44280065865535 39.3861112077362,-4.44280075312891 39.3861113018439,-4.44298168436368 39.3862915707969,-4.44298158988625</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.143">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">143</SimpleData>
+		<SimpleData name="grid_id">G2069</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0143</SimpleData>
+		<SimpleData name="Easting_UTM37S">545946.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9513105.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4141219201902</SimpleData>
+		<SimpleData name="Latitude">-4.40488054994337</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4142120997965,-4.40497096511561 39.4142119997069,-4.40479003431935 39.4140317406057,-4.40479013475791 39.4140318406517,-4.40497106555831 39.4142120997965,-4.40497096511561</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.144">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">144</SimpleData>
+		<SimpleData name="grid_id">G0623</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0144</SimpleData>
+		<SimpleData name="Easting_UTM37S">543446.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508505.9755914</SimpleData>
+		<SimpleData name="Longitude">39.3916113651771</SimpleData>
+		<SimpleData name="Latitude">-4.44650693955147</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.3917015477978,-4.4465973571557 39.3917014522496,-4.44641642605928 39.3915211825784,-4.44641652193403 39.3915212780826,-4.44659745303437 39.3917015477978,-4.4465973571557</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.145">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">145</SimpleData>
+		<SimpleData name="grid_id">G2438</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0145</SimpleData>
+		<SimpleData name="Easting_UTM37S">546646.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510805.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4204426979039</SimpleData>
+		<SimpleData name="Latitude">-4.42568402692218</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4205328809519,-4.42577444096378 39.4205327788533,-4.42559351041516 39.4203525148778,-4.42559361286728 39.4203526169327,-4.4257745434201 39.4205328809519,-4.42577444096378</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.146">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">146</SimpleData>
+		<SimpleData name="grid_id">G1937</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0146</SimpleData>
+		<SimpleData name="Easting_UTM37S">545746.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511105.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4123293126371</SimpleData>
+		<SimpleData name="Latitude">-4.42297463171804</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4124194944352,-4.4230650468792 39.4124193943679,-4.42288411612989 39.4122391308608,-4.42288421654362 39.4122392308844,-4.42306514729705 39.4124194944352,-4.4230650468792</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.147">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">147</SimpleData>
+		<SimpleData name="grid_id">G0339</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0147</SimpleData>
+		<SimpleData name="Easting_UTM37S">542946.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508105.9755914</SimpleData>
+		<SimpleData name="Longitude">39.3871065109406</SimpleData>
+		<SimpleData name="Latitude">-4.45012794641446</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.3871966935392,-4.45021836457142 39.3871965990126,-4.45003743339541 39.3870163283641,-4.45003752824431 39.3870164228466,-4.45021845942418 39.3871966935392,-4.45021836457142</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.148">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">148</SimpleData>
+		<SimpleData name="grid_id">G2032</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0148</SimpleData>
+		<SimpleData name="Easting_UTM37S">545946.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509405.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4141405037565</SimpleData>
+		<SimpleData name="Latitude">-4.43835273252035</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4142306877911,-4.43844314722767 39.4142305869334,-4.43826221659501 39.4140503197439,-4.43826231779973 39.4140504205576,-4.43844324843653 39.4142306877911,-4.43844314722767</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.149">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">149</SimpleData>
+		<SimpleData name="grid_id">G2254</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0149</SimpleData>
+		<SimpleData name="Easting_UTM37S">546346.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509205.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4177468644981</SimpleData>
+		<SimpleData name="Latitude">-4.4401600050455</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4178370491703,-4.44025041924538 39.417836947393,-4.44006948870481 39.4176566798479,-4.44006959083229 39.4176567815813,-4.44025052137704 39.4178370491703,-4.44025041924538</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.150">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">150</SimpleData>
+		<SimpleData name="grid_id">G2905</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0150</SimpleData>
+		<SimpleData name="Easting_UTM37S">547446.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512705.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4276434101598</SimpleData>
+		<SimpleData name="Latitude">-4.40849150342041</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4277335917198,-4.40858191674383 39.4277334882779,-4.40840098628093 39.4275532286216,-4.40840109008369 39.4275533320199,-4.40858202055086 39.4277335917198,-4.40858191674383</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.151">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">151</SimpleData>
+		<SimpleData name="grid_id">G1749</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0151</SimpleData>
 		<SimpleData name="Easting_UTM37S">545446.591918803</SimpleData>
 		<SimpleData name="Northing_UTM37S">9509105.9755914</SimpleData>
 		<SimpleData name="Longitude">39.4096353187151</SimpleData>
@@ -1678,20 +3190,125 @@
 	</SchemaData></ExtendedData>
       <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4097255026127,-4.44115962516219 39.4097254027907,-4.44097869443985 39.4095451348394,-4.44097879460478 39.4095452346175,-4.44115972533122 39.4097255026127,-4.44115962516219</coordinates></LinearRing></outerBoundaryIs></Polygon>
   </Placemark>
-  <Placemark id="plot_footprints.80">
+  <Placemark id="plot_footprints.152">
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
 	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
-		<SimpleData name="fid">80</SimpleData>
-		<SimpleData name="grid_id">G0149</SimpleData>
+		<SimpleData name="fid">152</SimpleData>
+		<SimpleData name="grid_id">G2000</SimpleData>
 		<SimpleData name="offset_x">96.5919188024944</SimpleData>
 		<SimpleData name="offset_y">55.9755913998905</SimpleData>
 		<SimpleData name="Block">corridor</SimpleData>
 		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
 		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
-		<SimpleData name="target_n">23</SimpleData>
-		<SimpleData name="selected_n">4</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
 		<SimpleData name="constraint_limited">1</SimpleData>
-		<SimpleData name="Plot_ID">P0080</SimpleData>
+		<SimpleData name="Plot_ID">P0152</SimpleData>
+		<SimpleData name="Easting_UTM37S">545846.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511805.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4132271235214</SimpleData>
+		<SimpleData name="Latitude">-4.41664155297312</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4133173045812,-4.41673196810201 39.4133172044401,-4.4165510373424 39.4131369424834,-4.41655113783098 39.4131370425807,-4.41673206859471 39.4133173045812,-4.41673196810201</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.153">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">153</SimpleData>
+		<SimpleData name="grid_id">G0572</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0153</SimpleData>
+		<SimpleData name="Easting_UTM37S">543346.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509005.9755914</SimpleData>
+		<SimpleData name="Longitude">39.390707635227</SimpleData>
+		<SimpleData name="Latitude">-4.44198414015711</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.3907978171493,-4.44207455794141 39.3907977219189,-4.44189362680321 39.3906174533267,-4.44189372235962 39.3906175485132,-4.44207465350172 39.3907978171493,-4.44207455794141</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.154">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">154</SimpleData>
+		<SimpleData name="grid_id">G2667</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0154</SimpleData>
+		<SimpleData name="Easting_UTM37S">547046.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511305.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4240454045331</SimpleData>
+		<SimpleData name="Latitude">-4.42115870711968</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4241355873765,-4.42124912074388 39.4241354845089,-4.42106819025761 39.4239552217116,-4.42106829348217 39.4239553245355,-4.42124922397268 39.4241355873765,-4.42124912074388</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.155">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">155</SimpleData>
+		<SimpleData name="grid_id">G2227</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0155</SimpleData>
+		<SimpleData name="Easting_UTM37S">546246.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512105.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4168308478433</SimpleData>
+		<SimpleData name="Latitude">-4.41392557411418</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4169210289394,-4.41401598880112 39.4169209279877,-4.41383505811129 39.4167406667689,-4.413835159414 39.4167407676771,-4.41401609010799 39.4169210289394,-4.41401598880112</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.156">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">156</SimpleData>
+		<SimpleData name="grid_id">G0563</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0156</SimpleData>
+		<SimpleData name="Easting_UTM37S">543346.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508105.9755914</SimpleData>
+		<SimpleData name="Longitude">39.3907119235728</SimpleData>
+		<SimpleData name="Latitude">-4.45012604056429</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.3908021065725,-4.45021645824066 39.3908020111658,-4.45003552714246 39.3906217405952,-4.4500356228747 39.3906218359579,-4.45021655397681 39.3908021065725,-4.45021645824066</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="plot_footprints.157">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
+		<SimpleData name="fid">157</SimpleData>
+		<SimpleData name="grid_id">G1918</SimpleData>
+		<SimpleData name="offset_x">96.5919188024944</SimpleData>
+		<SimpleData name="offset_y">55.9755913998905</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
+		<SimpleData name="constraint_limited">1</SimpleData>
+		<SimpleData name="Plot_ID">P0157</SimpleData>
 		<SimpleData name="Easting_UTM37S">545746.591918803</SimpleData>
 		<SimpleData name="Northing_UTM37S">9509205.9755914</SimpleData>
 		<SimpleData name="Longitude">39.4123388356088</SimpleData>
@@ -1699,26 +3316,26 @@
 	</SchemaData></ExtendedData>
       <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4124290196848,-4.4402534640251 39.4124289192247,-4.44007253335998 39.4122486515548,-4.44007263416544 39.4122487519709,-4.44025356483468 39.4124290196848,-4.4402534640251</coordinates></LinearRing></outerBoundaryIs></Polygon>
   </Placemark>
-  <Placemark id="plot_footprints.81">
+  <Placemark id="plot_footprints.158">
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
 	<ExtendedData><SchemaData schemaUrl="#plot_footprints">
-		<SimpleData name="fid">81</SimpleData>
-		<SimpleData name="grid_id">G0075</SimpleData>
+		<SimpleData name="fid">158</SimpleData>
+		<SimpleData name="grid_id">G2006</SimpleData>
 		<SimpleData name="offset_x">96.5919188024944</SimpleData>
 		<SimpleData name="offset_y">55.9755913998905</SimpleData>
 		<SimpleData name="Block">corridor</SimpleData>
 		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
 		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
-		<SimpleData name="target_n">23</SimpleData>
-		<SimpleData name="selected_n">4</SimpleData>
+		<SimpleData name="target_n">364</SimpleData>
+		<SimpleData name="selected_n">81</SimpleData>
 		<SimpleData name="constraint_limited">1</SimpleData>
-		<SimpleData name="Plot_ID">P0081</SimpleData>
-		<SimpleData name="Easting_UTM37S">544946.591918803</SimpleData>
-		<SimpleData name="Northing_UTM37S">9509005.9755914</SimpleData>
-		<SimpleData name="Longitude">39.4051291116663</SimpleData>
-		<SimpleData name="Latitude">-4.44197635441053</SimpleData>
+		<SimpleData name="Plot_ID">P0158</SimpleData>
+		<SimpleData name="Easting_UTM37S">545846.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512405.9755914</SimpleData>
+		<SimpleData name="Longitude">39.4132241218094</SimpleData>
+		<SimpleData name="Latitude">-4.4112136297256</SimpleData>
 	</SchemaData></ExtendedData>
-      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.405219295186,-4.44206677027214 39.4052191964416,-4.44188583945237 39.4050389281686,-4.44188593853564 39.4050390268691,-4.44206686935947 39.405219295186,-4.44206677027214</coordinates></LinearRing></outerBoundaryIs></Polygon>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>39.4133143021524,-4.41130404492973 39.4133142021357,-4.41112311414364 39.4131339414882,-4.41112321450824 39.4131340414613,-4.41130414529847 39.4133143021524,-4.41130404492973</coordinates></LinearRing></outerBoundaryIs></Polygon>
   </Placemark>
 </Folder>
 </Document></kml>
