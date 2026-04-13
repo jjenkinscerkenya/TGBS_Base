@@ -12,6 +12,7 @@ from tgbs_rs.config.config import (
     ESA_MAP_BAND,
     ISDA_TOPSOIL_MEAN_BAND,
     GL_FOREST_CHANGE,
+    ESA_CLASS_VALUES,
 )
 from tgbs_rs.data.topography import calc_terrain
 from tgbs_rs.utils import _clip_and_mask_image
@@ -204,3 +205,199 @@ def build_baseline_layers(aoi):
     }
 
     return layers
+
+
+def build_continuous_baseline_stack(layers_dict):
+    """
+    Combine continuous baseline layers into a single multiband image.
+    """
+    return ee.Image.cat(
+        [
+            layers_dict["dem"].rename("DEM"),
+            layers_dict["slope"].rename("SLOPE"),
+            layers_dict["hillshade"].rename("HILLSHADE"),
+            layers_dict["canopy_height"].rename("CANOPY_HEIGHT"),
+            layers_dict["soil_carbon"].rename("SOIL_CARBON"),
+            layers_dict["bii_all"].rename("BII_ALL"),
+        ]
+    )
+
+
+def build_continuous_reducer():
+    """
+    Build a combined reducer for continuous raster summaries.
+    """
+    reducer = ee.Reducer.mean()
+    reducer = reducer.combine(reducer2=ee.Reducer.median(), sharedInputs=True)
+    reducer = reducer.combine(reducer2=ee.Reducer.min(), sharedInputs=True)
+    reducer = reducer.combine(reducer2=ee.Reducer.max(), sharedInputs=True)
+    reducer = reducer.combine(reducer2=ee.Reducer.stdDev(), sharedInputs=True)
+    return reducer
+
+
+def summarize_continuous_baseline_layers(
+    sites_fc,
+    baseline_layers,
+    scale=30,
+    crs="EPSG:4326",
+    tile_scale=4,
+):
+    """
+    Reduce continuous baseline layers over each site polygon.
+    """
+    image = build_continuous_baseline_stack(baseline_layers)
+    reducer = build_continuous_reducer()
+
+    return image.reduceRegions(
+        collection=sites_fc,
+        reducer=reducer,
+        scale=scale,
+        crs=crs,
+        tileScale=tile_scale,
+    )
+
+
+def build_esa_class_map():
+    """
+    Build a dict of export-friendly ESA class names to integer class values.
+    """
+    clean_names = [
+        "tree_cover",
+        "shrubland",
+        "grassland",
+        "cropland",
+        "built_up",
+        "bare_sparse_vegetation",
+        "snow_ice",
+        "permanent_water_bodies",
+        "herbaceous_wetland",
+        "mangroves",
+        "moss_lichen",
+    ]
+
+    return dict(zip(clean_names, ESA_CLASS_VALUES))
+
+
+def summarize_landcover_classes(
+    sites_fc,
+    land_cover_img,
+    class_map,
+    scale=10,
+    crs="EPSG:4326",
+    tile_scale=4,
+):
+    """
+    Summarize ESA land-cover class areas by site.
+
+    Parameters
+    ----------
+    sites_fc : ee.FeatureCollection
+        Site polygons with site metadata.
+    land_cover_img : ee.Image
+        ESA land-cover image.
+    class_map : dict
+        Example:
+        {
+            "tree_cover": 10,
+            "shrubland": 20,
+            ...
+        }
+    """
+    class_area_bands = []
+
+    # Use the first band of the ESA image explicitly.
+    lc_band = land_cover_img.select(0).unmask(-9999)
+
+    for class_name, class_value in class_map.items():
+        class_area = (
+            ee.Image.pixelArea()
+            .multiply(lc_band.eq(class_value))
+            .rename(f"lc_{class_name}_area_m2")
+        )
+        class_area_bands.append(class_area)
+
+    area_stack = ee.Image.cat(class_area_bands)
+
+    return area_stack.reduceRegions(
+        collection=sites_fc,
+        reducer=ee.Reducer.sum(),
+        scale=scale,
+        crs=crs,
+        tileScale=tile_scale,
+    )
+
+
+def merge_site_summaries(
+    sites_fc,
+    continuous_fc,
+    landcover_fc,
+):
+    """
+    Merge continuous and land-cover summary properties back onto one feature per site.
+    """
+
+    def merge_one_site(site):
+        site_id = site.get("site_id")
+
+        continuous_feat = ee.Feature(
+            continuous_fc.filter(ee.Filter.eq("site_id", site_id)).first()
+        )
+
+        landcover_feat = ee.Feature(
+            landcover_fc.filter(ee.Filter.eq("site_id", site_id)).first()
+        )
+
+        # Copy summary properties onto the original site feature.
+        merged = ee.Feature(site)
+
+        merged = merged.copyProperties(continuous_feat)
+        merged = merged.copyProperties(landcover_feat)
+
+        return merged
+
+    return ee.FeatureCollection(sites_fc.map(merge_one_site))
+
+
+def summarize_baseline_layers_by_site(
+    sites_fc,
+    scale_continuous=30,
+    scale_landcover=10,
+    crs="EPSG:4326",
+    tile_scale=4,
+):
+    """
+    Summarize baseline layers by site and return one feature per site.
+    """
+    all_sites_geom = sites_fc.geometry()
+    baseline_layers = build_baseline_layers(all_sites_geom)
+
+    # Drop unwanted layers after building the dictionary.
+    baseline_layers.pop("forest_2000", None)
+    baseline_layers.pop("forest_loss", None)
+
+    esa_class_map = build_esa_class_map()
+
+    continuous_fc = summarize_continuous_baseline_layers(
+        sites_fc=sites_fc,
+        baseline_layers=baseline_layers,
+        scale=scale_continuous,
+        crs=crs,
+        tile_scale=tile_scale,
+    )
+
+    landcover_fc = summarize_landcover_classes(
+        sites_fc=sites_fc,
+        land_cover_img=baseline_layers["land_cover"],
+        class_map=esa_class_map,
+        scale=scale_landcover,
+        crs=crs,
+        tile_scale=tile_scale,
+    )
+
+    merged_fc = merge_site_summaries(
+        sites_fc=sites_fc,
+        continuous_fc=continuous_fc,
+        landcover_fc=landcover_fc,
+    )
+
+    return merged_fc
