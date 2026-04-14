@@ -98,9 +98,6 @@ GLOBAL_ADM2 = "FAO/GAUL/2015/level2"
 S2_SR_COLLECTION = "COPERNICUS/S2_SR_HARMONIZED"
 S2_CLOUD_PROB_COLLECTION = "COPERNICUS/S2_CLOUD_PROBABILITY"
 
-# Landsat-8 collections
-L8_SR_COLLECTION = "LANDSAT/LC08/C02/T1_L2"
-
 # HLS
 HLS_L30_COLLECTION = "NASA/HLS/HLSL30/v002"  # Landsat OLI
 HLS_S30_COLLECTION = "NASA/HLS/HLSS30/v002"  # Sentinel MSI
@@ -179,39 +176,6 @@ S2_DISTURBANCE_INDEX_BANDS = ["NBR"]
 
 PRIORITY_INDICES = ["NBR", "NDMI", "NDVI", "NIRv", "SAVI"]
 
-#################### LANDSAT VARIABLES #########################
-# Core optical SR bands used for the translated workflow
-L8_BANDS = ["SR_B2", "SR_B3", "SR_B4", "SR_B5", "SR_B6", "SR_B7"]
-
-# BLUE_BAND = "SR_B2"
-# GREEN_BAND = "SR_B3"
-# RED_BAND = "SR_B4"
-# NIR_BAND = "SR_B5"
-# SWIR1_BAND = "SR_B6"
-# SWIR2_BAND = "SR_B7"
-
-L8_INDEX_BANDS = [
-    "NDVI",  # Normalized Difference Vegetation Index
-    "EVI",  # Enhanced Vegetation Index
-    "NDWI",  # Normalized Difference Water Index
-    "MNDWI",  # Modified Normalized Difference Water Index
-    "SAVI",  # Soil-Adjusted Vegetation Index
-    "NDMI",  # Normalized Difference Moisture Index
-    "NBR",  # Normalized Burn Ratio
-    "NIRv",  # Near-Infrared Reflectance of Vegetation
-]
-
-# Landsat Collection 2 Level-2 surface reflectance scaling
-L8_SCALE_FACTOR = 0.0000275
-L8_ADD_OFFSET = -0.2
-
-# CLOUD MASKING PARAMETERS
-# Closest analog to Sentinel CLOUDY_PIXEL_PERCENTAGE
-L8_CLOUD_FILTER = 50  # % max CLOUD_COVER per image
-
-# Default analysis scale
-L8_SCALE = 30
-
 #################### HLS VARIABLES ##########################
 # Native HLS shared reflectance scaling
 HLS_SCALE_FACTOR = 0.0001
@@ -274,7 +238,9 @@ SPATIAL_CHANGE = ["NDVI", "NIRV", "NDMI", "NBR", "SAVI"]
 
 #################### GLOBAL VARIABLES ##########################
 # Google Earth Engine Project
-GEE_PROJECT = "charrell-personal"
+GEE_PROJECT = (
+    None  # Put your GEE project name here as a string, e.g. "my-gcp-project"
+)
 
 # Time-series defaults
 S2_BASELINE_START = "2019-01-01"
@@ -296,9 +262,9 @@ DEGRADED_LABEL = "degraded"
 DEFAULT_MAX_PIXELS = 1e13
 DEFAULT_FILE_FORMAT = "GeoTIFF"
 DEFAULT_CRS = "EPSG:4326"
-DRIVE_FOLDER = "TGBS_Kwale_Baseline"
-LAND_METRICS_DRIVE_FOLDER = "TGBS_Kwale_Landscape_Metrics"
-SPATIAL_CHANGE_DRIVE_FOLDER = "TGBS_Kwale_Spatial_Change"
+DRIVE_FOLDER = None  # Put your desired Google Drive export folder name here as a string, e.g. "TGBS_Outputs"
+LAND_METRICS_DRIVE_FOLDER = None  # Put your desired Google Drive export folder name for landscape metrics here as a string, e.g. "TGBS_Landscape_Metrics"
+SPATIAL_CHANGE_DRIVE_FOLDER = None  # Put your desired Google Drive export folder name for spatial change outputs here as a string, e.g. "TGBS_Spatial_Change"
 
 PLOTTING_SCALE_DICT = {
     "hillshade": 30,
