@@ -903,6 +903,7 @@ def plot_pland_trajectories(
         "degraded_2": (1, 1),
         "degraded_3": (2, 1),
         "ks_rehab": (3, 0),
+        "bio_corridor": (3, 1),
     }
 
     fig, axes = plt.subplots(4, 2, figsize=(14, 18), sharex=True, sharey=True)
