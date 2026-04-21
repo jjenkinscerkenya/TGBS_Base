@@ -29,6 +29,7 @@ AOI_PATHS = {
     "degraded_2": DATA_DIR / "degraded_2_aoi.geojson",
     "degraded_3": DATA_DIR / "degraded_3_aoi.geojson",
     "corridor": DATA_DIR / "corridor_exclusion.geojson",
+    "bio_corridor": DATA_DIR / "bio_corridor_aoi.geojson",
 }
 
 #################### EE DATASETS ##########################
