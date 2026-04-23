@@ -308,195 +308,172 @@ def build_trend_slope_image(
     return _clip_if_requested(slope_img, clip_geom)
 
 
-def build_reference_site_composite_stack(
+def build_reference_site_value_featurecollection(
     collection: ee.ImageCollection,
     reference_fc: ee.FeatureCollection,
     index_name: str,
     start_date: str,
     end_date: str,
     summary_stat: str = "mean",
-) -> ee.ImageCollection:
+    reducer: ee.Reducer = None,
+    scale: int = 10,
+    max_pixels: float = 1e13,
+    tile_scale: int = 4,
+) -> ee.FeatureCollection:
     """
-    Build one composite image per reference site for a given time window.
+    Build one scalar composite value per reference site for the requested index.
 
-    Each output image is masked/clipped to its own reference geometry and retains
-    site metadata properties.
-
-    Parameters
-    ----------
-    collection : ee.ImageCollection
-        Input collection containing the requested index band.
-    reference_fc : ee.FeatureCollection
-        Reference sites with site_id/site_name/site_category properties.
-    index_name : str
-        Band name to summarize.
-    start_date : str
-    end_date : str
-    summary_stat : {'mean', 'median'}
-
-    Returns
-    -------
-    ee.ImageCollection
+    Each feature in the output contains:
+        site_id, site_name, site_category, image_count, ref_value
     """
+    reducer = reducer or ee.Reducer.mean()
     reference_list = reference_fc.toList(reference_fc.size())
 
-    def _site_img(i: ee.Number) -> ee.Image:
+    def _site_feature(i: ee.Number) -> ee.Feature:
         feat = ee.Feature(reference_list.get(i))
         geom = feat.geometry()
 
         site_col = (
             collection.filterDate(start_date, end_date)
-            .select(index_name)
             .filterBounds(geom)
+            .select(index_name)
         )
 
-        site_img = (
-            ee.Image(
-                ee.Algorithms.If(
-                    ee.String(summary_stat).compareTo("median").eq(0),
-                    site_col.median(),
-                    site_col.mean(),
-                )
+        site_img = ee.Image(
+            ee.Algorithms.If(
+                ee.String(summary_stat).compareTo("median").eq(0),
+                site_col.median(),
+                site_col.mean(),
             )
-            .rename(index_name)
-            .clip(geom)
+        ).rename(index_name)
+
+        stats = site_img.reduceRegion(
+            reducer=reducer,
+            geometry=geom,
+            scale=scale,
+            maxPixels=max_pixels,
+            tileScale=tile_scale,
         )
 
-        site_img = _set_image_properties(
-            site_img,
-            index_name=index_name,
-            start_date=start_date,
-            end_date=end_date,
-            summary_stat=summary_stat,
-            site_id=feat.get("site_id"),
-            site_name=feat.get("site_name"),
-            site_category=feat.get("site_category"),
-            image_count=site_col.size(),
+        ref_value = ee.Number(stats.get(index_name))
+
+        return ee.Feature(
+            None,
+            {
+                "site_id": feat.get("site_id"),
+                "site_name": feat.get("site_name"),
+                "site_category": feat.get("site_category"),
+                "index_name": index_name,
+                "start_date": start_date,
+                "end_date": end_date,
+                "summary_stat": summary_stat,
+                "image_count": site_col.size(),
+                "ref_value": ref_value,
+            },
         )
-        return site_img
 
-    images = ee.List.sequence(0, reference_fc.size().subtract(1)).map(_site_img)
-    return ee.ImageCollection.fromImages(images)
+    features = ee.List.sequence(0, reference_fc.size().subtract(1)).map(
+        _site_feature
+    )
+    return ee.FeatureCollection(features)
 
 
-def build_reference_stats_images(
-    reference_img_collection: ee.ImageCollection,
-    index_name: str,
-) -> Tuple[ee.Image, ee.Image]:
+def build_reference_scalar_stats(
+    reference_value_fc: ee.FeatureCollection,
+    value_field: str = "ref_value",
+) -> dict[str, ee.Number]:
     """
-    Build per-pixel reference mean and std-dev images from a reference composite stack.
-
-    Parameters
-    ----------
-    reference_img_collection : ee.ImageCollection
-        One image per reference site.
-    index_name : str
-
-    Returns
-    -------
-    tuple[ee.Image, ee.Image]
-        (reference_mean, reference_std)
+    Compute scalar mean, std dev, and count from reference-site values.
     """
-    ref_mean = reference_img_collection.mean().rename(
-        f"{index_name}_reference_mean"
+    values = ee.List(reference_value_fc.aggregate_array(value_field))
+    n = ee.Number(values.size())
+
+    mean_val = ee.Number(reference_value_fc.aggregate_mean(value_field))
+
+    # Population variance across reference sites
+    variance = ee.Number(
+        values.map(lambda v: ee.Number(v).subtract(mean_val).pow(2)).reduce(
+            ee.Reducer.mean()
+        )
     )
+    std_val = variance.sqrt()
 
-    ref_std = reference_img_collection.reduce(ee.Reducer.stdDev()).rename(
-        f"{index_name}_reference_std"
-    )
-
-    ref_mean = _set_image_properties(
-        ref_mean, index_name=index_name, summary_stat="reference_mean"
-    )
-    ref_std = _set_image_properties(
-        ref_std, index_name=index_name, summary_stat="reference_std"
-    )
-
-    return ref_mean, ref_std
+    return {
+        "n": n,
+        "mean": mean_val,
+        "std": std_val,
+    }
 
 
-def build_reference_z_anomaly_image(
+def build_reference_z_anomaly_from_scalars(
     focal_current_img: ee.Image,
-    reference_mean_img: ee.Image,
-    reference_std_img: ee.Image,
+    reference_mean: ee.Number,
+    reference_std: ee.Number,
     index_name: str,
-    clip_geom: Optional[ee.Geometry] = None,
+    clip_geom: ee.Geometry = None,
+    eps: float = 1e-6,
 ) -> ee.Image:
     """
-    Build a z-score anomaly image:
-        (focal_current - reference_mean) / reference_std
-
-    Parameters
-    ----------
-    focal_current_img : ee.Image
-    reference_mean_img : ee.Image
-    reference_std_img : ee.Image
-    index_name : str
-    clip_geom : ee.Geometry, optional
-
-    Returns
-    -------
-    ee.Image
+    Build a z-score anomaly image using scalar reference mean/std.
     """
-    std_safe = _ensure_nonzero_std(reference_std_img)
+    mean_img = ee.Image.constant(reference_mean)
+    std_img = ee.Image.constant(reference_std).max(ee.Image.constant(eps))
 
     z_img = (
-        focal_current_img.subtract(reference_mean_img)
-        .divide(std_safe)
+        focal_current_img.subtract(mean_img)
+        .divide(std_img)
         .rename(f"{index_name}_z_anomaly")
     )
 
-    z_img = _set_image_properties(
-        z_img,
-        index_name=index_name,
-        summary_stat="z_anomaly",
+    return _clip_if_requested(
+        _set_image_properties(
+            z_img,
+            index_name=index_name,
+            summary_stat="z_anomaly_scalar_reference",
+            reference_mean=reference_mean,
+            reference_std=reference_std,
+        ),
+        clip_geom,
     )
 
-    return _clip_if_requested(z_img, clip_geom)
 
-
-def build_reference_percentile_image(
-    reference_img_collection: ee.ImageCollection,
+def build_reference_percentile_from_scalars(
     focal_current_img: ee.Image,
+    reference_value_fc: ee.FeatureCollection,
     index_name: str,
-    clip_geom: Optional[ee.Geometry] = None,
+    clip_geom: ee.Geometry = None,
+    value_field: str = "ref_value",
 ) -> ee.Image:
     """
-    Build a percentile-rank image comparing focal current values to reference-site values.
+    Build a percentile-rank image using scalar reference-site values.
 
-    For each pixel:
-        percentile = 100 * (# reference images <= focal_current) / N_reference_images
-
-    Parameters
-    ----------
-    reference_img_collection : ee.ImageCollection
-        One image per reference site.
-    focal_current_img : ee.Image
-    index_name : str
-    clip_geom : ee.Geometry, optional
-
-    Returns
-    -------
-    ee.Image
+    For each focal pixel:
+        percentile = 100 * (# reference site values <= pixel value) / N
     """
-    n = ee.Number(reference_img_collection.size())
+    values = ee.List(reference_value_fc.aggregate_array(value_field))
+    n = ee.Number(values.size())
 
-    le_count = reference_img_collection.map(
-        lambda img: ee.Image(img).lte(focal_current_img).rename("le")
-    ).sum()
+    def _to_indicator(v):
+        v_img = ee.Image.constant(ee.Number(v))
+        return focal_current_img.gte(v_img).rename("le")
+
+    le_count = ee.ImageCollection.fromImages(values.map(_to_indicator)).sum()
 
     pct_img = (
         le_count.divide(n)
         .multiply(100)
         .rename(f"{index_name}_percentile_anomaly")
     )
-    pct_img = _set_image_properties(
-        pct_img,
-        index_name=index_name,
-        summary_stat="reference_percentile_rank",
-    )
 
-    return _clip_if_requested(pct_img, clip_geom)
+    return _clip_if_requested(
+        _set_image_properties(
+            pct_img,
+            index_name=index_name,
+            summary_stat="reference_percentile_rank_scalar_reference",
+            reference_n=n,
+        ),
+        clip_geom,
+    )
 
 
 def build_fire_dnbr_image(
@@ -505,7 +482,7 @@ def build_fire_dnbr_image(
     pre_end: str,
     post_start: str,
     post_end: str,
-    clip_geom: Optional[ee.Geometry] = None,
+    clip_geom: ee.Geometry = None,
     summary_stat: str = "median",
 ) -> Tuple[ee.Image, ee.Image, ee.Image]:
     """
