@@ -1,6 +1,8 @@
 import ee
 import pandas as pd
 import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 from tgbs_rs.config.specs import (
     get_metric_label,
@@ -14,6 +16,7 @@ from tgbs_rs.visualization.plots import (
     set_plot_theme,
     plot_focal_vs_envelope,
     plot_category_mean_trajectories,
+    finalize_timeseries_axis,
 )
 
 from tgbs_rs.visualization.tables import (
@@ -554,6 +557,100 @@ def plot_annual_metrics_category_figures(
             metric_col=metric_col,
             title=title,
             ylabel=get_metric_label(metric_col),
+        )
+        figs.append((fig, ax))
+
+    return figs
+
+
+def plot_annual_degraded_site_timeseries(
+    outputs: dict | pd.DataFrame,
+    source_label: str,
+    metric_cols: list[str],
+    site_ids: list[str] | None = None,
+    label_map: dict | None = None,
+    use_spec_order: bool = True,
+) -> list[tuple]:
+    """
+    Plot annual timeseries for focal and individual degraded sites.
+
+    This function accepts either:
+    - the outputs dict from run_annual_metrics_workflow/build_annual_metrics_outputs,
+      or
+    - a raw annual subset DataFrame produced by subset_metric_tables.
+
+    It plots the requested metric list for focal plus the selected degraded
+    site_ids on a single figure per metric.
+    """
+    set_plot_theme()
+    figs = []
+
+    ordered_metrics = (
+        get_annual_plot_order(metric_cols) if use_spec_order else metric_cols
+    )
+
+    site_ids = site_ids or [
+        "ks_rehab",
+        "degraded_1",
+        "degraded_2",
+        "degraded_3",
+    ]
+    label_map = label_map or {
+        "ks_rehab": "Focal",
+        "degraded_1": "Degraded_1 (Mining)",
+        "degraded_2": "Degraded_2 (Agriculture)",
+        "degraded_3": "Degraded_3 (Mining)",
+    }
+    palette = {
+        "Focal": "#7FC97F",
+        "Degraded_1 (Mining)": "#FB8072",
+        "Degraded_2 (Agriculture)": "#BEBADA",
+        "Degraded_3 (Mining)": "#80B1D3",
+    }
+    hue_order = [
+        "Focal",
+        "Degraded_1 (Mining)",
+        "Degraded_2 (Agriculture)",
+        "Degraded_3 (Mining)",
+    ]
+
+    if isinstance(outputs, pd.DataFrame):
+        annual_long = build_annual_metrics_long_table(
+            annual_df=outputs,
+            metric_cols=metric_cols,
+        )
+    else:
+        annual_long = outputs.get("annual_long")
+        if annual_long is None:
+            raise KeyError(
+                "plot_annual_degraded_site_timeseries requires either a raw annual "
+                "DataFrame or outputs from run_annual_metrics_workflow/build_annual_metrics_outputs."
+            )
+
+    annual_long = annual_long.copy()
+    annual_long = annual_long.loc[annual_long["site_id"].isin(site_ids)].copy()
+    annual_long["site_label"] = annual_long["site_id"].replace(label_map)
+
+    for metric_col in ordered_metrics:
+        d = annual_long.loc[annual_long["index_name"].eq(metric_col)].copy()
+        d = d.sort_values(["site_label", "year"])
+
+        fig, ax = plt.subplots(figsize=(11, 5))
+        sns.lineplot(
+            data=d,
+            x="year",
+            y="value",
+            hue="site_label",
+            hue_order=hue_order,
+            palette=palette,
+            marker="o",
+            linewidth=2.2,
+            ax=ax,
+        )
+
+        title = f"{source_label} Annual {get_metric_label(metric_col)}: Focal and Degraded Sites"
+        finalize_timeseries_axis(
+            ax=ax, title=title, ylabel=get_metric_label(metric_col)
         )
         figs.append((fig, ax))
 
