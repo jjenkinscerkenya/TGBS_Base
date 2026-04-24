@@ -22,6 +22,7 @@ from tgbs_rs.visualization.tables import (
     summarize_by_category_year,
     build_category_envelope,
     build_focal_series,
+    build_corridor_series,
     join_focal_to_envelope,
     summarize_baseline_ranges,
     add_standardized_anomalies,
@@ -416,6 +417,7 @@ def build_annual_metrics_outputs(
     )
 
     focal = build_focal_series(annual_long_df)
+    corridor = build_corridor_series(annual_long_df)
 
     focal_vs_reference = join_focal_to_envelope(
         focal_long=focal,
@@ -423,8 +425,20 @@ def build_annual_metrics_outputs(
         envelope_label="reference",
     )
 
+    corridor_vs_reference = join_focal_to_envelope(
+        focal_long=corridor,
+        envelope_df=reference_envelope,
+        envelope_label="reference",
+    )
+
     focal_vs_degraded = join_focal_to_envelope(
         focal_long=focal,
+        envelope_df=degraded_envelope,
+        envelope_label="degraded",
+    )
+
+    corridor_vs_degraded = join_focal_to_envelope(
+        focal_long=corridor,
         envelope_df=degraded_envelope,
         envelope_label="degraded",
     )
@@ -449,8 +463,11 @@ def build_annual_metrics_outputs(
         "reference_envelope": reference_envelope,
         "degraded_envelope": degraded_envelope,
         "focal": focal,
+        "corridor": corridor,
         "focal_vs_reference": focal_vs_reference,
+        "corridor_vs_reference": corridor_vs_reference,
         "focal_vs_degraded": focal_vs_degraded,
+        "corridor_vs_degraded": corridor_vs_degraded,
         "reference_baseline_ranges": reference_baseline_ranges,
         "focal_reference_anomalies": focal_reference_anomalies,
         "period_summary": period_summary,
@@ -496,9 +513,13 @@ def plot_annual_metrics_core_figures(
 
     comparison_key = f"focal_vs_{envelope_label}"
 
+    corridor_key = f"corridor_vs_{envelope_label}"
+    corridor_df = outputs.get(corridor_key)
+
     for metric_col in ordered_metrics:
         fig, ax = plot_focal_vs_envelope(
             comparison_df=outputs[comparison_key],
+            corridor_df=corridor_df,
             metric_col=metric_col,
             envelope_label=envelope_label,
             title=make_annual_title(
@@ -588,6 +609,7 @@ def build_seasonal_metrics_outputs(
     )
 
     focal = build_focal_series(seasonal_long_df)
+    corridor = build_corridor_series(seasonal_long_df)
 
     focal_vs_reference = join_focal_to_envelope(
         focal_long=focal,
@@ -595,8 +617,20 @@ def build_seasonal_metrics_outputs(
         envelope_label="reference",
     )
 
+    corridor_vs_reference = join_focal_to_envelope(
+        focal_long=corridor,
+        envelope_df=reference_envelope,
+        envelope_label="reference",
+    )
+
     focal_vs_degraded = join_focal_to_envelope(
         focal_long=focal,
+        envelope_df=degraded_envelope,
+        envelope_label="degraded",
+    )
+
+    corridor_vs_degraded = join_focal_to_envelope(
+        focal_long=corridor,
         envelope_df=degraded_envelope,
         envelope_label="degraded",
     )
@@ -621,8 +655,11 @@ def build_seasonal_metrics_outputs(
         "reference_envelope": reference_envelope,
         "degraded_envelope": degraded_envelope,
         "focal": focal,
+        "corridor": corridor,
         "focal_vs_reference": focal_vs_reference,
+        "corridor_vs_reference": corridor_vs_reference,
         "focal_vs_degraded": focal_vs_degraded,
+        "corridor_vs_degraded": corridor_vs_degraded,
         "reference_baseline_ranges": reference_baseline_ranges,
         "focal_reference_anomalies": focal_reference_anomalies,
         "period_summary": period_summary,
@@ -694,9 +731,13 @@ def plot_single_season_metrics_core_figures(
 
     comparison_key = f"focal_vs_{envelope_label}"
 
+    corridor_key = f"corridor_vs_{envelope_label}"
+    corridor_df = outputs.get(corridor_key)
+
     for metric_col in ordered_metrics:
         fig, ax = plot_focal_vs_envelope(
             comparison_df=outputs[comparison_key],
+            corridor_df=corridor_df,
             metric_col=metric_col,
             envelope_label=envelope_label,
             title=make_seasonal_title(

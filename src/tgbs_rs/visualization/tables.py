@@ -620,33 +620,56 @@ def build_category_envelope(
     )
 
 
+def build_category_series(
+    df_long: pd.DataFrame,
+    category: str,
+    year_col: str = "year",
+) -> pd.DataFrame:
+    """
+    Extract the trajectory for a specific site category in long format.
+    """
+    return (
+        df_long.loc[df_long["site_category"].eq(category)]
+        .sort_values(["index_name", year_col])
+        .reset_index(drop=True)
+    )
+
+
 def build_focal_series(
     df_long: pd.DataFrame,
     year_col: str = "year",
 ) -> pd.DataFrame:
     """
     Extract the focal trajectory in long format for each year and index.
-    This produces the line that will typically sit on top of the reference
-    or degraded envelopes in the main comparison figures.
     """
-    return (
-        df_long.loc[df_long["site_category"].eq("focal")]
-        .sort_values(["index_name", year_col])
-        .reset_index(drop=True)
+    return build_category_series(
+        df_long=df_long, category="focal", year_col=year_col
     )
 
 
-def join_focal_to_envelope(
-    focal_long: pd.DataFrame,
+def build_corridor_series(
+    df_long: pd.DataFrame,
+    year_col: str = "year",
+) -> pd.DataFrame:
+    """
+    Extract the bio corridor trajectory in long format for each year and index.
+    """
+    return build_category_series(
+        df_long=df_long,
+        category="corridor",
+        year_col=year_col,
+    )
+
+
+def join_category_series_to_envelope(
+    category_long: pd.DataFrame,
     envelope_df: pd.DataFrame,
     year_col: str = "year",
     envelope_label: str = "reference",
 ) -> pd.DataFrame:
     """
-    Join the focal series to a category envelope so each focal observation
-    carries the comparison range for the same year and index. This becomes
-    the main plotting-ready comparison table for focal-vs-reference or
-    focal-vs-degraded visualizations.
+    Join a category trajectory to a category envelope so each observation
+    carries the comparison range for the same year and index.
     """
     cols = [
         year_col,
@@ -671,7 +694,24 @@ def join_focal_to_envelope(
             "n_sites": f"{envelope_label}_n_sites",
         }
     )
-    return focal_long.merge(env, on=[year_col, "index_name"], how="left")
+    return category_long.merge(env, on=[year_col, "index_name"], how="left")
+
+
+def join_focal_to_envelope(
+    focal_long: pd.DataFrame,
+    envelope_df: pd.DataFrame,
+    year_col: str = "year",
+    envelope_label: str = "reference",
+) -> pd.DataFrame:
+    """
+    Join the focal series to a category envelope.
+    """
+    return join_category_series_to_envelope(
+        category_long=focal_long,
+        envelope_df=envelope_df,
+        year_col=year_col,
+        envelope_label=envelope_label,
+    )
 
 
 def summarize_baseline_ranges(

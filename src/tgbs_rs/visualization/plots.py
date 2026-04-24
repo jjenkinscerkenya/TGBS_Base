@@ -556,13 +556,14 @@ def plot_focal_vs_envelope(
     envelope_label: str,
     title: str,
     ylabel: str,
+    corridor_df: pd.DataFrame | None = None,
+    corridor_label: str = "Bio Corridor",
     figsize: tuple = (11, 5),
 ) -> tuple:
     """
     Plot the focal trajectory against a comparison category envelope using a
     shaded interquartile ribbon, full range ribbon, and comparison median line.
-    This is the core figure pattern for focal-vs-reference and focal-vs-degraded
-    annual or seasonal trajectory figures.
+    This also optionally overlays the Bio Corridor series on the same plot.
     """
     d = comparison_df.loc[comparison_df["index_name"].eq(metric_col)].copy()
     d = d.sort_values("year")
@@ -595,12 +596,27 @@ def plot_focal_vs_envelope(
         ax=ax,
     )
 
+    if corridor_df is not None and not corridor_df.empty:
+        c = corridor_df.loc[corridor_df["index_name"].eq(metric_col)].copy()
+        c = c.sort_values("year")
+        sns.lineplot(
+            data=c,
+            x="year",
+            y="value",
+            marker="o",
+            linewidth=2.5,
+            color="#80B1D3",
+            label=corridor_label,
+            ax=ax,
+        )
+
     sns.lineplot(
         data=d,
         x="year",
         y="value",
         marker="o",
         linewidth=2.5,
+        color="#7FC97F",
         label="Focal",
         ax=ax,
     )
@@ -624,7 +640,25 @@ def plot_category_mean_trajectories(
     focal-versus-envelope comparisons.
     """
     d = summary_df.loc[summary_df["index_name"].eq(metric_col)].copy()
+    d = d.assign(
+        site_category=d["site_category"].replace(
+            {
+                "focal": "Focal",
+                "corridor": "Bio Corridor",
+                "reference": "Reference",
+                "degraded": "Degraded",
+            }
+        )
+    )
     d = d.sort_values([x_col, "site_category"])
+
+    palette = {
+        "Focal": "#7FC97F",
+        "Bio Corridor": "#80B1D3",
+        "Reference": "#FDB462",
+        "Degraded": "#FB8072",
+    }
+    hue_order = ["Focal", "Bio Corridor", "Reference", "Degraded"]
 
     fig, ax = plt.subplots(figsize=figsize)
 
@@ -633,6 +667,8 @@ def plot_category_mean_trajectories(
         x=x_col,
         y="mean",
         hue="site_category",
+        hue_order=hue_order,
+        palette=palette,
         marker="o",
         linewidth=2.2,
         ax=ax,
