@@ -1,0 +1,2229 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="sampling_points" id="sampling_points">
+	<SimpleField name="fid" type="float"></SimpleField>
+	<SimpleField name="Plot_ID" type="string"></SimpleField>
+	<SimpleField name="Block" type="string"></SimpleField>
+	<SimpleField name="Stratum" type="string"></SimpleField>
+	<SimpleField name="Year" type="string"></SimpleField>
+	<SimpleField name="Easting_UTM37S" type="float"></SimpleField>
+	<SimpleField name="Northing_UTM37S" type="float"></SimpleField>
+	<SimpleField name="Latitude" type="float"></SimpleField>
+	<SimpleField name="Longitude" type="float"></SimpleField>
+</Schema>
+<Folder><name>sampling_points</name>
+  <Placemark id="sampling_points.1">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">1</SimpleData>
+		<SimpleData name="Plot_ID">P0001</SimpleData>
+		<SimpleData name="Block">1011</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Easting_UTM37S">546813.942679846</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512752.50107552</SimpleData>
+		<SimpleData name="Latitude">-4.40807387094641</SimpleData>
+		<SimpleData name="Longitude">39.4219411132528</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4219411132528,-4.40807387094641</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.2">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">2</SimpleData>
+		<SimpleData name="Plot_ID">P0002</SimpleData>
+		<SimpleData name="Block">1011</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Easting_UTM37S">546713.942679846</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512452.50107552</SimpleData>
+		<SimpleData name="Latitude">-4.41078834169377</SimpleData>
+		<SimpleData name="Longitude">39.421041342319</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.421041342319,-4.41078834169377</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.3">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">3</SimpleData>
+		<SimpleData name="Plot_ID">P0003</SimpleData>
+		<SimpleData name="Block">1011</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Easting_UTM37S">546813.942679846</SimpleData>
+		<SimpleData name="Northing_UTM37S">9513052.50107552</SimpleData>
+		<SimpleData name="Latitude">-4.40535991182533</SimpleData>
+		<SimpleData name="Longitude">39.4219395832584</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4219395832584,-4.40535991182533</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.4">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">4</SimpleData>
+		<SimpleData name="Plot_ID">P0004</SimpleData>
+		<SimpleData name="Block">1011</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Easting_UTM37S">547013.942679846</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512552.50107552</SimpleData>
+		<SimpleData name="Latitude">-4.40988215019581</SimpleData>
+		<SimpleData name="Longitude">39.4237447350391</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4237447350391,-4.40988215019581</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.5">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">5</SimpleData>
+		<SimpleData name="Plot_ID">P0005</SimpleData>
+		<SimpleData name="Block">1011</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Easting_UTM37S">546613.942679846</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512652.50107552</SimpleData>
+		<SimpleData name="Latitude">-4.40897954607661</SimpleData>
+		<SimpleData name="Longitude">39.420139023958</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.420139023958,-4.40897954607661</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.6">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">6</SimpleData>
+		<SimpleData name="Plot_ID">P0006</SimpleData>
+		<SimpleData name="Block">1011</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Easting_UTM37S">546613.942679846</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512952.50107552</SimpleData>
+		<SimpleData name="Latitude">-4.40626558639009</SimpleData>
+		<SimpleData name="Longitude">39.4201375001837</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4201375001837,-4.40626558639009</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.7">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">7</SimpleData>
+		<SimpleData name="Plot_ID">P0007</SimpleData>
+		<SimpleData name="Block">1012</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Easting_UTM37S">547053.855183934</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511819.62243226</SimpleData>
+		<SimpleData name="Latitude">-4.41651195068783</SimpleData>
+		<SimpleData name="Longitude">39.4241082290396</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4241082290396,-4.41651195068783</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.8">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">8</SimpleData>
+		<SimpleData name="Plot_ID">P0008</SimpleData>
+		<SimpleData name="Block">1012</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Easting_UTM37S">546953.855183934</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512319.62243226</SimpleData>
+		<SimpleData name="Latitude">-4.41198920226414</SimpleData>
+		<SimpleData name="Longitude">39.4232043584819</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4232043584819,-4.41198920226414</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.9">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">9</SimpleData>
+		<SimpleData name="Plot_ID">P0009</SimpleData>
+		<SimpleData name="Block">1012</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Easting_UTM37S">547053.855183934</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512119.62243226</SimpleData>
+		<SimpleData name="Latitude">-4.41379799294524</SimpleData>
+		<SimpleData name="Longitude">39.4241066882309</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4241066882309,-4.41379799294524</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.10">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">10</SimpleData>
+		<SimpleData name="Plot_ID">P0010</SimpleData>
+		<SimpleData name="Block">1012</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Easting_UTM37S">546853.855183934</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512119.62243226</SimpleData>
+		<SimpleData name="Latitude">-4.41379902145575</SimpleData>
+		<SimpleData name="Longitude">39.4223040776122</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4223040776122,-4.41379902145575</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.11">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">11</SimpleData>
+		<SimpleData name="Plot_ID">P0011</SimpleData>
+		<SimpleData name="Block">1012</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Easting_UTM37S">546753.855183934</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512319.62243226</SimpleData>
+		<SimpleData name="Latitude">-4.41199022816206</SimpleData>
+		<SimpleData name="Longitude">39.4214017520147</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4214017520147,-4.41199022816206</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.12">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">12</SimpleData>
+		<SimpleData name="Plot_ID">P0012</SimpleData>
+		<SimpleData name="Block">1013</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Easting_UTM37S">546490.853587925</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512204.19720091</SimpleData>
+		<SimpleData name="Latitude">-4.41303576865477</SimpleData>
+		<SimpleData name="Longitude">39.4190318948634</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4190318948634,-4.41303576865477</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.13">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">13</SimpleData>
+		<SimpleData name="Plot_ID">P0013</SimpleData>
+		<SimpleData name="Block">1013</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Easting_UTM37S">546690.853587925</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511904.19720091</SimpleData>
+		<SimpleData name="Latitude">-4.41574870722139</SimpleData>
+		<SimpleData name="Longitude">39.4208360330591</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4208360330591,-4.41574870722139</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.14">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">14</SimpleData>
+		<SimpleData name="Plot_ID">P0014</SimpleData>
+		<SimpleData name="Block">1013</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Easting_UTM37S">546590.853587925</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511704.19720091</SimpleData>
+		<SimpleData name="Latitude">-4.41755852434093</SimpleData>
+		<SimpleData name="Longitude">39.4199357425152</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4199357425152,-4.41755852434093</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.15">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">15</SimpleData>
+		<SimpleData name="Plot_ID">P0015</SimpleData>
+		<SimpleData name="Block">1013</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Easting_UTM37S">546390.853587925</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512004.19720091</SimpleData>
+		<SimpleData name="Latitude">-4.41484558382063</SimpleData>
+		<SimpleData name="Longitude">39.4181316023871</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4181316023871,-4.41484558382063</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.16">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">16</SimpleData>
+		<SimpleData name="Plot_ID">P0016</SimpleData>
+		<SimpleData name="Block">1013</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Easting_UTM37S">546390.853587925</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511804.19720091</SimpleData>
+		<SimpleData name="Latitude">-4.41665489034952</SimpleData>
+		<SimpleData name="Longitude">39.4181326152577</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4181326152577,-4.41665489034952</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.17">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">17</SimpleData>
+		<SimpleData name="Plot_ID">P0017</SimpleData>
+		<SimpleData name="Block">1013</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Easting_UTM37S">546690.853587925</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512104.19720091</SimpleData>
+		<SimpleData name="Latitude">-4.41393940127759</SimpleData>
+		<SimpleData name="Longitude">39.42083501385</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.42083501385,-4.41393940127759</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.18">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">18</SimpleData>
+		<SimpleData name="Plot_ID">P0018</SimpleData>
+		<SimpleData name="Block">1013</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Easting_UTM37S">546390.853587925</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511604.19720091</SimpleData>
+		<SimpleData name="Latitude">-4.41846419679007</SimpleData>
+		<SimpleData name="Longitude">39.4181336285474</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4181336285474,-4.41846419679007</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.19">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">19</SimpleData>
+		<SimpleData name="Plot_ID">P0019</SimpleData>
+		<SimpleData name="Block">1014</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Easting_UTM37S">546777.187541438</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511498.80282078</SimpleData>
+		<SimpleData name="Latitude">-4.41941567679531</SimpleData>
+		<SimpleData name="Longitude">39.4216162388207</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4216162388207,-4.41941567679531</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.20">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">20</SimpleData>
+		<SimpleData name="Plot_ID">P0020</SimpleData>
+		<SimpleData name="Block">1014</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Easting_UTM37S">546677.187541438</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511098.80282078</SimpleData>
+		<SimpleData name="Latitude">-4.42303480054369</SimpleData>
+		<SimpleData name="Longitude">39.4207169672897</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4207169672897,-4.42303480054369</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.21">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">21</SimpleData>
+		<SimpleData name="Plot_ID">P0021</SimpleData>
+		<SimpleData name="Block">1014</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Easting_UTM37S">546977.187541438</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511498.80282078</SimpleData>
+		<SimpleData name="Latitude">-4.41941464865247</SimpleData>
+		<SimpleData name="Longitude">39.4234188631579</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4234188631579,-4.41941464865247</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.22">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">22</SimpleData>
+		<SimpleData name="Plot_ID">P0022</SimpleData>
+		<SimpleData name="Block">1014</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Easting_UTM37S">546877.187541438</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511798.80282078</SimpleData>
+		<SimpleData name="Latitude">-4.41670120518122</SimpleData>
+		<SimpleData name="Longitude">39.4225160149991</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4225160149991,-4.41670120518122</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.23">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">23</SimpleData>
+		<SimpleData name="Plot_ID">P0023</SimpleData>
+		<SimpleData name="Block">1014</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Easting_UTM37S">546777.187541438</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511298.80282078</SimpleData>
+		<SimpleData name="Latitude">-4.42122498228981</SimpleData>
+		<SimpleData name="Longitude">39.4216172611933</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4216172611933,-4.42122498228981</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.24">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">24</SimpleData>
+		<SimpleData name="Plot_ID">P0024</SimpleData>
+		<SimpleData name="Block">1014</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2020</SimpleData>
+		<SimpleData name="Easting_UTM37S">546477.187541438</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510998.80282078</SimpleData>
+		<SimpleData name="Latitude">-4.42394047593203</SimpleData>
+		<SimpleData name="Longitude">39.4189148418513</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4189148418513,-4.42394047593203</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.25">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">25</SimpleData>
+		<SimpleData name="Plot_ID">P0025</SimpleData>
+		<SimpleData name="Block">1015</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Easting_UTM37S">546338.826807645</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510689.9994396</SimpleData>
+		<SimpleData name="Latitude">-4.42673478012325</SimpleData>
+		<SimpleData name="Longitude">39.4176693370361</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4176693370361,-4.42673478012325</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.26">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">26</SimpleData>
+		<SimpleData name="Plot_ID">P0026</SimpleData>
+		<SimpleData name="Block">1015</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Easting_UTM37S">546438.826807645</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510489.9994396</SimpleData>
+		<SimpleData name="Latitude">-4.42854357640884</SimpleData>
+		<SimpleData name="Longitude">39.4185716752373</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4185716752373,-4.42854357640884</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.27">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">27</SimpleData>
+		<SimpleData name="Plot_ID">P0027</SimpleData>
+		<SimpleData name="Block">1015</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Easting_UTM37S">546138.826807645</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510289.9994396</SimpleData>
+		<SimpleData name="Latitude">-4.43035440880979</SimpleData>
+		<SimpleData name="Longitude">39.4158687143012</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4158687143012,-4.43035440880979</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.28">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">28</SimpleData>
+		<SimpleData name="Plot_ID">P0028</SimpleData>
+		<SimpleData name="Block">1015</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Easting_UTM37S">546438.826807645</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510889.9994396</SimpleData>
+		<SimpleData name="Latitude">-4.42492496462547</SimpleData>
+		<SimpleData name="Longitude">39.4185696423074</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4185696423074,-4.42492496462547</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.29">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">29</SimpleData>
+		<SimpleData name="Plot_ID">P0029</SimpleData>
+		<SimpleData name="Block">1015</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Easting_UTM37S">546138.826807645</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510489.9994396</SimpleData>
+		<SimpleData name="Latitude">-4.42854510242509</SimpleData>
+		<SimpleData name="Longitude">39.4158677037769</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4158677037769,-4.42854510242509</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.30">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">30</SimpleData>
+		<SimpleData name="Plot_ID">P0030</SimpleData>
+		<SimpleData name="Block">1016</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Easting_UTM37S">546185.184625583</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511293.0186246</SimpleData>
+		<SimpleData name="Latitude">-4.42128032806543</SimpleData>
+		<SimpleData name="Longitude">39.4162814806666</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4162814806666,-4.42128032806543</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.31">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">31</SimpleData>
+		<SimpleData name="Plot_ID">P0031</SimpleData>
+		<SimpleData name="Block">1016</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Easting_UTM37S">546385.184625583</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511093.0186246</SimpleData>
+		<SimpleData name="Latitude">-4.42308861870285</SimpleData>
+		<SimpleData name="Longitude">39.4180851249837</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4180851249837,-4.42308861870285</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.32">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">32</SimpleData>
+		<SimpleData name="Plot_ID">P0032</SimpleData>
+		<SimpleData name="Block">1016</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Easting_UTM37S">546385.184625583</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511293.0186246</SimpleData>
+		<SimpleData name="Latitude">-4.42127931247639</SimpleData>
+		<SimpleData name="Longitude">39.4180841107468</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4180841107468,-4.42127931247639</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.33">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">33</SimpleData>
+		<SimpleData name="Plot_ID">P0033</SimpleData>
+		<SimpleData name="Block">1016</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Easting_UTM37S">545885.184625583</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510393.0186246</SimpleData>
+		<SimpleData name="Latitude">-4.4294237252219</SimpleData>
+		<SimpleData name="Longitude">39.4135820529021</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4135820529021,-4.4294237252219</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.34">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">34</SimpleData>
+		<SimpleData name="Plot_ID">P0034</SimpleData>
+		<SimpleData name="Block">1016</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Easting_UTM37S">545985.184625583</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510793.0186246</SimpleData>
+		<SimpleData name="Latitude">-4.42580460674819</SimpleData>
+		<SimpleData name="Longitude">39.4144813646768</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4144813646768,-4.42580460674819</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.35">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">35</SimpleData>
+		<SimpleData name="Plot_ID">P0035</SimpleData>
+		<SimpleData name="Block">1016</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Easting_UTM37S">546085.184625583</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511093.0186246</SimpleData>
+		<SimpleData name="Latitude">-4.42309014106601</SimpleData>
+		<SimpleData name="Longitude">39.4153811731477</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4153811731477,-4.42309014106601</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.36">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">36</SimpleData>
+		<SimpleData name="Plot_ID">P0036</SimpleData>
+		<SimpleData name="Block">1016</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Easting_UTM37S">545985.184625583</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510593.0186246</SimpleData>
+		<SimpleData name="Latitude">-4.42761391358602</SimpleData>
+		<SimpleData name="Longitude">39.4144823712069</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4144823712069,-4.42761391358602</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.37">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">37</SimpleData>
+		<SimpleData name="Plot_ID">P0037</SimpleData>
+		<SimpleData name="Block">1016</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Easting_UTM37S">546585.184625583</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511393.0186246</SimpleData>
+		<SimpleData name="Latitude">-4.42037363956246</SimpleData>
+		<SimpleData name="Longitude">39.4198862312609</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4198862312609,-4.42037363956246</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.38">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">38</SimpleData>
+		<SimpleData name="Plot_ID">P0038</SimpleData>
+		<SimpleData name="Block">1016</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Easting_UTM37S">545785.184625583</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510593.0186246</SimpleData>
+		<SimpleData name="Latitude">-4.42761492184659</SimpleData>
+		<SimpleData name="Longitude">39.4126797249815</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4126797249815,-4.42761492184659</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.39">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">39</SimpleData>
+		<SimpleData name="Plot_ID">P0039</SimpleData>
+		<SimpleData name="Block">1016</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Easting_UTM37S">546185.184625583</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510793.0186246</SimpleData>
+		<SimpleData name="Latitude">-4.42580359450868</SimpleData>
+		<SimpleData name="Longitude">39.4162840061094</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4162840061094,-4.42580359450868</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.40">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">40</SimpleData>
+		<SimpleData name="Plot_ID">P0040</SimpleData>
+		<SimpleData name="Block">1019</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="Year">2023</SimpleData>
+		<SimpleData name="Easting_UTM37S">545704.815782842</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509363.18914634</SimpleData>
+		<SimpleData name="Latitude">-4.43874102180891</SimpleData>
+		<SimpleData name="Longitude">39.4119615025561</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4119615025561,-4.43874102180891</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.41">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">41</SimpleData>
+		<SimpleData name="Plot_ID">P0041</SimpleData>
+		<SimpleData name="Block">1019</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="Year">2023</SimpleData>
+		<SimpleData name="Easting_UTM37S">545504.815782842</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509263.18914634</SimpleData>
+		<SimpleData name="Latitude">-4.43964668004536</SimpleData>
+		<SimpleData name="Longitude">39.4101593282219</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4101593282219,-4.43964668004536</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.42">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">42</SimpleData>
+		<SimpleData name="Plot_ID">P0042</SimpleData>
+		<SimpleData name="Block">1019</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="Year">2023</SimpleData>
+		<SimpleData name="Easting_UTM37S">544704.815782842</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509463.18914634</SimpleData>
+		<SimpleData name="Latitude">-4.43784134645185</SimpleData>
+		<SimpleData name="Longitude">39.4029476391123</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4029476391123,-4.43784134645185</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.43">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">43</SimpleData>
+		<SimpleData name="Plot_ID">P0043</SimpleData>
+		<SimpleData name="Block">1019</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="Year">2023</SimpleData>
+		<SimpleData name="Easting_UTM37S">544904.815782842</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509163.18914634</SimpleData>
+		<SimpleData name="Latitude">-4.44055432230583</SimpleData>
+		<SimpleData name="Longitude">39.4047517908385</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4047517908385,-4.44055432230583</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.44">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">44</SimpleData>
+		<SimpleData name="Plot_ID">P0044</SimpleData>
+		<SimpleData name="Block">1019</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="Year">2023</SimpleData>
+		<SimpleData name="Easting_UTM37S">545004.815782842</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509363.18914634</SimpleData>
+		<SimpleData name="Latitude">-4.43874451873377</SimpleData>
+		<SimpleData name="Longitude">39.4056521425984</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4056521425984,-4.43874451873377</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.45">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">45</SimpleData>
+		<SimpleData name="Plot_ID">P0045</SimpleData>
+		<SimpleData name="Block">1019</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="Year">2023</SimpleData>
+		<SimpleData name="Easting_UTM37S">545104.815782842</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509163.18914634</SimpleData>
+		<SimpleData name="Latitude">-4.44055333048827</SimpleData>
+		<SimpleData name="Longitude">39.4065544702176</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4065544702176,-4.44055333048827</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.46">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">46</SimpleData>
+		<SimpleData name="Plot_ID">P0046</SimpleData>
+		<SimpleData name="Block">1020</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="Year">2023</SimpleData>
+		<SimpleData name="Easting_UTM37S">544456.688397634</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509391.32428164</SimpleData>
+		<SimpleData name="Latitude">-4.43849269346931</SimpleData>
+		<SimpleData name="Longitude">39.400711526177</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.400711526177,-4.43849269346931</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.47">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">47</SimpleData>
+		<SimpleData name="Plot_ID">P0047</SimpleData>
+		<SimpleData name="Block">1020</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="Year">2023</SimpleData>
+		<SimpleData name="Easting_UTM37S">544656.688397634</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509191.32428164</SimpleData>
+		<SimpleData name="Latitude">-4.440301020915</SimpleData>
+		<SimpleData name="Longitude">39.4025151817371</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4025151817371,-4.440301020915</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.48">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">48</SimpleData>
+		<SimpleData name="Plot_ID">P0048</SimpleData>
+		<SimpleData name="Block">1020</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="Year">2023</SimpleData>
+		<SimpleData name="Easting_UTM37S">544456.688397634</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509191.32428164</SimpleData>
+		<SimpleData name="Latitude">-4.44030200280103</SimpleData>
+		<SimpleData name="Longitude">39.4007125020691</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4007125020691,-4.44030200280103</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.49">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">49</SimpleData>
+		<SimpleData name="Plot_ID">P0049</SimpleData>
+		<SimpleData name="Block">1020</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="Year">2023</SimpleData>
+		<SimpleData name="Easting_UTM37S">544456.688397634</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508991.32428164</SimpleData>
+		<SimpleData name="Latitude">-4.44211131204395</SimpleData>
+		<SimpleData name="Longitude">39.4007134783629</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4007134783629,-4.44211131204395</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.50">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">50</SimpleData>
+		<SimpleData name="Plot_ID">P0050</SimpleData>
+		<SimpleData name="Block">10171</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Easting_UTM37S">545799.753656876</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510476.61737231</SimpleData>
+		<SimpleData name="Latitude">-4.42866787663904</SimpleData>
+		<SimpleData name="Longitude">39.4128116226772</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4128116226772,-4.42866787663904</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.51">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">51</SimpleData>
+		<SimpleData name="Plot_ID">P0051</SimpleData>
+		<SimpleData name="Block">10171</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Easting_UTM37S">545599.753656876</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510376.61737231</SimpleData>
+		<SimpleData name="Latitude">-4.4295735348228</SimpleData>
+		<SimpleData name="Longitude">39.4110094728414</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4110094728414,-4.4295735348228</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.52">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">52</SimpleData>
+		<SimpleData name="Plot_ID">P0052</SimpleData>
+		<SimpleData name="Block">10171</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Easting_UTM37S">545599.753656876</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510176.61737231</SimpleData>
+		<SimpleData name="Latitude">-4.43138284227169</SimpleData>
+		<SimpleData name="Longitude">39.4110104717937</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4110104717937,-4.43138284227169</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.53">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">53</SimpleData>
+		<SimpleData name="Plot_ID">P0053</SimpleData>
+		<SimpleData name="Block">10171</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Easting_UTM37S">545799.753656876</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510276.61737231</SimpleData>
+		<SimpleData name="Latitude">-4.4304771837203</SimpleData>
+		<SimpleData name="Longitude">39.4128126258035</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4128126258035,-4.4304771837203</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.54">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">54</SimpleData>
+		<SimpleData name="Plot_ID">P0054</SimpleData>
+		<SimpleData name="Block">10171</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Easting_UTM37S">545999.753656876</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510576.61737231</SimpleData>
+		<SimpleData name="Latitude">-4.42776221445059</SimpleData>
+		<SimpleData name="Longitude">39.4146137678234</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4146137678234,-4.42776221445059</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.55">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">55</SimpleData>
+		<SimpleData name="Plot_ID">P0055</SimpleData>
+		<SimpleData name="Block">10171</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Easting_UTM37S">545799.753656876</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510676.61737231</SimpleData>
+		<SimpleData name="Latitude">-4.42685856946922</SimpleData>
+		<SimpleData name="Longitude">39.4128106199646</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4128106199646,-4.42685856946922</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.56">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">56</SimpleData>
+		<SimpleData name="Plot_ID">P0056</SimpleData>
+		<SimpleData name="Block">10172</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="Year">2022</SimpleData>
+		<SimpleData name="Easting_UTM37S">544974.351776271</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509600.22089895</SimpleData>
+		<SimpleData name="Latitude">-4.43660035202128</SimpleData>
+		<SimpleData name="Longitude">39.4053763894851</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4053763894851,-4.43660035202128</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.57">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">57</SimpleData>
+		<SimpleData name="Plot_ID">P0057</SimpleData>
+		<SimpleData name="Block">10172</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="Year">2022</SimpleData>
+		<SimpleData name="Easting_UTM37S">545174.351776271</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510000.22089895</SimpleData>
+		<SimpleData name="Latitude">-4.43298074334341</SimpleData>
+		<SimpleData name="Longitude">39.4071770779198</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4071770779198,-4.43298074334341</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.58">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">58</SimpleData>
+		<SimpleData name="Plot_ID">P0058</SimpleData>
+		<SimpleData name="Block">10172</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="Year">2022</SimpleData>
+		<SimpleData name="Easting_UTM37S">544974.351776271</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509900.22089895</SimpleData>
+		<SimpleData name="Latitude">-4.43388638928321</SimpleData>
+		<SimpleData name="Longitude">39.4053749100017</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4053749100017,-4.43388638928321</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.59">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">59</SimpleData>
+		<SimpleData name="Plot_ID">P0059</SimpleData>
+		<SimpleData name="Block">10172</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="Year">2022</SimpleData>
+		<SimpleData name="Easting_UTM37S">545174.351776271</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509600.22089895</SimpleData>
+		<SimpleData name="Latitude">-4.43659935955924</SimpleData>
+		<SimpleData name="Longitude">39.4071790591317</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4071790591317,-4.43659935955924</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.60">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">60</SimpleData>
+		<SimpleData name="Plot_ID">P0060</SimpleData>
+		<SimpleData name="Block">10172</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="Year">2022</SimpleData>
+		<SimpleData name="Easting_UTM37S">545374.351776271</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509800.22089895</SimpleData>
+		<SimpleData name="Latitude">-4.43478905503843</SimpleData>
+		<SimpleData name="Longitude">39.4089807331739</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4089807331739,-4.43478905503843</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.61">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">61</SimpleData>
+		<SimpleData name="Plot_ID">P0061</SimpleData>
+		<SimpleData name="Block">10172</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="Year">2022</SimpleData>
+		<SimpleData name="Easting_UTM37S">545174.351776271</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509800.22089895</SimpleData>
+		<SimpleData name="Latitude">-4.43479005149567</SimpleData>
+		<SimpleData name="Longitude">39.4071780683217</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4071780683217,-4.43479005149567</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.62">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">62</SimpleData>
+		<SimpleData name="Plot_ID">P0062</SimpleData>
+		<SimpleData name="Block">10172</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="Year">2022</SimpleData>
+		<SimpleData name="Easting_UTM37S">545374.351776271</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510000.22089895</SimpleData>
+		<SimpleData name="Latitude">-4.43297974729427</SimpleData>
+		<SimpleData name="Longitude">39.4089797383876</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4089797383876,-4.43297974729427</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.63">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">63</SimpleData>
+		<SimpleData name="Plot_ID">P0063</SimpleData>
+		<SimpleData name="Block">10181</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Easting_UTM37S">546247.835485837</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509955.4522655</SimpleData>
+		<SimpleData name="Latitude">-4.43338034634267</SimpleData>
+		<SimpleData name="Longitude">39.4168529332475</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4168529332475,-4.43338034634267</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.64">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">64</SimpleData>
+		<SimpleData name="Plot_ID">P0064</SimpleData>
+		<SimpleData name="Block">10181</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Easting_UTM37S">545947.835485837</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509755.4522655</SimpleData>
+		<SimpleData name="Latitude">-4.43519117427299</SimpleData>
+		<SimpleData name="Longitude">39.4141499510746</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4141499510746,-4.43519117427299</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.65">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">65</SimpleData>
+		<SimpleData name="Plot_ID">P0065</SimpleData>
+		<SimpleData name="Block">10181</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Easting_UTM37S">545747.835485837</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509955.4522655</SimpleData>
+		<SimpleData name="Latitude">-4.43338287648622</SimpleData>
+		<SimpleData name="Longitude">39.4123462833546</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4123462833546,-4.43338287648622</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.66">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">66</SimpleData>
+		<SimpleData name="Plot_ID">P0066</SimpleData>
+		<SimpleData name="Block">10181</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Easting_UTM37S">545947.835485837</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509955.4522655</SimpleData>
+		<SimpleData name="Latitude">-4.43338186772886</SimpleData>
+		<SimpleData name="Longitude">39.4141489436234</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4141489436234,-4.43338186772886</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.67">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">67</SimpleData>
+		<SimpleData name="Plot_ID">P0067</SimpleData>
+		<SimpleData name="Block">10181</SimpleData>
+		<SimpleData name="Stratum">Early Restoration</SimpleData>
+		<SimpleData name="Year">2021</SimpleData>
+		<SimpleData name="Easting_UTM37S">545747.835485837</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509755.4522655</SimpleData>
+		<SimpleData name="Latitude">-4.43519218344362</SimpleData>
+		<SimpleData name="Longitude">39.412347286421</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.412347286421,-4.43519218344362</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.68">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">68</SimpleData>
+		<SimpleData name="Plot_ID">P0068</SimpleData>
+		<SimpleData name="Block">10182</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="Year">2022</SimpleData>
+		<SimpleData name="Easting_UTM37S">545311.714147667</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509339.01385532</SimpleData>
+		<SimpleData name="Latitude">-4.43896169492597</SimpleData>
+		<SimpleData name="Longitude">39.4084184523668</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4084184523668,-4.43896169492597</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.69">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">69</SimpleData>
+		<SimpleData name="Plot_ID">P0069</SimpleData>
+		<SimpleData name="Block">10182</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="Year">2022</SimpleData>
+		<SimpleData name="Easting_UTM37S">545511.714147667</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509639.01385532</SimpleData>
+		<SimpleData name="Latitude">-4.43624673358113</SimpleData>
+		<SimpleData name="Longitude">39.4102196290906</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4102196290906,-4.43624673358113</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.70">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">70</SimpleData>
+		<SimpleData name="Plot_ID">P0070</SimpleData>
+		<SimpleData name="Block">1022</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="Year">2024</SimpleData>
+		<SimpleData name="Easting_UTM37S">542941.364297256</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508363.74780196</SimpleData>
+		<SimpleData name="Latitude">-4.44779601963343</SimpleData>
+		<SimpleData name="Longitude">39.3870581740364</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.3870581740364,-4.44779601963343</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.71">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">71</SimpleData>
+		<SimpleData name="Plot_ID">P0071</SimpleData>
+		<SimpleData name="Block">1022</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="Year">2024</SimpleData>
+		<SimpleData name="Easting_UTM37S">543341.364297256</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508763.74780196</SimpleData>
+		<SimpleData name="Latitude">-4.44417549258602</SimpleData>
+		<SimpleData name="Longitude">39.3906616696771</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.3906616696771,-4.44417549258602</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.72">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">72</SimpleData>
+		<SimpleData name="Plot_ID">P0072</SimpleData>
+		<SimpleData name="Block">1022</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="Year">2024</SimpleData>
+		<SimpleData name="Easting_UTM37S">543141.364297256</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508763.74780196</SimpleData>
+		<SimpleData name="Latitude">-4.44417644632211</SimpleData>
+		<SimpleData name="Longitude">39.3888589780092</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.3888589780092,-4.44417644632211</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.73">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">73</SimpleData>
+		<SimpleData name="Plot_ID">P0073</SimpleData>
+		<SimpleData name="Block">1022</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="Year">2024</SimpleData>
+		<SimpleData name="Easting_UTM37S">543041.364297256</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508563.74780196</SimpleData>
+		<SimpleData name="Latitude">-4.4459862333798</SimpleData>
+		<SimpleData name="Longitude">39.3879585780752</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.3879585780752,-4.4459862333798</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.74">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">74</SimpleData>
+		<SimpleData name="Plot_ID">P0074</SimpleData>
+		<SimpleData name="Block">1021</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="Year">2024</SimpleData>
+		<SimpleData name="Easting_UTM37S">543459.033985427</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508745.06335646</SimpleData>
+		<SimpleData name="Latitude">-4.44434395926631</SimpleData>
+		<SimpleData name="Longitude">39.3917223695491</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.3917223695491,-4.44434395926631</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.75">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">75</SimpleData>
+		<SimpleData name="Plot_ID">P0075</SimpleData>
+		<SimpleData name="Block">1021</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="Year">2024</SimpleData>
+		<SimpleData name="Easting_UTM37S">543659.033985427</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508645.06335646</SimpleData>
+		<SimpleData name="Latitude">-4.44524765381294</SimpleData>
+		<SimpleData name="Longitude">39.3935255407846</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.3935255407846,-4.44524765381294</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.76">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">76</SimpleData>
+		<SimpleData name="Plot_ID">P0076</SimpleData>
+		<SimpleData name="Block">1021</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="Year">2024</SimpleData>
+		<SimpleData name="Easting_UTM37S">543659.033985427</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508845.06335646</SimpleData>
+		<SimpleData name="Latitude">-4.4434383431399</SimpleData>
+		<SimpleData name="Longitude">39.3935245813234</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.3935245813234,-4.4434383431399</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.77">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">77</SimpleData>
+		<SimpleData name="Plot_ID">P0077</SimpleData>
+		<SimpleData name="Block">1021</SimpleData>
+		<SimpleData name="Stratum">Recent Restoration</SimpleData>
+		<SimpleData name="Year">2024</SimpleData>
+		<SimpleData name="Easting_UTM37S">543859.033985427</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508745.06335646</SimpleData>
+		<SimpleData name="Latitude">-4.44434203329771</SimpleData>
+		<SimpleData name="Longitude">39.3953277520658</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.3953277520658,-4.44434203329771</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.78">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">78</SimpleData>
+		<SimpleData name="Plot_ID">P0078</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">546446.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510005.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.43292227226677</SimpleData>
+		<SimpleData name="Longitude">39.4186441266435</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4186441266435,-4.43292227226677</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.79">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">79</SimpleData>
+		<SimpleData name="Plot_ID">P0079</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">546146.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511505.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.41935400107506</SimpleData>
+		<SimpleData name="Longitude">39.4159325648166</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4159325648166,-4.41935400107506</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.80">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">80</SimpleData>
+		<SimpleData name="Plot_ID">P0080</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">545046.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510305.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.43021535445928</SimpleData>
+		<SimpleData name="Longitude">39.4060240304522</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4060240304522,-4.43021535445928</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.81">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">81</SimpleData>
+		<SimpleData name="Plot_ID">P0081</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">546146.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512905.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.40668885087548</SimpleData>
+		<SimpleData name="Longitude">39.415925516454</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.415925516454,-4.40668885087548</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.82">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">82</SimpleData>
+		<SimpleData name="Plot_ID">P0082</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">545946.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512605.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.40940381962618</SimpleData>
+		<SimpleData name="Longitude">39.4141244231811</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4141244231811,-4.40940381962618</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.83">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">83</SimpleData>
+		<SimpleData name="Plot_ID">P0083</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">544946.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510105.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.43202515786899</SimpleData>
+		<SimpleData name="Longitude">39.4051236880728</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4051236880728,-4.43202515786899</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.84">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">84</SimpleData>
+		<SimpleData name="Plot_ID">P0084</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">545846.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512005.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.41483224531223</SimpleData>
+		<SimpleData name="Longitude">39.4132261225365</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4132261225365,-4.41483224531223</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.85">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">85</SimpleData>
+		<SimpleData name="Plot_ID">P0085</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">543646.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508405.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.44741063386237</SimpleData>
+		<SimpleData name="Longitude">39.3934145417913</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.3934145417913,-4.44741063386237</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.86">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">86</SimpleData>
+		<SimpleData name="Plot_ID">P0086</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">543146.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508105.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.45012699569778</SimpleData>
+		<SimpleData name="Longitude">39.3889092174517</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.3889092174517,-4.45012699569778</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.87">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">87</SimpleData>
+		<SimpleData name="Plot_ID">P0087</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">546346.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512305.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.41211576028803</SimpleData>
+		<SimpleData name="Longitude">39.4177311427212</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4177311427212,-4.41211576028803</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.88">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">88</SimpleData>
+		<SimpleData name="Plot_ID">P0088</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">543946.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509305.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.43926728813548</SimpleData>
+		<SimpleData name="Longitude">39.3961142444325</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.3961142444325,-4.43926728813548</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.89">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">89</SimpleData>
+		<SimpleData name="Plot_ID">P0089</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">544546.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509805.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.43474109049019</SimpleData>
+		<SimpleData name="Longitude">39.4015198344183</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4015198344183,-4.43474109049019</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.90">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">90</SimpleData>
+		<SimpleData name="Plot_ID">P0090</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">544846.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510505.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.42840703363759</SimpleData>
+		<SimpleData name="Longitude">39.4042203938236</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4042203938236,-4.42840703363759</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.91">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">91</SimpleData>
+		<SimpleData name="Plot_ID">P0091</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">543046.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509005.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.44198556857271</SimpleData>
+		<SimpleData name="Longitude">39.3880036055761</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.3880036055761,-4.44198556857271</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.92">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">92</SimpleData>
+		<SimpleData name="Plot_ID">P0092</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">542746.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508205.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.44922423662039</SimpleData>
+		<SimpleData name="Longitude">39.3853033337673</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.3853033337673,-4.44922423662039</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.93">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">93</SimpleData>
+		<SimpleData name="Plot_ID">P0093</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">545846.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510905.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.42478343635349</SimpleData>
+		<SimpleData name="Longitude">39.4132316330787</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4132316330787,-4.42478343635349</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.94">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">94</SimpleData>
+		<SimpleData name="Plot_ID">P0094</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">545746.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511305.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.42116532416007</SimpleData>
+		<SimpleData name="Longitude">39.4123283123889</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4123283123889,-4.42116532416007</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.95">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">95</SimpleData>
+		<SimpleData name="Plot_ID">P0095</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">546446.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9513105.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.40487802526627</SimpleData>
+		<SimpleData name="Longitude">39.4186283969639</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4186283969639,-4.40487802526627</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.96">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">96</SimpleData>
+		<SimpleData name="Plot_ID">P0096</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">544046.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509105.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.44107611358874</SimpleData>
+		<SimpleData name="Longitude">39.3970165506287</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.3970165506287,-4.44107611358874</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.97">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">97</SimpleData>
+		<SimpleData name="Plot_ID">P0097</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">543346.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508305.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.44831672951828</SimpleData>
+		<SimpleData name="Longitude">39.3907109699217</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.3907109699217,-4.44831672951828</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.98">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">98</SimpleData>
+		<SimpleData name="Plot_ID">P0098</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">545946.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511205.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.42206897180398</SimpleData>
+		<SimpleData name="Longitude">39.414131445357</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.414131445357,-4.42206897180398</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.99">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">99</SimpleData>
+		<SimpleData name="Plot_ID">P0099</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">545546.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510605.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.42749890321753</SimpleData>
+		<SimpleData name="Longitude">39.4105291686308</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4105291686308,-4.42749890321753</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.100">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">100</SimpleData>
+		<SimpleData name="Plot_ID">P0100</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">546146.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512705.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.40849815831155</SimpleData>
+		<SimpleData name="Longitude">39.4159265221123</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4159265221123,-4.40849815831155</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.101">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">101</SimpleData>
+		<SimpleData name="Plot_ID">P0101</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">542746.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508605.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.44560561202232</SimpleData>
+		<SimpleData name="Longitude">39.3853014536362</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.3853014536362,-4.44560561202232</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.102">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">102</SimpleData>
+		<SimpleData name="Plot_ID">P0102</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">545846.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511605.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.41845086054567</SimpleData>
+		<SimpleData name="Longitude">39.4132281249204</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4132281249204,-4.41845086054567</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.103">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">103</SimpleData>
+		<SimpleData name="Plot_ID">P0103</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">543246.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508505.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.44650789611189</SimpleData>
+		<SimpleData name="Longitude">39.3898086680493</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.3898086680493,-4.44650789611189</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.104">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">104</SimpleData>
+		<SimpleData name="Plot_ID">P0104</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">546646.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510605.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.42749333238513</SimpleData>
+		<SimpleData name="Longitude">39.4204437188824</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4204437188824,-4.42749333238513</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.105">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">105</SimpleData>
+		<SimpleData name="Plot_ID">P0105</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">544446.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509605.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.43655088969067</SimpleData>
+		<SimpleData name="Longitude">39.4006194761046</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4006194761046,-4.43655088969067</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.106">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">106</SimpleData>
+		<SimpleData name="Plot_ID">P0106</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">546146.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509405.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.43835171824994</SimpleData>
+		<SimpleData name="Longitude">39.4159431756638</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4159431756638,-4.43835171824994</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.107">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">107</SimpleData>
+		<SimpleData name="Plot_ID">P0107</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">544246.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509205.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.44017048572358</SimpleData>
+		<SimpleData name="Longitude">39.3988187472168</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.3988187472168,-4.44017048572358</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.108">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">108</SimpleData>
+		<SimpleData name="Plot_ID">P0108</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">544146.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509405.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.43836166272725</SimpleData>
+		<SimpleData name="Longitude">39.3979164381263</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.3979164381263,-4.43836166272725</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.109">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">109</SimpleData>
+		<SimpleData name="Plot_ID">P0109</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">546046.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512405.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.4112126238699</SimpleData>
+		<SimpleData name="Longitude">39.4150267282946</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4150267282946,-4.4112126238699</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.110">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">110</SimpleData>
+		<SimpleData name="Plot_ID">P0110</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">544246.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509705.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.43564721116172</SimpleData>
+		<SimpleData name="Longitude">39.3988163198383</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.3988163198383,-4.43564721116172</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.111">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">111</SimpleData>
+		<SimpleData name="Plot_ID">P0111</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">542546.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508505.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.44651120931936</SimpleData>
+		<SimpleData name="Longitude">39.3834992250365</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.3834992250365,-4.44651120931936</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.112">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">112</SimpleData>
+		<SimpleData name="Plot_ID">P0112</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">544146.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508905.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.44288493745422</SimpleData>
+		<SimpleData name="Longitude">39.397918861515</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.397918861515,-4.44288493745422</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.113">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">113</SimpleData>
+		<SimpleData name="Plot_ID">P0113</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">547446.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512505.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.41030080802666</SimpleData>
+		<SimpleData name="Longitude">39.4276444445746</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4276444445746,-4.41030080802666</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.114">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">114</SimpleData>
+		<SimpleData name="Plot_ID">P0114</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">544446.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510005.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.43293227053018</SimpleData>
+		<SimpleData name="Longitude">39.4006175268304</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4006175268304,-4.43293227053018</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.115">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">115</SimpleData>
+		<SimpleData name="Plot_ID">P0115</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">542546.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508205.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.44922517831122</SimpleData>
+		<SimpleData name="Longitude">39.383500628682</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.383500628682,-4.44922517831122</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.116">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">116</SimpleData>
+		<SimpleData name="Plot_ID">P0116</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">546046.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511705.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.41754519946526</SimpleData>
+		<SimpleData name="Longitude">39.4150302459316</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4150302459316,-4.41754519946526</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.117">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">117</SimpleData>
+		<SimpleData name="Plot_ID">P0117</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">546046.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512005.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.41483123862826</SimpleData>
+		<SimpleData name="Longitude">39.4150287377489</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4150287377489,-4.41483123862826</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.118">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">118</SimpleData>
+		<SimpleData name="Plot_ID">P0118</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">543346.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509205.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.44017482871117</SimpleData>
+		<SimpleData name="Longitude">39.3907066833384</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.3907066833384,-4.44017482871117</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.119">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">119</SimpleData>
+		<SimpleData name="Plot_ID">P0119</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">545646.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510905.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.42478444092373</SimpleData>
+		<SimpleData name="Longitude">39.4114289934151</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4114289934151,-4.42478444092373</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.120">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">120</SimpleData>
+		<SimpleData name="Plot_ID">P0120</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">543546.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508205.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.44922042569792</SimpleData>
+		<SimpleData name="Longitude">39.3925141502277</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.3925141502277,-4.44922042569792</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.121">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">121</SimpleData>
+		<SimpleData name="Plot_ID">P0121</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">546346.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512505.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.41030645344519</SimpleData>
+		<SimpleData name="Longitude">39.4177301318674</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4177301318674,-4.41030645344519</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.122">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">122</SimpleData>
+		<SimpleData name="Plot_ID">P0122</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">546146.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509205.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.4401610241378</SimpleData>
+		<SimpleData name="Longitude">39.415944188618</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.415944188618,-4.4401610241378</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.123">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">123</SimpleData>
+		<SimpleData name="Plot_ID">P0123</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">544046.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509605.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.43655283814298</SimpleData>
+		<SimpleData name="Longitude">39.3970141337239</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.3970141337239,-4.43655283814298</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.124">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">124</SimpleData>
+		<SimpleData name="Plot_ID">P0124</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">545746.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512205.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.41302343905554</SimpleData>
+		<SimpleData name="Longitude">39.4123238163865</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4123238163865,-4.41302343905554</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.125">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">125</SimpleData>
+		<SimpleData name="Plot_ID">P0125</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">545946.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512805.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.40759451181916</SimpleData>
+		<SimpleData name="Longitude">39.4141234216735</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4141234216735,-4.40759451181916</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.126">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">126</SimpleData>
+		<SimpleData name="Plot_ID">P0126</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">542546.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508705.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.444701896547</SimpleData>
+		<SimpleData name="Longitude">39.3834982897534</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.3834982897534,-4.444701896547</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.127">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">127</SimpleData>
+		<SimpleData name="Plot_ID">P0127</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">546346.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512805.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.40759249301553</SimpleData>
+		<SimpleData name="Longitude">39.4177286163717</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4177286163717,-4.40759249301553</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.128">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">128</SimpleData>
+		<SimpleData name="Plot_ID">P0128</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">545946.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511405.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.42025966461504</SimpleData>
+		<SimpleData name="Longitude">39.4141304409438</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4141304409438,-4.42025966461504</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.129">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">129</SimpleData>
+		<SimpleData name="Plot_ID">P0129</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">544746.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510305.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.43021683513976</SimpleData>
+		<SimpleData name="Longitude">39.4033200486454</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4033200486454,-4.43021683513976</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.130">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">130</SimpleData>
+		<SimpleData name="Plot_ID">P0130</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">546046.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512205.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.41302193129321</SimpleData>
+		<SimpleData name="Longitude">39.4150277328138</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4150277328138,-4.41302193129321</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.131">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">131</SimpleData>
+		<SimpleData name="Plot_ID">P0131</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">543646.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509105.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.44107804640414</SimpleData>
+		<SimpleData name="Longitude">39.3934111847093</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.3934111847093,-4.44107804640414</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.132">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">132</SimpleData>
+		<SimpleData name="Plot_ID">P0132</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">544746.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510005.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.43293079883836</SimpleData>
+		<SimpleData name="Longitude">39.4033215194066</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4033215194066,-4.43293079883836</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.133">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">133</SimpleData>
+		<SimpleData name="Plot_ID">P0133</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">546646.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510305.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.43020729041351</SimpleData>
+		<SimpleData name="Longitude">39.4204452511404</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4204452511404,-4.43020729041351</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.134">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">134</SimpleData>
+		<SimpleData name="Plot_ID">P0134</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">547646.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512705.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.40849046318379</SimpleData>
+		<SimpleData name="Longitude">39.4294460067261</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4294460067261,-4.40849046318379</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.135">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">135</SimpleData>
+		<SimpleData name="Plot_ID">P0135</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">542646.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508905.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.44289211406432</SimpleData>
+		<SimpleData name="Longitude">39.3843986997514</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.3843986997514,-4.44289211406432</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.136">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">136</SimpleData>
+		<SimpleData name="Plot_ID">P0136</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">543146.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508305.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.44831768426194</SimpleData>
+		<SimpleData name="Longitude">39.3889082682003</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.3889082682003,-4.44831768426194</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.137">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">137</SimpleData>
+		<SimpleData name="Plot_ID">P0137</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">545346.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510405.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.42930920988426</SimpleData>
+		<SimpleData name="Longitude">39.4087275147211</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4087275147211,-4.42930920988426</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.138">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">138</SimpleData>
+		<SimpleData name="Plot_ID">P0138</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">547246.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512605.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.4093971918093</SimpleData>
+		<SimpleData name="Longitude">39.425841328139</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.425841328139,-4.4093971918093</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.139">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">139</SimpleData>
+		<SimpleData name="Plot_ID">P0139</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">543846.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509505.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.43745846109582</SimpleData>
+		<SimpleData name="Longitude">39.395211942924</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.395211942924,-4.43745846109582</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.140">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">140</SimpleData>
+		<SimpleData name="Plot_ID">P0140</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">545946.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509205.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.44016203882328</SimpleData>
+		<SimpleData name="Longitude">39.414141512321</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.414141512321,-4.44016203882328</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.141">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">141</SimpleData>
+		<SimpleData name="Plot_ID">P0141</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">542746.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508405.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.44741492436581</SimpleData>
+		<SimpleData name="Longitude">39.3853023935086</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.3853023935086,-4.44741492436581</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.142">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">142</SimpleData>
+		<SimpleData name="Plot_ID">P0142</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">542846.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508905.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.44289117151417</SimpleData>
+		<SimpleData name="Longitude">39.3862013892556</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.3862013892556,-4.44289117151417</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.143">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">143</SimpleData>
+		<SimpleData name="Plot_ID">P0143</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">545946.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9513105.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.40488054994337</SimpleData>
+		<SimpleData name="Longitude">39.4141219201902</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4141219201902,-4.40488054994337</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.144">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">144</SimpleData>
+		<SimpleData name="Plot_ID">P0144</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">543446.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508505.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.44650693955147</SimpleData>
+		<SimpleData name="Longitude">39.3916113651771</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.3916113651771,-4.44650693955147</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.145">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">145</SimpleData>
+		<SimpleData name="Plot_ID">P0145</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">546646.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9510805.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.42568402692218</SimpleData>
+		<SimpleData name="Longitude">39.4204426979039</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4204426979039,-4.42568402692218</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.146">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">146</SimpleData>
+		<SimpleData name="Plot_ID">P0146</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">545746.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511105.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.42297463171804</SimpleData>
+		<SimpleData name="Longitude">39.4123293126371</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4123293126371,-4.42297463171804</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.147">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">147</SimpleData>
+		<SimpleData name="Plot_ID">P0147</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">542946.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508105.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.45012794641446</SimpleData>
+		<SimpleData name="Longitude">39.3871065109406</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.3871065109406,-4.45012794641446</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.148">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">148</SimpleData>
+		<SimpleData name="Plot_ID">P0148</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">545946.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509405.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.43835273252035</SimpleData>
+		<SimpleData name="Longitude">39.4141405037565</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4141405037565,-4.43835273252035</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.149">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">149</SimpleData>
+		<SimpleData name="Plot_ID">P0149</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">546346.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509205.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.4401600050455</SimpleData>
+		<SimpleData name="Longitude">39.4177468644981</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4177468644981,-4.4401600050455</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.150">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">150</SimpleData>
+		<SimpleData name="Plot_ID">P0150</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">547446.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512705.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.40849150342041</SimpleData>
+		<SimpleData name="Longitude">39.4276434101598</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4276434101598,-4.40849150342041</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.151">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">151</SimpleData>
+		<SimpleData name="Plot_ID">P0151</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">545446.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509105.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.44106920989013</SimpleData>
+		<SimpleData name="Longitude">39.4096353187151</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4096353187151,-4.44106920989013</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.152">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">152</SimpleData>
+		<SimpleData name="Plot_ID">P0152</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">545846.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511805.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.41664155297312</SimpleData>
+		<SimpleData name="Longitude">39.4132271235214</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4132271235214,-4.41664155297312</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.153">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">153</SimpleData>
+		<SimpleData name="Plot_ID">P0153</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">543346.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509005.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.44198414015711</SimpleData>
+		<SimpleData name="Longitude">39.390707635227</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.390707635227,-4.44198414015711</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.154">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">154</SimpleData>
+		<SimpleData name="Plot_ID">P0154</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">547046.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9511305.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.42115870711968</SimpleData>
+		<SimpleData name="Longitude">39.4240454045331</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4240454045331,-4.42115870711968</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.155">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">155</SimpleData>
+		<SimpleData name="Plot_ID">P0155</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">546246.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512105.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.41392557411418</SimpleData>
+		<SimpleData name="Longitude">39.4168308478433</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4168308478433,-4.41392557411418</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.156">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">156</SimpleData>
+		<SimpleData name="Plot_ID">P0156</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">543346.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9508105.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.45012604056429</SimpleData>
+		<SimpleData name="Longitude">39.3907119235728</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.3907119235728,-4.45012604056429</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.157">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">157</SimpleData>
+		<SimpleData name="Plot_ID">P0157</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">545746.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9509205.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.44016304910192</SimpleData>
+		<SimpleData name="Longitude">39.4123388356088</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4123388356088,-4.44016304910192</coordinates></Point>
+  </Placemark>
+  <Placemark id="sampling_points.158">
+	<ExtendedData><SchemaData schemaUrl="#sampling_points">
+		<SimpleData name="fid">158</SimpleData>
+		<SimpleData name="Plot_ID">P0158</SimpleData>
+		<SimpleData name="Block">corridor</SimpleData>
+		<SimpleData name="Stratum">Biodiversity Corridor</SimpleData>
+		<SimpleData name="Year">&lt;NA&gt;</SimpleData>
+		<SimpleData name="Easting_UTM37S">545846.591918803</SimpleData>
+		<SimpleData name="Northing_UTM37S">9512405.9755914</SimpleData>
+		<SimpleData name="Latitude">-4.4112136297256</SimpleData>
+		<SimpleData name="Longitude">39.4132241218094</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4132241218094,-4.4112136297256</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>

@@ -1,0 +1,330 @@
+<?xml version="1.0"?>
+<gpx version="1.1" creator="GDAL 3.12.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<metadata>
+<bounds minlat="-4.453747044000000" minlon="39.386206100000003" maxlat="-4.403953295000000" maxlon="39.452878630000001"/>                                       
+</metadata>
+<wpt lat="-4.441063634" lon="39.41955005">
+  <name>BC_001</name>
+</wpt>
+<wpt lat="-4.415728201" lon="39.42854886">
+  <name>BC_002</name>
+</wpt>
+<wpt lat="-4.445591976" lon="39.41053916">
+  <name>BC_003</name>
+</wpt>
+<wpt lat="-4.407582137" lon="39.43575456">
+  <name>BC_004</name>
+</wpt>
+<wpt lat="-4.442873452" lon="39.41864973">
+  <name>BC_005</name>
+</wpt>
+<wpt lat="-4.409389847" lon="39.43845951">
+  <name>BC_006</name>
+</wpt>
+<wpt lat="-4.410296091" lon="39.43575615">
+  <name>BC_007</name>
+</wpt>
+<wpt lat="-4.44650258" lon="39.3997235">
+  <name>BC_008</name>
+</wpt>
+<wpt lat="-4.40938771" lon="39.44206471">
+  <name>BC_009</name>
+</wpt>
+<wpt lat="-4.446504529" lon="39.39611811">
+  <name>BC_010</name>
+</wpt>
+<wpt lat="-4.411199681" lon="39.43755927">
+  <name>BC_011</name>
+</wpt>
+<wpt lat="-4.432015052" lon="39.42315026">
+  <name>BC_012</name>
+</wpt>
+<wpt lat="-4.441064658" lon="39.41774737">
+  <name>BC_013</name>
+</wpt>
+<wpt lat="-4.436540883" lon="39.41864616">
+  <name>BC_014</name>
+</wpt>
+<wpt lat="-4.438349163" lon="39.42044985">
+  <name>BC_015</name>
+</wpt>
+<wpt lat="-4.443781157" lon="39.41324219">
+  <name>BC_016</name>
+</wpt>
+<wpt lat="-4.428395408" lon="39.42495084">
+  <name>BC_017</name>
+</wpt>
+<wpt lat="-4.409383926" lon="39.44837379">
+  <name>BC_018</name>
+</wpt>
+<wpt lat="-4.440162545" lon="39.41324017">
+  <name>BC_019</name>
+</wpt>
+<wpt lat="-4.434731066" lon="39.41954648">
+  <name>BC_020</name>
+</wpt>
+<wpt lat="-4.442880512" lon="39.40603095">
+  <name>BC_021</name>
+</wpt>
+<wpt lat="-4.426587138" lon="39.42314717">
+  <name>BC_022</name>
+</wpt>
+<wpt lat="-4.434729525" lon="39.42225047">
+  <name>BC_023</name>
+</wpt>
+<wpt lat="-4.437442965" lon="39.42315334">
+  <name>BC_024</name>
+</wpt>
+<wpt lat="-4.451937732" lon="39.3862061">
+  <name>BC_025</name>
+</wpt>
+<wpt lat="-4.446499625" lon="39.40513158">
+  <name>BC_026</name>
+</wpt>
+<wpt lat="-4.41934733" lon="39.42764962">
+  <name>BC_027</name>
+</wpt>
+<wpt lat="-4.422968012" lon="39.42404643">
+  <name>BC_028</name>
+</wpt>
+<wpt lat="-4.445598902" lon="39.39792032">
+  <name>BC_029</name>
+</wpt>
+<wpt lat="-4.436541904" lon="39.4168435">
+  <name>BC_030</name>
+</wpt>
+<wpt lat="-4.442879517" lon="39.40783363">
+  <name>BC_031</name>
+</wpt>
+<wpt lat="-4.407579479" lon="39.44026104">
+  <name>BC_032</name>
+</wpt>
+<wpt lat="-4.411202325" lon="39.43305277">
+  <name>BC_033</name>
+</wpt>
+<wpt lat="-4.421156634" lon="39.42765066">
+  <name>BC_034</name>
+</wpt>
+<wpt lat="-4.431109365" lon="39.42495239">
+  <name>BC_035</name>
+</wpt>
+<wpt lat="-4.408477091" lon="39.45197843">
+  <name>BC_036</name>
+</wpt>
+<wpt lat="-4.450122176" lon="39.39792274">
+  <name>BC_037</name>
+</wpt>
+<wpt lat="-4.436539344" lon="39.42135016">
+  <name>BC_038</name>
+</wpt>
+<wpt lat="-4.424776281" lon="39.4258501">
+  <name>BC_039</name>
+</wpt>
+<wpt lat="-4.438350189" lon="39.41864718">
+  <name>BC_040</name>
+</wpt>
+<wpt lat="-4.444691799" lon="39.40242656">
+  <name>BC_041</name>
+</wpt>
+<wpt lat="-4.410290745" lon="39.44476914">
+  <name>BC_042</name>
+</wpt>
+<wpt lat="-4.43111143" lon="39.42134709">
+  <name>BC_043</name>
+</wpt>
+<wpt lat="-4.438352226" lon="39.41504184">
+  <name>BC_044</name>
+</wpt>
+<wpt lat="-4.433823839" lon="39.42405261">
+  <name>BC_045</name>
+</wpt>
+<wpt lat="-4.451934392" lon="39.39251559">
+  <name>BC_046</name>
+</wpt>
+<wpt lat="-4.411198616" lon="39.43936187">
+  <name>BC_047</name>
+</wpt>
+<wpt lat="-4.405765327" lon="39.44837162">
+  <name>BC_048</name>
+</wpt>
+<wpt lat="-4.412108026" lon="39.43125069">
+  <name>BC_049</name>
+</wpt>
+<wpt lat="-4.443779636" lon="39.41594622">
+  <name>BC_050</name>
+</wpt>
+<wpt lat="-4.443783171" lon="39.40963682">
+  <name>BC_051</name>
+</wpt>
+<wpt lat="-4.443786158" lon="39.40422876">
+  <name>BC_052</name>
+</wpt>
+<wpt lat="-4.432920735" lon="39.42134811">
+  <name>BC_053</name>
+</wpt>
+<wpt lat="-4.406667243" lon="39.45287863">
+  <name>BC_054</name>
+</wpt>
+<wpt lat="-4.416634411" lon="39.42584545">
+  <name>BC_055</name>
+</wpt>
+<wpt lat="-4.446500614" lon="39.40332889">
+  <name>BC_056</name>
+</wpt>
+<wpt lat="-4.412110631" lon="39.42674418">
+  <name>BC_057</name>
+</wpt>
+<wpt lat="-4.438351209" lon="39.41684451">
+  <name>BC_058</name>
+</wpt>
+<wpt lat="-4.415727157" lon="39.43035147">
+  <name>BC_059</name>
+</wpt>
+<wpt lat="-4.452840963" lon="39.38891064">
+  <name>BC_060</name>
+</wpt>
+<wpt lat="-4.413919936" lon="39.42674521">
+  <name>BC_061</name>
+</wpt>
+<wpt lat="-4.445593478" lon="39.40783512">
+  <name>BC_062</name>
+</wpt>
+<wpt lat="-4.422965938" lon="39.4276517">
+  <name>BC_063</name>
+</wpt>
+<wpt lat="-4.413014245" lon="39.4285473">
+  <name>BC_064</name>
+</wpt>
+<wpt lat="-4.424777833" lon="39.42314614">
+  <name>BC_065</name>
+</wpt>
+<wpt lat="-4.408480363" lon="39.44657065">
+  <name>BC_066</name>
+</wpt>
+<wpt lat="-4.444693271" lon="39.39972252">
+  <name>BC_067</name>
+</wpt>
+<wpt lat="-4.449218494" lon="39.39611956">
+  <name>BC_068</name>
+</wpt>
+<wpt lat="-4.441971345" lon="39.41414252">
+  <name>BC_069</name>
+</wpt>
+<wpt lat="-4.440161024" lon="39.41594419">
+  <name>BC_070</name>
+</wpt>
+<wpt lat="-4.407574627" lon="39.4483727">
+  <name>BC_071</name>
+</wpt>
+<wpt lat="-4.403953295" lon="39.45287699">
+  <name>BC_072</name>
+</wpt>
+<wpt lat="-4.430205747" lon="39.42314923">
+  <name>BC_073</name>
+</wpt>
+<wpt lat="-4.409392495" lon="39.43395302">
+  <name>BC_074</name>
+</wpt>
+<wpt lat="-4.406668887" lon="39.45017475">
+  <name>BC_075</name>
+</wpt>
+<wpt lat="-4.412105393" lon="39.4357572">
+  <name>BC_076</name>
+</wpt>
+<wpt lat="-4.442877513" lon="39.411439">
+  <name>BC_077</name>
+</wpt>
+<wpt lat="-4.451028288" lon="39.39521917">
+  <name>BC_078</name>
+</wpt>
+<wpt lat="-4.417538026" lon="39.42764859">
+  <name>BC_079</name>
+</wpt>
+<wpt lat="-4.426585586" lon="39.42585113">
+  <name>BC_080</name>
+</wpt>
+<wpt lat="-4.441068206" lon="39.411438">
+  <name>BC_081</name>
+</wpt>
+<wpt lat="-4.441973864" lon="39.40963582">
+  <name>BC_082</name>
+</wpt>
+<wpt lat="-4.447408212" lon="39.39792129">
+  <name>BC_083</name>
+</wpt>
+<wpt lat="-4.422966977" lon="39.42584907">
+  <name>BC_084</name>
+</wpt>
+<wpt lat="-4.449219462" lon="39.39431685">
+  <name>BC_085</name>
+</wpt>
+<wpt lat="-4.453747044" lon="39.38620704">
+  <name>BC_086</name>
+</wpt>
+<wpt lat="-4.435633143" lon="39.42405365">
+  <name>BC_087</name>
+</wpt>
+<wpt lat="-4.408478186" lon="39.45017584">
+  <name>BC_088</name>
+</wpt>
+<wpt lat="-4.424775242" lon="39.42765274">
+  <name>BC_089</name>
+</wpt>
+<wpt lat="-4.440157954" lon="39.42135222">
+  <name>BC_090</name>
+</wpt>
+<wpt lat="-4.452840007" lon="39.39071335">
+  <name>BC_091</name>
+</wpt>
+<wpt lat="-4.407581077" lon="39.43755716">
+  <name>BC_092</name>
+</wpt>
+<wpt lat="-4.4483114" lon="39.40062582">
+  <name>BC_093</name>
+</wpt>
+<wpt lat="-4.410299245" lon="39.43034835">
+  <name>BC_094</name>
+</wpt>
+<wpt lat="-4.417536983" lon="39.4294512">
+  <name>BC_095</name>
+</wpt>
+<wpt lat="-4.428396442" lon="39.4231482">
+  <name>BC_096</name>
+</wpt>
+<wpt lat="-4.409388781" lon="39.44026211">
+  <name>BC_097</name>
+</wpt>
+<wpt lat="-4.419346287" lon="39.42945225">
+  <name>BC_098</name>
+</wpt>
+<wpt lat="-4.413917853" lon="39.43035043">
+  <name>BC_099</name>
+</wpt>
+<wpt lat="-4.413011628" lon="39.43305382">
+  <name>BC_100</name>
+</wpt>
+<wpt lat="-4.408481984" lon="39.44386676">
+  <name>BC_101</name>
+</wpt>
+<wpt lat="-4.439252269" lon="39.42315437">
+  <name>BC_102</name>
+</wpt>
+<wpt lat="-4.411197011" lon="39.44206577">
+  <name>BC_103</name>
+</wpt>
+<wpt lat="-4.4465016" lon="39.40152619">
+  <name>BC_104</name>
+</wpt>
+<wpt lat="-4.44468982" lon="39.40603194">
+  <name>BC_105</name>
+</wpt>
+<wpt lat="-4.418443716" lon="39.42584648">
+  <name>BC_106</name>
+</wpt>
+<wpt lat="-4.44197033" lon="39.4159452">
+  <name>BC_107</name>
+</wpt>
+<wpt lat="-4.410289663" lon="39.44657173">
+  <name>BC_108</name>
+</wpt>
+</gpx>

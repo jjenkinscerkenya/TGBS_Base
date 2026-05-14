@@ -1,0 +1,126 @@
+{
+  "type": "FeatureCollection",
+  "columns": {
+    "CONS_OBJ": "String",
+    "DESIG": "String",
+    "DESIG_ENG": "String",
+    "DESIG_TYPE": "String",
+    "GIS_AREA": "Float",
+    "GIS_M_AREA": "Float",
+    "GOVSUBTYPE": "String",
+    "GOV_TYPE": "String",
+    "INLND_WTRS": "String",
+    "INT_CRIT": "String",
+    "ISO3": "String",
+    "IUCN_CAT": "String",
+    "MANG_AUTH": "String",
+    "MANG_PLAN": "String",
+    "METADATAID": "Integer",
+    "NAME": "String",
+    "NAME_ENG": "String",
+    "NO_TAKE": "String",
+    "NO_TK_AREA": "Float",
+    "OECM_ASMT": "String",
+    "OWNSUBTYPE": "String",
+    "OWN_TYPE": "String",
+    "PRNT_ISO3": "String",
+    "REALM": "String",
+    "REP_AREA": "Float",
+    "REP_M_AREA": "Float",
+    "SITE_ID": "Integer",
+    "SITE_PID": "String",
+    "SITE_TYPE": "String",
+    "STATUS": "String",
+    "STATUS_YR": "Integer",
+    "SUPP_INFO": "String",
+    "VERIF": "String",
+    "system:index": "String"
+  },
+  "version": 1766009385608479,
+  "id": "WCMC/WDPA/current/polygons",
+  "properties": {
+    "system:time_start": 1767225600000,
+    "system:time_end": 1769904000000,
+    "system:asset_size": 2177425559
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              39.39925689797976,
+              -4.468188711135739
+            ],
+            [
+              39.41210797888017,
+              -4.457919365293976
+            ],
+            [
+              39.42200275190922,
+              -4.443574469364774
+            ],
+            [
+              39.41896168142231,
+              -4.440849971730899
+            ],
+            [
+              39.40691759548104,
+              -4.4420851009299795
+            ],
+            [
+              39.39521248784448,
+              -4.445117313640382
+            ],
+            [
+              39.38652172658538,
+              -4.464924657446215
+            ],
+            [
+              39.39925689797976,
+              -4.468188711135739
+            ]
+          ]
+        ]
+      },
+      "id": "000500000000000015e2",
+      "properties": {
+        "CONS_OBJ": "Not Applicable",
+        "DESIG": "Forest Reserve",
+        "DESIG_ENG": "Forest Reserve",
+        "DESIG_TYPE": "National",
+        "GIS_AREA": 6.67329228205409,
+        "GIS_M_AREA": 0,
+        "GOVSUBTYPE": "Not Applicable",
+        "GOV_TYPE": "Federal or national ministry or agency",
+        "INLND_WTRS": "Not Reported",
+        "INT_CRIT": "Not Applicable",
+        "ISO3": "KEN",
+        "IUCN_CAT": "Not Reported",
+        "MANG_AUTH": "Kenya Forest Service",
+        "MANG_PLAN": "Not Reported",
+        "METADATAID": 178,
+        "NAME": "Buda",
+        "NAME_ENG": "Buda",
+        "NO_TAKE": "Not Applicable",
+        "NO_TK_AREA": 0,
+        "OECM_ASMT": "Not Applicable",
+        "OWNSUBTYPE": "Not Applicable",
+        "OWN_TYPE": "State",
+        "PRNT_ISO3": "KEN",
+        "REALM": "Terrestrial",
+        "REP_AREA": 6.7,
+        "REP_M_AREA": 0,
+        "SITE_ID": 7543,
+        "SITE_PID": "7543",
+        "SITE_TYPE": "PA",
+        "STATUS": "Designated",
+        "STATUS_YR": 1932,
+        "SUPP_INFO": "Not Applicable",
+        "VERIF": "State Verified"
+      }
+    }
+  ]
+}
